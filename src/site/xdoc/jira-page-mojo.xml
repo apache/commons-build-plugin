@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<!--
+   $HeadURL$
+   $Revision$ $Date$
+ -->
+<document>
+  <properties>
+    <title>commons-build-plugin - commons:jira-page</title>
+    </properties>
+  <body>
+    <section name="commons:jira-page">
+      <p>Commons Build Ant Mojo: Generate Issue Tracking page</p>
+      <p><b>Mojo Attributes</b>:<ul>
+          <li>Requires a Maven 2.0 project to execute.</li>
+          <li>Is NOT inherited by default in multi-project builds.</li>
+          </ul>
+        </p>
+      <subsection name="Required Parameters">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            </tr>
+          <tr>
+            <td><b><a href="#commons.jira.id">commons.jira.id</a></b></td>
+            <td><code>String</code></td>
+            <td>The external JIRA id for the project (alphabetic, upper case) Default value is <code>${commons.jira.id}</code>.</td>
+            </tr>
+          <tr>
+            <td><b><a href="#commons.jira.pid">commons.jira.pid</a></b></td>
+            <td><code>String</code></td>
+            <td>The internal JIRA id for the project (numeric) Default value is <code>${commons.jira.pid}</code>.</td>
+            </tr>
+          <tr>
+            <td><b><a href="#basedir">basedir</a></b></td>
+            <td><code>File</code></td>
+            <td>The base directory from which to execute the Ant script. Default value is <code>${basedir}</code>.</td>
+            </tr>
+          </table>
+        </subsection>
+      <subsection name="Optional Parameters">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            </tr>
+          <tr>
+            <td><b><a href="#messageLevel">messageLevel</a></b></td>
+            <td><code>String</code></td>
+            <td>The message-level used to tune the verbosity of Ant logging. Default value is <code>info</code>.</td>
+            </tr>
+          </table>
+        </subsection>
+      <subsection name="Parameter Details">
+        <p><b><a name="commons.jira.id">commons.jira.id</a></b></p>
+        <p>The external JIRA id for the project (alphabetic, upper case)</p>
+        <ul>
+          <li><b>Type</b>: <code>java.lang.String</code></li>
+          <li><b>Required</b>: <code>Yes</code></li>
+          <li><b>Default</b>: <code>${commons.jira.id}</code></li>
+          </ul><hr/><p><b><a name="commons.jira.pid">commons.jira.pid</a></b></p>
+        <p>The internal JIRA id for the project (numeric)</p>
+        <ul>
+          <li><b>Type</b>: <code>java.lang.String</code></li>
+          <li><b>Required</b>: <code>Yes</code></li>
+          <li><b>Default</b>: <code>${commons.jira.pid}</code></li>
+          </ul><hr/><p><b><a name="basedir">basedir</a></b></p>
+        <p>The base directory from which to execute the Ant script.</p>
+        <ul>
+          <li><b>Type</b>: <code>java.io.File</code></li>
+          <li><b>Required</b>: <code>Yes</code></li>
+          <li><b>Expression</b>: <code>${antBasedir}</code></li>
+          <li><b>Default</b>: <code>${basedir}</code></li>
+          </ul><hr/><p><b><a name="messageLevel">messageLevel</a></b></p>
+        <p>The message-level used to tune the verbosity of Ant logging.</p>
+        <ul>
+          <li><b>Type</b>: <code>java.lang.String</code></li>
+          <li><b>Required</b>: <code>No</code></li>
+          <li><b>Expression</b>: <code>${antMessageLevel}</code></li>
+          <li><b>Default</b>: <code>info</code></li>
+          </ul>
+        </subsection>
+      </section>
+    </body>
+  </document>

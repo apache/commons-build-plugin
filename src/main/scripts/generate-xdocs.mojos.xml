@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<!--
+   Mojo metadata for "Commons Build: Standard XDOC Pages Generation".
+
+   $HeadURL$
+   $Revision$ $Date$
+ -->
+<pluginMetadata>
+    <mojos>
+        <mojo>
+            <goal>jira-page</goal>
+            <call>jira-page</call>
+            <description>Commons Build Ant Mojo: Generate Issue Tracking page</description>
+            <requiresProject>true</requiresProject>
+            <parameters>
+                <parameter>
+                    <name>project.name</name> 
+                    <property>project.name</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.jira.id</name> 
+                    <property>commons.jira.id</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.jira.id}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The external JIRA id for the project (alphabetic, upper case)</description>
+                </parameter>
+                <parameter>
+                    <name>commons.jira.pid</name> 
+                    <property>commons.jira.pid</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.jira.pid}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The internal JIRA id for the project (numeric)</description>
+                </parameter>
+            </parameters>
+        </mojo>
+        <mojo>
+            <goal>sandbox-jira-page</goal>
+            <call>sandbox-jira-page</call>
+            <description>Commons Build Ant Mojo: Generate Sandbox Issue Tracking page</description>
+            <requiresProject>true</requiresProject>
+            <parameters>
+                <parameter>
+                    <name>project.name</name> 
+                    <property>project.name</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.jira.componentid</name> 
+                    <property>commons.jira.componentid</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.jira.componentid}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The internal JIRA component id (numeric)</description>
+                </parameter>
+            </parameters>
+        </mojo>
+        <mojo>
+            <goal>download-page</goal>
+            <call>download-page</call>
+            <description>Commons Build Ant Mojo: Generate Download page</description>
+            <requiresProject>true</requiresProject>
+            <parameters>
+                <parameter>
+                    <name>project.name</name> 
+                    <property>project.name</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.componentid</name> 
+                    <property>commons.componentid</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${commons.componentid}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The commons component id.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.version</name> 
+                    <property>commons.release.version</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.version}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The version of the latest release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.name</name> 
+                    <property>commons.release.name</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${project.artifactId}-${commons.release.version}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The final name (i.e. artifactId-version) of the artifacts being built.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.binary.suffix</name> 
+                    <property>commons.binary.suffix</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.binary.suffix}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The suffix for the binary distro.</description>
+                </parameter>
+            </parameters>
+        </mojo>
+    </mojos>
+</pluginMetadata>
