@@ -81,7 +81,7 @@
             This plugin uses <code>commons</code> as the goal prefix. So if you add a new <code>foo-bar</code>
             goal, then it can be executed on the command line using <code>mvn commons:foo-bar</code>. This prefix
             is defined in this plugin's
-            <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/pom.xml">pom.xml</a>.
+            <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/pom.xml">pom.xml</a>.
             </p>
 
         </section>

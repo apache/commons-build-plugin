@@ -50,7 +50,7 @@ limitations under the License.
 
     <section name="@NAME@ Issue tracking">
       <p>
-      @NAME@ uses <a href="http://issues.apache.org/jira/">ASF JIRA</a> for for tracking issues.
+      @NAME@ uses <a href="http://issues.apache.org/jira/">ASF JIRA</a> for tracking issues.
       See the <a href="http://issues.apache.org/jira/browse/@JIRA_ID@">@NAME@ JIRA project page</a>.
       </p>
 

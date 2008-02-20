@@ -54,7 +54,7 @@
 
         <section name="Trying out the plugin">
             <p>
-            Configure the plugin in the <code>build</code> section of the <code>pom.xml</code>
+            Configure the plugin in the <code>&lt;build&gt;</code> section of the <code>pom.xml</code>
 <source><![CDATA[
             <plugin>
                 <groupId>org.apache.commons</groupId>
