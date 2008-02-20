@@ -24,7 +24,7 @@
     <body>
         <menu name="Build Plugin">
             <item name="Overview"                href="/index.html"/>
-            <item name="Goals">
+            <item name="Goals"                   href="/generate-xdocs-build.html">
                 <item name="Generate XDOCS"      href="/generate-xdocs-build.html">
                     <item name="jira-page"       href="/generate-xdocs-build.html"/>
                     <item name="download-page"   href="/generate-xdocs-build.html#commons:download-page"/>

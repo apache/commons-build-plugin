@@ -128,6 +128,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.0.1</version>
                 <configuration>
                 </configuration>
                 <reportSets>
@@ -145,4 +146,8 @@
             </plugin>
         </plugins>
     </reporting>
+    <properties>
+        <maven.compile.source></maven.compile.source>
+        <maven.compile.target></maven.compile.target>
+    </properties>
 </project>
