@@ -54,6 +54,10 @@
             <id>niallp</id>
             <email>niallp AT apache.org</email>
         </developer>
+        <developer>
+            <name>Dennis Lundberg</name>
+            <id>dennisl</id>
+        </developer>
     </developers>
 
     <dependencies>
