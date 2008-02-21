@@ -31,8 +31,8 @@
         <!-- Copy pages, filtering parameter values -->
         <copy todir="target/apidocs/META-INF">
             <fileset dir=".">
-                 <include name="NOTICE*"/>
-                 <include name="LICENSE*"/>
+                 <include name="NOTICE.txt"/>
+                 <include name="LICENSE.txt"/>
             </fileset>
         </copy>
 
