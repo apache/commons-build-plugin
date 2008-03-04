@@ -26,7 +26,7 @@
     <parent>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-parent</artifactId>
-        <version>7</version>
+        <version>8</version>
     </parent>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-build-plugin</artifactId>
@@ -124,6 +124,16 @@
                     </execution>
                 </executions>
 
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptors>
+                        <descriptor>src/assembly/src.xml</descriptor>
+                        <descriptor>src/assembly/bin.xml</descriptor>
+                    </descriptors>
+                    <tarLongFileMode>gnu</tarLongFileMode>
+                </configuration>
             </plugin>
         </plugins>
     </build>
