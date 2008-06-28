@@ -163,20 +163,20 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-                <reportSets><reportSet/></reportSets>
+                <reportSets><reportSet /></reportSets>
             </plugin>
 
             <!-- exclude jdepend report -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jdepend-maven-plugin</artifactId>
-                <reportSets><reportSet/></reportSets>
+                <reportSets><reportSet /></reportSets>
             </plugin>
         </plugins>
     </reporting>
     <properties>
-        <maven.compile.source></maven.compile.source>
-        <maven.compile.target></maven.compile.target>
-        <commons.manifestfile/>
+        <maven.compile.source />
+        <maven.compile.target />
+        <commons.manifestfile />
     </properties>
 </project>
