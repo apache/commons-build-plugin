@@ -177,5 +177,6 @@
     <properties>
         <maven.compile.source></maven.compile.source>
         <maven.compile.target></maven.compile.target>
+        <commons.manifestfile/>
     </properties>
 </project>
