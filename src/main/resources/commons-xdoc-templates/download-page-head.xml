@@ -88,7 +88,8 @@ limitations under the License.
       </form>
 
       <p>
-        The <code>KEYS</code> link links to the code signing keys used to sign the product.
+        The <a href="http://www.apache.org/dist/commons/KEYS">KEYS</a>
+        link links to the code signing keys used to sign the product.
         The <code>PGP</code> link downloads the OpenPGP compatible signature from our main site. 
         The <code>MD5</code> link downloads the checksum from the main site.
       </p>
