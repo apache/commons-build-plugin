@@ -24,13 +24,19 @@
     <body>
         <menu name="Build Plugin">
             <item name="Overview"                href="/index.html"/>
-            <item name="Goals"                   href="/generate-xdocs-build.html">
-                <item name="Generate XDOCS"      href="/generate-xdocs-build.html">
-                    <item name="jira-page"       href="/generate-xdocs-build.html"/>
-                    <item name="download-page"   href="/generate-xdocs-build.html#commons:download-page"/>
-                    <item name="sandbox-jira-page" href="/generate-xdocs-build.html#commons:sandbox-jira-page"/>
+            <item name="Download Page"           href="/download-page.html">
+                <item name="download-page"       href="/download-page.html"/>
+                <item name="properties"          href="/download-page-mojo.html"/>
+            </item>
+            <item name="JIRA Page">
+                <item name="Proper"                 href="/jira-page.html">
+                    <item name="jira-page"          href="/jira-page.html"/>
+                    <item name="properties"         href="/jira-page-mojo.html"/>
                 </item>
-                <item name="copy-javadoc-files"  href="/copy-javadoc-files-build.html"/>
+                <item name="Sandbox"                href="/sandbox-jira-page.html">
+                    <item name="sandbox-jira-page"  href="/sandbox-jira-page.html"/>
+                    <item name="properties"         href="/sandbox-jira-page-mojo.html"/>
+                </item>
             </item>
             <item name="Help"                    href="/development.html">
                 <item name="Development"         href="/development.html"/>

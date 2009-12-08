@@ -44,9 +44,9 @@
             <p>
             Available Goals:
             <ul>
-                <li><a href="generate-xdocs-build.html#commons:jira-page">commons:jira-page</a> - Generate a custom JIRA Issue Tracking page for a component</li>
-                <li><a href="generate-xdocs-build.html#commons:download-page">commons:download-page</a> - Generate a Download page for the component's latest release</li>
-                <li><a href="generate-xdocs-build.html#commons:sandbox-jira-page">commons:sandbox-jira-page</a> - Generate a custom JIRA Issue Tracking page for a Sandbox component</li>
+                <li><a href="download-page.html">commons:download-page</a> - Generate a Download page for the component's latest release</li>
+                <li><a href="jira-page.html">commons:jira-page</a> - Generate a custom JIRA Issue Tracking page for a component</li>
+                <li><a href="sandbox-jira-page.html">commons:sandbox-jira-page</a> - Generate a custom JIRA Issue Tracking page for a Sandbox component</li>
                 <li><a href="copy-javadoc-files-build.html">commons:copy-javadoc-files</a> - Copy NOTICE and LICENSE files to -javadoc jar</li>
             </ul>
             </p>

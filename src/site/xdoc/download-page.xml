@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<!--
+   $HeadURL$
+   $Revision$ $Date$
+ -->
+<document>
+
+    <properties>
+        <title>Generating Download Page</title>
+        <author email="dev@commons.apache.org">Commons Documentation Team</author>
+    </properties>
+
+    <body>
+
+
+        <section name="commons:download-page" href="download-page">
+
+            <subsection name="Overview">
+                <p>
+                The <code>commons:download-page</code> goal generates a custom Download page for the latest release of a component.
+                Execute the goal using the following command: <source>mvn commons:download-page</source>
+                </p>
+
+                <p>
+                <strong>Note:</strong> The Download page should only need to be re-generated after a new release of the component 
+                or if the download page template changes.
+                </p>
+
+                <p>
+                This goal uses the following:
+                <ul>
+                    <li>The goal is mapped to the ant script/target using the <code>download-page</code> mojo defintion in the 
+                        <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
+                    <li>Executes the <code>download-page</code> target in
+                        <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
+                        ant script</li>
+                    <li>Uses either the
+                        <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/resources/commons-xdoc-templates/download-page-template.xml">download-page-template.xml</a> or 
+                        <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/resources/commons-xdoc-templates/no-download-page-template.xml">no-download-page-template.xml</a>
+                        template, depending on whether the <code>commons.release.version</code> property is set or not.
+                        </li>
+                    <li>Uses the <a href="download-page-mojo.html">goal's (i.e. mojo's) parameters</a> to filter values in the template</li>
+                </ul>
+                </p>
+            </subsection>
+
+            <subsection name="Configuration">
+                <p>
+                To generate a Download page, the following <a href="download-page-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>
+                <ul>
+                    <li><b>commons.componentid</b> - Commons component id</li>
+                    <li><b>commons.release.version</b> - The version number of the latest release of the component</li>
+                    <li><b>commons.release.desc</b> - (<i>optional</i>) The download links are shown in a section with the component name and release version - if this paratmeter is specified then this text is appended</li>
+                    <li><b>commons.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the binary release
+                        (some components use "-bin", others have no suffix)</li>
+                </ul>
+                </p>
+                <p>
+                Example configuration for Commons Chain:
+<source><![CDATA[
+    <properties>
+        <commons.componentid>chain</commons.componentid>
+        <commons.release.version>1.2</commons.release.version>
+    </properties> 
+]]></source>
+                </p>
+
+                <p>
+                Sometimes there is a requirement to list two versions on the download page. This can be achieved using the following properties:
+                <ul>
+                    <li><b>commons.release.version.2</b> - The version number of the alternative release of the component</li>
+                    <li><b>commons.release.desc.2</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
+                </ul>
+                </p>
+                <p>
+                Example configuration for Commons DBCP with two releases:
+<source><![CDATA[
+    <properties>
+        <commons.componentid>dbcp</commons.componentid>
+        <commons.release.version>1.4</commons.release.version>
+        <commons.release.desc>for JDBC 4 (JDK 1.6)</commons.release.desc>
+        <commons.release.version.2>1.3</commons.release.version.2>
+        <commons.release.desc.2> for JDBC 3 (JDK 1.4-1.5)</commons.release.desc.2>
+    </properties> 
+]]></source>
+                </p>
+                <p>
+                The above configuration generates a download page for two releases shown below:
+                </p>
+                 <p>
+                    <img src="download-page-2release.jpg" alt="Download Page with two release versions"/>
+                </p>
+            </subsection>
+
+        </section>
+
+    </body>
+</document>
