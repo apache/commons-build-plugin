@@ -39,6 +39,7 @@
                 </item>
             </item>
             <item name="Help"                    href="/development.html">
+                <item name="Issue Tracking"      href="/issue-tracking.html"/>
                 <item name="Development"         href="/development.html"/>
                 <item name="Maven Plugins"       href="http://maven.apache.org/guides/plugin/guide-ant-plugin-development.html"/>
                 <item name="Ant"                 href="http://ant.apache.org/manual/index.html"/>

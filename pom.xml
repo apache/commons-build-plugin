@@ -186,5 +186,8 @@
         <maven.compile.source />
         <maven.compile.target />
         <commons.manifestfile />
+        <commons.jira.id>COMMONSSITE</commons.jira.id>
+        <commons.jira.pid>12310466&amp;amp;component=12312401</commons.jira.pid>
+        <commons.release.version>1.1</commons.release.version>
     </properties>
 </project>
