@@ -25,7 +25,7 @@
     <property name="commonsMojoId"      value="Commons:xdoc-generate" />
     <property name="commonsMojoXdocDir" value="resources/commons-xdoc-templates" />
     <property name="commonsMojoTempDir" value="target/commons-generated-xdocs" />
-    <property name="level"              value="debug" />
+    <property name="level"              value="info" />
 
     <!-- ========== Generate Issue Tracking Page ============================== -->
 
@@ -110,7 +110,9 @@
         <echo level="${level}" message="project.name           : ${project.name}" />
         <echo level="${level}" message="commons.componentid    : ${commons.componentid}" />
         <echo level="${level}" message="commons.release.version: ${commons.release.version}" />
-        <echo level="${level}" message="commons.release.name   : ${commons.release.name}" />
+        <echo level="${level}" message="commons.release.version.2: ${commons.release.version.2}" />
+        <echo level="${level}" message="commons.release.desc   : ${commons.release.desc}" />
+        <echo level="${level}" message="commons.release.desc.2 : ${commons.release.desc.2}" />
         <echo level="${level}" message="commons.binary.suffix  : ${commons.binary.suffix}" />
         <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
 
@@ -121,18 +123,10 @@
 
         <!-- Load the dowload-page template from mojo resources to temp directory -->
         <antcall target="load-no-download-page-template"/>
-        <antcall target="load-download-page-template"/>
-
-        <!-- Copy the download page template filtering to replace properties -->
-        <copy file="${commonsMojoTempDir}/download-page-template.xml" tofile="${commonsMojoTempDir}/download_${commons.componentid}.xml" overwrite="true">
-            <filterset>
-            <filter  token="NAME"          value="${project.name}"/>
-            <filter  token="ID"            value="${commons.componentid}"/>
-            <filter  token="VERSION"       value="${commons.release.version}"/>
-            <filter  token="FINAL_NAME"    value="${commons.release.name}"/>
-            <filter  token="BINARY-SUFFIX" value="${commons.binary.suffix}"/>
-            </filterset>
-        </copy>
+        <antcall target="load-download-page-head"/>
+        <antcall target="load-download-page-body-1"/>
+        <antcall target="load-download-page-body-2"/>
+        <antcall target="load-download-page-foot"/>
 
         <!-- copy to either m1 or m2 xdoc directory -->
         <antcall target="copy-to-xdoc-dir">
@@ -140,12 +134,78 @@
         </antcall>
     </target>
 
-    <target name="load-download-page-template" if="commons.release.version">
-        <echo  level="info" message="*** copying download-page-template.xml ***" />
-        <loadresource property="downloadpage-xml">
-            <javaresource name="${commonsMojoXdocDir}/download-page-template.xml"/>
+    <target name="load-download-page-head" if="commons.release.version">
+        <echo  level="info" message="*** loading download-page header file ***" />
+
+        <!-- Load header -->
+        <loadresource property="download-page-head-xml">
+            <javaresource name="${commonsMojoXdocDir}/download-page-head.xml"/>
+            <filterchain>
+                <replacetokens>
+                    <token key="NAME" value="${project.name}"/>
+                </replacetokens>
+            </filterchain>
         </loadresource>
-        <echo message="${downloadpage-xml}" file="${commonsMojoTempDir}/download-page-template.xml" append="false" />
+        <echo message="${download-page-head-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="false" />
+
+    </target>
+
+    <target name="load-download-page-body-1" if="commons.release.version">
+        <echo  level="info" message="*** loading download-page body(1) file***" />
+
+        <!-- Load Body -->
+        <loadresource property="download-page-body-1-xml">
+            <javaresource name="${commonsMojoXdocDir}/download-page-body.xml"/>
+            <filterchain>
+                <replacetokens>
+                    <token key="VERSION"       value="${commons.release.version}"/>
+                    <token key="RELDESC"       value="${commons.release.desc}"/>
+                    <token key="NAME"          value="${project.name}"/>
+                    <token key="ID"            value="${commons.componentid}"/>
+                    <token key="FINAL_NAME"    value="${project.artifactId}-${commons.release.version}"/>
+                    <token key="BINARY-SUFFIX" value="${commons.binary.suffix}"/>
+                </replacetokens>
+            </filterchain>
+        </loadresource>
+        <echo message="${download-page-body-1-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+
+    </target>
+
+    <target name="load-download-page-body-2" if="commons.release.version.2">
+        <echo  level="info" message="*** loading download-page body(2) file***" />
+
+        <!-- Load Body -->
+        <loadresource property="download-page-body-2-xml">
+            <javaresource name="${commonsMojoXdocDir}/download-page-body.xml"/>
+            <filterchain>
+                <replacetokens>
+                    <token key="VERSION"       value="${commons.release.version.2}"/>
+                    <token key="RELDESC"       value="${commons.release.desc.2}"/>
+                    <token key="NAME"          value="${project.name}"/>
+                    <token key="ID"            value="${commons.componentid}"/>
+                    <token key="FINAL_NAME"    value="${project.artifactId}-${commons.release.version.2}"/>
+                    <token key="BINARY-SUFFIX" value="${commons.binary.suffix}"/>
+                </replacetokens>
+            </filterchain>
+        </loadresource>
+        <echo message="${download-page-body-2-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+
+    </target>
+
+    <target name="load-download-page-foot" if="commons.release.version">
+        <echo  level="info" message="*** loading download-page footer files ***" />
+
+        <!-- Load Footer -->
+        <loadresource property="download-page-foot-xml">
+            <javaresource name="${commonsMojoXdocDir}/download-page-foot.xml"/>
+            <filterchain>
+                <replacetokens>
+                    <token key="ID"            value="${commons.componentid}"/>
+                </replacetokens>
+            </filterchain>
+        </loadresource>
+        <echo message="${download-page-foot-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+
     </target>
 
     <target name="load-no-download-page-template" unless="commons.release.version">

@@ -101,6 +101,15 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
+                    <name>project.artifactId</name> 
+                    <property>project.artifactId</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.artifactId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The artifactId of the project currently being built.</description>
+                </parameter>
+                <parameter>
                     <name>commons.componentid</name> 
                     <property>commons.componentid</property>
                     <required>true</required>
@@ -119,13 +128,31 @@
                     <description>The version of the latest release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.name</name> 
-                    <property>commons.release.name</property>
+                    <name>commons.release.desc</name> 
+                    <property>commons.release.desc</property>
                     <required>true</required>
                     <readonly>false</readonly>
-                    <defaultValue>${project.artifactId}-${commons.release.version}</defaultValue>
+                    <defaultValue>${commons.release.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The final name (i.e. artifactId-version) of the artifacts being built.</description>
+                    <description>Release Title or Description.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.version.2</name> 
+                    <property>commons.release.version.2</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.version.2}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The version of an alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.desc.2</name> 
+                    <property>commons.release.desc.2</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.desc.2}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.binary.suffix</name> 

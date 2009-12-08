@@ -1,0 +1,12 @@
+    <subsection name="Browse Download Area and Archives">
+        <p>
+          Older releases can be obtained from the archives.
+        </p>
+        <ul>
+          <li class="download"><a href="[preferred]/commons/@ID@/">browse download area</a></li>
+          <li><a href="http://archive.apache.org/dist/commons/@ID@/">archives...</a></li>
+        </ul>
+    </subsection>
+    </section>
+  </body>
+</document>
