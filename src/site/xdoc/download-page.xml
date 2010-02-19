@@ -51,7 +51,7 @@
                         <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
                         ant script</li>
                     <li>Uses either the
-                        <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/resources/commons-xdoc-templates/download-page-template.xml">download-page-template.xml</a> or 
+                        <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/resources/commons-xdoc-templates/download-page-body.xml">download-page-body.xml</a> or 
                         <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/resources/commons-xdoc-templates/no-download-page-template.xml">no-download-page-template.xml</a>
                         template, depending on whether the <code>commons.release.version</code> property is set or not.
                         </li>
