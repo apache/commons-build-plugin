@@ -110,9 +110,9 @@
         <echo level="${level}" message="project.name           : ${project.name}" />
         <echo level="${level}" message="commons.componentid    : ${commons.componentid}" />
         <echo level="${level}" message="commons.release.version: ${commons.release.version}" />
-        <echo level="${level}" message="commons.release.version.2: ${commons.release.version.2}" />
         <echo level="${level}" message="commons.release.desc   : ${commons.release.desc}" />
-        <echo level="${level}" message="commons.release.desc.2 : ${commons.release.desc.2}" />
+        <echo level="${level}" message="commons.release.2.version: ${commons.release.2.version}" />
+        <echo level="${level}" message="commons.release.2.desc : ${commons.release.2.desc}" />
         <echo level="${level}" message="commons.binary.suffix  : ${commons.binary.suffix}" />
         <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
 
@@ -171,7 +171,7 @@
 
     </target>
 
-    <target name="load-download-page-body-2" if="commons.release.version.2">
+    <target name="load-download-page-body-2" if="commons.release.2.version">
         <echo  level="info" message="*** loading download-page body(2) file***" />
 
         <!-- Load Body -->
@@ -179,11 +179,11 @@
             <javaresource name="${commonsMojoXdocDir}/download-page-body.xml"/>
             <filterchain>
                 <replacetokens>
-                    <token key="VERSION"       value="${commons.release.version.2}"/>
-                    <token key="RELDESC"       value="${commons.release.desc.2}"/>
+                    <token key="VERSION"       value="${commons.release.2.version}"/>
+                    <token key="RELDESC"       value="${commons.release.2.desc}"/>
                     <token key="NAME"          value="${project.name}"/>
                     <token key="ID"            value="${commons.componentid}"/>
-                    <token key="FINAL_NAME"    value="${project.artifactId}-${commons.release.version.2}"/>
+                    <token key="FINAL_NAME"    value="${project.artifactId}-${commons.release.2.version}"/>
                     <token key="BINARY-SUFFIX" value="${commons.binary.suffix}"/>
                 </replacetokens>
             </filterchain>

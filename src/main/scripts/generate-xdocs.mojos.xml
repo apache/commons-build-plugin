@@ -130,27 +130,27 @@
                 <parameter>
                     <name>commons.release.desc</name> 
                     <property>commons.release.desc</property>
-                    <required>true</required>
+                    <required>false</required>
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.desc}</defaultValue>
                     <type>java.lang.String</type>
                     <description>Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.version.2</name> 
-                    <property>commons.release.version.2</property>
+                    <name>commons.release.2.version</name> 
+                    <property>commons.release.2.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
-                    <defaultValue>${commons.release.version.2}</defaultValue>
+                    <defaultValue>${commons.release.2.version}</defaultValue>
                     <type>java.lang.String</type>
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.desc.2</name> 
-                    <property>commons.release.desc.2</property>
+                    <name>commons.release.2.desc</name> 
+                    <property>commons.release.2.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
-                    <defaultValue>${commons.release.desc.2}</defaultValue>
+                    <defaultValue>${commons.release.2.desc}</defaultValue>
                     <type>java.lang.String</type>
                     <description>Alternative Release Title or Description.</description>
                 </parameter>

@@ -84,8 +84,8 @@
                 <p>
                 Sometimes there is a requirement to list two versions on the download page. This can be achieved using the following properties:
                 <ul>
-                    <li><b>commons.release.version.2</b> - The version number of the alternative release of the component</li>
-                    <li><b>commons.release.desc.2</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
+                    <li><b>commons.release.2.version</b> - The version number of the alternative release of the component</li>
+                    <li><b>commons.release.2.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                 </ul>
                 </p>
                 <p>
@@ -95,8 +95,8 @@
         <commons.componentid>dbcp</commons.componentid>
         <commons.release.version>1.4</commons.release.version>
         <commons.release.desc>for JDBC 4 (JDK 1.6)</commons.release.desc>
-        <commons.release.version.2>1.3</commons.release.version.2>
-        <commons.release.desc.2> for JDBC 3 (JDK 1.4-1.5)</commons.release.desc.2>
+        <commons.release.2.version>1.3</commons.release.2.version>
+        <commons.release.2.desc> for JDBC 3 (JDK 1.4-1.5)</commons.release.2.desc>
     </properties> 
 ]]></source>
                 </p>
