@@ -10,6 +10,17 @@ Commons Build Plugin is a Maven 2.x Ant Plugin which is used by Apache Commons b
 See:
    http://commons.apache.org/commons-build-plugin/
 
+
+VERSION 1.2 - 2010-02-23
+------------------------
+
+Changes since the last release
+1. Improve the L&F of the download page
+2. Add facility to add a second version to the download page
+3. Upgrade to commons-parent version 12
+
+
+
 VERSION 1.1 - 2008-07-16
 ------------------------
 
