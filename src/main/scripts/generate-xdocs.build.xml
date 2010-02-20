@@ -107,13 +107,14 @@
     <target name="download-page" description="Generate Download page">
 
         <echo level="${level}" message="----- commons:download-page - Parameters - START -----" />
-        <echo level="${level}" message="project.name           : ${project.name}" />
-        <echo level="${level}" message="commons.componentid    : ${commons.componentid}" />
-        <echo level="${level}" message="commons.release.version: ${commons.release.version}" />
-        <echo level="${level}" message="commons.release.desc   : ${commons.release.desc}" />
+        <echo level="${level}" message="project.name             : ${project.name}" />
+        <echo level="${level}" message="commons.componentid      : ${commons.componentid}" />
+        <echo level="${level}" message="commons.release.version  : ${commons.release.version}" />
+        <echo level="${level}" message="commons.release.desc     : ${commons.release.desc}" />
+        <echo level="${level}" message="commons.binary.suffix    : ${commons.binary.suffix}" />
         <echo level="${level}" message="commons.release.2.version: ${commons.release.2.version}" />
-        <echo level="${level}" message="commons.release.2.desc : ${commons.release.2.desc}" />
-        <echo level="${level}" message="commons.binary.suffix  : ${commons.binary.suffix}" />
+        <echo level="${level}" message="commons.release.2.desc   : ${commons.release.2.desc}" />
+        <echo level="${level}" message="commons.release.2.binary.suffix: ${commons.release.2.binary.suffix}" />
         <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} ${commons.release.version} Download Page ***" />
@@ -184,7 +185,7 @@
                     <token key="NAME"          value="${project.name}"/>
                     <token key="ID"            value="${commons.componentid}"/>
                     <token key="FINAL_NAME"    value="${project.artifactId}-${commons.release.2.version}"/>
-                    <token key="BINARY-SUFFIX" value="${commons.binary.suffix}"/>
+                    <token key="BINARY-SUFFIX" value="${commons.release.2.binary.suffix}"/>
                 </replacetokens>
             </filterchain>
         </loadresource>
