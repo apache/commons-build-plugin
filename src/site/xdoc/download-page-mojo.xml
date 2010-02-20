@@ -26,7 +26,7 @@
   <body>
     <section name="commons:download-page">
       <p><strong>Full name</strong>:</p>
-      <p>org.apache.commons:commons-build-plugin:1.2-SNAPSHOT:download-page</p>
+      <p>org.apache.commons:commons-build-plugin:1.2:download-page</p>
       <p><strong>Description</strong>:</p>
       <div>Commons Build Ant Mojo: Generate Download page</div>
       <p><strong>Attributes</strong>:</p>
@@ -49,12 +49,6 @@
             <td>The version of the latest release of the project.<br/><strong>Default value is</strong>: <code>${commons.release.version}</code>.</td>
           </tr>
           <tr>
-            <td><strong><a href="#commons.binary.suffix">commons.binary.suffix</a></strong></td>
-            <td><code>String</code></td>
-            <td><code>-</code></td>
-            <td>The suffix for the binary distro.<br/><strong>Default value is</strong>: <code>${commons.binary.suffix}</code>.</td>
-          </tr>
-          <tr>
             <td><strong><a href="#basedir">basedir</a></strong></td>
             <td><code>File</code></td>
             <td><code>-</code></td>
@@ -69,6 +63,12 @@
             <th>Type</th>
             <th>Since</th>
             <th>Description</th>
+          </tr>
+          <tr>
+            <td><strong><a href="#commons.binary.suffix">commons.binary.suffix</a></strong></td>
+            <td><code>String</code></td>
+            <td><code>-</code></td>
+            <td>The suffix for the binary distro.<br/><strong>Default value is</strong>: <code>${commons.binary.suffix}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.desc">commons.release.desc</a></strong></td>
@@ -89,6 +89,12 @@
             <td>Alternative Release Title or Description.<br/><strong>Default value is</strong>: <code>${commons.release.2.desc}</code>.</td>
           </tr>
           <tr>
+            <td><strong><a href="#commons.release.2.binary.suffix">commons.release.2.binary.suffix</a></strong></td>
+            <td><code>String</code></td>
+            <td><code>-</code></td>
+            <td>The suffix for the alternative release binary distro.<br/><strong>Default value is</strong>: <code>${commons.release.2.binary.suffix}</code>.</td>
+          </tr>
+          <tr>
             <td><strong><a href="#messageLevel">messageLevel</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
@@ -103,6 +109,12 @@
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Default</strong>: <code>${commons.release.version}</code></li>
+        </ul><hr/><p><strong><a name="commons.binary.suffix">commons.binary.suffix</a>:</strong></p>
+        <div>The suffix for the binary distro.</div>
+        <ul>
+          <li><strong>Type</strong>: <code>java.lang.String</code></li>
+          <li><strong>Required</strong>: <code>No</code></li>
+          <li><strong>Default</strong>: <code>${commons.binary.suffix}</code></li>
         </ul><hr/><p><strong><a name="commons.release.desc">commons.release.desc</a>:</strong></p>
         <div>Release Title or Description.</div>
         <ul>
@@ -121,12 +133,12 @@
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.2.desc}</code></li>
-        </ul><hr/><p><strong><a name="commons.binary.suffix">commons.binary.suffix</a>:</strong></p>
-        <div>The suffix for the binary distro.</div>
+        </ul><hr/><p><strong><a name="commons.release.2.binary.suffix">commons.release.2.binary.suffix</a>:</strong></p>
+        <div>The suffix for the alternative release binary distro.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
-          <li><strong>Required</strong>: <code>Yes</code></li>
-          <li><strong>Default</strong>: <code>${commons.binary.suffix}</code></li>
+          <li><strong>Required</strong>: <code>No</code></li>
+          <li><strong>Default</strong>: <code>${commons.release.2.binary.suffix}</code></li>
         </ul><hr/><p><strong><a name="basedir">basedir</a>:</strong></p>
         <div>The base directory from which to execute the Ant script.</div>
         <ul>

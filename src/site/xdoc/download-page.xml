@@ -93,6 +93,8 @@
                 <ul>
                     <li><b>commons.release.2.version</b> - The version number of the alternative release of the component</li>
                     <li><b>commons.release.2.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
+                    <li><b>commons.release.2.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative 
+                        binary release (some components use "-bin", others have no suffix)</li>
                 </ul>
                 </p>
                 <p>

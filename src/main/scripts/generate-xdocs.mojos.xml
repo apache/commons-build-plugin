@@ -130,7 +130,7 @@
                 <parameter>
                     <name>commons.binary.suffix</name> 
                     <property>commons.binary.suffix</property>
-                    <required>true</required>
+                    <required>false</required>
                     <readonly>false</readonly>
                     <defaultValue>${commons.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
@@ -166,7 +166,7 @@
                 <parameter>
                     <name>commons.release.2.binary.suffix</name> 
                     <property>commons.release.2.binary.suffix</property>
-                    <required>true</required>
+                    <required>false</required>
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
