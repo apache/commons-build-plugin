@@ -25,6 +25,32 @@
 <pluginMetadata>
     <mojos>
         <mojo>
+            <goal>mail-page</goal>
+            <call>mail-page</call>
+            <description>Commons Build Ant Mojo: Generate Mailing List page</description>
+            <requiresProject>true</requiresProject>
+            <parameters>
+                <parameter>
+                    <name>project.name</name> 
+                    <property>project.name</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.componentid</name> 
+                    <property>commons.componentid</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${commons.componentid}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The commons component id.</description>
+                </parameter>
+            </parameters>
+        </mojo>
+        <mojo>
             <goal>jira-page</goal>
             <call>jira-page</call>
             <description>Commons Build Ant Mojo: Generate Issue Tracking page</description>

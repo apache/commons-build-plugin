@@ -27,6 +27,42 @@
     <property name="commonsMojoTempDir" value="target/commons-generated-xdocs" />
     <property name="level"              value="info" />
 
+    <!-- ========== Generate Mailing List Page ================================ -->
+
+    <target name="mail-page" description="Generate Mailing List page">
+
+        <echo level="${level}" message="----- commons:mailing-list - Parameters - START -----" />
+        <echo level="${level}" message="project.name         : ${project.name}" />
+        <echo level="${level}" message="commons.componentid  : ${commons.componentid}" />
+        <echo level="${level}" message="commons.xdoc.dir     : ${commons.xdoc.dir}" />
+        <echo level="${level}" message="----- commons:mailing-list - Parameters - END   -----" />
+
+        <echo level="info" message="*** Generating ${project.name} Mailing List Page ***" />
+
+        <!-- Create a temporary directory to load the template files into -->
+        <mkdir dir="${commonsMojoTempDir}"/>
+
+        <!-- Load the issue-tracking template from mojo resources to temp directory -->
+        <loadresource property="mailinglists-xml">
+            <javaresource name="${commonsMojoXdocDir}/mail-lists-template.xml"/>
+        </loadresource>
+        <echo message="${mailinglists-xml}" file="${commonsMojoTempDir}/mail-lists-template.xml" append="false" />
+
+        <!-- Copy the mail-lists template filtering to replace properties -->
+        <copy file="${commonsMojoTempDir}/mail-lists-template.xml" tofile="${commonsMojoTempDir}/mail-lists.xml" overwrite="true">
+            <filterset>
+            <filter  token="NAME"         value="${project.name}"/>
+            <filter  token="ID"           value="${commons.componentid}"/>
+            </filterset>
+        </copy>
+
+        <!-- copy to either m1 or m2 xdoc directory -->
+        <antcall target="copy-to-xdoc-dir">
+            <param name="file.name" value="mail-lists.xml"/>
+        </antcall>
+
+    </target>
+
     <!-- ========== Generate Issue Tracking Page ============================== -->
 
     <target name="jira-page" description="Generate JIRA Issue Tracking page">

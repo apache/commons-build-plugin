@@ -38,6 +38,10 @@
                     <item name="properties"         href="/sandbox-jira-page-mojo.html"/>
                 </item>
             </item>
+            <item name="Mail Page"               href="/mail-page.html">
+                <item name="mail-page"           href="/mail-page.html"/>
+                <item name="properties"          href="/mail-page-mojo.html"/>
+            </item>
             <item name="Help"                    href="/development.html">
                 <item name="Issue Tracking"      href="/issue-tracking.html"/>
                 <item name="Development"         href="/development.html"/>
