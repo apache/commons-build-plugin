@@ -154,6 +154,15 @@
                     <description>The version of the latest release of the project.</description>
                 </parameter>
                 <parameter>
+                    <name>commons.release.name</name> 
+                    <property>commons.release.name</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the latest release of the project.</description>
+                </parameter>
+                <parameter>
                     <name>commons.binary.suffix</name> 
                     <property>commons.binary.suffix</property>
                     <required>false</required>
@@ -179,6 +188,15 @@
                     <defaultValue>${commons.release.2.version}</defaultValue>
                     <type>java.lang.String</type>
                     <description>The version of an alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.2.name</name> 
+                    <property>commons.release.2.name</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.2.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The nameof the alternative release of the project.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.desc</name> 

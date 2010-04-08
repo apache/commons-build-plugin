@@ -146,9 +146,11 @@
         <echo level="${level}" message="project.name             : ${project.name}" />
         <echo level="${level}" message="commons.componentid      : ${commons.componentid}" />
         <echo level="${level}" message="commons.release.version  : ${commons.release.version}" />
+        <echo level="${level}" message="commons.release.name     : ${commons.release.name}" />
         <echo level="${level}" message="commons.release.desc     : ${commons.release.desc}" />
         <echo level="${level}" message="commons.binary.suffix    : ${commons.binary.suffix}" />
         <echo level="${level}" message="commons.release.2.version: ${commons.release.2.version}" />
+        <echo level="${level}" message="commons.release.2.name   : ${commons.release.2.name}" />
         <echo level="${level}" message="commons.release.2.desc   : ${commons.release.2.desc}" />
         <echo level="${level}" message="commons.release.2.binary.suffix: ${commons.release.2.binary.suffix}" />
         <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
@@ -199,7 +201,7 @@
                     <token key="RELDESC"       value="${commons.release.desc}"/>
                     <token key="NAME"          value="${project.name}"/>
                     <token key="ID"            value="${commons.componentid}"/>
-                    <token key="FINAL_NAME"    value="${project.artifactId}-${commons.release.version}"/>
+                    <token key="FINAL_NAME"    value="${commons.release.name}"/>
                     <token key="BINARY-SUFFIX" value="${commons.binary.suffix}"/>
                 </replacetokens>
             </filterchain>
@@ -220,7 +222,7 @@
                     <token key="RELDESC"       value="${commons.release.2.desc}"/>
                     <token key="NAME"          value="${project.name}"/>
                     <token key="ID"            value="${commons.componentid}"/>
-                    <token key="FINAL_NAME"    value="${project.artifactId}-${commons.release.2.version}"/>
+                    <token key="FINAL_NAME"    value="${commons.release.2.name}"/>
                     <token key="BINARY-SUFFIX" value="${commons.release.2.binary.suffix}"/>
                 </replacetokens>
             </filterchain>

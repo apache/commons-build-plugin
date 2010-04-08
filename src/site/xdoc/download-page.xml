@@ -73,6 +73,7 @@
                 <ul>
                     <li><b>commons.componentid</b> - Commons component id</li>
                     <li><b>commons.release.version</b> - The version number of the latest release of the component</li>
+                    <li><b>commons.release.name</b> - (<i>optional - defaults to <code>${commons.release.name}</code></i>) The name of the latest release of the component</li>
                     <li><b>commons.release.desc</b> - (<i>optional</i>) The download links are shown in a section with the component name and release version - if this paratmeter is specified then this text is appended</li>
                     <li><b>commons.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the binary release
                         (some components use "-bin", others have no suffix)</li>
@@ -92,6 +93,7 @@
                 Sometimes there is a requirement to list two versions on the download page. This can be achieved using the following properties:
                 <ul>
                     <li><b>commons.release.2.version</b> - The version number of the alternative release of the component</li>
+                    <li><b>commons.release.2.name</b> - (<i>optional - defaults to <code>${commons.release.2.name}</code></i>) The name of the alternative release of the component</li>
                     <li><b>commons.release.2.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                     <li><b>commons.release.2.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative 
                         binary release (some components use "-bin", others have no suffix)</li>
