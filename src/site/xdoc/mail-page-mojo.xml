@@ -26,7 +26,7 @@
   <body>
     <section name="commons:mail-page">
       <p><strong>Full name</strong>:</p>
-      <p>org.apache.commons:commons-build-plugin:1.3-SNAPSHOT:mail-page</p>
+      <p>org.apache.commons:commons-build-plugin:1.3:mail-page</p>
       <p><strong>Description</strong>:</p>
       <div>Commons Build Ant Mojo: Generate Mailing List page</div>
       <p><strong>Attributes</strong>:</p>
