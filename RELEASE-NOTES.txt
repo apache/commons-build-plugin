@@ -11,6 +11,12 @@ See:
    http://commons.apache.org/commons-build-plugin/
 
 
+VERSION 1.4 - TBC
+------------------------
+
+Changes since the last release
+1. Fix announce mod_mbox link
+
 VERSION 1.3 - 2010-04-15
 ------------------------
 
