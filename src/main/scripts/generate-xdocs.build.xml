@@ -153,6 +153,10 @@
         <echo level="${level}" message="commons.release.2.name   : ${commons.release.2.name}" />
         <echo level="${level}" message="commons.release.2.desc   : ${commons.release.2.desc}" />
         <echo level="${level}" message="commons.release.2.binary.suffix: ${commons.release.2.binary.suffix}" />
+        <echo level="${level}" message="commons.release.3.version: ${commons.release.3.version}" />
+        <echo level="${level}" message="commons.release.3.name   : ${commons.release.3.name}" />
+        <echo level="${level}" message="commons.release.3.desc   : ${commons.release.3.desc}" />
+        <echo level="${level}" message="commons.release.3.binary.suffix: ${commons.release.3.binary.suffix}" />
         <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} ${commons.release.version} Download Page ***" />
@@ -165,6 +169,7 @@
         <antcall target="load-download-page-head"/>
         <antcall target="load-download-page-body-1"/>
         <antcall target="load-download-page-body-2"/>
+        <antcall target="load-download-page-body-3"/>
         <antcall target="load-download-page-foot"/>
 
         <!-- copy to either m1 or m2 xdoc directory -->
@@ -228,6 +233,27 @@
             </filterchain>
         </loadresource>
         <echo message="${download-page-body-2-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+
+    </target>
+
+    <target name="load-download-page-body-3" if="commons.release.3.version">
+        <echo  level="info" message="*** loading download-page body(3) file***" />
+
+        <!-- Load Body -->
+        <loadresource property="download-page-body-3-xml">
+            <javaresource name="${commonsMojoXdocDir}/download-page-body.xml"/>
+            <filterchain>
+                <replacetokens>
+                    <token key="VERSION"       value="${commons.release.3.version}"/>
+                    <token key="RELDESC"       value="${commons.release.3.desc}"/>
+                    <token key="NAME"          value="${project.name}"/>
+                    <token key="ID"            value="${commons.componentid}"/>
+                    <token key="FINAL_NAME"    value="${commons.release.3.name}"/>
+                    <token key="BINARY-SUFFIX" value="${commons.release.3.binary.suffix}"/>
+                </replacetokens>
+            </filterchain>
+        </loadresource>
+        <echo message="${download-page-body-3-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
 
     </target>
 

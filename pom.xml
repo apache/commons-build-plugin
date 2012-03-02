@@ -52,6 +52,13 @@
             <name>Dennis Lundberg</name>
             <id>dennisl</id>
         </developer>
+        <developer>
+            <name>Gary Gregory</name>
+            <id>ggregory</id>
+            <email>ggregory AT apache.org</email>
+            <url>http://www.garygregory.com</url>
+            <timezone>-5</timezone>
+        </developer>
     </developers>
 
     <dependencies>

@@ -100,6 +100,16 @@
                 </ul>
                 </p>
                 <p>
+                You can have a third version on the download page. This can be achieved using the following properties:
+                <ul>
+                    <li><b>commons.release.3.version</b> - The version number of the alternative release of the component</li>
+                    <li><b>commons.release.3.name</b> - (<i>optional - defaults to <code>${commons.release.3.name}</code></i>) The name of the alternative release of the component</li>
+                    <li><b>commons.release.3.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
+                    <li><b>commons.release.3.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative 
+                        binary release (some components use "-bin", others have no suffix)</li>
+                </ul>
+                </p>                
+                <p>
                 Example configuration for Commons DBCP with two releases:
 <source><![CDATA[
     <properties>

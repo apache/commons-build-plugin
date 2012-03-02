@@ -57,11 +57,11 @@
             <p>
             Configure the plugin in the <code>&lt;build&gt;</code> section of the <code>pom.xml</code>
 <source><![CDATA[
-            <plugin>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-build-plugin</artifactId>
-                <version>1.2</version>
-            </plugin>
+<plugin>
+  <groupId>org.apache.commons</groupId>
+  <artifactId>commons-build-plugin</artifactId>
+  <version>1.4</version>
+</plugin>
 ]]></source>
             </p>
             <p>
