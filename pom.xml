@@ -194,6 +194,7 @@
         <commons.manifestfile />
         <commons.jira.id>COMMONSSITE</commons.jira.id>
         <commons.jira.pid>12310466&amp;amp;component=12312401</commons.jira.pid>
-        <commons.release.version>1.2</commons.release.version>
+        <commons.release.version>1.4</commons.release.version>
+        <commons.rc.version>RC1</commons.rc.version>
     </properties>
 </project>
