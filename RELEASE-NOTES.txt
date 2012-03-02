@@ -17,6 +17,7 @@ VERSION 1.4 - TBC
 Changes since the last release
 1. Fix announce mod_mbox link
 2. Mailing List Page - Make it clear that you have to be subscribed to post.
+3. COMMONSSITE-66 - Add support for a "commons.release.3" set of properties to offer a 3rd download option.
 
 VERSION 1.3 - 2010-04-15
 ------------------------
