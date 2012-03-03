@@ -43,9 +43,9 @@
     </scm>
     <distributionManagement>
         <site>
-            <id>stagingSite</id>
-            <name>Apache Staging Website</name>
-            <url>scp://people.apache.org/www/commons.apache.org/commons-build-plugin/</url>
+            <id>apache.website</id>
+            <name>Apache Commons ${commons.componentid} Site</name>
+            <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/${commons.componentid}</url>
         </site>
     </distributionManagement>
     <developers>
@@ -194,9 +194,10 @@
         <maven.compile.source />
         <maven.compile.target />
         <commons.manifestfile />
+        <commons.componentid>commons-build-plugin</commons.componentid>
         <commons.jira.id>COMMONSSITE</commons.jira.id>
         <commons.jira.pid>12310466&amp;amp;component=12312401</commons.jira.pid>
         <commons.release.version>1.4</commons.release.version>
-        <commons.rc.version>RC1</commons.rc.version>
+        <commons.rc.version>RC2</commons.rc.version>
     </properties>
 </project>
