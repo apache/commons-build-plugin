@@ -41,7 +41,13 @@
         <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/</developerConnection>
         <url>http://svn.apache.org/viewvc/commons/proper/commons-build-plugin/trunk/</url>
     </scm>
-
+    <distributionManagement>
+        <site>
+            <id>stagingSite</id>
+            <name>Apache Staging Website</name>
+            <url>scp://people.apache.org/www/commons.apache.org/commons-build-plugin/</url>
+        </site>
+    </distributionManagement>
     <developers>
         <developer>
             <name>Niall Pemberton</name>
