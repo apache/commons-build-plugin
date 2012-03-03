@@ -22,7 +22,7 @@
     <author>Gary D. Gregory</author>
   </properties>
   <body>
-    <release version="1.4" date="20 November 2011" description="Feature and fix release.">
+    <release version="1.4" date="3 March 2012" description="Feature and fix release.">
       <action dev="ggregory" type="fix" issue="COMMONSSITE-66" due-to="ggregory">
         Add support for a "commons.release.3" set of properties to offer a 3rd download option.
       </action>
