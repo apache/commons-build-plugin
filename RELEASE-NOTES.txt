@@ -11,7 +11,7 @@ See:
    http://commons.apache.org/commons-build-plugin/
 
 
-VERSION 1.4 - TBC
+VERSION 1.4 - 2012-03-06
 ------------------------
 
 Changes since the last release
