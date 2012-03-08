@@ -167,7 +167,6 @@
                            <report>dependencies</report>
                            <report>issue-tracking</report>
                            <report>mailing-list</report>
-                           <report>license</report>
                            <report>project-team</report>
                            <report>scm</report>
                         </reports>
