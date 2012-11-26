@@ -74,7 +74,7 @@
                     <li><b>commons.componentid</b> - Commons component id</li>
                     <li><b>commons.release.version</b> - The version number of the latest release of the component</li>
                     <li><b>commons.release.name</b> - (<i>optional - defaults to <code>${commons.release.name}</code></i>) The name of the latest release of the component</li>
-                    <li><b>commons.release.desc</b> - (<i>optional</i>) The download links are shown in a section with the component name and release version - if this paratmeter is specified then this text is appended</li>
+                    <li><b>commons.release.desc</b> - (<i>optional</i>) The download links are shown in a section with the component name and release version - if this parameter is specified then this text is appended</li>
                     <li><b>commons.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the binary release
                         (some components use "-bin", others have no suffix)</li>
                 </ul>
