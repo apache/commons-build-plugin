@@ -20,7 +20,7 @@
     <parent>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-parent</artifactId>
-        <version>23</version>
+        <version>30</version>
     </parent>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-build-plugin</artifactId>
@@ -196,7 +196,7 @@
         <commons.componentid>commons-build-plugin</commons.componentid>
         <commons.jira.id>COMMONSSITE</commons.jira.id>
         <commons.jira.pid>12310466&amp;amp;component=12312401</commons.jira.pid>
-        <commons.release.version>1.4</commons.release.version>
-        <commons.rc.version>RC2</commons.rc.version>
+        <commons.release.version>${project.version}</commons.release.version>
+        <commons.rc.version>RC1</commons.rc.version>
     </properties>
 </project>
