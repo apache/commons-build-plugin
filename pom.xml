@@ -30,7 +30,7 @@
     <description>
         Maven Ant mojo for Commons Build tasks.
     </description>
-    <url>http://commons.apache.org/commons-build-plugin/</url>
+    <url>http://commons.apache.org/proper/commons-build-plugin/</url>
     <issueManagement>
         <system>jira</system>
         <url>http://issues.apache.org/jira/browse/COMMONSSITE</url>
