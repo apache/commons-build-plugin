@@ -26,9 +26,9 @@
     <artifactId>commons-build-plugin</artifactId>
     <packaging>maven-plugin</packaging>
     <version>1.4-SNAPSHOT</version>
-    <name>commons-build-plugin Maven Mojo</name>
+    <name>Apache Commons Build Plugin Maven Mojo</name>
     <description>
-        Maven Ant mojo for Commons Build tasks.
+        Apache Maven Ant mojo for Apache Commons Build tasks.
     </description>
     <url>http://commons.apache.org/proper/commons-build-plugin/</url>
     <issueManagement>
