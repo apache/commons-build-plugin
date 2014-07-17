@@ -20,7 +20,7 @@
     <parent>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-parent</artifactId>
-        <version>30</version>
+        <version>34</version>
     </parent>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-build-plugin</artifactId>
@@ -74,7 +74,7 @@
             <version>2.2.1</version>
             <!-- maven-script-ant 2.2.1 depends on org.apache.ant 1.7.1 -->
             <!-- Ant 1.7.0+ required for the "loadresource" Task -->
-            <!-- Ant 1.7.1 required for COMMONSSITE-35 -->            
+            <!-- Ant 1.7.1 required for COMMONSSITE-35 -->
         </dependency>
     </dependencies>
 
