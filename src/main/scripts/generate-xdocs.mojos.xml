@@ -31,7 +31,7 @@
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
-                    <name>project.name</name> 
+                    <name>project.name</name>
                     <property>project.name</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -40,7 +40,7 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.componentid</name> 
+                    <name>commons.componentid</name>
                     <property>commons.componentid</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -57,7 +57,7 @@
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
-                    <name>project.name</name> 
+                    <name>project.name</name>
                     <property>project.name</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -66,7 +66,7 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.jira.id</name> 
+                    <name>commons.jira.id</name>
                     <property>commons.jira.id</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -75,7 +75,7 @@
                     <description>The external JIRA id for the project (alphabetic, upper case)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.jira.pid</name> 
+                    <name>commons.jira.pid</name>
                     <property>commons.jira.pid</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -92,7 +92,7 @@
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
-                    <name>project.name</name> 
+                    <name>project.name</name>
                     <property>project.name</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -101,7 +101,7 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.jira.componentid</name> 
+                    <name>commons.jira.componentid</name>
                     <property>commons.jira.componentid</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -118,7 +118,7 @@
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
-                    <name>project.name</name> 
+                    <name>project.name</name>
                     <property>project.name</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -127,7 +127,16 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>project.artifactId</name> 
+                    <name>project.groupId</name>
+                    <property>project.groupId</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.groupId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The groupId of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>project.artifactId</name>
                     <property>project.artifactId</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -136,7 +145,7 @@
                     <description>The artifactId of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.componentid</name> 
+                    <name>commons.componentid</name>
                     <property>commons.componentid</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -145,7 +154,7 @@
                     <description>The commons component id.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.version</name> 
+                    <name>commons.release.version</name>
                     <property>commons.release.version</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -154,7 +163,7 @@
                     <description>The version of the latest release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.name</name> 
+                    <name>commons.release.name</name>
                     <property>commons.release.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -163,7 +172,7 @@
                     <description>The name of the latest release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.binary.suffix</name> 
+                    <name>commons.binary.suffix</name>
                     <property>commons.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -172,7 +181,7 @@
                     <description>The suffix for the binary distro.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.desc</name> 
+                    <name>commons.release.desc</name>
                     <property>commons.release.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -182,7 +191,7 @@
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
-                    <name>commons.release.2.version</name> 
+                    <name>commons.release.2.version</name>
                     <property>commons.release.2.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -191,16 +200,34 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.name</name> 
+                    <name>commons.release.2.name</name>
                     <property>commons.release.2.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.name}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The nameof the alternative release of the project.</description>
+                    <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.desc</name> 
+                    <name>commons.release.2.groupId</name>
+                    <property>commons.release.2.groupId</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.2.groupId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The groupId of the alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.2.artifactId</name>
+                    <property>commons.release.2.artifactId</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.2.artifactId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The artifactId of the alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.2.desc</name>
                     <property>commons.release.2.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -209,7 +236,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.binary.suffix</name> 
+                    <name>commons.release.2.binary.suffix</name>
                     <property>commons.release.2.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -219,7 +246,7 @@
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
-                    <name>commons.release.3.version</name> 
+                    <name>commons.release.3.version</name>
                     <property>commons.release.3.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -228,16 +255,34 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.name</name> 
+                    <name>commons.release.3.name</name>
                     <property>commons.release.3.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.name}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The nameof the alternative release of the project.</description>
+                    <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.desc</name> 
+                    <name>commons.release.3.groupId</name>
+                    <property>commons.release.3.groupId</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.3.groupId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The groupId of the alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.3.artifactId</name>
+                    <property>commons.release.3.artifactId</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.3.artifactId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The artifactId of the alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.3.desc</name>
                     <property>commons.release.3.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -246,7 +291,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.binary.suffix</name> 
+                    <name>commons.release.3.binary.suffix</name>
                     <property>commons.release.3.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>

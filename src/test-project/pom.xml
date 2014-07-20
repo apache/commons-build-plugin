@@ -37,7 +37,7 @@
             <plugin>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-build-plugin</artifactId>
-                <version>1.3</version>
+                <version>1.5-SNAPSHOT</version>
                 <configuration>
                     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
                     <commons.jira.id>COMMONSSITE</commons.jira.id>

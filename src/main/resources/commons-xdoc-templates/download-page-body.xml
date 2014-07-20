@@ -27,4 +27,23 @@
           </tr>
         </table>
       </subsection>
+      <subsection name="Maven">
+        <source>
+&lt;dependency&gt;
+    &lt;groupId&gt;@GROUP_ID@&lt;&#47;groupId&gt;
+    &lt;artifactId&gt;@ARTIFACT_ID@&lt;&#47;artifactId&gt;
+    &lt;version&gt;@VERSION@&lt;&#47;version&gt;
+&lt;&#47;dependency&gt;
+        </source>
+      </subsection>
+      <subsection name="Ivy">
+        <source>
+&lt;dependency org="@GROUP_ID@" name="@ARTIFACT_ID@" rev="@VERSION@"&#47;&gt;
+        </source>
+      </subsection>
+      <subsection name="Gradle">
+        <source>
+'@GROUP_ID@:@ARTIFACT_ID@:@VERSION@'
+        </source>
+      </subsection>
     </section>
