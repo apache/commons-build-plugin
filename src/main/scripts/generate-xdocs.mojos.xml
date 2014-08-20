@@ -256,5 +256,67 @@
                 </parameter>
             </parameters>
         </mojo>
+        <mojo>
+            <goal>readme-md</goal>
+            <call>readme-md</call>
+            <description>Commons Build Ant Mojo: Generate README.md</description>
+            <requiresProject>true</requiresProject>
+            <parameters>
+                <parameter>
+                    <name>project.name</name>
+                    <property>project.name</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>project.description</name>
+                    <property>project.description</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.description}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>A description of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>project.artifactId</name>
+                    <property>project.artifactId</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.artifactId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The artifactId of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>project.groupId</name>
+                    <property>project.groupId</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.groupId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The groupId of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.version</name>
+                    <property>commons.release.version</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.version}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The version of the latest release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.componentid</name>
+                    <property>commons.componentid</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${commons.componentid}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The commons component id.</description>
+                </parameter>
+            </parameters>
+        </mojo>
     </mojos>
 </pluginMetadata>

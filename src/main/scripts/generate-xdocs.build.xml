@@ -298,4 +298,40 @@
         <copy file="${commonsMojoTempDir}/${file.name}" tofile="src/site/xdoc/${file.name}" overwrite="true" filtering="true"/>
     </target>
 
+    <!-- ========== Generate Mailing List Page ================================ -->
+
+    <target name="readme-md" description="Generate README.md">
+
+        <echo level="${level}" message="----- commons:readme-md - Parameters - START -----" />
+        <echo level="${level}" message="project.name              : ${project.name}" />
+        <echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
+        <echo level="${level}" message="project.groupId           : ${project.groupId}" />
+        <echo level="${level}" message="commons.release.version   : ${commons.release.version}" />
+        <echo level="${level}" message="commons.componentid       : ${commons.componentid}" />
+        <echo level="${level}" message="----- commons:readme-md - Parameters - END   -----" />
+
+        <echo level="info" message="*** Generating ${project.name} README.md ***" />
+
+        <!-- Create a temporary directory to load the template files into -->
+        <mkdir dir="${commonsMojoTempDir}"/>
+
+        <!-- Load the issue-tracking template from mojo resources to temp directory -->
+        <loadresource property="readme-md">
+            <javaresource name="${commonsMojoXdocDir}/readme-md-template.md"/>
+        </loadresource>
+        <echo message="${readme-md}" file="${commonsMojoTempDir}/readme-md-template.md" append="false" />
+
+        <!-- Copy the mail-lists template filtering to replace properties -->
+        <copy file="${commonsMojoTempDir}/readme-md-template.md" tofile="README.md" overwrite="true">
+            <filterset>
+             <filter  token="NAME"         value="${project.name}"/>
+             <filter  token="ARTIFACTID"   value="${project.artifactId}"/>
+             <filter  token="GROUPID"      value="${project.groupId}"/>
+             <filter  token="VERSION"      value="${commons.release.version}"/>
+             <filter  token="DESCRIPTION"  value="${project.description}"/>
+             <filter  token="ID"           value="${commons.componentid}"/>
+            </filterset>
+        </copy>
+
+    </target>
 </project>
