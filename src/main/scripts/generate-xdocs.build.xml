@@ -298,7 +298,7 @@
         <copy file="${commonsMojoTempDir}/${file.name}" tofile="src/site/xdoc/${file.name}" overwrite="true" filtering="true"/>
     </target>
 
-    <!-- ========== Generate Mailing List Page ================================ -->
+    <!-- ========== Generate README.md file ================================ -->
 
     <target name="readme-md" description="Generate README.md">
 
