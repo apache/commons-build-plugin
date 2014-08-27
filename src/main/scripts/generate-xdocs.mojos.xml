@@ -318,5 +318,40 @@
                 </parameter>
             </parameters>
         </mojo>
+        <mojo>
+            <goal>contributing-md</goal>
+            <call>contributing-md</call>
+            <description>Commons Build Ant Mojo: Generate CONTRIBUTING.md</description>
+            <requiresProject>true</requiresProject>
+            <parameters>
+                <parameter>
+                    <name>project.name</name>
+                    <property>project.name</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>project.artifactId</name>
+                    <property>project.artifactId</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.artifactId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The artifactId of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.jira.id</name>
+                    <property>commons.jira.id</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.jira.id}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The external JIRA id for the project (alphabetic, upper case)</description>
+                </parameter>
+            </parameters>
+        </mojo>
     </mojos>
 </pluginMetadata>

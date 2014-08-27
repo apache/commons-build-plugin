@@ -46,6 +46,10 @@
                 <item name="readme-md"           href="/readme-md.html"/>
                 <item name="properties"          href="/readme-md-mojo.html"/>
             </item>
+            <item name="CONTRIBUTING.md"         href="/contributing-md.html">
+                <item name="contributing-md"     href="/contributing-md.html"/>
+                <item name="properties"          href="/contributing-md-mojo.html"/>
+            </item>
             <item name="Help"                    href="/development.html">
                 <item name="Issue Tracking"      href="/issue-tracking.html"/>
                 <item name="Development"         href="/development.html"/>

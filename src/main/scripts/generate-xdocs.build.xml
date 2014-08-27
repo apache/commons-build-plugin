@@ -334,4 +334,37 @@
         </copy>
 
     </target>
+
+    <!-- ========== Generate CONTRIBUTING.md file ================================ -->
+
+    <target name="contributing-md" description="Generate CONTRIBUTING.md">
+
+        <echo level="${level}" message="----- commons:readme-md - Parameters - START -----" />
+        <echo level="${level}" message="project.name              : ${project.name}" />
+        <echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
+        <echo level="${level}" message="commons.jira.id           : ${commons.jira.id}" />
+        <echo level="${level}" message="----- commons:readme-md - Parameters - END   -----" />
+
+        <echo level="info" message="*** Generating ${project.name} CONTRIBUTING.md ***" />
+
+        <!-- Create a temporary directory to load the template files into -->
+        <mkdir dir="${commonsMojoTempDir}"/>
+
+        <!-- Load the contributing-md template from mojo resources to temp directory -->
+        <loadresource property="contributing-md">
+           <javaresource name="${commonsMojoXdocDir}/contributing-md-template.md"/>
+        </loadresource>
+        <echo message="${contributing-md}" file="${commonsMojoTempDir}/contributing-md-template.md" append="false" />
+
+        <!-- Copy the mail-lists template filtering to replace properties -->
+        <copy file="${commonsMojoTempDir}/contributing-md-template.md" tofile="CONTRIBUTING.md" overwrite="true">
+            <filterset>
+                <filter  token="NAME"         value="${project.name}"/>
+                <filter  token="ARTIFACTID"   value="${project.artifactId}"/>
+                <filter  token="JIRA_ID"      value="${commons.jira.id}"/>
+            </filterset>
+        </copy>
+
+    </target>
+
 </project>

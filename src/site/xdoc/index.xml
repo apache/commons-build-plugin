@@ -50,6 +50,7 @@
                 <li><a href="sandbox-jira-page.html">commons:sandbox-jira-page</a> - Generate a custom <i>JIRA Issue Tracking page</i> for a Sandbox component</li>
                 <li><a href="copy-javadoc-files-build.html">commons:copy-javadoc-files</a> - Copy NOTICE and LICENSE files to -javadoc jar</li>
                 <li><a href="readme-md.html">commons:readme-md</a> - Generate a README.md file containing information for contributors from GitHub</li>
+                <li><a href="contributing-md.html">commons:contributing-md</a> - Generate a CONTRIBUTING.md file containing information on how to contribute for contributors from GitHub</li>
             </ul>
             </p>
         </section>
