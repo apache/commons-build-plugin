@@ -315,13 +315,13 @@
         <!-- Create a temporary directory to load the template files into -->
         <mkdir dir="${commonsMojoTempDir}"/>
 
-        <!-- Load the issue-tracking template from mojo resources to temp directory -->
+        <!-- Load the readme-md template from mojo resources to temp directory -->
         <loadresource property="readme-md">
             <javaresource name="${commonsMojoXdocDir}/readme-md-template.md"/>
         </loadresource>
         <echo message="${readme-md}" file="${commonsMojoTempDir}/readme-md-template.md" append="false" />
 
-        <!-- Copy the mail-lists template filtering to replace properties -->
+        <!-- Copy the readme-md template filtering to replace properties -->
         <copy file="${commonsMojoTempDir}/readme-md-template.md" tofile="README.md" overwrite="true">
             <filterset>
              <filter  token="NAME"         value="${project.name}"/>
