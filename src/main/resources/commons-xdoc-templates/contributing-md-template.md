@@ -78,7 +78,7 @@ In this case, it is appropriate to start the first line of a commit with '(doc)'
 Submitting Changes
 ------------------
 
-+ Sign the [Contributor License Agreement][cla].
++ Sign the [Contributor License Agreement][cla] if you haven't already.
 + Push your changes to a topic branch in your fork of the repository.
 + Submit a pull request to the repository in the apache organization.
 + Update your JIRA ticket and include a link to the pull request in the ticket.
