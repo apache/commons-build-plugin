@@ -91,6 +91,7 @@ Additional Resources
 + [Contributor License Agreement][cla]
 + [General GitHub documentation](http://help.github.com/)
 + [GitHub pull request documentation](http://help.github.com/send-pull-requests/)
++ [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
 + #apachecommons IRC channel on freenode.org
 
 [cla]:http://www.apache.org/licenses/#clas
