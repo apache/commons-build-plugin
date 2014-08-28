@@ -86,4 +86,12 @@ Donations
 ---------
 You like @NAME@? Then [donate back to the ASF](http://www.apache.org/foundation/contributing.html) to support the development.
 
+Additional Resources
+--------------------
+
++ [Apache Commons Homepage](http://commons.apache.org/)
++ [Apache Bugtracker (JIRA)](https://issues.apache.org/jira/)
++ [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
++ #apachecommons IRC channel on freenode.org
+
 [ml]:http://commons.apache.org/proper/@ARTIFACTID@/mail-lists.html
