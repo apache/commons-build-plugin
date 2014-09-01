@@ -21,7 +21,7 @@
  |****                    DO NOT EDIT DIRECTLY                      ****|
  |****                                                              ****|
  +======================================================================+
- | TEMPLATE FILE: mail-lists-template.xml                               |
+ | TEMPLATE FILE: readme-md-template.md                                 |
  | commons-build-plugin/trunk/src/main/resources/commons-xdoc-templates |
  +======================================================================+
  |                                                                      |
