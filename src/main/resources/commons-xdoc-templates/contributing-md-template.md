@@ -67,7 +67,7 @@ Making Changes
   + Check for unnecessary whitespace with git diff --check before committing.
 + Make sure your commit messages are in the proper format. Your commit message should contain the key of the JIRA issue.
 + Make sure you have added the necessary tests for your changes.
-+ Run all the tests with `mvn clean test` to assure nothing else was accidentally broken.
++ Run all the tests with `mvn clean verify` to assure nothing else was accidentally broken.
 
 Making Trivial Changes
 ----------------------
