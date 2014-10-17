@@ -53,10 +53,10 @@ limitations under the License.
     <subsection name="Using a Mirror">
       <p>
         We recommend you use a mirror to download our release
-        builds, but you <strong>must</strong> verify the integrity of
+        builds, but you <strong>must</strong> <a href="http://www.apache.org/info/verification.html">verify the integrity</a> of
         the downloaded files using signatures downloaded from our main
         distribution directories. Recent releases (48 hours) may not yet
-        be available from the mirrors.
+        be available from all the mirrors.
       </p>
 
       <p>
@@ -92,6 +92,8 @@ limitations under the License.
         link links to the code signing keys used to sign the product.
         The <code>PGP</code> link downloads the OpenPGP compatible signature from our main site.
         The <code>MD5</code> link downloads the checksum from the main site.
+        Please <a href="http://www.apache.org/info/verification.html">verify the integrity</a>
+        of the downloaded file.
       </p>
     </subsection>
     </section>
