@@ -20,7 +20,7 @@
     <parent>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-parent</artifactId>
-        <version>34</version>
+        <version>35</version>
     </parent>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-build-plugin</artifactId>
@@ -153,8 +153,8 @@
         </plugins>
     </reporting>
     <properties>
-        <maven.compile.source />
-        <maven.compile.target />
+        <maven.compiler.source />
+        <maven.compiler.target />
         <commons.manifestfile />
         <commons.componentid>commons-build-plugin</commons.componentid>
         <commons.jira.id>COMMONSSITE</commons.jira.id>
