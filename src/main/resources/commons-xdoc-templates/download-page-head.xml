@@ -88,12 +88,14 @@ limitations under the License.
       </form>
 
       <p>
-        The <a href="https://www.apache.org/dist/commons/KEYS">KEYS</a>
-        link links to the code signing keys used to sign the product.
-        The <code>PGP</code> link downloads the OpenPGP compatible signature from our main site.
-        The <code>MD5</code> link downloads the checksum from the main site.
-        Please <a href="http://www.apache.org/info/verification.html">verify the integrity</a>
-        of the downloaded file.
+        Please <a href="https://www.apache.org/info/verification.html">verify the integrity</a>
+        of downloaded files against the public code signing
+        <a href="https://www.apache.org/dist/commons/KEYS">KEYS</a>
+        used by the Apache Commons developers.
+      </p>
+      <p>
+        The <code>pgp</code> link downloads the OpenPGP compatible signature (*.asc) from our main site.
+        The <code>md5</code> link downloads the checksum file (MD5 hash) from the main site.
       </p>
     </subsection>
     </section>
