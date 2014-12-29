@@ -15,13 +15,23 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<!-- $Id: changes.xml 1201725 2011-11-14 14:29:47Z ggregory $ -->
 <document>
   <properties>
-    <title>Changes</title>
-    <author>Gary D. Gregory</author>
+    <title>Apache Commons Build Plugin Changes</title>
+    <author email="dev@commons.apache.org">Apache Commons Developers</author>
   </properties>
+
   <body>
+
+    <release version="1.5" date="TBD" description="TBD">
+      <action dev="ecki" type="update">
+        Download Page - Better describes KEYS file (and uses https links).
+      </action>
+      <action dev="ggregory" type="add">
+        CONTRIBUTING.md/README.md - New Goal to build markup formatted intro files.
+      </action>
+    </release>
+
     <release version="1.4" date="3 March 2012" description="Feature and fix release.">
       <action dev="ggregory" type="fix" issue="COMMONSSITE-66" due-to="ggregory">
         Add support for a "commons.release.3" set of properties to offer a 3rd download option.
