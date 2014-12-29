@@ -30,8 +30,8 @@
       <action dev="ecki" type="update">
         Download Page - Better describes KEYS file (and uses https links).
       </action>
-      <action dev="ggregory" type="add">
-        CONTRIBUTING.md/README.md - New Goals to build Markdown formatted intro files.
+      <action dev="britter" type="add">
+        CONTRIBUTING.md/README.md - New Goals to build Markdown formatted intro files for GitHub.
       </action>
     </release>
 
