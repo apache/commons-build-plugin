@@ -15,6 +15,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
+
+<!-- Description: http://maven.apache.org/plugins/maven-changes-plugin/changes.html -->
+
 <document>
   <properties>
     <title>Apache Commons Build Plugin Changes</title>
@@ -28,12 +31,12 @@
         Download Page - Better describes KEYS file (and uses https links).
       </action>
       <action dev="ggregory" type="add">
-        CONTRIBUTING.md/README.md - New Goal to build markup formatted intro files.
+        CONTRIBUTING.md/README.md - New Goals to build Markdown formatted intro files.
       </action>
     </release>
 
     <release version="1.4" date="3 March 2012" description="Feature and fix release.">
-      <action dev="ggregory" type="fix" issue="COMMONSSITE-66" due-to="ggregory">
+      <action dev="ggregory" type="fix" issue="COMMONSSITE-66">
         Add support for a "commons.release.3" set of properties to offer a 3rd download option.
       </action>
       <action type="update">
