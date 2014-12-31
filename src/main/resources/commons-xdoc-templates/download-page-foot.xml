@@ -4,7 +4,7 @@
         </p>
         <ul>
           <li class="download"><a href="[preferred]/commons/@ID@/">browse download area</a></li>
-          <li><a href="http://archive.apache.org/dist/commons/@ID@/">archives...</a></li>
+          <li><a href="https://archive.apache.org/dist/commons/@ID@/">archives...</a></li>
         </ul>
     </section>
   </body>

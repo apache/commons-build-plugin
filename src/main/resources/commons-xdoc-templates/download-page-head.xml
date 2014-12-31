@@ -31,10 +31,19 @@ limitations under the License.
  | 2) Set the following properties in the component's pom:              |
  |    - commons.componentid (required, alphabetic, lower case)          |
  |    - commons.release.version (required)                              |
+ |    - commons.release.name    (required)                              |
  |    - commons.binary.suffix (optional)                                |
  |      (defaults to "-bin", set to "" for pre-maven2 releases)         |
+ |    - commons.release.desc    (optional)                              |
+ |                                                                      |
+ |    - commons.release.2/3.version       (conditional)                 |
+ |    - commons.release.2/3.name          (conditional)                 |
+ |    - commons.release.2/3.binary.suffix (optional)                    |
+ |    - commons.release.2/3.desc          (optional)                    |
  |                                                                      |
  | 3) Example Properties                                                |
+ |    (commons.release.name inherited by parent:                        |
+ |     ${project.artifactId}-${commons.release.version}                 |
  |                                                                      |
  |  <properties>                                                        |
  |    <commons.componentid>math</commons.componentid>                   |
@@ -88,14 +97,15 @@ limitations under the License.
       </form>
 
       <p>
-        Please <a href="https://www.apache.org/info/verification.html">verify the integrity</a>
-        of downloaded files against the public code signing
-        <a href="https://www.apache.org/dist/commons/KEYS">KEYS</a>
-        used by the Apache Commons developers.
+        It is essential that you
+        <a href="https://www.apache.org/info/verification.html">verify the integrity</a>
+        of downloaded files, preferably using the <code>PGP</code> signature (<code>*.asc</code> files);
+        failing that using the <code>MD5</code> hash (<code>*.md5</code> checksum files).
       </p>
       <p>
-        The <code>pgp</code> link downloads the OpenPGP compatible signature (*.asc) from our main site.
-        The <code>md5</code> link downloads the checksum file (MD5 hash) from the main site.
+        The <a href="https://www.apache.org/dist/commons/KEYS">KEYS</a>
+        file contains the public PGP keys used by Apache Commons developers
+        to sign releases.
       </p>
     </subsection>
     </section>
