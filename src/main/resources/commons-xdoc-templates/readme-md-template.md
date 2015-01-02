@@ -95,4 +95,4 @@ Additional Resources
 + [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
 + #apachecommons IRC channel on freenode.org
 
-[ml]:https://commons.apache.org/proper/commons-@ID@/mail-lists.html
+[ml]:https://commons.apache.org/mail-lists.html
