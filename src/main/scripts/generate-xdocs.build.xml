@@ -321,15 +321,27 @@
         </loadresource>
         <echo message="${readme-md}" file="${commonsMojoTempDir}/readme-md-template.md" append="false" />
 
+        <!-- Without using ant-contrib: remove "-project" for multi-module artifacts -->
+        <loadresource property="tmp.artifactId">
+            <propertyresource name="project.artifactId" />
+            <filterchain>
+                <tokenfilter>
+                    <filetokenizer/>
+                    <replacestring from="-project" to=""/>
+                </tokenfilter>
+            </filterchain>
+        </loadresource>
+
         <!-- Copy the readme-md template filtering to replace properties -->
         <copy file="${commonsMojoTempDir}/readme-md-template.md" tofile="README.md" overwrite="true">
             <filterset>
-             <filter  token="NAME"         value="${project.name}"/>
-             <filter  token="ARTIFACTID"   value="${project.artifactId}"/>
-             <filter  token="GROUPID"      value="${project.groupId}"/>
-             <filter  token="VERSION"      value="${commons.release.version}"/>
-             <filter  token="DESCRIPTION"  value="${project.description}"/>
-             <filter  token="ID"           value="${commons.componentid}"/>
+             <filter  token="NAME"           value="${project.name}"/>
+             <filter  token="ARTIFACTID"     value="${project.artifactId}"/>
+             <filter  token="ARTIFACTCOREID" value="${tmp.artifactId}"/>
+             <filter  token="GROUPID"        value="${project.groupId}"/>
+             <filter  token="VERSION"        value="${commons.release.version}"/>
+             <filter  token="DESCRIPTION"    value="${project.description}"/>
+             <filter  token="ID"             value="${commons.componentid}"/>
             </filterset>
         </copy>
 
@@ -343,6 +355,7 @@
         <echo level="${level}" message="project.name              : ${project.name}" />
         <echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
         <echo level="${level}" message="commons.jira.id           : ${commons.jira.id}" />
+        <echo level="${level}" message="commons.componentid       : ${commons.componentid}" />
         <echo level="${level}" message="----- commons:readme-md - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} CONTRIBUTING.md ***" />
@@ -356,12 +369,25 @@
         </loadresource>
         <echo message="${contributing-md}" file="${commonsMojoTempDir}/contributing-md-template.md" append="false" />
 
+        <!-- Without using ant-contrib: remove "-project" for multi-module artifacts -->
+        <loadresource property="tmp.artifactId">
+            <propertyresource name="project.artifactId" />
+            <filterchain>
+                <tokenfilter>
+                    <filetokenizer/>
+                    <replacestring from="-project" to=""/>
+                </tokenfilter>
+            </filterchain>
+        </loadresource>
+
         <!-- Copy the mail-lists template filtering to replace properties -->
         <copy file="${commonsMojoTempDir}/contributing-md-template.md" tofile="CONTRIBUTING.md" overwrite="true">
             <filterset>
-                <filter  token="NAME"         value="${project.name}"/>
-                <filter  token="ARTIFACTID"   value="${project.artifactId}"/>
-                <filter  token="JIRA_ID"      value="${commons.jira.id}"/>
+                <filter  token="NAME"            value="${project.name}"/>
+                <filter  token="ARTIFACTID"      value="${project.artifactId}"/>
+                <filter  token="ARTIFACTCOREID"  value="${tmp.artifactId}"/>
+                <filter  token="JIRA_ID"         value="${commons.jira.id}"/>
+                <filter  token="ID"              value="${commons.componentid}"/>
             </filterset>
         </copy>
 

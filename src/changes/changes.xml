@@ -27,6 +27,9 @@
   <body>
 
     <release version="1.5" date="TBD" description="TBD">
+      <action dev="ecki" type="update" issue="COMMONSSITE-81">
+        commons-build-plugin README/CONTRIBUTING.md handle multi-modules
+      </action>
       <action dev="ecki" type="update">
         Download Page - Better describes KEYS file (and uses https links).
       </action>

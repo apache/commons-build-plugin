@@ -50,7 +50,7 @@ Getting Started
 
 + Make sure you have a [JIRA account](https://issues.apache.org/jira/).
 + Make sure you have a [GitHub account](https://github.com/signup/free).
-+ If you're planning to implement a new feature it makes sense to discuss you're changes on the [dev list](http://commons.apache.org/proper/@ARTIFACTID@/mail-lists.html) first. This way you can make sure you're not wasting your time on something that isn't considered to be in @NAME@'s scope.
++ If you're planning to implement a new feature it makes sense to discuss you're changes on the [dev list](https://commons.apache.org/proper/commons-@ID@/mail-lists.html) first. This way you can make sure you're not wasting your time on something that isn't considered to be in @NAME@'s scope.
 + Submit a ticket for your issue, assuming one does not already exist.
   + Clearly describe the issue including steps to reproduce when it is a bug.
   + Make sure you fill in the earliest version that you know has the issue.
@@ -86,12 +86,12 @@ Submitting Changes
 Additional Resources
 --------------------
 
-+ [Contributing patches](http://commons.apache.org/patches.html)
++ [Contributing patches](https://commons.apache.org/patches.html)
 + [@NAME@ JIRA project page](https://issues.apache.org/jira/browse/@JIRA_ID@)
 + [Contributor License Agreement][cla]
-+ [General GitHub documentation](http://help.github.com/)
-+ [GitHub pull request documentation](http://help.github.com/send-pull-requests/)
++ [General GitHub documentation](https://help.github.com/)
++ [GitHub pull request documentation](https://help.github.com/send-pull-requests/)
 + [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
 + #apachecommons IRC channel on freenode.org
 
-[cla]:http://www.apache.org/licenses/#clas
+[cla]:https://www.apache.org/licenses/#clas

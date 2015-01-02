@@ -351,6 +351,15 @@
                     <type>java.lang.String</type>
                     <description>The external JIRA id for the project (alphabetic, upper case)</description>
                 </parameter>
+                <parameter>
+                    <name>commons.componentid</name> 
+                    <property>commons.componentid</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${commons.componentid}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The commons component id.</description>
+                </parameter>
             </parameters>
         </mojo>
     </mojos>
