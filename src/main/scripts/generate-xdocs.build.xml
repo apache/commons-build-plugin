@@ -20,7 +20,7 @@
    $HeadURL$
    $Revision$ $Date$
  -->
-<project name="Commons Build: Standard XDOC Pages Generation" default="init" basedir=".">
+<project name="Commons Build: Standard XDOC Pages Generation" basedir=".">
 
     <property name="commonsMojoId"      value="Commons:xdoc-generate" />
     <property name="commonsMojoXdocDir" value="resources/commons-xdoc-templates" />
