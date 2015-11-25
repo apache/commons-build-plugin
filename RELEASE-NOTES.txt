@@ -6,10 +6,18 @@ $Id$
 
 INTRODUCTION:
 
-Commons Build Plugin is a Maven 2.x Ant Plugin which is used by Apache Commons builds.
+Commons Build Plugin is a Maven Ant Plugin which can be used by Apache Commons components.
 See:
    http://commons.apache.org/commons-build-plugin/
 
+
+VERSION 1.5 - 2015-11-28
+------------------------
+
+Changes since the last release
+1. Added CONTRIBUTING.md/README.md - New Goals to build Markdown formatted intro files for GitHub.
+2. Download Page - Better describes KEYS file (and uses https links) 
+3. Use Apache Commons rather than just Commons
 
 VERSION 1.4 - 2012-03-06
 ------------------------

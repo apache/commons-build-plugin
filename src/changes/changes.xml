@@ -26,7 +26,7 @@
 
   <body>
 
-    <release version="1.5" date="TBD" description="TBD">
+    <release version="1.5" date="2015-11-28" description="Feature and fix release">
       <action dev="ecki" type="update" issue="COMMONSSITE-81">
         commons-build-plugin README/CONTRIBUTING.md handle multi-modules
       </action>
