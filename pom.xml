@@ -44,8 +44,8 @@
     <distributionManagement>
         <site>
             <id>apache.website</id>
-            <name>Apache Commons commons-${commons.componentid} Site</name>
-            <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/commons-${commons.componentid}</url>
+            <name>Apache Commons ${commons.componentid} Site</name>
+            <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/${commons.componentid}</url>
         </site>
     </distributionManagement>
     <developers>
@@ -156,7 +156,7 @@
         <maven.compiler.source />
         <maven.compiler.target />
         <commons.manifestfile />
-        <commons.componentid>build-plugin</commons.componentid>
+        <commons.componentid>commons-build-plugin</commons.componentid>
         <commons.jira.id>COMMONSSITE</commons.jira.id>
         <commons.jira.pid>12310466&amp;amp;component=12312401</commons.jira.pid>
         <commons.release.version>${project.version}</commons.release.version>
