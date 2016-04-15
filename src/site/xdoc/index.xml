@@ -31,7 +31,7 @@
         <section name="Build Plugin">
 
             <p>
-            This is a <a href="http://maven.apache.org/">Maven 2.x</a> 
+            This is a <a href="http://maven.apache.org/">Maven 2.x/3.x</a> 
             <a href="http://ant.apache.org/">Ant</a> Plugin which is
             used by <a href="http://commons.apache.org/">Apache Commons</a> builds. See
             the <a href="development.html">Development</a> page for information to
@@ -62,7 +62,7 @@
 <plugin>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-build-plugin</artifactId>
-  <version>1.4</version>
+  <version>1.5</version>
 </plugin>
 ]]></source>
             </p>
