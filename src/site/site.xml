@@ -24,31 +24,25 @@
     <body>
         <menu name="Build Plugin">
             <item name="Overview"                href="/index.html"/>
-            <item name="Download Page"           href="/download-page.html">
-                <item name="download-page"       href="/download-page.html"/>
-                <item name="properties"          href="/download-page-mojo.html"/>
-            </item>
-            <item name="JIRA Page"                  href="/jira-page.html">
-                <item name="Proper"                 href="/jira-page.html">
-                    <item name="jira-page"          href="/jira-page.html"/>
-                    <item name="properties"         href="/jira-page-mojo.html"/>
+            <item name="Goals">
+                <item name="download-page"       href="/download-page.html">
+                    <item name="properties"      href="/download-page-mojo.html"/>
                 </item>
-                <item name="Sandbox"                href="/sandbox-jira-page.html">
-                    <item name="sandbox-jira-page"  href="/sandbox-jira-page.html"/>
-                    <item name="properties"         href="/sandbox-jira-page-mojo.html"/>
+                <item name="jira-page"           href="/jira-page.html">
+                    <item name="properties"      href="/jira-page-mojo.html"/>
                 </item>
-            </item>
-            <item name="Mail Page"               href="/mail-page.html">
-                <item name="mail-page"           href="/mail-page.html"/>
-                <item name="properties"          href="/mail-page-mojo.html"/>
-            </item>
-            <item name="README.md"               href="/readme-md.html">
-                <item name="readme-md"           href="/readme-md.html"/>
-                <item name="properties"          href="/readme-md-mojo.html"/>
-            </item>
-            <item name="CONTRIBUTING.md"         href="/contributing-md.html">
-                <item name="contributing-md"     href="/contributing-md.html"/>
-                <item name="properties"          href="/contributing-md-mojo.html"/>
+                <item name="sandbox-jira-page"   href="/sandbox-jira-page.html">
+                    <item name="properties"      href="/sandbox-jira-page-mojo.html"/>
+                </item>
+                <item name="mail-page"           href="/mail-page.html">
+                    <item name="properties"      href="/mail-page-mojo.html"/>
+                </item>
+                <item name="readme-md"           href="/readme-md.html">
+                    <item name="properties"      href="/readme-md-mojo.html"/>
+                </item>
+                <item name="contributing-md"     href="/contributing-md.html">
+                    <item name="properties"      href="/contributing-md-mojo.html"/>
+                </item>
             </item>
             <item name="Help"                    href="/development.html">
                 <item name="Issue Tracking"      href="/issue-tracking.html"/>
