@@ -4,11 +4,18 @@
 
 INTRODUCTION:
 
-Commons Build Plugin is a Maven Ant Plugin which can be used by Apache Commons components.
+Commons Build Plugin is a Maven Plugin which can be used by Apache Commons components.
 
 See:
    http://commons.apache.org/commons-build-plugin/
 
+
+VERSION 1.6 - 2016-04-20
+------------------------
+
+Changes since the last release
+1. Added new download-page layout property: 
+   set this to 'version' to use a single directory of the form commons-build-plugin-1.6 rather than binaries/source 
 
 VERSION 1.5 - 2015-11-28
 ------------------------
