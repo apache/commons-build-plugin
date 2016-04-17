@@ -28,7 +28,7 @@
     <version>1.6-SNAPSHOT</version>
     <name>Apache Commons Build Plugin Maven Mojo</name>
     <description>
-        Apache Maven Ant mojo for Apache Commons Build tasks.
+        Apache Maven Mojo for Apache Commons Build tasks.
     </description>
     <url>http://commons.apache.org/proper/commons-build-plugin/</url>
     <issueManagement>
