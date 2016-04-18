@@ -121,7 +121,6 @@
                         </configuration>
                     </execution>
                 </executions>
-
             </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -130,6 +129,18 @@
                         <descriptor>src/assembly/src.xml</descriptor>
                     </descriptors>
                     <tarLongFileMode>gnu</tarLongFileMode>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.rat</groupId>
+                <artifactId>apache-rat-plugin</artifactId>
+                <configuration>
+                    <useDefaultExcludes>true</useDefaultExcludes>
+                    <excludes>
+                        <!-- template files which will be inserted into the middle of resulting page -->
+                        <exclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</exclude>
+                        <exclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>
