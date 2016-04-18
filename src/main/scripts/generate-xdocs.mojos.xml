@@ -27,7 +27,7 @@
         <mojo>
             <goal>mail-page</goal>
             <call>mail-page</call>
-            <description>Commons Build Ant Mojo: Generate Mailing List page</description>
+            <description>Apache Commons Build Mojo: Generate Mailing List page</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -53,7 +53,7 @@
         <mojo>
             <goal>jira-page</goal>
             <call>jira-page</call>
-            <description>Commons Build Ant Mojo: Generate Issue Tracking page</description>
+            <description>Apache Commons Build Mojo: Generate Issue Tracking page</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -88,7 +88,7 @@
         <mojo>
             <goal>sandbox-jira-page</goal>
             <call>sandbox-jira-page</call>
-            <description>Commons Build Ant Mojo: Generate Sandbox Issue Tracking page</description>
+            <description>Apache Commons Build Mojo: Generate Sandbox Issue Tracking page</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -114,7 +114,7 @@
         <mojo>
             <goal>download-page</goal>
             <call>download-page</call>
-            <description>Commons Build Ant Mojo: Generate Download page</description>
+            <description>Apache Commons Build Mojo: Generate Download page</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -286,7 +286,7 @@
         <mojo>
             <goal>readme-md</goal>
             <call>readme-md</call>
-            <description>Commons Build Ant Mojo: Generate README.md</description>
+            <description>Apache Commons Build Mojo: Generate README.md</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -348,7 +348,7 @@
         <mojo>
             <goal>contributing-md</goal>
             <call>contributing-md</call>
-            <description>Commons Build Ant Mojo: Generate CONTRIBUTING.md</description>
+            <description>Apache Commons Build Mojo: Generate CONTRIBUTING.md</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
