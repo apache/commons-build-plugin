@@ -1,10 +1,10 @@
-			 Commons Build Plugin
-			   Release Notes
+			 Apache Commons Build Plugin
+			       Release Notes
 
 
 INTRODUCTION:
 
-Commons Build Plugin is a Maven Plugin which can be used by Apache Commons components.
+The Apache Commons Build Plugin is a Maven Plugin which can be used by Apache Commons components.
 
 See:
    http://commons.apache.org/commons-build-plugin/
