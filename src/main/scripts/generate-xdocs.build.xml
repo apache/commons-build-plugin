@@ -149,17 +149,17 @@
         <echo level="${level}" message="commons.release.name     : ${commons.release.name}" />
         <echo level="${level}" message="commons.release.desc     : ${commons.release.desc}" />
         <echo level="${level}" message="commons.binary.suffix    : ${commons.binary.suffix}" />
-        <echo level="${level}" message="commons.release.layout   : ${commons.release.layout}" />
+        <echo level="${level}" message="commons.release.subdir   : ${commons.release.subdir}" />
         <echo level="${level}" message="commons.release.2.version: ${commons.release.2.version}" />
         <echo level="${level}" message="commons.release.2.name   : ${commons.release.2.name}" />
         <echo level="${level}" message="commons.release.2.desc   : ${commons.release.2.desc}" />
         <echo level="${level}" message="commons.release.2.binary.suffix: ${commons.release.2.binary.suffix}" />
-        <echo level="${level}" message="commons.release.2.layout : ${commons.release.2.layout}" />
+        <echo level="${level}" message="commons.release.2.subdir : ${commons.release.2.subdir}" />
         <echo level="${level}" message="commons.release.3.version: ${commons.release.3.version}" />
         <echo level="${level}" message="commons.release.3.name   : ${commons.release.3.name}" />
         <echo level="${level}" message="commons.release.3.desc   : ${commons.release.3.desc}" />
         <echo level="${level}" message="commons.release.3.binary.suffix: ${commons.release.3.binary.suffix}" />
-        <echo level="${level}" message="commons.release.3.layout : ${commons.release.3.layout}" />
+        <echo level="${level}" message="commons.release.3.subdir : ${commons.release.3.subdir}" />
         <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} ${commons.release.version} Download Page ***" />
@@ -200,11 +200,11 @@
     <target name="load-download-page-body-1" if="commons.release.version">
         <echo  level="info" message="*** loading download-page body(1) file***" />
 
-        <condition property="BINDIR" value="${commons.release.version}" else="binaries">
-          <equals arg1="${commons.release.layout}" arg2="version"/>
+        <condition property="BINDIR" value="${commons.release.subdir}" else="binaries">
+          <isset property="commons.release.subdir"/>
         </condition>
-        <condition property="SRCDIR" value="${commons.release.version}" else="source">
-          <equals arg1="${commons.release.layout}" arg2="version"/>
+        <condition property="SRCDIR" value="${commons.release.subdir}" else="source">
+          <isset property="commons.release.subdir"/>
         </condition>
 
         <!-- Load Body -->
@@ -228,14 +228,14 @@
     </target>
 
     <target name="load-download-page-body-2" if="commons.release.2.version">
-        <echo  level="info" message="*** loading download-page body(2) file***" />
+      <echo  level="info" message="*** loading download-page body(2) file***" />
 
-        <condition property="BINDIR" value="${commons.release.2.version}" else="binaries">
-          <equals arg1="${commons.release.2.layout}" arg2="version"/>
-        </condition>
-        <condition property="SRCDIR" value="${commons.release.2.version}" else="source">
-          <equals arg1="${commons.release.2.layout}" arg2="version"/>
-        </condition>
+      <condition property="BINDIR" value="${commons.release.2.subdir}" else="binaries">
+        <isset property="commons.release.2.subdir"/>
+      </condition>
+      <condition property="SRCDIR" value="${commons.release.2.subdir}" else="source">
+        <isset property="commons.release.2.subdir"/>
+      </condition>
 
         <!-- Load Body -->
         <loadresource property="download-page-body-2-xml">
@@ -258,14 +258,14 @@
     </target>
 
     <target name="load-download-page-body-3" if="commons.release.3.version">
-        <echo  level="info" message="*** loading download-page body(3) file***" />
+      <echo  level="info" message="*** loading download-page body(3) file***" />
 
-        <condition property="BINDIR" value="${commons.release.3.version}" else="binaries">
-          <equals arg1="${commons.release.3.layout}" arg2="version"/>
-        </condition>
-        <condition property="SRCDIR" value="${commons.release.3.version}" else="source">
-          <equals arg1="${commons.release.3.layout}" arg2="version"/>
-        </condition>
+      <condition property="BINDIR" value="${commons.release.3.subdir}" else="binaries">
+        <isset property="commons.release.3.subdir"/>
+      </condition>
+      <condition property="SRCDIR" value="${commons.release.3.subdir}" else="source">
+        <isset property="commons.release.3.subdir"/>
+      </condition>
 
         <!-- Load Body -->
         <loadresource property="download-page-body-3-xml">

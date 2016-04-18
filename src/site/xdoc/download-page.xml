@@ -77,7 +77,7 @@
                     <li><b>commons.release.desc</b> - (<i>optional</i>) The download links are shown in a section with the component name and release version - if this parameter is specified then this text is appended</li>
                     <li><b>commons.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the binary release
                         (some components use "-bin", others have no suffix)</li>
-                    <li><b>commons.release.layout</b> - The layout style. This defaults to using source/binaries folders; use 'version' to use a single versioned folder (e.g. commons-build-23) fore binaries and source</li>
+                    <li><b>commons.release.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the dierctory for both.</li>
                 </ul>
                 </p>
                 <p>

@@ -95,10 +95,10 @@
             <td>Release Title or Description.<br/><strong>Default value is</strong>: <code>${commons.release.desc}</code>.</td>
           </tr>
           <tr>
-            <td><strong><a href="#commons.release.layout">commons.release.layout</a></strong></td>
+            <td><strong><a href="#commons.release.subdir">commons.release.subdir</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Layout Style (e.g. version)<br/><strong>Default value is</strong>: <code>${commons.release.layout}</code>.</td>
+            <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.subdir}</code>.</td>
           </tr>
           <!-- commons.release.2.* -->
           <tr>
@@ -120,10 +120,10 @@
             <td>The suffix for the alternative release binary distro.<br/><strong>Default value is</strong>: <code>${commons.release.2.binary.suffix}</code>.</td>
           </tr>
           <tr>
-            <td><strong><a href="#commons.release.layout">commons.release.2.layout</a></strong></td>
+            <td><strong><a href="#commons.release.subdir">commons.release.2.subdir</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Layout Style (e.g. version)<br/><strong>Default value is</strong>: <code>${commons.release.2.layout}</code>.</td>
+            <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.2.subdir}</code>.</td>
           </tr>
           <!-- commons.release.3.* -->
           <tr>
@@ -145,10 +145,10 @@
             <td>The suffix for the alternative release binary distro.<br/><strong>Default value is</strong>: <code>${commons.release.3.binary.suffix}</code>.</td>
           </tr>
           <tr>
-            <td><strong><a href="#commons.release.layout">commons.release.3.layout</a></strong></td>
+            <td><strong><a href="#commons.release.subdir">commons.release.3.subdir</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Layout Style (e.g. version)<br/><strong>Default value is</strong>: <code>${commons.release.3.layout}</code>.</td>
+            <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.3.subdir}</code>.</td>
           </tr>
           <!-- Miscellaneous -->
           <tr>

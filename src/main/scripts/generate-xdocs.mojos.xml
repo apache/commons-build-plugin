@@ -181,13 +181,13 @@
                     <description>Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.layout</name> 
-                    <property>commons.release.layout</property>
+                    <name>commons.release.subdir</name> 
+                    <property>commons.release.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
-                    <defaultValue>${commons.release.layout}</defaultValue>
+                    <defaultValue>${commons.release.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Layout style (e.g. version)</description>
+                    <description>Subdirectory (instead of source/binaries)</description>
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
@@ -227,13 +227,13 @@
                     <description>The suffix for the alternative release binary distro.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.layout</name> 
-                    <property>commons.release.2.layout</property>
+                    <name>commons.release.2.subdir</name> 
+                    <property>commons.release.2.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
-                    <defaultValue>${commons.release.2.layout}</defaultValue>
+                    <defaultValue>${commons.release.2.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Layout style (e.g. version)</description>
+                    <description>Subdirectory (instead of source/binaries)</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -273,13 +273,13 @@
                     <description>The suffix for the alternative release binary distro.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.layout</name> 
-                    <property>commons.release.3.layout</property>
+                    <name>commons.release.3.subdir</name> 
+                    <property>commons.release.3.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
-                    <defaultValue>${commons.release.3.layout}</defaultValue>
+                    <defaultValue>${commons.release.3.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Layout style (e.g. version)</description>
+                    <description>Subdirectory (instead of source/binaries)</description>
                 </parameter>
             </parameters>
         </mojo>
