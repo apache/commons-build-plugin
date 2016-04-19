@@ -26,6 +26,12 @@
 
   <body>
 
+    <release version="1.6" date="2016-04-24" description="Feature release">
+      <action dev="sebb" type="add">
+        Added new download-page subdir property: set this (e.g. to '1.2' or 'lang-1.2' etc) to override the default of binaries/source 
+      </action>
+    </release>
+
     <release version="1.5" date="2015-11-28" description="Feature and fix release">
       <action dev="ecki" type="update" issue="COMMONSSITE-81">
         commons-build-plugin README/CONTRIBUTING.md handle multi-modules
