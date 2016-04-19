@@ -42,11 +42,11 @@
         <url>http://svn.apache.org/viewvc/commons/proper/commons-build-plugin/trunk/</url>
     </scm>
     <distributionManagement>
-        <site>
-            <id>apache.website</id>
-            <name>Apache Commons ${commons.componentid} Site</name>
-            <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/${commons.componentid}</url>
-        </site>
+      <site>
+        <id>commons.site</id>
+        <name>Apache Commons Site SVN</name>
+        <url>scm:svn:${commons.scmPubUrl}</url>
+      </site>
     </distributionManagement>
     <developers>
         <developer>
@@ -172,5 +172,7 @@
         <commons.jira.pid>12310466&amp;amp;component=12312401</commons.jira.pid>
         <commons.release.version>${project.version}</commons.release.version>
         <commons.rc.version>RC1</commons.rc.version>
+        <commons.site.path>commons-build-plugin</commons.site.path>
+        <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${commons.site.path}</commons.scmPubUrl>
     </properties>
 </project>
