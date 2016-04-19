@@ -25,7 +25,7 @@
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-build-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.6-SNAPSHOT</version>
+    <version>1.6</version>
     <name>Apache Commons Build Plugin Maven Mojo</name>
     <description>
         Apache Maven Mojo for Apache Commons Build tasks.
@@ -37,9 +37,9 @@
     </issueManagement>
     <inceptionYear>2008</inceptionYear>
     <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/</developerConnection>
-        <url>http://svn.apache.org/viewvc/commons/proper/commons-build-plugin/trunk/</url>
+        <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/tags/commons-build-plugin-1.6/</connection>
+        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/tags/commons-build-plugin-1.6/</developerConnection>
+        <url>http://svn.apache.org/viewvc/commons/proper/commons-build-plugin/tags/commons-build-plugin-1.6/</url>
     </scm>
     <distributionManagement>
       <site>
