@@ -98,6 +98,7 @@
                     <li><b>commons.release.2.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                     <li><b>commons.release.2.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative 
                         binary release (some components use "-bin", others have no suffix)</li>
+                    <li><b>commons.release.2.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the dierctory for both.</li>
                 </ul>
                 </p>
                 <p>
@@ -108,6 +109,7 @@
                     <li><b>commons.release.3.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                     <li><b>commons.release.3.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative 
                         binary release (some components use "-bin", others have no suffix)</li>
+                    <li><b>commons.release.3.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the dierctory for both.</li>
                 </ul>
                 </p>                
                 <p>
