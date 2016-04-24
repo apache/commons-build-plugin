@@ -120,7 +120,7 @@
             <td>The suffix for the alternative release binary distro.<br/><strong>Default value is</strong>: <code>${commons.release.2.binary.suffix}</code>.</td>
           </tr>
           <tr>
-            <td><strong><a href="#commons.release.subdir">commons.release.2.subdir</a></strong></td>
+            <td><strong><a href="#commons.release.2.subdir">commons.release.2.subdir</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
             <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.2.subdir}</code>.</td>
@@ -145,7 +145,7 @@
             <td>The suffix for the alternative release binary distro.<br/><strong>Default value is</strong>: <code>${commons.release.3.binary.suffix}</code>.</td>
           </tr>
           <tr>
-            <td><strong><a href="#commons.release.subdir">commons.release.3.subdir</a></strong></td>
+            <td><strong><a href="#commons.release.3.subdir">commons.release.3.subdir</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
             <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.3.subdir}</code>.</td>
