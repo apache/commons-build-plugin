@@ -86,9 +86,10 @@ In this case, it is appropriate to start the first line of a commit with '(doc)'
 Submitting Changes
 ------------------
 
-* Small patches & typical bug-fixes do not require a CLA as they are covered by
-  [Apache License clause 5](https://www.apache.org/licenses/LICENSE-2.0.html#contributions),
-  but for anything else, sign and submit the Apache [Contributor License Agreement][cla] if you haven't already.
++ Sign and submit the Apache [Contributor License Agreement][cla] if you haven't already.
+  * Note that small patches & typical bug fixes do not require a CLA as
+    clause 5 of the [Apache License](https://www.apache.org/licenses/LICENSE-2.0.html#contributions)
+    covers them.
 + Push your changes to a topic branch in your fork of the repository.
 + Submit a _Pull Request_ to the corresponding repository in the `apache` organization.
   * Verify _Files Changed_ shows only your intended changes and does not
