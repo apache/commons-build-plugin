@@ -26,15 +26,18 @@
 
   <body>
 
-    <release version="1.6" date="2016-04-24" description="Feature release">
-      <action dev="sebb" type="add">
-        Added new download-page subdir property: set this (e.g. to '1.2' or 'lang-1.2' etc) to override the default of binaries/source 
-      </action>
+    <release version="1.7" date="2016-MM-DD" description="Feature release">
       <action dev="ggregory" type="add" issue="COMMONSSITE-90">
         Include badges in the README.md file. 
       </action>
       <action dev="ggregory" type="add" issue="COMMONSSITE-91">
         Build plugin does not pass the JIRA_ID property when generating README.md.
+      </action>
+    </release>
+
+    <release version="1.6" date="2016-04-24" description="Feature release">
+      <action dev="sebb" type="add">
+        Added new download-page subdir property: set this (e.g. to '1.2' or 'lang-1.2' etc) to override the default of binaries/source 
       </action>
     </release>
 
