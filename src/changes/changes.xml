@@ -33,6 +33,9 @@
       <action dev="ggregory" type="add" issue="COMMONSSITE-90">
         Include badges in the README.md file. 
       </action>
+      <action dev="ggregory" type="add" issue="COMMONSSITE-91">
+        Build plugin does not pass the JIRA_ID property when generating README.md.
+      </action>
     </release>
 
     <release version="1.5" date="2015-11-28" description="Feature and fix release">

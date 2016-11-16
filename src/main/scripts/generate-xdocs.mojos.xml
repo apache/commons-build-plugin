@@ -326,6 +326,15 @@
                     <description>The groupId of the project currently being built.</description>
                 </parameter>
                 <parameter>
+                    <name>commons.jira.id</name> 
+                    <property>commons.jira.id</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.jira.id}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The external JIRA id for the project (alphabetic, upper case)</description>
+                </parameter>
+                <parameter>
                     <name>commons.release.version</name>
                     <property>commons.release.version</property>
                     <required>true</required>
