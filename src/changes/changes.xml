@@ -30,6 +30,9 @@
       <action dev="sebb" type="add">
         Added new download-page subdir property: set this (e.g. to '1.2' or 'lang-1.2' etc) to override the default of binaries/source 
       </action>
+      <action dev="ggregory" type="add" issue="COMMONSSITE-90">
+        Include badges in the README.md file. 
+      </action>
     </release>
 
     <release version="1.5" date="2015-11-28" description="Feature and fix release">
