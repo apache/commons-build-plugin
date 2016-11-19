@@ -29,6 +29,7 @@
                 <include>NOTICE.txt</include>
                 <include>pom.xml</include>
                 <include>RELEASE-NOTES.txt</include>                
+                <include>README.md</include>                
             </includes>
         </fileSet>
         <fileSet>
