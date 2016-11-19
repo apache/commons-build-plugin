@@ -10,6 +10,13 @@ See:
    http://commons.apache.org/commons-build-plugin/
 
 
+VERSION 1.7 - 2016-11-18
+------------------------
+
+Changes since the last release
+1. Include badges in the README.md file.  Issue: COMMONSSITE-90. 
+2. Build plugin does not pass the JIRA_ID property when generating README.md.  Issue: COMMONSSITE-91. 
+
 VERSION 1.6 - 2016-04-24
 ------------------------
 
