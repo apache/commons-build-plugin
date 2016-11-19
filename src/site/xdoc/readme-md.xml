@@ -61,7 +61,8 @@
                 <p>
                 To generate a README.md, the following <a href="readme-md-mojo.html">properties</a>  are configured in the component's <code>pom.xml</code>
                 <ul>
-                    <li><b>commons.componentid</b> - Commons component id</li>
+                    <li><b>commons.componentid</b> - Commons component ID</li>
+                    <li><b>commons.jira.id</b> - Commons JIRA ID</li>
                     <li><b>commons.release.version</b> - The version number of the latest release of the component</li>
                 </ul>
                 </p>
