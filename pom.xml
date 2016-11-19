@@ -142,6 +142,12 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <!-- Version 2.2 causes an NPE with Maven 3.3.9 -->
+                <version>2.3</version>
+            </plugin>
         </plugins>
     </build>
     <reporting>
