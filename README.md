@@ -52,6 +52,10 @@ More information can be found on the [homepage](https://commons.apache.org/prope
 The [JavaDoc](https://commons.apache.org/proper/commons-commons-build-plugin/javadocs/api-release) can be browsed.
 Questions related to the usage of Apache Commons Build Plugin Maven Mojo should be posted to the [user mailing list][ml].
 
+[![Build Status](https://travis-ci.org/apache/commons-build-plugin.svg?branch=master)](https://travis-ci.org/apache/commons-build-plugin)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin)
+[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+
 Where can I get the latest release?
 -----------------------------------
 You can download source and binaries from our [download page](https://commons.apache.org/proper/commons-commons-build-plugin/download_commons-build-plugin.cgi).
