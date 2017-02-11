@@ -10,6 +10,12 @@ See:
    http://commons.apache.org/commons-build-plugin/
 
 
+VERSION 1.8 - 2017-MM-DD
+------------------------
+
+Changes since the last release
+1. Fix EOL-style so generate files have correct setting
+
 VERSION 1.7 - 2016-11-18
 ------------------------
 
