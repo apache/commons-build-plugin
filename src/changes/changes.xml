@@ -31,6 +31,9 @@
       </action>
     </release>
     <release version="1.7" date="2016-11-18" description="Feature release">
+      <action dev="britter" type="add" issue="COMMONSSITE-94">
+        Include JavaDoc badge in READM.md file.
+      </action>
       <action dev="ggregory" type="add" issue="COMMONSSITE-90">
         Include badges in the README.md file. 
       </action>
