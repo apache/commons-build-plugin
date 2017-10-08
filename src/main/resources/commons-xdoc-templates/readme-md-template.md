@@ -47,7 +47,6 @@
 [![Coverage Status](https://coveralls.io/repos/apache/@ARTIFACTCOREID@/badge.svg?branch=master)](https://coveralls.io/r/apache/@ARTIFACTCOREID@)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/badge.svg)](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/)
 [![Javadocs](https://javadoc.io/badge/@GROUPID@/@ARTIFACTCOREID@/@VERSION@.svg)](https://javadoc.io/doc/@GROUPID@/@ARTIFACTCOREID@/@VERSION@)
-[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 @DESCRIPTION@
 
