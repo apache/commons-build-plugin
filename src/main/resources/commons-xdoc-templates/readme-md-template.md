@@ -43,8 +43,8 @@
 @NAME@
 ===================
 
-[![Build Status](https://travis-ci.org/apache/@ARTIFACTCOREID@.svg?branch=master)](https://travis-ci.org/apache/@ARTIFACTCOREID@)
-[![Coverage Status](https://coveralls.io/repos/apache/@ARTIFACTCOREID@/badge.svg?branch=master)](https://coveralls.io/r/apache/@ARTIFACTCOREID@)
+[![Build Status](https://travis-ci.org/apache/@ARTIFACTCOREID@.svg)](https://travis-ci.org/apache/@ARTIFACTCOREID@)
+[![Coverage Status](https://coveralls.io/repos/apache/@ARTIFACTCOREID@/badge.svg)](https://coveralls.io/r/apache/@ARTIFACTCOREID@)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/badge.svg)](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/)
 [![Javadocs](https://javadoc.io/badge/@GROUPID@/@ARTIFACTCOREID@/@VERSION@.svg)](https://javadoc.io/doc/@GROUPID@/@ARTIFACTCOREID@/@VERSION@)
 
