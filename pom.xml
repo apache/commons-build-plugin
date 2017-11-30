@@ -20,7 +20,7 @@
     <parent>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-parent</artifactId>
-        <version>42</version>
+        <version>41</version>
     </parent>
     <artifactId>commons-build-plugin</artifactId>
     <packaging>maven-plugin</packaging>
@@ -36,9 +36,9 @@
     </issueManagement>
     <inceptionYear>2008</inceptionYear>
     <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/</developerConnection>
-        <url>http://svn.apache.org/viewvc/commons/proper/commons-build-plugin/trunk/</url>
+        <connection>scm:git:http://git-wip-us.apache.org/repos/asf/commons-build-plugin.git</connection>
+        <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/commons-build-plugin.git</developerConnection>
+        <url>https://git-wip-us.apache.org/repos/asf?p=commons-build-plugin.git</url>
     </scm>
     <distributionManagement>
       <site>
