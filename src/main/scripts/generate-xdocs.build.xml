@@ -160,6 +160,11 @@
         <echo level="${level}" message="commons.release.3.desc   : ${commons.release.3.desc}" />
         <echo level="${level}" message="commons.release.3.binary.suffix: ${commons.release.3.binary.suffix}" />
         <echo level="${level}" message="commons.release.3.subdir : ${commons.release.3.subdir}" />
+        <echo level="${level}" message="commons.release.4.version: ${commons.release.4.version}" />
+        <echo level="${level}" message="commons.release.4.name   : ${commons.release.4.name}" />
+        <echo level="${level}" message="commons.release.4.desc   : ${commons.release.4.desc}" />
+        <echo level="${level}" message="commons.release.4.binary.suffix: ${commons.release.4.binary.suffix}" />
+        <echo level="${level}" message="commons.release.4.subdir : ${commons.release.4.subdir}" />
         <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} ${commons.release.version} Download Page ***" />
@@ -173,6 +178,7 @@
         <antcall target="load-download-page-body-1"/>
         <antcall target="load-download-page-body-2"/>
         <antcall target="load-download-page-body-3"/>
+        <antcall target="load-download-page-body-4"/>
         <antcall target="load-download-page-foot"/>
 
         <!-- copy to either m1 or m2 xdoc directory -->
@@ -284,6 +290,36 @@
             </filterchain>
         </loadresource>
         <echo message="${download-page-body-3-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+
+    </target>
+
+    <target name="load-download-page-body-4" if="commons.release.4.version">
+      <echo  level="info" message="*** loading download-page body(4) file***" />
+
+      <condition property="BINDIR" value="${commons.release.4.subdir}" else="binaries">
+        <isset property="commons.release.4.subdir"/>
+      </condition>
+      <condition property="SRCDIR" value="${commons.release.4.subdir}" else="source">
+        <isset property="commons.release.4.subdir"/>
+      </condition>
+
+        <!-- Load Body -->
+        <loadresource property="download-page-body-4-xml">
+            <javaresource name="${commonsMojoXdocDir}/download-page-body.xml"/>
+            <filterchain>
+                <replacetokens>
+                    <token key="VERSION"       value="${commons.release.4.version}"/>
+                    <token key="RELDESC"       value="${commons.release.4.desc}"/>
+                    <token key="NAME"          value="${project.name}"/>
+                    <token key="ID"            value="${commons.componentid}"/>
+                    <token key="FINAL_NAME"    value="${commons.release.4.name}"/>
+                    <token key="BINARY-SUFFIX" value="${commons.release.4.binary.suffix}"/>
+                    <token key="BINDIR"        value="${BINDIR}"/>
+                    <token key="SRCDIR"        value="${SRCDIR}"/>
+                </replacetokens>
+            </filterchain>
+        </loadresource>
+        <echo message="${download-page-body-4-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
 
     </target>
 

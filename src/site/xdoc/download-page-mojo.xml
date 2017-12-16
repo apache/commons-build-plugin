@@ -150,6 +150,31 @@
             <td><code>-</code></td>
             <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.3.subdir}</code>.</td>
           </tr>
+          <!-- commons.release.4.* -->
+          <tr>
+            <td><strong><a href="#commons.release.4.version">commons.release.4.version</a></strong></td>
+            <td><code>String</code></td>
+            <td><code>-</code></td>
+            <td>The version of an alternative release of the project.<br/><strong>Default value is</strong>: <code>${commons.release.4.version}</code>.</td>
+          </tr>
+          <tr>
+            <td><strong><a href="#commons.release.4.desc">commons.release.4.desc</a></strong></td>
+            <td><code>String</code></td>
+            <td><code>-</code></td>
+            <td>Alternative Release Title or Description.<br/><strong>Default value is</strong>: <code>${commons.release.4.desc}</code>.</td>
+          </tr>
+          <tr>
+            <td><strong><a href="#commons.release.4.binary.suffix">commons.release.4.binary.suffix</a></strong></td>
+            <td><code>String</code></td>
+            <td><code>-</code></td>
+            <td>The suffix for the alternative release binary distro.<br/><strong>Default value is</strong>: <code>${commons.release.4.binary.suffix}</code>.</td>
+          </tr>
+          <tr>
+            <td><strong><a href="#commons.release.4.subdir">commons.release.4.subdir</a></strong></td>
+            <td><code>String</code></td>
+            <td><code>-</code></td>
+            <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.4.subdir}</code>.</td>
+          </tr>
           <!-- Miscellaneous -->
           <tr>
             <td><strong><a href="#messageLevel">messageLevel</a></strong></td>

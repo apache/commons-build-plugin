@@ -206,7 +206,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.name}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The nameof the alternative release of the project.</description>
+                    <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.desc</name> 
@@ -252,7 +252,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.name}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The nameof the alternative release of the project.</description>
+                    <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.desc</name> 
@@ -278,6 +278,52 @@
                     <required>false</required>
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.subdir}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Subdirectory (instead of source/binaries)</description>
+                </parameter>
+                <!-- commons.release.4.* -->
+                <parameter>
+                    <name>commons.release.4.version</name> 
+                    <property>commons.release.4.version</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.version}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The version of an alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.4.name</name> 
+                    <property>commons.release.4.name</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.4.desc</name> 
+                    <property>commons.release.4.desc</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.desc}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Alternative Release Title or Description.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.4.binary.suffix</name> 
+                    <property>commons.release.4.binary.suffix</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.binary.suffix}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The suffix for the alternative release binary distro.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.4.subdir</name> 
+                    <property>commons.release.4.subdir</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.subdir}</defaultValue>
                     <type>java.lang.String</type>
                     <description>Subdirectory (instead of source/binaries)</description>
                 </parameter>
