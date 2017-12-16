@@ -145,26 +145,31 @@
         <echo level="${level}" message="----- commons:download-page - Parameters - START -----" />
         <echo level="${level}" message="project.name             : ${project.name}" />
         <echo level="${level}" message="commons.componentid      : ${commons.componentid}" />
+    	<!-- Current release -->
         <echo level="${level}" message="commons.release.version  : ${commons.release.version}" />
         <echo level="${level}" message="commons.release.name     : ${commons.release.name}" />
         <echo level="${level}" message="commons.release.desc     : ${commons.release.desc}" />
         <echo level="${level}" message="commons.binary.suffix    : ${commons.binary.suffix}" />
         <echo level="${level}" message="commons.release.subdir   : ${commons.release.subdir}" />
+    	<!-- Release #2 -->
         <echo level="${level}" message="commons.release.2.version: ${commons.release.2.version}" />
         <echo level="${level}" message="commons.release.2.name   : ${commons.release.2.name}" />
         <echo level="${level}" message="commons.release.2.desc   : ${commons.release.2.desc}" />
         <echo level="${level}" message="commons.release.2.binary.suffix: ${commons.release.2.binary.suffix}" />
         <echo level="${level}" message="commons.release.2.subdir : ${commons.release.2.subdir}" />
+    	<!-- Release #3 -->
         <echo level="${level}" message="commons.release.3.version: ${commons.release.3.version}" />
         <echo level="${level}" message="commons.release.3.name   : ${commons.release.3.name}" />
         <echo level="${level}" message="commons.release.3.desc   : ${commons.release.3.desc}" />
         <echo level="${level}" message="commons.release.3.binary.suffix: ${commons.release.3.binary.suffix}" />
         <echo level="${level}" message="commons.release.3.subdir : ${commons.release.3.subdir}" />
+    	<!-- Release #4 -->
         <echo level="${level}" message="commons.release.4.version: ${commons.release.4.version}" />
         <echo level="${level}" message="commons.release.4.name   : ${commons.release.4.name}" />
         <echo level="${level}" message="commons.release.4.desc   : ${commons.release.4.desc}" />
         <echo level="${level}" message="commons.release.4.binary.suffix: ${commons.release.4.binary.suffix}" />
         <echo level="${level}" message="commons.release.4.subdir : ${commons.release.4.subdir}" />
+    	
         <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} ${commons.release.version} Download Page ***" />
