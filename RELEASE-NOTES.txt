@@ -10,11 +10,12 @@ See:
    http://commons.apache.org/commons-build-plugin/
 
 
-VERSION 1.8 - 2017-MM-DD
+VERSION 1.8 - 2018-MM-DD
 ------------------------
 
 Changes since the last release
-1. Fix EOL-style so generate files have correct setting
+1. Fix EOL-style so generated files have correct setting
+2. Change MD5 to SHA1
 
 VERSION 1.7 - 2016-11-18
 ------------------------
