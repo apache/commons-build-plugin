@@ -175,8 +175,9 @@
     </plugins>
   </reporting>
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <enforcer.skip>true</enforcer.skip>
+    <maven.compiler.source />
+    <maven.compiler.target />
     <commons.manifestfile/>
     <commons.componentid>commons-build-plugin</commons.componentid>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
