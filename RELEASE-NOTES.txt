@@ -15,7 +15,8 @@ VERSION 1.8 - 2018-MM-DD
 
 Changes since the last release
 1. Fix EOL-style so generated files have correct setting
-2. Change MD5 to SHA1
+2. Change download page from MD5 to SHA1
+3. Include JavaDoc badge in README.md file.
 
 VERSION 1.7 - 2016-11-18
 ------------------------
