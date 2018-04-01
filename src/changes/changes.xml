@@ -26,8 +26,11 @@
 
   <body>
     <release version="1.8" date="2017-MM-DD" description="Feature release">
+      <action dev="sebb" type="update">
+        Use sha1 signatures as opposed to md5 signatures in download page.
+      </action>
       <action dev="britter" type="add" issue="COMMONSSITE-94">
-        Include JavaDoc badge in READM.md file.
+        Include JavaDoc badge in README.md file.
       </action>
       <action dev="sebb" type="fix">
         Add eol-style:native otherwise generated files can cause commit errors
