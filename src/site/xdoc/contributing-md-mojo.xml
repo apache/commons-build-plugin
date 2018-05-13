@@ -15,10 +15,6 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<!--
-   $HeadURL: https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/site/xdoc/contributing-md-mojo.xml $
-   $Revision: 1619060 $
- -->
 <document>
   <properties>
     <title>commons:contributing-md</title>

@@ -16,9 +16,6 @@
 -->
 <!--
    Commons Build: Standard XDOC Pages Generation.
-
-   $HeadURL$
-   $Revision$ $Date$
  -->
 <project name="Commons Build: Standard XDOC Pages Generation" basedir=".">
 

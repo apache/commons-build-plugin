@@ -16,9 +16,6 @@
 -->
 <!--
    Commons Build:  Copy NOTICE and LICENSE files to -javadoc.jar.
-
-   $HeadURL$
-   $Revision$ $Date$
  -->
 <project name="Commons Build: Copy NOTICE and LICENSE files to -javadoc.jar" default="copy-javadoc-files" basedir=".">
 
