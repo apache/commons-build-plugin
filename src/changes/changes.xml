@@ -25,6 +25,8 @@
   </properties>
 
   <body>
+    <release version="1.9" date="2018-MM-DD" description="Feature release">
+    </release>
     <release version="1.8" date="2017-MM-DD" description="Feature release">
       <action dev="sebb" type="update">
         Use sha1 signatures as opposed to md5 signatures in download page.
