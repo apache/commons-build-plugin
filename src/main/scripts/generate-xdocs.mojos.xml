@@ -24,7 +24,7 @@
         <mojo>
             <goal>mail-page</goal>
             <call>mail-page</call>
-            <description>Apache Commons Build Mojo: Generate Mailing List page</description>
+            <description>Apache Commons Build Mojo: Generate Mailing List page.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -50,7 +50,7 @@
         <mojo>
             <goal>jira-page</goal>
             <call>jira-page</call>
-            <description>Apache Commons Build Mojo: Generate Issue Tracking page</description>
+            <description>Apache Commons Build Mojo: Generate Issue Tracking page.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -69,7 +69,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.id}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The external JIRA id for the project (alphabetic, upper case)</description>
+                    <description>The external JIRA id for the project (alphabetic, upper case.)</description>
                 </parameter>
                 <parameter>
                     <name>commons.jira.pid</name> 
@@ -78,14 +78,14 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.pid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The internal JIRA id for the project (numeric)</description>
+                    <description>The internal JIRA id for the project (numeric.)</description>
                 </parameter>
             </parameters>
         </mojo>
         <mojo>
             <goal>sandbox-jira-page</goal>
             <call>sandbox-jira-page</call>
-            <description>Apache Commons Build Mojo: Generate Sandbox Issue Tracking page</description>
+            <description>Apache Commons Build Mojo: Generate Sandbox Issue Tracking page.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -104,14 +104,14 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.componentid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The internal JIRA component id (numeric)</description>
+                    <description>The internal JIRA component id (numeric.)</description>
                 </parameter>
             </parameters>
         </mojo>
         <mojo>
             <goal>download-page</goal>
             <call>download-page</call>
-            <description>Apache Commons Build Mojo: Generate Download page</description>
+            <description>Apache Commons Build Mojo: Generate Download page.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -166,7 +166,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the binary distro.</description>
+                    <description>The suffix for the binary distribution.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.desc</name> 
@@ -184,7 +184,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries)</description>
+                    <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
@@ -221,7 +221,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distro.</description>
+                    <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.subdir</name> 
@@ -230,7 +230,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries)</description>
+                    <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -267,7 +267,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distro.</description>
+                    <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.subdir</name> 
@@ -276,7 +276,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries)</description>
+                    <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
@@ -313,7 +313,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distro.</description>
+                    <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.subdir</name> 
@@ -322,14 +322,14 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries)</description>
+                    <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
             </parameters>
         </mojo>
         <mojo>
             <goal>readme-md</goal>
             <call>readme-md</call>
-            <description>Apache Commons Build Mojo: Generate README.md</description>
+            <description>Apache Commons Build Mojo: Generate README.md.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -375,7 +375,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.id}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The external JIRA id for the project (alphabetic, upper case)</description>
+                    <description>The external JIRA id for the project (alphabetic, upper case.)</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.version</name>
@@ -400,7 +400,7 @@
         <mojo>
             <goal>contributing-md</goal>
             <call>contributing-md</call>
-            <description>Apache Commons Build Mojo: Generate CONTRIBUTING.md</description>
+            <description>Apache Commons Build Mojo: Generate CONTRIBUTING.md.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -428,7 +428,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.id}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The external JIRA id for the project (alphabetic, upper case)</description>
+                    <description>The external JIRA id for the project (alphabetic, upper case.)</description>
                 </parameter>
                 <parameter>
                     <name>commons.componentid</name> 
