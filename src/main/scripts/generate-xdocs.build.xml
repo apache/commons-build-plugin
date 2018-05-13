@@ -24,6 +24,11 @@
     <property name="commonsMojoTempDir" value="target/commons-generated-xdocs" />
     <property name="level"              value="info" />
 
+    <!-- ========== Generate All Pages ================================ -->
+
+    <target name="all" description="Generate all pages" depends="contributing-md, download-page, jira-page, mail-page, readme-md" />
+    <target name="all-sandbox" description="Generate all pages" depends="contributing-md, download-page, sandbox-jira-page, mail-page, readme-md" />
+
     <!-- ========== Generate Mailing List Page ================================ -->
 
     <target name="mail-page" description="Generate Mailing List page">

@@ -21,6 +21,9 @@
         <menu name="Build Plugin">
             <item name="Overview"                href="/index.html"/>
             <item name="Goals">
+                <item name="all"       href="/all.html">
+                    <item name="properties"      href="/all-mojo.html"/>
+                </item>
                 <item name="download-page"       href="/download-page.html">
                     <item name="properties"      href="/download-page-mojo.html"/>
                 </item>

@@ -40,6 +40,7 @@
             <p>
             Available Goals:
             <ul>
+                <li><a href="all.html">commons:all</a> - Generate all pages for the component's latest release</li>
                 <li><a href="download-page.html">commons:download-page</a> - Generate a Download page for the component's latest release</li>
                 <li><a href="mail-page.html">commons:mail-page</a> - Generate a custom <i>Mailing List</i> page for a component</li>
                 <li><a href="jira-page.html">commons:jira-page</a> - Generate a custom <i>JIRA Issue Tracking</i> page for a component</li>
