@@ -26,6 +26,12 @@
 
   <body>
     <release version="1.9" date="2018-MM-DD" description="Feature release">
+      <action dev="ggregory" type="fix">
+        Fix in src/main/resources/commons-xdoc-templates/readme-md-template.md for components that have a major version number in their artifact IDs.
+      </action>
+      <action dev="ggregory" type="add" issue="COMMONSSITE-109">
+        Target for creating all items for pre-release. First cut. Tested with Commons Collection git master.
+      </action>
     </release>
     <release version="1.8" date="2018-04-02" description="Feature release">
       <action dev="sebb" type="update">
