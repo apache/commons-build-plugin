@@ -30,7 +30,7 @@
         Fix in src/main/resources/commons-xdoc-templates/readme-md-template.md for components that have a major version number in their artifact IDs.
       </action>
       <action dev="ggregory" type="add" issue="COMMONSSITE-109">
-        Target for creating all items for pre-release. First cut. Tested with Commons Collection git master.
+        Add goal for creating all items for pre-release.
       </action>
     </release>
     <release version="1.8" date="2018-04-02" description="Feature release">
