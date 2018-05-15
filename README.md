@@ -49,7 +49,7 @@ Documentation
 -------------
 
 More information can be found on the [homepage](https://commons.apache.org/proper/commons-commons-build-plugin).
-The [JavaDoc](https://commons.apache.org/proper/commons-commons-build-plugin/javadocs/api-release) can be browsed.
+The [Javadoc](https://commons.apache.org/proper/commons-commons-build-plugin/javadocs/api-release) can be browsed.
 Questions related to the usage of Apache Commons Build Plugin Maven Mojo should be posted to the [user mailing list][ml].
 
 [![Build Status](https://travis-ci.org/apache/commons-build-plugin.svg?branch=trunk)](https://travis-ci.org/apache/commons-build-plugin)

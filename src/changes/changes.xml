@@ -38,7 +38,7 @@
         Use sha1 signatures as opposed to md5 signatures in download page.
       </action>
       <action dev="britter" type="add" issue="COMMONSSITE-94">
-        Include JavaDoc badge in README.md file.
+        Include Javadoc badge in README.md file.
       </action>
       <action dev="sebb" type="fix">
         Add eol-style:native otherwise generated files can cause commit errors
