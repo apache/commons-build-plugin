@@ -18,27 +18,27 @@
 <document>
 
     <properties>
-        <title>Generating All Pages</title>
+        <title>Generating All Sandbox Pages</title>
         <author email="dev@commons.apache.org">Apache Commons Documentation Team</author>
     </properties>
 
     <body>
 
 
-        <section name="commons:all" href="all">
+        <section name="commons:all-sandbox" href="all-sandbox">
 
             <subsection name="Overview">
                 <p>
-                The <code>commons:all</code> goal generates all pages for a <strong>Proper</strong> component
-                (for  <strong>Sandbox</strong> components use the <a href="all-sandbox.html">commons:all-sandbox</a> goal).
-                Execute the goal using the following command: <source>mvn commons:all</source>
+                The <code>commons:all-sandbox</code> goal generates all pages for a <strong>Sandbox</strong> component
+                (for  <strong>Proper</strong> components use the <a href="all.html">commons:all</a> goal).
+                Execute the goal using the following command: <source>mvn commons:all-sandbox</source>
                 </p>
                 <p>
                 This goal uses the following:
                 <ul>
-                    <li>The goal is mapped to the ant script/target using the <code>all</code> Mojo defintion in the 
+                    <li>The goal is mapped to the ant script/target using the <code>all-sandbox</code> Mojo defintion in the 
                         <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
-                    <li>Executes the <code>all</code> target in
+                    <li>Executes the <code>all-sandbox</code> target in
                         <a href="http://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
                         ant script</li>
                 </ul>

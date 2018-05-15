@@ -25,7 +25,252 @@
         <mojo>
             <goal>all</goal>
             <call>all</call>
-            <description>Apache Commons Build Mojo: Generate Mailing List page.</description>
+            <description>Apache Commons Build Mojo: Generate all pages.</description>
+            <requiresProject>true</requiresProject>
+            <parameters>
+                <parameter>
+                    <name>project.name</name>
+                    <property>project.name</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>project.groupId</name>
+                    <property>project.groupId</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.groupId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The groupId of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>project.artifactId</name>
+                    <property>project.artifactId</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.artifactId}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The artifactId of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.jira.id</name>
+                    <property>commons.jira.id</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.jira.id}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The external JIRA id for the project (alphabetic, upper case.)</description>
+                </parameter>
+                <parameter>
+                    <name>commons.componentid</name> 
+                    <property>commons.componentid</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${commons.componentid}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The commons component id.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.jira.pid</name> 
+                    <property>commons.jira.pid</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.jira.pid}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The internal JIRA id for the project (numeric.)</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.version</name> 
+                    <property>commons.release.version</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.version}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The version of the latest release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.name</name> 
+                    <property>commons.release.name</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the latest release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.binary.suffix</name> 
+                    <property>commons.binary.suffix</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.binary.suffix}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The suffix for the binary distribution.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.desc</name> 
+                    <property>commons.release.desc</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.desc}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Release Title or Description.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.subdir</name> 
+                    <property>commons.release.subdir</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.subdir}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Subdirectory (instead of source/binaries.)</description>
+                </parameter>
+                <!-- commons.release.2.* -->
+                <parameter>
+                    <name>commons.release.2.version</name> 
+                    <property>commons.release.2.version</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.2.version}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The version of an alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.2.name</name> 
+                    <property>commons.release.2.name</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.2.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.2.desc</name> 
+                    <property>commons.release.2.desc</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.2.desc}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Alternative Release Title or Description.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.2.binary.suffix</name> 
+                    <property>commons.release.2.binary.suffix</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.2.binary.suffix}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The suffix for the alternative release binary distribution.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.2.subdir</name> 
+                    <property>commons.release.2.subdir</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.2.subdir}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Subdirectory (instead of source/binaries.)</description>
+                </parameter>
+                <!-- commons.release.3.* -->
+                <parameter>
+                    <name>commons.release.3.version</name> 
+                    <property>commons.release.3.version</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.3.version}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The version of an alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.3.name</name> 
+                    <property>commons.release.3.name</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.3.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.3.desc</name> 
+                    <property>commons.release.3.desc</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.3.desc}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Alternative Release Title or Description.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.3.binary.suffix</name> 
+                    <property>commons.release.3.binary.suffix</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.3.binary.suffix}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The suffix for the alternative release binary distribution.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.3.subdir</name> 
+                    <property>commons.release.3.subdir</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.3.subdir}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Subdirectory (instead of source/binaries.)</description>
+                </parameter>
+                <!-- commons.release.4.* -->
+                <parameter>
+                    <name>commons.release.4.version</name> 
+                    <property>commons.release.4.version</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.version}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The version of an alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.4.name</name> 
+                    <property>commons.release.4.name</property>
+                    <required>true</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the alternative release of the project.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.4.desc</name> 
+                    <property>commons.release.4.desc</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.desc}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Alternative Release Title or Description.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.4.binary.suffix</name> 
+                    <property>commons.release.4.binary.suffix</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.binary.suffix}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The suffix for the alternative release binary distribution.</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.4.subdir</name> 
+                    <property>commons.release.4.subdir</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.subdir}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Subdirectory (instead of source/binaries.)</description>
+                </parameter>
+            </parameters>
+        </mojo>
+        <mojo>
+            <goal>all-sandbox</goal>
+            <call>all-sandbox</call>
+            <description>Apache Commons Build Mojo: Generate all sandbox pages.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
