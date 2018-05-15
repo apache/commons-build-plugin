@@ -33,7 +33,7 @@
         Add goal for creating all items for pre-release.
       </action>
       <action dev="ggregory" type="add">
-        Fix README.md generation typo: 'JavaDoc' -> 'Javadoc'.
+        Fix README.md generation typo: 'Javadoc' -> 'Javadoc'.
       </action>
     </release>
     <release version="1.8" date="2018-04-02" description="Feature release">
