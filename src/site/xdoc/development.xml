@@ -27,10 +27,12 @@
         <section name="Help with Maven Ant Mojos">
 
             <p>
-            The best sources of information are
-            <a href="http://maven.apache.org/guides/plugin/guide-ant-plugin-development.html">Developing Ant Plugins for Maven 2.x</a>
-            and <a href="http://www.sonatype.com/book/chapter-11.html">Maven: The Definitive Guide: Chapter 11 Writing Plugins</a>.
+            The best sources of information are:           
             </p>
+            <ul>
+              <li><a href="https://maven.apache.org/guides/mini/guide-using-ant.html">Apache Maven Guide to using Ant with Maven</a></li>
+              <li><a href="https://maven.apache.org/plugin-developers/index.html">Apache Maven Plugin Developers Center</a></li>
+            </ul>
 
         </section>
 
