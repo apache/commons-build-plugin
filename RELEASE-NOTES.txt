@@ -13,7 +13,7 @@ See:
 VERSION 1.8 - 2018-04-02
 ------------------------
 
-Changes since the last release
+Changes since the last release:
 1. Fix EOL-style so generated files have correct setting
 2. Change download page from MD5 to SHA1
 3. Include Javadoc badge in README.md file.
@@ -21,7 +21,7 @@ Changes since the last release
 VERSION 1.7 - 2016-11-18
 ------------------------
 
-Changes since the last release
+Changes since the last release:
 1. Include badges in the README.md file.  Issue: COMMONSSITE-90. 
 2. Build plugin does not pass the JIRA_ID property when generating README.md.  Issue: COMMONSSITE-91. 
 
@@ -34,7 +34,7 @@ Changes since the last release
 VERSION 1.5 - 2015-11-28
 ------------------------
 
-Changes since the last release
+Changes since the last release:
 1. Added new goals: contributing-md and readme-md - to build Markdown formatted intro files for GitHub.
 2. Download Page - Better describes KEYS file (and uses https links) 
 3. Use Apache Commons rather than just Commons
@@ -42,7 +42,7 @@ Changes since the last release
 VERSION 1.4 - 2012-03-06
 ------------------------
 
-Changes since the last release
+Changes since the last release:
 1. Fix announce mod_mbox link
 2. Mailing List Page - Make it clear that you have to be subscribed to post.
 3. COMMONSSITE-66 - Add support for a "commons.release.3" set of properties to offer a 3rd download option.
@@ -50,7 +50,7 @@ Changes since the last release
 VERSION 1.3 - 2010-04-15
 ------------------------
 
-Changes since the last release
+Changes since the last release:
 1. Add facility to generate custom mailing list page
 2. Add new ${commons.release.name} property for the download page generation
 
@@ -58,26 +58,21 @@ Changes since the last release
 VERSION 1.2 - 2010-02-23
 ------------------------
 
-Changes since the last release
+Changes since the last release:
 1. Improve the L&F of the download page
 2. Add facility to add a second version to the download page
 3. Upgrade to commons-parent version 12
 
-
-
 VERSION 1.1 - 2008-07-16
 ------------------------
 
-Changes since the last release
+Changes since the last release:
 1. Upgrade to commons-parent version 10
 2. Add assembly descriptors
 3. Minor documentation corrections
 4. COMMONSSITE-36 - plugin won't build because of missing OSGi manifest file.
 5. COOMONSSITE-35 - Upgrade to Ant 1.7.1 (fixes two problems/bugs when generating
                     Jira/download pages).
-
-
-
 
 VERSION 1.0 - 2008-02-24
 ------------------------
