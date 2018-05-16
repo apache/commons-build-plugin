@@ -10,6 +10,14 @@ See:
    http://commons.apache.org/commons-build-plugin/
 
 
+VERSION 1.9 - 2018-04-DD
+------------------------
+
+Changes since the last release:
+1. Fix in src/main/resources/commons-xdoc-templates/readme-md-template.md for components that have a major version number in their artifact IDs.
+2. Add goal for creating all items for pre-release. 
+3. Fix README.md generation typo: 'Javadoc' -> 'Javadoc'.
+
 VERSION 1.8 - 2018-04-02
 ------------------------
 
