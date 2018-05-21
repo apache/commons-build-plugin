@@ -35,6 +35,9 @@
       <action dev="ggregory" type="add">
         Fix README.md generation typo: 'Javadoc' -> 'Javadoc'.
       </action>
+      <action dev="ggregory" type="update">
+        Change the Maven goal prefix from "commons" to "commons-build".
+      </action>
     </release>
     <release version="1.8" date="2018-04-02" description="Feature release">
       <action dev="sebb" type="update">

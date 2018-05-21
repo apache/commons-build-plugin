@@ -107,7 +107,7 @@
         </dependencies>
 
         <configuration>
-          <goalPrefix>commons</goalPrefix>
+          <goalPrefix>commons-build</goalPrefix>
         </configuration>
 
         <executions>
