@@ -153,6 +153,18 @@
   </build>
   <reporting>
     <plugins>
+      <plugin>
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+        <configuration>
+          <useDefaultExcludes>true</useDefaultExcludes>
+          <excludes>
+            <!-- template files which will be inserted into the middle of resulting page -->
+            <exclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</exclude>
+            <exclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
 
       <!-- exclude surefire report -->
       <plugin>
