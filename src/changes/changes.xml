@@ -30,7 +30,10 @@
         Fix in src/main/resources/commons-xdoc-templates/readme-md-template.md for components that have a major version number in their artifact IDs.
       </action>
       <action dev="ggregory" type="add" issue="COMMONSSITE-109">
-        Add goal for creating all items for pre-release.
+        Add a goal for creating all items for pre-release.
+      </action>
+      <action dev="ggregory" type="add" issue="COMMONSSITE-116">
+        Add a goal for creating the NOTICE.txt file.
       </action>
       <action dev="ggregory" type="add">
         Fix README.md generation typo: 'JavaDoc' -> 'Javadoc'.

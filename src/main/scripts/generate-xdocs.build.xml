@@ -26,8 +26,8 @@
 
     <!-- ========== Generate All Pages ================================ -->
 
-    <target name="all" description="Generate all pages" depends="contributing-md, download-page, jira-page, mail-page, readme-md" />
-    <target name="all-sandbox" description="Generate all sandbox pages" depends="contributing-md, download-page, sandbox-jira-page, mail-page, readme-md" />
+    <target name="all" description="Generate all pages" depends="contributing-md, download-page, jira-page, mail-page, readme-md, notice-txt" />
+    <target name="all-sandbox" description="Generate all sandbox pages" depends="contributing-md, download-page, sandbox-jira-page, mail-page, readme-md, notice-txt" />
 
     <!-- ========== Generate Mailing List Page ================================ -->
 
@@ -418,6 +418,40 @@
              <filter  token="DESCRIPTION"    value="${project.description}"/>
              <filter  token="ID"             value="${commons.componentid}"/>
             </filterset>
+        </copy>
+
+    </target>
+
+    <!-- ========== Generate NOTICE.txt file ================================ -->
+
+    <target name="notice-txt" description="Generate NOTICE.txt">
+
+        <echo level="${level}" message="----- commons:notice-txt - Parameters - START -----" />
+        <echo level="${level}" message="project.inceptionYear     : ${project.inceptionYear}" />
+        <echo level="${level}" message="----- commons:readme-md - Parameters - END   -----" />
+
+    	<script manager="javax" language="javascript"><![CDATA[
+    		project.setProperty("commons.currentYear", new Date().getFullYear());
+    	]]></script>
+        	
+        <echo level="${level}" message="commons.currentYear       : ${commons.currentYear}" />
+        <echo level="info" message="*** Generating ${project.name} NOTICE.txt ***" />
+
+        <!-- Create a temporary directory to load the template files into -->
+        <mkdir dir="${commonsMojoTempDir}"/>
+
+        <!-- Load the notice-txt template from mojo resources to temp directory -->
+        <loadresource property="notice-txt">
+            <javaresource name="${commonsMojoXdocDir}/notice-txt-template.txt"/>
+        </loadresource>
+        <echo message="${notice-txt}" file="${commonsMojoTempDir}/notice-txt-template.txt" append="false" />
+
+        <!-- Copy the notice-txt template filtering to replace properties -->
+        <copy file="${commonsMojoTempDir}/notice-txt-template.txt" tofile="NOTICE.txt" overwrite="true">
+          <filterset>
+            <filter  token="INCEPTIONYEAR"  value="${project.inceptionYear}"/>
+            <filter  token="CURRENTYEAR"    value="${commons.currentYear}"/>
+          </filterset>
         </copy>
 
     </target>

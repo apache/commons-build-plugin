@@ -42,6 +42,9 @@
                 <item name="readme-md"           href="/readme-md.html">
                     <item name="properties"      href="/readme-md-mojo.html"/>
                 </item>
+                <item name="notice-txt"          href="/notice-txt.html">
+                    <item name="properties"      href="/notice-txt-mojo.html"/>
+                </item>
                 <item name="contributing-md"     href="/contributing-md.html">
                     <item name="properties"      href="/contributing-md-mojo.html"/>
                 </item>

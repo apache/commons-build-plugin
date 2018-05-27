@@ -889,6 +889,32 @@
             </parameters>
         </mojo>
         <mojo>
+            <goal>notice-txt</goal>
+            <call>notice-txt</call>
+            <description>Apache Commons Build Mojo: Generate NOTICE.txt.</description>
+            <requiresProject>true</requiresProject>
+            <parameters>
+                <parameter>
+                    <name>project.name</name>
+                    <property>project.name</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.name}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The name of the project currently being built.</description>
+                </parameter>
+                <parameter>
+                    <name>project.inceptionYear</name>
+                    <property>project.inceptionYear</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.inceptionYear}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The project inception year.</description>
+                </parameter>
+            </parameters>
+        </mojo>
+        <mojo>
             <goal>contributing-md</goal>
             <call>contributing-md</call>
             <description>Apache Commons Build Mojo: Generate CONTRIBUTING.md.</description>
