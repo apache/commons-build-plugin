@@ -61,7 +61,7 @@
                     <required>true</required>
                     <readonly>true</readonly>
                     <expression>${project.inceptionYear}</expression>
-                    <type>java.lang.Object</type>
+                    <type>java.lang.String</type>
                     <description>The inception year of the project currently being built.</description>
                 </parameter>
                 <parameter>
@@ -918,7 +918,7 @@
                     <required>true</required>
                     <readonly>true</readonly>
                     <expression>${project.inceptionYear}</expression>
-                    <type>java.lang.Object</type>
+                    <type>java.lang.String</type>
                     <description>The inception year of the project currently being built.</description>
                 </parameter>
             </parameters>
