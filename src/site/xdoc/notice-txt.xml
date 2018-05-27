@@ -57,7 +57,7 @@
                 <p>
                 To generate a README.md, the following <a href="notice-txt-mojo.html">properties</a>  are configured in the component's <code>pom.xml</code>
                 <ul>
-                    <li><b>inceptionYear</b> - The year of the project's inception, specified with 4 digits. This value is used when generating copyright notices as well as being informational.</li>
+                    <li><b>project.inceptionYear</b> - The year of the project's inception, specified with 4 digits. This value is used when generating copyright notices as well as being informational.</li>
                 </ul>
                 </p>
                 <p>

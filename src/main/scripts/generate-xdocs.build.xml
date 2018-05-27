@@ -427,6 +427,7 @@
     <target name="notice-txt" description="Generate NOTICE.txt">
 
         <echo level="${level}" message="----- commons:notice-txt - Parameters - START -----" />
+        <echo level="${level}" message="project.name              : ${project.name}" />
         <echo level="${level}" message="project.inceptionYear     : ${project.inceptionYear}" />
         <echo level="${level}" message="----- commons:readme-md - Parameters - END   -----" />
 
@@ -449,6 +450,7 @@
         <!-- Copy the notice-txt template filtering to replace properties -->
         <copy file="${commonsMojoTempDir}/notice-txt-template.txt" tofile="NOTICE.txt" overwrite="true">
           <filterset>
+            <filter  token="NAME"           value="${project.name}"/>
             <filter  token="INCEPTIONYEAR"  value="${project.inceptionYear}"/>
             <filter  token="CURRENTYEAR"    value="${commons.currentYear}"/>
           </filterset>

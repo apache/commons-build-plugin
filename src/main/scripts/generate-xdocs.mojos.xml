@@ -910,7 +910,7 @@
                     <readonly>true</readonly>
                     <defaultValue>${project.inceptionYear}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The project inception year.</description>
+                    <description>The inception year of the project currently being built.</description>
                 </parameter>
             </parameters>
         </mojo>
