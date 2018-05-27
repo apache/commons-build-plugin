@@ -56,6 +56,15 @@
                     <description>The artifactId of the project currently being built.</description>
                 </parameter>
                 <parameter>
+                    <name>project.inceptionYear</name>
+                    <property>project.inceptionYear</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <expression>${project.inceptionYear}</expression>
+                    <type>java.lang.Object</type>
+                    <description>The inception year of the project currently being built.</description>
+                </parameter>
+                <parameter>
                     <name>commons.jira.id</name>
                     <property>commons.jira.id</property>
                     <required>true</required>
@@ -908,8 +917,8 @@
                     <property>project.inceptionYear</property>
                     <required>true</required>
                     <readonly>true</readonly>
-                    <defaultValue>${project.inceptionYear}</defaultValue>
-                    <type>java.lang.String</type>
+                    <expression>${project.inceptionYear}</expression>
+                    <type>java.lang.Object</type>
                     <description>The inception year of the project currently being built.</description>
                 </parameter>
             </parameters>
