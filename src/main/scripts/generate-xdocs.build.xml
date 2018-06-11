@@ -379,6 +379,7 @@
         <echo level="${level}" message="project.name              : ${project.name}" />
         <echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
         <echo level="${level}" message="project.groupId           : ${project.groupId}" />
+        <echo level="${level}" message="project.description       : ${project.description}" />
         <echo level="${level}" message="commons.jira.id           : ${commons.jira.id}" />
         <echo level="${level}" message="commons.release.version   : ${commons.release.version}" />
         <echo level="${level}" message="commons.componentid       : ${commons.componentid}" />

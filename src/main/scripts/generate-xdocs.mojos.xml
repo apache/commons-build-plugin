@@ -38,6 +38,15 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
+                    <name>project.description</name>
+                    <property>project.description</property>
+                    <required>true</required>
+                    <readonly>true</readonly>
+                    <defaultValue>${project.description}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>A description of the project currently being built.</description>
+                </parameter>
+                <parameter>
                     <name>project.groupId</name>
                     <property>project.groupId</property>
                     <required>true</required>
