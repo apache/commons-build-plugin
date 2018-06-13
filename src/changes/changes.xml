@@ -41,6 +41,9 @@
       <action dev="ggregory" type="update">
         Change the Maven goal prefix from "commons" to "commons-build".
       </action>
+      <action dev="ggregory" type="update">
+        Update platform requirement from Java 7 to Java 8.
+      </action>
     </release>
     <release version="1.8" date="2018-04-02" description="Feature release">
       <action dev="sebb" type="update">
