@@ -19,6 +19,7 @@ Changes since the last release:
 3. Fix README.md generation typo: 'JavaDoc' -> 'Javadoc'.
 4. Change the Maven goal prefix from "commons" to "commons-build".
 5. Add a goal for generating the NOTICE.txt file.
+6. Update platform requirement from Java 7 to Java 8.
 
 VERSION 1.8 - 2018-04-02
 ------------------------
