@@ -10,7 +10,7 @@ See:
    http://commons.apache.org/commons-build-plugin/
 
 
-VERSION 1.9 - 2018-05-DD
+VERSION 1.9 - 2018-06-16
 ------------------------
 
 Changes since the last release:
