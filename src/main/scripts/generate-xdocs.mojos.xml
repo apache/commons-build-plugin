@@ -695,6 +695,15 @@
                     <type>java.lang.String</type>
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
+                <parameter>
+                    <name>commons.release.hash</name> 
+                    <property>commons.release.hash</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.hash}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Type of hash (lower case, e.g. sha256)</description>
+                </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
                     <name>commons.release.2.version</name> 
@@ -740,6 +749,15 @@
                     <defaultValue>${commons.release.2.subdir}</defaultValue>
                     <type>java.lang.String</type>
                     <description>Subdirectory (instead of source/binaries.)</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.2.hash</name> 
+                    <property>commons.release.2.hash</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.2.hash}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Type of hash (lower case, e.g. sha256)</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -787,6 +805,15 @@
                     <type>java.lang.String</type>
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
+                <parameter>
+                    <name>commons.release.3.hash</name> 
+                    <property>commons.release.3.hash</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.3.hash}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Type of hash (lower case, e.g. sha256)</description>
+                </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
                     <name>commons.release.4.version</name> 
@@ -832,6 +859,15 @@
                     <defaultValue>${commons.release.4.subdir}</defaultValue>
                     <type>java.lang.String</type>
                     <description>Subdirectory (instead of source/binaries.)</description>
+                </parameter>
+                <parameter>
+                    <name>commons.release.4.hash</name> 
+                    <property>commons.release.4.hash</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.release.4.hash}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>Type of hash (lower case, e.g. sha256)</description>
                 </parameter>
             </parameters>
         </mojo>

@@ -142,6 +142,14 @@
 
     <!-- ========== Generate Download Page ==================================== -->
 
+    <scriptdef language="javascript" name="upper">
+        <attribute name="string" /> 
+        <attribute name="to" />
+
+        project.setProperty( attributes.get( "to" ),
+                             attributes.get( "string" ).toUpperCase() );
+    </scriptdef>
+
     <target name="download-page" description="Generate Download page">
 
         <echo level="${level}" message="----- commons:download-page - Parameters - START -----" />
@@ -153,24 +161,28 @@
         <echo level="${level}" message="commons.release.desc     : ${commons.release.desc}" />
         <echo level="${level}" message="commons.binary.suffix    : ${commons.binary.suffix}" />
         <echo level="${level}" message="commons.release.subdir   : ${commons.release.subdir}" />
+        <echo level="${level}" message="commons.release.hash     : ${commons.release.hash}" />
     	<!-- Release #2 -->
         <echo level="${level}" message="commons.release.2.version: ${commons.release.2.version}" />
         <echo level="${level}" message="commons.release.2.name   : ${commons.release.2.name}" />
         <echo level="${level}" message="commons.release.2.desc   : ${commons.release.2.desc}" />
         <echo level="${level}" message="commons.release.2.binary.suffix: ${commons.release.2.binary.suffix}" />
         <echo level="${level}" message="commons.release.2.subdir : ${commons.release.2.subdir}" />
+        <echo level="${level}" message="commons.release.2.hash   : ${commons.release.2.hash}" />
     	<!-- Release #3 -->
         <echo level="${level}" message="commons.release.3.version: ${commons.release.3.version}" />
         <echo level="${level}" message="commons.release.3.name   : ${commons.release.3.name}" />
         <echo level="${level}" message="commons.release.3.desc   : ${commons.release.3.desc}" />
         <echo level="${level}" message="commons.release.3.binary.suffix: ${commons.release.3.binary.suffix}" />
         <echo level="${level}" message="commons.release.3.subdir : ${commons.release.3.subdir}" />
+        <echo level="${level}" message="commons.release.3.hash   : ${commons.release.3.hash}" />
     	<!-- Release #4 -->
         <echo level="${level}" message="commons.release.4.version: ${commons.release.4.version}" />
         <echo level="${level}" message="commons.release.4.name   : ${commons.release.4.name}" />
         <echo level="${level}" message="commons.release.4.desc   : ${commons.release.4.desc}" />
         <echo level="${level}" message="commons.release.4.binary.suffix: ${commons.release.4.binary.suffix}" />
         <echo level="${level}" message="commons.release.4.subdir : ${commons.release.4.subdir}" />
+        <echo level="${level}" message="commons.release.4.hash   : ${commons.release.4.hash}" />
     	
         <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
 
@@ -197,12 +209,19 @@
     <target name="load-download-page-head" if="commons.release.version">
         <echo  level="info" message="*** loading download-page header file ***" />
 
+        <condition property="HASHLC" value="${commons.release.hash}" else="sha256">
+          <isset property="commons.release.hash"/>
+        </condition>
+        <upper string="${HASHLC}" to="HASHUC" />
+
         <!-- Load header -->
         <loadresource property="download-page-head-xml">
             <javaresource name="${commonsMojoXdocDir}/download-page-head.xml"/>
             <filterchain>
                 <replacetokens>
                     <token key="NAME" value="${project.name}"/>
+                    <token key="HASHUC"        value="${HASHUC}"/>
+                    <token key="HASHLC"        value="${HASHLC}"/>
                 </replacetokens>
             </filterchain>
         </loadresource>
@@ -213,12 +232,17 @@
     <target name="load-download-page-body-1" if="commons.release.version">
         <echo  level="info" message="*** loading download-page body(1) file***" />
 
+        <!-- Set up the defaults -->
         <condition property="BINDIR" value="${commons.release.subdir}" else="binaries">
           <isset property="commons.release.subdir"/>
         </condition>
         <condition property="SRCDIR" value="${commons.release.subdir}" else="source">
           <isset property="commons.release.subdir"/>
         </condition>
+        <condition property="HASHLC" value="${commons.release.hash}" else="sha256">
+          <isset property="commons.release.hash"/>
+        </condition>
+        <upper string="${HASHLC}" to="HASHUC" />
 
         <!-- Load Body -->
         <loadresource property="download-page-body-1-xml">
@@ -233,6 +257,8 @@
                     <token key="BINARY-SUFFIX" value="${commons.binary.suffix}"/>
                     <token key="BINDIR"        value="${BINDIR}"/>
                     <token key="SRCDIR"        value="${SRCDIR}"/>
+                    <token key="HASHUC"        value="${HASHUC}"/>
+                    <token key="HASHLC"        value="${HASHLC}"/>
                 </replacetokens>
             </filterchain>
         </loadresource>
@@ -243,12 +269,17 @@
     <target name="load-download-page-body-2" if="commons.release.2.version">
       <echo  level="info" message="*** loading download-page body(2) file***" />
 
+      <!-- Set up the defaults -->
       <condition property="BINDIR" value="${commons.release.2.subdir}" else="binaries">
         <isset property="commons.release.2.subdir"/>
       </condition>
       <condition property="SRCDIR" value="${commons.release.2.subdir}" else="source">
         <isset property="commons.release.2.subdir"/>
       </condition>
+      <condition property="HASHLC" value="${commons.release.2.hash}" else="sha256">
+        <isset property="commons.release.2.hash"/>
+      </condition>
+      <upper string="${HASHLC}" to="HASHUC" />
 
         <!-- Load Body -->
         <loadresource property="download-page-body-2-xml">
@@ -263,6 +294,8 @@
                     <token key="BINARY-SUFFIX" value="${commons.release.2.binary.suffix}"/>
                     <token key="BINDIR"        value="${BINDIR}"/>
                     <token key="SRCDIR"        value="${SRCDIR}"/>
+                    <token key="HASHUC"        value="${HASHUC}"/>
+                    <token key="HASHLC"        value="${HASHLC}"/>
                 </replacetokens>
             </filterchain>
         </loadresource>
@@ -273,12 +306,17 @@
     <target name="load-download-page-body-3" if="commons.release.3.version">
       <echo  level="info" message="*** loading download-page body(3) file***" />
 
+      <!-- Set up the defaults -->
       <condition property="BINDIR" value="${commons.release.3.subdir}" else="binaries">
         <isset property="commons.release.3.subdir"/>
       </condition>
       <condition property="SRCDIR" value="${commons.release.3.subdir}" else="source">
         <isset property="commons.release.3.subdir"/>
       </condition>
+      <condition property="HASHLC" value="${commons.release.3.hash}" else="sha256">
+        <isset property="commons.release.3.hash"/>
+      </condition>
+      <upper string="${HASHLC}" to="HASHUC" />
 
         <!-- Load Body -->
         <loadresource property="download-page-body-3-xml">
@@ -293,6 +331,8 @@
                     <token key="BINARY-SUFFIX" value="${commons.release.3.binary.suffix}"/>
                     <token key="BINDIR"        value="${BINDIR}"/>
                     <token key="SRCDIR"        value="${SRCDIR}"/>
+                    <token key="HASHUC"        value="${HASHUC}"/>
+                    <token key="HASHLC"        value="${HASHLC}"/>
                 </replacetokens>
             </filterchain>
         </loadresource>
@@ -303,12 +343,17 @@
     <target name="load-download-page-body-4" if="commons.release.4.version">
       <echo  level="info" message="*** loading download-page body(4) file***" />
 
+      <!-- Set up the defaults -->
       <condition property="BINDIR" value="${commons.release.4.subdir}" else="binaries">
         <isset property="commons.release.4.subdir"/>
       </condition>
       <condition property="SRCDIR" value="${commons.release.4.subdir}" else="source">
         <isset property="commons.release.4.subdir"/>
       </condition>
+      <condition property="HASHLC" value="${commons.release.4.hash}" else="sha256">
+        <isset property="commons.release.4.hash"/>
+      </condition>
+      <upper string="${HASHLC}" to="HASHUC" />
 
         <!-- Load Body -->
         <loadresource property="download-page-body-4-xml">
@@ -323,6 +368,8 @@
                     <token key="BINARY-SUFFIX" value="${commons.release.4.binary.suffix}"/>
                     <token key="BINDIR"        value="${BINDIR}"/>
                     <token key="SRCDIR"        value="${SRCDIR}"/>
+                    <token key="HASHUC"        value="${HASHUC}"/>
+                    <token key="HASHLC"        value="${HASHLC}"/>
                 </replacetokens>
             </filterchain>
         </loadresource>

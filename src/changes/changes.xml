@@ -25,6 +25,11 @@
   </properties>
 
   <body>
+    <release version="1.10" date="2018-??-??" description="Feature release">
+      <action dev="sebb" type="update">
+        Use SHA256 signatures as the default in the download page.
+      </action>
+    </release>
     <release version="1.9" date="2018-06-16" description="Feature release">
       <action dev="ggregory" type="fix">
         Fix in src/main/resources/commons-xdoc-templates/readme-md-template.md for components that have a major version number in their artifact IDs.
