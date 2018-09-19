@@ -25,13 +25,13 @@
     <body>
 
 
-        <section name="commons:jira-page" href="jira-page">
+        <section name="commons-build:jira-page" href="jira-page">
 
             <subsection name="Overview">
                 <p>
-                The <code>commons:jira-page</code> goal generates a custom JIRA Issue Tracking page for a <strong>Proper</strong> component
-                (for  <strong>Sandbox</strong> components use the <a href="sandbox-jira-page.html">commons:sandbox-jira-page</a> goal).
-                Execute the goal using the following command: <source>mvn commons:jira-page</source>
+                The <code>commons-build:jira-page</code> goal generates a custom JIRA Issue Tracking page for a <strong>Proper</strong> component
+                (for  <strong>Sandbox</strong> components use the <a href="sandbox-jira-page.html">commons-build:sandbox-jira-page</a> goal).
+                Execute the goal using the following command: <source>mvn commons-build:jira-page</source>
                 </p>
 
                 <p>

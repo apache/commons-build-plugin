@@ -25,12 +25,12 @@
     <body>
 
 
-        <section name="commons:mail-page" href="mail-page">
+        <section name="commons-build:mail-page" href="mail-page">
 
             <subsection name="Overview">
                 <p>
-                The <code>commons:mail-page</code> goal generates a custom Mailing List page for a component
-                Execute the goal using the following command: <source>mvn commons:mail-page</source>
+                The <code>commons-build:mail-page</code> goal generates a custom Mailing List page for a component
+                Execute the goal using the following command: <source>mvn commons-build:mail-page</source>
                 </p>
 
                 <p>

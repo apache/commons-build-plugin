@@ -33,11 +33,11 @@
 
     <target name="mail-page" description="Generate Mailing List page">
 
-        <echo level="${level}" message="----- commons:mailing-list - Parameters - START -----" />
+        <echo level="${level}" message="----- commons-build:mailing-list - Parameters - START -----" />
         <echo level="${level}" message="project.name         : ${project.name}" />
         <echo level="${level}" message="commons.componentid  : ${commons.componentid}" />
         <echo level="${level}" message="commons.xdoc.dir     : ${commons.xdoc.dir}" />
-        <echo level="${level}" message="----- commons:mailing-list - Parameters - END   -----" />
+        <echo level="${level}" message="----- commons-build:mailing-list - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} Mailing List Page ***" />
 
@@ -69,12 +69,12 @@
 
     <target name="jira-page" description="Generate JIRA Issue Tracking page">
 
-        <echo level="${level}" message="----- commons:jira-page - Parameters - START -----" />
+        <echo level="${level}" message="----- commons-build:jira-page - Parameters - START -----" />
         <echo level="${level}" message="project.name         : ${project.name}" />
         <echo level="${level}" message="commons.xdoc.dir     : ${commons.xdoc.dir}" />
         <echo level="${level}" message="commons.jira.id      : ${commons.jira.id}" />
         <echo level="${level}" message="commons.jira.pid     : ${commons.jira.pid}" />
-        <echo level="${level}" message="----- commons:jira-page - Parameters - END   -----" />
+        <echo level="${level}" message="----- commons-build:jira-page - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} Issue Tracking Page ***" />
 
@@ -108,10 +108,10 @@
 
     <target name="sandbox-jira-page" description="Generate Sandbox JIRA Issue Tracking page">
 
-        <echo level="${level}" message="----- commons:sandbox-jira-page - Parameters - START -----" />
+        <echo level="${level}" message="----- commons-build:sandbox-jira-page - Parameters - START -----" />
         <echo level="${level}" message="project.name            : ${project.name}" />
         <echo level="${level}" message="commons.jira.componentid: ${commons.jira.componentid}" />
-        <echo level="${level}" message="----- commons:sandbox-jira-page - Parameters - END   -----" />
+        <echo level="${level}" message="----- commons-build:sandbox-jira-page - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} Sandbox Issue Tracking Page ***" />
 
@@ -152,7 +152,7 @@
 
     <target name="download-page" description="Generate Download page">
 
-        <echo level="${level}" message="----- commons:download-page - Parameters - START -----" />
+        <echo level="${level}" message="----- commons-build:download-page - Parameters - START -----" />
         <echo level="${level}" message="project.name             : ${project.name}" />
         <echo level="${level}" message="commons.componentid      : ${commons.componentid}" />
     	<!-- Current release -->
@@ -184,7 +184,7 @@
         <echo level="${level}" message="commons.release.4.subdir : ${commons.release.4.subdir}" />
         <echo level="${level}" message="commons.release.4.hash   : ${commons.release.4.hash}" />
     	
-        <echo level="${level}" message="----- commons:download-page - Parameters - END   -----" />
+        <echo level="${level}" message="----- commons-build:download-page - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} ${commons.release.version} Download Page ***" />
 
@@ -422,7 +422,7 @@
 
     <target name="readme-md" description="Generate README.md">
 
-        <echo level="${level}" message="----- commons:readme-md - Parameters - START -----" />
+        <echo level="${level}" message="----- commons-build:readme-md - Parameters - START -----" />
         <echo level="${level}" message="project.name              : ${project.name}" />
         <echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
         <echo level="${level}" message="project.groupId           : ${project.groupId}" />
@@ -430,7 +430,7 @@
         <echo level="${level}" message="commons.jira.id           : ${commons.jira.id}" />
         <echo level="${level}" message="commons.release.version   : ${commons.release.version}" />
         <echo level="${level}" message="commons.componentid       : ${commons.componentid}" />
-        <echo level="${level}" message="----- commons:readme-md - Parameters - END   -----" />
+        <echo level="${level}" message="----- commons-build:readme-md - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} README.md ***" />
 
@@ -474,10 +474,10 @@
 
     <target name="notice-txt" description="Generate NOTICE.txt">
 
-        <echo level="${level}" message="----- commons:notice-txt - Parameters - START -----" />
+        <echo level="${level}" message="----- commons-build:notice-txt - Parameters - START -----" />
         <echo level="${level}" message="project.name              : ${project.name}" />
         <echo level="${level}" message="project.inceptionYear     : ${project.inceptionYear}" />
-        <echo level="${level}" message="----- commons:readme-md - Parameters - END   -----" />
+        <echo level="${level}" message="----- commons-build:notice-txt - Parameters - END   -----" />
 
     	<script manager="javax" language="javascript"><![CDATA[
     		project.setProperty("commons.currentYear", new Date().getFullYear());
@@ -510,12 +510,12 @@
 
     <target name="contributing-md" description="Generate CONTRIBUTING.md">
 
-        <echo level="${level}" message="----- commons:readme-md - Parameters - START -----" />
+        <echo level="${level}" message="----- commons-build:readme-md - Parameters - START -----" />
         <echo level="${level}" message="project.name              : ${project.name}" />
         <echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
         <echo level="${level}" message="commons.jira.id           : ${commons.jira.id}" />
         <echo level="${level}" message="commons.componentid       : ${commons.componentid}" />
-        <echo level="${level}" message="----- commons:readme-md - Parameters - END   -----" />
+        <echo level="${level}" message="----- commons-build:readme-md - Parameters - END   -----" />
 
         <echo level="info" message="*** Generating ${project.name} CONTRIBUTING.md ***" />
 

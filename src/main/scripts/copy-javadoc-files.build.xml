@@ -23,7 +23,7 @@
 
     <target name="copy-javadoc-files" description="Copy NOTICE/LICENSE files for javadoc jar">
 
-        <echo level="info" message="**** commons:copy-javadoc-files - Copying NOTICE and LICENSE files ****" />
+        <echo level="info" message="**** commons-build:copy-javadoc-files - Copying NOTICE and LICENSE files ****" />
 
         <!-- Copy pages, filtering parameter values -->
         <copy todir="target/apidocs/META-INF">

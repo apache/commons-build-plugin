@@ -25,12 +25,12 @@
     <body>
 
 
-        <section name="commons:readme-md" href="readme-md">
+        <section name="commons-build:readme-md" href="readme-md">
 
             <subsection name="Overview">
                 <p>
-                The <code>commons:notice-txt</code> goal generates a README.md file for a component.
-                Execute the goal using the following command: <source>mvn commons:notice-txt</source>
+                The <code>commons-build:notice-txt</code> goal generates a README.md file for a component.
+                Execute the goal using the following command: <source>mvn commons-build:notice-txt</source>
                 </p>
 
                 <p>
