@@ -29,6 +29,12 @@
   <name>Apache Commons Build Plugin Maven Mojo</name>
   <description>
     Apache Maven Mojo for Apache Commons Build tasks.
+
+    For example:
+      mvn commons:download-page [-Dcommons.release.version=1.2.3]
+
+    To use a SNAPSHOT version (for testing etc)
+      mvn org.apache.commons:commons-build-plugin:1.10-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
   </description>
   <url>http://commons.apache.org/proper/commons-build-plugin/</url>
   <issueManagement>
