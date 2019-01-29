@@ -36,14 +36,14 @@ limitations under the License.
  |      (defaults to "-bin", set to "" for pre-maven2 releases)         |
  |    - commons.release.desc    (optional)                              |
  |    - commons.release.subdir  (optional)                              |
- |    - commons.release.hash    (optional, lowercase, default sha256)   |
+ |    - commons.release.hash    (optional, lowercase, default sha512)   |
  |                                                                      |
  |    - commons.release.[234].version       (conditional)               |
  |    - commons.release.[234].name          (conditional)               |
  |    - commons.release.[234].binary.suffix (optional)                  |
  |    - commons.release.[234].desc          (optional)                  |
  |    - commons.release.[234].subdir        (optional)                  |
- |    - commons.release.[234].hash       (optional, lowercase, [sha256])|
+ |    - commons.release.[234].hash       (optional, lowercase, [sha512])|
  |                                                                      |
  | 3) Example Properties                                                |
  |    (commons.release.name inherited by parent:                        |

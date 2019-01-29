@@ -209,7 +209,7 @@
     <target name="load-download-page-head" if="commons.release.version">
         <echo  level="info" message="*** loading download-page header file ***" />
 
-        <condition property="HASHLC" value="${commons.release.hash}" else="sha256">
+        <condition property="HASHLC" value="${commons.release.hash}" else="sha512">
           <isset property="commons.release.hash"/>
         </condition>
         <upper string="${HASHLC}" to="HASHUC" />
@@ -239,7 +239,7 @@
         <condition property="SRCDIR" value="${commons.release.subdir}" else="source">
           <isset property="commons.release.subdir"/>
         </condition>
-        <condition property="HASHLC" value="${commons.release.hash}" else="sha256">
+        <condition property="HASHLC" value="${commons.release.hash}" else="sha512">
           <isset property="commons.release.hash"/>
         </condition>
         <upper string="${HASHLC}" to="HASHUC" />
@@ -276,7 +276,7 @@
       <condition property="SRCDIR" value="${commons.release.2.subdir}" else="source">
         <isset property="commons.release.2.subdir"/>
       </condition>
-      <condition property="HASHLC" value="${commons.release.2.hash}" else="sha256">
+      <condition property="HASHLC" value="${commons.release.2.hash}" else="sha512">
         <isset property="commons.release.2.hash"/>
       </condition>
       <upper string="${HASHLC}" to="HASHUC" />
@@ -313,7 +313,7 @@
       <condition property="SRCDIR" value="${commons.release.3.subdir}" else="source">
         <isset property="commons.release.3.subdir"/>
       </condition>
-      <condition property="HASHLC" value="${commons.release.3.hash}" else="sha256">
+      <condition property="HASHLC" value="${commons.release.3.hash}" else="sha512">
         <isset property="commons.release.3.hash"/>
       </condition>
       <upper string="${HASHLC}" to="HASHUC" />
@@ -350,7 +350,7 @@
       <condition property="SRCDIR" value="${commons.release.4.subdir}" else="source">
         <isset property="commons.release.4.subdir"/>
       </condition>
-      <condition property="HASHLC" value="${commons.release.4.hash}" else="sha256">
+      <condition property="HASHLC" value="${commons.release.4.hash}" else="sha512">
         <isset property="commons.release.4.hash"/>
       </condition>
       <upper string="${HASHLC}" to="HASHUC" />

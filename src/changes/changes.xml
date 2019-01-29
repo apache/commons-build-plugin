@@ -25,9 +25,9 @@
   </properties>
 
   <body>
-    <release version="1.10" date="2018-??-??" description="Feature release">
+    <release version="1.10" date="2019-??-??" description="Feature release">
       <action dev="sebb" type="update">
-        Use SHA256 signatures as the default in the download page.
+        Use SHA512 signatures as the default in the download page.
       </action>
     </release>
     <release version="1.9" date="2018-06-16" description="Feature release">

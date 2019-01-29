@@ -702,7 +702,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha256)</description>
+                    <description>Type of hash (lower case, e.g. sha512)</description>
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
@@ -757,7 +757,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha256)</description>
+                    <description>Type of hash (lower case, e.g. sha512)</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -812,7 +812,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha256)</description>
+                    <description>Type of hash (lower case, e.g. sha512)</description>
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
@@ -867,7 +867,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha256)</description>
+                    <description>Type of hash (lower case, e.g. sha512)</description>
                 </parameter>
             </parameters>
         </mojo>
