@@ -54,7 +54,7 @@ Documentation
 -------------
 
 More information can be found on the [@NAME@ homepage](https://commons.apache.org/proper/commons-@ID@).
-The [Javadoc](https://commons.apache.org/proper/commons-@ID@/javadocs/api-release) can be browsed.
+The [Javadoc](https://commons.apache.org/proper/commons-@ID@/apidocs) can be browsed.
 Questions related to the usage of @NAME@ should be posted to the [user mailing list][ml].
 
 Where can I get the latest release?
