@@ -46,15 +46,21 @@ Apache Commons Build Plugin Maven Mojo
 [![Build Status](https://travis-ci.org/apache/commons-commons-build-plugin.svg)](https://travis-ci.org/apache/commons-commons-build-plugin)
 [![Coverage Status](https://coveralls.io/repos/apache/commons-commons-build-plugin/badge.svg)](https://coveralls.io/r/apache/commons-commons-build-plugin)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-build-plugin/1.9-SNAPSHOT.svg)](https://javadoc.io/doc/org.apache.commons/commons-build-plugin/1.9-SNAPSHOT)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-build-plugin/1.9.svg)](https://javadoc.io/doc/org.apache.commons/commons-build-plugin/1.9)
 
-${project.description}
+Apache Maven Mojo for Apache Commons Build tasks.
+
+    For example:
+      mvn commons:download-page [-Dcommons.release.version=1.2.3]
+
+    To use a SNAPSHOT version (for testing etc)
+      mvn org.apache.commons:commons-build-plugin:1.10-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
 
 Documentation
 -------------
 
 More information can be found on the [Apache Commons Build Plugin Maven Mojo homepage](https://commons.apache.org/proper/commons-commons-build-plugin).
-The [Javadoc](https://commons.apache.org/proper/commons-commons-build-plugin/javadocs/api-release) can be browsed.
+The [Javadoc](https://commons.apache.org/proper/commons-commons-build-plugin/apidocs) can be browsed.
 Questions related to the usage of Apache Commons Build Plugin Maven Mojo should be posted to the [user mailing list][ml].
 
 Where can I get the latest release?
@@ -67,7 +73,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-build-plugin</artifactId>
-  <version>1.9-SNAPSHOT</version>
+  <version>1.9</version>
 </dependency>
 ```
 
