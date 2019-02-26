@@ -22,7 +22,7 @@
   <body>
     <section name="commons-build:all-sandbox">
       <p><strong>Full name</strong>:</p>
-      <p>org.apache.commons:commons-build-plugin:1.9:all-sandbox</p>
+      <p>org.apache.commons:commons-build-plugin:1.10:all-sandbox</p>
       <p><strong>Description</strong>:</p>
       <div>Apache Commons Build Mojo: Generate all sandbox pages</div>
       <p><strong>Attributes</strong>:</p>
