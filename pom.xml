@@ -31,7 +31,16 @@
     Apache Maven Mojo for Apache Commons Build tasks.
 
     For example:
-      mvn commons:download-page [-Dcommons.release.version=1.2.3]
+      mvn commons:doVERSION 1.9 - 2018-06-16
+    ------------------------
+
+    Changes since the last release:
+    1. Fix in src/main/resources/commons-xdoc-templates/readme-md-template.md for components that have a major version number in their artifact IDs.
+    2. Add a goal for creating all items for pre-release.
+    3. Fix README.md generation typo: 'JavaDoc' -> 'Javadoc'.
+    4. Change the Maven goal prefix from "commons" to "commons-build".
+    5. Add a goal for generating the NOTICE.txt file.
+    6. Update platform requirement from Java 7 to Java 8.wnload-page [-Dcommons.release.version=1.2.3]
 
     To use a SNAPSHOT version (for testing etc)
       mvn org.apache.commons:commons-build-plugin:1.10-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
@@ -216,6 +225,7 @@
     <!-- Commons Release Plugin -->
     <commons.bc.version>1.9</commons.bc.version>
     <commons.release.version>1.10</commons.release.version>
+    <commons.release-plugin.version>1.5</commons.release-plugin.version>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
