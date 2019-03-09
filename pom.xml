@@ -214,7 +214,7 @@
     <commons.bc.version>1.9</commons.bc.version>
     <commons.release.version>1.10</commons.release.version>
     <commons.release-plugin.version>1.5</commons.release-plugin.version>
-    <commons.rc.version>RC1</commons.rc.version>
+    <commons.rc.version>RC2</commons.rc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
     <commons.releaseManagerName>Rob Tompkins</commons.releaseManagerName>
