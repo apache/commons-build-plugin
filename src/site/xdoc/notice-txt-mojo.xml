@@ -22,7 +22,7 @@
   <body>
     <section name="commons-build:notice-txt">
       <p><strong>Full name</strong>:</p>
-      <p>org.apache.commons:commons-build-plugin:1.9:notice-txt</p>
+      <p>org.apache.commons:commons-build-plugin:1.10:notice-txt</p>
       <p><strong>Description</strong>:</p>
       <div>Apache Commons Build Mojo: Generate NOTICE.txt</div>
       <p><strong>Attributes</strong>:</p>

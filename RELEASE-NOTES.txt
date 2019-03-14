@@ -10,6 +10,13 @@ See:
    http://commons.apache.org/commons-build-plugin/
 
 
+VERSION 1.10 - 2019-02-26
+-------------------------
+
+Changes since the last release:
+1. Use SHA512 signatures as the default in the download page. (update; ggregory)
+2. Use SHA256 signatures as the default in the download page. (update; sebb)
+
 VERSION 1.9 - 2018-06-16
 ------------------------
 
