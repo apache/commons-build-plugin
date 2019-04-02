@@ -26,6 +26,9 @@
 
   <body>
     <release version="1.11" date="YYYY-MM-DD" description="Feature release">
+      <action dev="ggregory" type="update">
+        versions-maven-plugin 2.5 -> 2.7.
+      </action>
     </release>
 
     <release version="1.10" date="2019-02-26" description="Feature release">
