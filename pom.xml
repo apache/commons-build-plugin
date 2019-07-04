@@ -33,7 +33,7 @@
     For example:
       mvn commons:download-page [-Dcommons.release.version=1.2.3]
   </description>
-  <url>http://commons.apache.org/proper/commons-build-plugin/</url>
+  <url>https://commons.apache.org/proper/commons-build-plugin/</url>
   <issueManagement>
     <system>jira</system>
     <url>http://issues.apache.org/jira/browse/COMMONSSITE</url>

@@ -7,7 +7,7 @@ INTRODUCTION:
 The Apache Commons Build Plugin is a Maven Plugin which can be used by Apache Commons components.
 
 See:
-   http://commons.apache.org/commons-build-plugin/
+   https://commons.apache.org/commons-build-plugin/
 
 
 VERSION 1.10 - 2019-02-26
