@@ -38,6 +38,9 @@
       <action dev="ggregory" type="update">
         commons.release-plugin.version 1.5 -> 1.6.
       </action>
+      <action dev="ggregory" type="update">
+        Replace http://mail-archives.apache.org with https://mail-archives.apache.org.
+      </action>
     </release>
 
     <release version="1.10" date="2019-02-26" description="Feature release">
