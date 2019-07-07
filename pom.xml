@@ -36,7 +36,7 @@
   <url>https://commons.apache.org/proper/commons-build-plugin/</url>
   <issueManagement>
     <system>jira</system>
-    <url>http://issues.apache.org/jira/browse/COMMONSSITE</url>
+    <url>https://issues.apache.org/jira/browse/COMMONSSITE</url>
   </issueManagement>
   <inceptionYear>2008</inceptionYear>
   <scm>
