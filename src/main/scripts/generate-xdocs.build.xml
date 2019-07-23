@@ -19,537 +19,539 @@
  -->
 <project name="Commons Build: Standard XDOC Pages Generation" basedir=".">
 
-    <property name="commonsMojoId"      value="Commons:xdoc-generate" />
-    <property name="commonsMojoXdocDir" value="resources/commons-xdoc-templates" />
-    <property name="commonsMojoTempDir" value="target/commons-generated-xdocs" />
-    <property name="level"              value="info" />
+	<property name="commonsMojoId" value="Commons:xdoc-generate" />
+	<property name="commonsMojoXdocDir" value="resources/commons-xdoc-templates" />
+	<property name="commonsMojoTempDir" value="target/commons-generated-xdocs" />
+	<property name="level" value="info" />
 
-    <!-- ========== Generate All Pages ================================ -->
+	<!-- ========== Generate All Pages ================================ -->
 
-    <target name="all" description="Generate all pages" depends="contributing-md, download-page, jira-page, mail-page, readme-md, notice-txt" />
-    <target name="all-sandbox" description="Generate all sandbox pages" depends="contributing-md, download-page, sandbox-jira-page, mail-page, readme-md, notice-txt" />
+	<target name="all" description="Generate all pages" depends="contributing-md, download-page, jira-page, mail-page, readme-md, notice-txt" />
+	<target name="all-sandbox" description="Generate all sandbox pages" depends="contributing-md, download-page, sandbox-jira-page, mail-page, readme-md, notice-txt" />
 
-    <!-- ========== Generate Mailing List Page ================================ -->
+	<!-- ========== Generate Mailing List Page ================================ -->
 
-    <target name="mail-page" description="Generate Mailing List page">
+	<target name="mail-page" description="Generate Mailing List page">
 
-        <echo level="${level}" message="----- commons-build:mailing-list - Parameters - START -----" />
-        <echo level="${level}" message="project.name         : ${project.name}" />
-        <echo level="${level}" message="commons.componentid  : ${commons.componentid}" />
-        <echo level="${level}" message="commons.xdoc.dir     : ${commons.xdoc.dir}" />
-        <echo level="${level}" message="----- commons-build:mailing-list - Parameters - END   -----" />
+		<echo level="${level}" message="----- commons-build:mailing-list - Parameters - START -----" />
+		<echo level="${level}" message="project.name         : ${project.name}" />
+		<echo level="${level}" message="commons.componentid  : ${commons.componentid}" />
+		<echo level="${level}" message="commons.xdoc.dir     : ${commons.xdoc.dir}" />
+		<echo level="${level}" message="----- commons-build:mailing-list - Parameters - END   -----" />
 
-        <echo level="info" message="*** Generating ${project.name} Mailing List Page ***" />
+		<echo level="info" message="*** Generating ${project.name} Mailing List Page ***" />
 
-        <!-- Create a temporary directory to load the template files into -->
-        <mkdir dir="${commonsMojoTempDir}"/>
+		<!-- Create a temporary directory to load the template files into -->
+		<mkdir dir="${commonsMojoTempDir}" />
 
-        <!-- Load the issue-tracking template from mojo resources to temp directory -->
-        <loadresource property="mailinglists-xml">
-            <javaresource name="${commonsMojoXdocDir}/mail-lists-template.xml"/>
-        </loadresource>
-        <echo message="${mailinglists-xml}" file="${commonsMojoTempDir}/mail-lists-template.xml" append="false" />
+		<!-- Load the issue-tracking template from mojo resources to temp directory -->
+		<loadresource property="mailinglists-xml">
+			<javaresource name="${commonsMojoXdocDir}/mail-lists-template.xml" />
+		</loadresource>
+		<echo message="${mailinglists-xml}" file="${commonsMojoTempDir}/mail-lists-template.xml" append="false" />
 
-        <!-- Copy the mail-lists template filtering to replace properties -->
-        <copy file="${commonsMojoTempDir}/mail-lists-template.xml" tofile="${commonsMojoTempDir}/mail-lists.xml" overwrite="true">
-            <filterset>
-            <filter  token="NAME"         value="${project.name}"/>
-            <filter  token="ID"           value="${commons.componentid}"/>
-            </filterset>
-        </copy>
+		<!-- Copy the mail-lists template filtering to replace properties -->
+		<copy file="${commonsMojoTempDir}/mail-lists-template.xml" tofile="${commonsMojoTempDir}/mail-lists.xml" overwrite="true">
+			<filterset>
+				<filter token="NAME" value="${project.name}" />
+				<filter token="ID" value="${commons.componentid}" />
+			</filterset>
+		</copy>
 
-        <!-- copy to either m1 or m2 xdoc directory -->
-        <antcall target="copy-to-xdoc-dir">
-            <param name="file.name" value="mail-lists.xml"/>
-        </antcall>
+		<!-- copy to either m1 or m2 xdoc directory -->
+		<antcall target="copy-to-xdoc-dir">
+			<param name="file.name" value="mail-lists.xml" />
+		</antcall>
 
-    </target>
+	</target>
 
-    <!-- ========== Generate Issue Tracking Page ============================== -->
+	<!-- ========== Generate Issue Tracking Page ============================== -->
 
-    <target name="jira-page" description="Generate JIRA Issue Tracking page">
+	<target name="jira-page" description="Generate JIRA Issue Tracking page">
 
-        <echo level="${level}" message="----- commons-build:jira-page - Parameters - START -----" />
-        <echo level="${level}" message="project.name         : ${project.name}" />
-        <echo level="${level}" message="commons.xdoc.dir     : ${commons.xdoc.dir}" />
-        <echo level="${level}" message="commons.jira.id      : ${commons.jira.id}" />
-        <echo level="${level}" message="commons.jira.pid     : ${commons.jira.pid}" />
-        <echo level="${level}" message="----- commons-build:jira-page - Parameters - END   -----" />
+		<echo level="${level}" message="----- commons-build:jira-page - Parameters - START -----" />
+		<echo level="${level}" message="project.name         : ${project.name}" />
+		<echo level="${level}" message="commons.xdoc.dir     : ${commons.xdoc.dir}" />
+		<echo level="${level}" message="commons.jira.id      : ${commons.jira.id}" />
+		<echo level="${level}" message="commons.jira.pid     : ${commons.jira.pid}" />
+		<echo level="${level}" message="----- commons-build:jira-page - Parameters - END   -----" />
 
-        <echo level="info" message="*** Generating ${project.name} Issue Tracking Page ***" />
+		<echo level="info" message="*** Generating ${project.name} Issue Tracking Page ***" />
 
-        <!-- Create a temporary directory to load the template files into -->
-        <mkdir dir="${commonsMojoTempDir}"/>
+		<!-- Create a temporary directory to load the template files into -->
+		<mkdir dir="${commonsMojoTempDir}" />
 
-        <!-- Load the issue-tracking template from mojo resources to temp directory -->
-        <loadresource property="issuetracking-xml">
-            <javaresource name="${commonsMojoXdocDir}/issue-tracking-template.xml"/>
-        </loadresource>
-        <echo message="${issuetracking-xml}" file="${commonsMojoTempDir}/issue-tracking-template.xml" append="false" />
+		<!-- Load the issue-tracking template from mojo resources to temp directory -->
+		<loadresource property="issuetracking-xml">
+			<javaresource name="${commonsMojoXdocDir}/issue-tracking-template.xml" />
+		</loadresource>
+		<echo message="${issuetracking-xml}" file="${commonsMojoTempDir}/issue-tracking-template.xml" append="false" />
 
-        <!-- Copy the issue-tracking template filtering to replace properties -->
-        <copy file="${commonsMojoTempDir}/issue-tracking-template.xml" tofile="${commonsMojoTempDir}/issue-tracking.xml" overwrite="true">
-            <filterset>
-            <filter  token="NAME"         value="${project.name}"/>
-            <filter  token="JIRA_ID"      value="${commons.jira.id}"/>
-            <filter  token="JIRA_PID"     value="${commons.jira.pid}"/>
-            </filterset>
-        </copy>
+		<!-- Copy the issue-tracking template filtering to replace properties -->
+		<copy file="${commonsMojoTempDir}/issue-tracking-template.xml" tofile="${commonsMojoTempDir}/issue-tracking.xml" overwrite="true">
+			<filterset>
+				<filter token="NAME" value="${project.name}" />
+				<filter token="JIRA_ID" value="${commons.jira.id}" />
+				<filter token="JIRA_PID" value="${commons.jira.pid}" />
+			</filterset>
+		</copy>
 
-        <!-- copy to either m1 or m2 xdoc directory -->
-        <antcall target="copy-to-xdoc-dir">
-            <param name="file.name" value="issue-tracking.xml"/>
-        </antcall>
+		<!-- copy to either m1 or m2 xdoc directory -->
+		<antcall target="copy-to-xdoc-dir">
+			<param name="file.name" value="issue-tracking.xml" />
+		</antcall>
 
-    </target>
-
-
-    <!-- ========== Generate Sandbox Issue Tracking Page ====================== -->
-
-    <target name="sandbox-jira-page" description="Generate Sandbox JIRA Issue Tracking page">
-
-        <echo level="${level}" message="----- commons-build:sandbox-jira-page - Parameters - START -----" />
-        <echo level="${level}" message="project.name            : ${project.name}" />
-        <echo level="${level}" message="commons.jira.componentid: ${commons.jira.componentid}" />
-        <echo level="${level}" message="----- commons-build:sandbox-jira-page - Parameters - END   -----" />
-
-        <echo level="info" message="*** Generating ${project.name} Sandbox Issue Tracking Page ***" />
-
-        <!-- Create a temporary directory to load the template files into -->
-        <mkdir dir="${commonsMojoTempDir}"/>
-
-        <!-- Load the issue-tracking template from mojo resources to temp directory -->
-        <loadresource property="sandbox-issuetracking-xml">
-            <javaresource name="${commonsMojoXdocDir}/sandbox-issue-tracking-template.xml"/>
-        </loadresource>
-        <echo message="${sandbox-issuetracking-xml}" file="${commonsMojoTempDir}/sandbox-issue-tracking-template.xml" append="false" />
-
-        <!-- Copy the issue-tracking template filtering to replace properties -->
-        <copy file="${commonsMojoTempDir}/sandbox-issue-tracking-template.xml" tofile="${commonsMojoTempDir}/issue-tracking.xml" overwrite="true">
-            <filterset>
-            <filter  token="NAME"             value="${project.name}"/>
-            <filter  token="JIRA_COMPONENTID" value="${commons.jira.componentid}"/>
-            </filterset>
-        </copy>
-
-        <!-- copy to either m1 or m2 xdoc directory -->
-        <antcall target="copy-to-xdoc-dir">
-            <param name="file.name" value="issue-tracking.xml"/>
-        </antcall>
-
-    </target>
+	</target>
 
 
-    <!-- ========== Generate Download Page ==================================== -->
+	<!-- ========== Generate Sandbox Issue Tracking Page ====================== -->
 
-    <scriptdef language="javascript" name="upper">
-        <attribute name="string" /> 
-        <attribute name="to" />
+	<target name="sandbox-jira-page" description="Generate Sandbox JIRA Issue Tracking page">
+
+		<echo level="${level}" message="----- commons-build:sandbox-jira-page - Parameters - START -----" />
+		<echo level="${level}" message="project.name            : ${project.name}" />
+		<echo level="${level}" message="commons.jira.componentid: ${commons.jira.componentid}" />
+		<echo level="${level}" message="----- commons-build:sandbox-jira-page - Parameters - END   -----" />
+
+		<echo level="info" message="*** Generating ${project.name} Sandbox Issue Tracking Page ***" />
+
+		<!-- Create a temporary directory to load the template files into -->
+		<mkdir dir="${commonsMojoTempDir}" />
+
+		<!-- Load the issue-tracking template from mojo resources to temp directory -->
+		<loadresource property="sandbox-issuetracking-xml">
+			<javaresource name="${commonsMojoXdocDir}/sandbox-issue-tracking-template.xml" />
+		</loadresource>
+		<echo message="${sandbox-issuetracking-xml}" file="${commonsMojoTempDir}/sandbox-issue-tracking-template.xml" append="false" />
+
+		<!-- Copy the issue-tracking template filtering to replace properties -->
+		<copy file="${commonsMojoTempDir}/sandbox-issue-tracking-template.xml" tofile="${commonsMojoTempDir}/issue-tracking.xml" overwrite="true">
+			<filterset>
+				<filter token="NAME" value="${project.name}" />
+				<filter token="JIRA_COMPONENTID" value="${commons.jira.componentid}" />
+			</filterset>
+		</copy>
+
+		<!-- copy to either m1 or m2 xdoc directory -->
+		<antcall target="copy-to-xdoc-dir">
+			<param name="file.name" value="issue-tracking.xml" />
+		</antcall>
+
+	</target>
+
+
+	<!-- ========== Generate Download Page ==================================== -->
+
+	<scriptdef language="javascript" name="upper">
+		<attribute name="string" />
+		<attribute name="to" />
 
         project.setProperty( attributes.get( "to" ),
                              attributes.get( "string" ).toUpperCase() );
     </scriptdef>
 
-    <target name="download-page" description="Generate Download page">
+	<target name="download-page" description="Generate Download page">
 
-        <echo level="${level}" message="----- commons-build:download-page - Parameters - START -----" />
-        <echo level="${level}" message="project.name             : ${project.name}" />
-        <echo level="${level}" message="commons.componentid      : ${commons.componentid}" />
-    	<!-- Current release -->
-        <echo level="${level}" message="commons.release.version  : ${commons.release.version}" />
-        <echo level="${level}" message="commons.release.name     : ${commons.release.name}" />
-        <echo level="${level}" message="commons.release.desc     : ${commons.release.desc}" />
-        <echo level="${level}" message="commons.binary.suffix    : ${commons.binary.suffix}" />
-        <echo level="${level}" message="commons.release.subdir   : ${commons.release.subdir}" />
-        <echo level="${level}" message="commons.release.hash     : ${commons.release.hash}" />
-    	<!-- Release #2 -->
-        <echo level="${level}" message="commons.release.2.version: ${commons.release.2.version}" />
-        <echo level="${level}" message="commons.release.2.name   : ${commons.release.2.name}" />
-        <echo level="${level}" message="commons.release.2.desc   : ${commons.release.2.desc}" />
-        <echo level="${level}" message="commons.release.2.binary.suffix: ${commons.release.2.binary.suffix}" />
-        <echo level="${level}" message="commons.release.2.subdir : ${commons.release.2.subdir}" />
-        <echo level="${level}" message="commons.release.2.hash   : ${commons.release.2.hash}" />
-    	<!-- Release #3 -->
-        <echo level="${level}" message="commons.release.3.version: ${commons.release.3.version}" />
-        <echo level="${level}" message="commons.release.3.name   : ${commons.release.3.name}" />
-        <echo level="${level}" message="commons.release.3.desc   : ${commons.release.3.desc}" />
-        <echo level="${level}" message="commons.release.3.binary.suffix: ${commons.release.3.binary.suffix}" />
-        <echo level="${level}" message="commons.release.3.subdir : ${commons.release.3.subdir}" />
-        <echo level="${level}" message="commons.release.3.hash   : ${commons.release.3.hash}" />
-    	<!-- Release #4 -->
-        <echo level="${level}" message="commons.release.4.version: ${commons.release.4.version}" />
-        <echo level="${level}" message="commons.release.4.name   : ${commons.release.4.name}" />
-        <echo level="${level}" message="commons.release.4.desc   : ${commons.release.4.desc}" />
-        <echo level="${level}" message="commons.release.4.binary.suffix: ${commons.release.4.binary.suffix}" />
-        <echo level="${level}" message="commons.release.4.subdir : ${commons.release.4.subdir}" />
-        <echo level="${level}" message="commons.release.4.hash   : ${commons.release.4.hash}" />
-    	
-        <echo level="${level}" message="----- commons-build:download-page - Parameters - END   -----" />
+		<echo level="${level}" message="----- commons-build:download-page - Parameters - START -----" />
+		<echo level="${level}" message="project.name             : ${project.name}" />
+		<echo level="${level}" message="commons.componentid      : ${commons.componentid}" />
+		<!-- Current release -->
+		<echo level="${level}" message="commons.release.version  : ${commons.release.version}" />
+		<echo level="${level}" message="commons.release.name     : ${commons.release.name}" />
+		<echo level="${level}" message="commons.release.desc     : ${commons.release.desc}" />
+		<echo level="${level}" message="commons.binary.suffix    : ${commons.binary.suffix}" />
+		<echo level="${level}" message="commons.release.subdir   : ${commons.release.subdir}" />
+		<echo level="${level}" message="commons.release.hash     : ${commons.release.hash}" />
+		<!-- Release #2 -->
+		<echo level="${level}" message="commons.release.2.version: ${commons.release.2.version}" />
+		<echo level="${level}" message="commons.release.2.name   : ${commons.release.2.name}" />
+		<echo level="${level}" message="commons.release.2.desc   : ${commons.release.2.desc}" />
+		<echo level="${level}" message="commons.release.2.binary.suffix: ${commons.release.2.binary.suffix}" />
+		<echo level="${level}" message="commons.release.2.subdir : ${commons.release.2.subdir}" />
+		<echo level="${level}" message="commons.release.2.hash   : ${commons.release.2.hash}" />
+		<!-- Release #3 -->
+		<echo level="${level}" message="commons.release.3.version: ${commons.release.3.version}" />
+		<echo level="${level}" message="commons.release.3.name   : ${commons.release.3.name}" />
+		<echo level="${level}" message="commons.release.3.desc   : ${commons.release.3.desc}" />
+		<echo level="${level}" message="commons.release.3.binary.suffix: ${commons.release.3.binary.suffix}" />
+		<echo level="${level}" message="commons.release.3.subdir : ${commons.release.3.subdir}" />
+		<echo level="${level}" message="commons.release.3.hash   : ${commons.release.3.hash}" />
+		<!-- Release #4 -->
+		<echo level="${level}" message="commons.release.4.version: ${commons.release.4.version}" />
+		<echo level="${level}" message="commons.release.4.name   : ${commons.release.4.name}" />
+		<echo level="${level}" message="commons.release.4.desc   : ${commons.release.4.desc}" />
+		<echo level="${level}" message="commons.release.4.binary.suffix: ${commons.release.4.binary.suffix}" />
+		<echo level="${level}" message="commons.release.4.subdir : ${commons.release.4.subdir}" />
+		<echo level="${level}" message="commons.release.4.hash   : ${commons.release.4.hash}" />
 
-        <echo level="info" message="*** Generating ${project.name} ${commons.release.version} Download Page ***" />
+		<echo level="${level}" message="----- commons-build:download-page - Parameters - END   -----" />
 
-        <!-- Create a temporary directory to load the template files into -->
-        <mkdir dir="${commonsMojoTempDir}"/>
+		<echo level="info" message="*** Generating ${project.name} ${commons.release.version} Download Page ***" />
 
-        <!-- Load the dowload-page template from mojo resources to temp directory -->
-        <antcall target="load-no-download-page-template"/>
-        <antcall target="load-download-page-head"/>
-        <antcall target="load-download-page-body-1"/>
-        <antcall target="load-download-page-body-2"/>
-        <antcall target="load-download-page-body-3"/>
-        <antcall target="load-download-page-body-4"/>
-        <antcall target="load-download-page-foot"/>
+		<!-- Create a temporary directory to load the template files into -->
+		<mkdir dir="${commonsMojoTempDir}" />
 
-        <!-- copy to either m1 or m2 xdoc directory -->
-        <antcall target="copy-to-xdoc-dir">
-            <param name="file.name" value="download_${commons.componentid}.xml"/>
-        </antcall>
-    </target>
+		<!-- Load the dowload-page template from mojo resources to temp directory -->
+		<antcall target="load-no-download-page-template" />
+		<antcall target="load-download-page-head" />
+		<antcall target="load-download-page-body-1" />
+		<antcall target="load-download-page-body-2" />
+		<antcall target="load-download-page-body-3" />
+		<antcall target="load-download-page-body-4" />
+		<antcall target="load-download-page-foot" />
 
-    <target name="load-download-page-head" if="commons.release.version">
-        <echo  level="info" message="*** loading download-page header file ***" />
+		<!-- copy to either m1 or m2 xdoc directory -->
+		<antcall target="copy-to-xdoc-dir">
+			<param name="file.name" value="download_${commons.componentid}.xml" />
+		</antcall>
+	</target>
 
-        <condition property="HASHLC" value="${commons.release.hash}" else="sha512">
-          <isset property="commons.release.hash"/>
-        </condition>
-        <upper string="${HASHLC}" to="HASHUC" />
+	<target name="load-download-page-head" if="commons.release.version">
+		<echo level="info" message="*** loading download-page header file ***" />
 
-        <!-- Load header -->
-        <loadresource property="download-page-head-xml">
-            <javaresource name="${commonsMojoXdocDir}/download-page-head.xml"/>
-            <filterchain>
-                <replacetokens>
-                    <token key="NAME" value="${project.name}"/>
-                    <token key="HASHUC"        value="${HASHUC}"/>
-                    <token key="HASHLC"        value="${HASHLC}"/>
-                </replacetokens>
-            </filterchain>
-        </loadresource>
-        <echo message="${download-page-head-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="false" />
+		<condition property="HASHLC" value="${commons.release.hash}" else="sha512">
+			<isset property="commons.release.hash" />
+		</condition>
+		<upper string="${HASHLC}" to="HASHUC" />
 
-    </target>
+		<!-- Load header -->
+		<loadresource property="download-page-head-xml">
+			<javaresource name="${commonsMojoXdocDir}/download-page-head.xml" />
+			<filterchain>
+				<replacetokens>
+					<token key="NAME" value="${project.name}" />
+					<token key="HASHUC" value="${HASHUC}" />
+					<token key="HASHLC" value="${HASHLC}" />
+				</replacetokens>
+			</filterchain>
+		</loadresource>
+		<echo message="${download-page-head-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="false" />
 
-    <target name="load-download-page-body-1" if="commons.release.version">
-        <echo  level="info" message="*** loading download-page body(1) file***" />
+	</target>
 
-        <!-- Set up the defaults -->
-        <condition property="BINDIR" value="${commons.release.subdir}" else="binaries">
-          <isset property="commons.release.subdir"/>
-        </condition>
-        <condition property="SRCDIR" value="${commons.release.subdir}" else="source">
-          <isset property="commons.release.subdir"/>
-        </condition>
-        <condition property="HASHLC" value="${commons.release.hash}" else="sha512">
-          <isset property="commons.release.hash"/>
-        </condition>
-        <upper string="${HASHLC}" to="HASHUC" />
+	<target name="load-download-page-body-1" if="commons.release.version">
+		<echo level="info" message="*** loading download-page body(1) file***" />
 
-        <!-- Load Body -->
-        <loadresource property="download-page-body-1-xml">
-            <javaresource name="${commonsMojoXdocDir}/download-page-body.xml"/>
-            <filterchain>
-                <replacetokens>
-                    <token key="VERSION"       value="${commons.release.version}"/>
-                    <token key="RELDESC"       value="${commons.release.desc}"/>
-                    <token key="NAME"          value="${project.name}"/>
-                    <token key="ID"            value="${commons.componentid}"/>
-                    <token key="FINAL_NAME"    value="${commons.release.name}"/>
-                    <token key="BINARY-SUFFIX" value="${commons.binary.suffix}"/>
-                    <token key="BINDIR"        value="${BINDIR}"/>
-                    <token key="SRCDIR"        value="${SRCDIR}"/>
-                    <token key="HASHUC"        value="${HASHUC}"/>
-                    <token key="HASHLC"        value="${HASHLC}"/>
-                </replacetokens>
-            </filterchain>
-        </loadresource>
-        <echo message="${download-page-body-1-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+		<!-- Set up the defaults -->
+		<condition property="BINDIR" value="${commons.release.subdir}" else="binaries">
+			<isset property="commons.release.subdir" />
+		</condition>
+		<condition property="SRCDIR" value="${commons.release.subdir}" else="source">
+			<isset property="commons.release.subdir" />
+		</condition>
+		<condition property="HASHLC" value="${commons.release.hash}" else="sha512">
+			<isset property="commons.release.hash" />
+		</condition>
+		<upper string="${HASHLC}" to="HASHUC" />
 
-    </target>
+		<!-- Load Body -->
+		<loadresource property="download-page-body-1-xml">
+			<javaresource name="${commonsMojoXdocDir}/download-page-body.xml" />
+			<filterchain>
+				<replacetokens>
+					<token key="VERSION" value="${commons.release.version}" />
+					<token key="RELDESC" value="${commons.release.desc}" />
+					<token key="NAME" value="${project.name}" />
+					<token key="ID" value="${commons.componentid}" />
+					<token key="FINAL_NAME" value="${commons.release.name}" />
+					<token key="BINARY-SUFFIX" value="${commons.binary.suffix}" />
+					<token key="BINDIR" value="${BINDIR}" />
+					<token key="SRCDIR" value="${SRCDIR}" />
+					<token key="HASHUC" value="${HASHUC}" />
+					<token key="HASHLC" value="${HASHLC}" />
+				</replacetokens>
+			</filterchain>
+		</loadresource>
+		<echo message="${download-page-body-1-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
 
-    <target name="load-download-page-body-2" if="commons.release.2.version">
-      <echo  level="info" message="*** loading download-page body(2) file***" />
+	</target>
 
-      <!-- Set up the defaults -->
-      <condition property="BINDIR" value="${commons.release.2.subdir}" else="binaries">
-        <isset property="commons.release.2.subdir"/>
-      </condition>
-      <condition property="SRCDIR" value="${commons.release.2.subdir}" else="source">
-        <isset property="commons.release.2.subdir"/>
-      </condition>
-      <condition property="HASHLC" value="${commons.release.2.hash}" else="sha512">
-        <isset property="commons.release.2.hash"/>
-      </condition>
-      <upper string="${HASHLC}" to="HASHUC" />
+	<target name="load-download-page-body-2" if="commons.release.2.version">
+		<echo level="info" message="*** loading download-page body(2) file***" />
 
-        <!-- Load Body -->
-        <loadresource property="download-page-body-2-xml">
-            <javaresource name="${commonsMojoXdocDir}/download-page-body.xml"/>
-            <filterchain>
-                <replacetokens>
-                    <token key="VERSION"       value="${commons.release.2.version}"/>
-                    <token key="RELDESC"       value="${commons.release.2.desc}"/>
-                    <token key="NAME"          value="${project.name}"/>
-                    <token key="ID"            value="${commons.componentid}"/>
-                    <token key="FINAL_NAME"    value="${commons.release.2.name}"/>
-                    <token key="BINARY-SUFFIX" value="${commons.release.2.binary.suffix}"/>
-                    <token key="BINDIR"        value="${BINDIR}"/>
-                    <token key="SRCDIR"        value="${SRCDIR}"/>
-                    <token key="HASHUC"        value="${HASHUC}"/>
-                    <token key="HASHLC"        value="${HASHLC}"/>
-                </replacetokens>
-            </filterchain>
-        </loadresource>
-        <echo message="${download-page-body-2-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+		<!-- Set up the defaults -->
+		<condition property="BINDIR" value="${commons.release.2.subdir}" else="binaries">
+			<isset property="commons.release.2.subdir" />
+		</condition>
+		<condition property="SRCDIR" value="${commons.release.2.subdir}" else="source">
+			<isset property="commons.release.2.subdir" />
+		</condition>
+		<condition property="HASHLC" value="${commons.release.2.hash}" else="sha512">
+			<isset property="commons.release.2.hash" />
+		</condition>
+		<upper string="${HASHLC}" to="HASHUC" />
 
-    </target>
+		<!-- Load Body -->
+		<loadresource property="download-page-body-2-xml">
+			<javaresource name="${commonsMojoXdocDir}/download-page-body.xml" />
+			<filterchain>
+				<replacetokens>
+					<token key="VERSION" value="${commons.release.2.version}" />
+					<token key="RELDESC" value="${commons.release.2.desc}" />
+					<token key="NAME" value="${project.name}" />
+					<token key="ID" value="${commons.componentid}" />
+					<token key="FINAL_NAME" value="${commons.release.2.name}" />
+					<token key="BINARY-SUFFIX" value="${commons.release.2.binary.suffix}" />
+					<token key="BINDIR" value="${BINDIR}" />
+					<token key="SRCDIR" value="${SRCDIR}" />
+					<token key="HASHUC" value="${HASHUC}" />
+					<token key="HASHLC" value="${HASHLC}" />
+				</replacetokens>
+			</filterchain>
+		</loadresource>
+		<echo message="${download-page-body-2-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
 
-    <target name="load-download-page-body-3" if="commons.release.3.version">
-      <echo  level="info" message="*** loading download-page body(3) file***" />
+	</target>
 
-      <!-- Set up the defaults -->
-      <condition property="BINDIR" value="${commons.release.3.subdir}" else="binaries">
-        <isset property="commons.release.3.subdir"/>
-      </condition>
-      <condition property="SRCDIR" value="${commons.release.3.subdir}" else="source">
-        <isset property="commons.release.3.subdir"/>
-      </condition>
-      <condition property="HASHLC" value="${commons.release.3.hash}" else="sha512">
-        <isset property="commons.release.3.hash"/>
-      </condition>
-      <upper string="${HASHLC}" to="HASHUC" />
+	<target name="load-download-page-body-3" if="commons.release.3.version">
+		<echo level="info" message="*** loading download-page body(3) file***" />
 
-        <!-- Load Body -->
-        <loadresource property="download-page-body-3-xml">
-            <javaresource name="${commonsMojoXdocDir}/download-page-body.xml"/>
-            <filterchain>
-                <replacetokens>
-                    <token key="VERSION"       value="${commons.release.3.version}"/>
-                    <token key="RELDESC"       value="${commons.release.3.desc}"/>
-                    <token key="NAME"          value="${project.name}"/>
-                    <token key="ID"            value="${commons.componentid}"/>
-                    <token key="FINAL_NAME"    value="${commons.release.3.name}"/>
-                    <token key="BINARY-SUFFIX" value="${commons.release.3.binary.suffix}"/>
-                    <token key="BINDIR"        value="${BINDIR}"/>
-                    <token key="SRCDIR"        value="${SRCDIR}"/>
-                    <token key="HASHUC"        value="${HASHUC}"/>
-                    <token key="HASHLC"        value="${HASHLC}"/>
-                </replacetokens>
-            </filterchain>
-        </loadresource>
-        <echo message="${download-page-body-3-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+		<!-- Set up the defaults -->
+		<condition property="BINDIR" value="${commons.release.3.subdir}" else="binaries">
+			<isset property="commons.release.3.subdir" />
+		</condition>
+		<condition property="SRCDIR" value="${commons.release.3.subdir}" else="source">
+			<isset property="commons.release.3.subdir" />
+		</condition>
+		<condition property="HASHLC" value="${commons.release.3.hash}" else="sha512">
+			<isset property="commons.release.3.hash" />
+		</condition>
+		<upper string="${HASHLC}" to="HASHUC" />
 
-    </target>
+		<!-- Load Body -->
+		<loadresource property="download-page-body-3-xml">
+			<javaresource name="${commonsMojoXdocDir}/download-page-body.xml" />
+			<filterchain>
+				<replacetokens>
+					<token key="VERSION" value="${commons.release.3.version}" />
+					<token key="RELDESC" value="${commons.release.3.desc}" />
+					<token key="NAME" value="${project.name}" />
+					<token key="ID" value="${commons.componentid}" />
+					<token key="FINAL_NAME" value="${commons.release.3.name}" />
+					<token key="BINARY-SUFFIX" value="${commons.release.3.binary.suffix}" />
+					<token key="BINDIR" value="${BINDIR}" />
+					<token key="SRCDIR" value="${SRCDIR}" />
+					<token key="HASHUC" value="${HASHUC}" />
+					<token key="HASHLC" value="${HASHLC}" />
+				</replacetokens>
+			</filterchain>
+		</loadresource>
+		<echo message="${download-page-body-3-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
 
-    <target name="load-download-page-body-4" if="commons.release.4.version">
-      <echo  level="info" message="*** loading download-page body(4) file***" />
+	</target>
 
-      <!-- Set up the defaults -->
-      <condition property="BINDIR" value="${commons.release.4.subdir}" else="binaries">
-        <isset property="commons.release.4.subdir"/>
-      </condition>
-      <condition property="SRCDIR" value="${commons.release.4.subdir}" else="source">
-        <isset property="commons.release.4.subdir"/>
-      </condition>
-      <condition property="HASHLC" value="${commons.release.4.hash}" else="sha512">
-        <isset property="commons.release.4.hash"/>
-      </condition>
-      <upper string="${HASHLC}" to="HASHUC" />
+	<target name="load-download-page-body-4" if="commons.release.4.version">
+		<echo level="info" message="*** loading download-page body(4) file***" />
 
-        <!-- Load Body -->
-        <loadresource property="download-page-body-4-xml">
-            <javaresource name="${commonsMojoXdocDir}/download-page-body.xml"/>
-            <filterchain>
-                <replacetokens>
-                    <token key="VERSION"       value="${commons.release.4.version}"/>
-                    <token key="RELDESC"       value="${commons.release.4.desc}"/>
-                    <token key="NAME"          value="${project.name}"/>
-                    <token key="ID"            value="${commons.componentid}"/>
-                    <token key="FINAL_NAME"    value="${commons.release.4.name}"/>
-                    <token key="BINARY-SUFFIX" value="${commons.release.4.binary.suffix}"/>
-                    <token key="BINDIR"        value="${BINDIR}"/>
-                    <token key="SRCDIR"        value="${SRCDIR}"/>
-                    <token key="HASHUC"        value="${HASHUC}"/>
-                    <token key="HASHLC"        value="${HASHLC}"/>
-                </replacetokens>
-            </filterchain>
-        </loadresource>
-        <echo message="${download-page-body-4-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+		<!-- Set up the defaults -->
+		<condition property="BINDIR" value="${commons.release.4.subdir}" else="binaries">
+			<isset property="commons.release.4.subdir" />
+		</condition>
+		<condition property="SRCDIR" value="${commons.release.4.subdir}" else="source">
+			<isset property="commons.release.4.subdir" />
+		</condition>
+		<condition property="HASHLC" value="${commons.release.4.hash}" else="sha512">
+			<isset property="commons.release.4.hash" />
+		</condition>
+		<upper string="${HASHLC}" to="HASHUC" />
 
-    </target>
+		<!-- Load Body -->
+		<loadresource property="download-page-body-4-xml">
+			<javaresource name="${commonsMojoXdocDir}/download-page-body.xml" />
+			<filterchain>
+				<replacetokens>
+					<token key="VERSION" value="${commons.release.4.version}" />
+					<token key="RELDESC" value="${commons.release.4.desc}" />
+					<token key="NAME" value="${project.name}" />
+					<token key="ID" value="${commons.componentid}" />
+					<token key="FINAL_NAME" value="${commons.release.4.name}" />
+					<token key="BINARY-SUFFIX" value="${commons.release.4.binary.suffix}" />
+					<token key="BINDIR" value="${BINDIR}" />
+					<token key="SRCDIR" value="${SRCDIR}" />
+					<token key="HASHUC" value="${HASHUC}" />
+					<token key="HASHLC" value="${HASHLC}" />
+				</replacetokens>
+			</filterchain>
+		</loadresource>
+		<echo message="${download-page-body-4-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
 
-    <target name="load-download-page-foot" if="commons.release.version">
-        <echo  level="info" message="*** loading download-page footer files ***" />
+	</target>
 
-        <!-- Load Footer -->
-        <loadresource property="download-page-foot-xml">
-            <javaresource name="${commonsMojoXdocDir}/download-page-foot.xml"/>
-            <filterchain>
-                <replacetokens>
-                    <token key="ID"            value="${commons.componentid}"/>
-                </replacetokens>
-            </filterchain>
-        </loadresource>
-        <echo message="${download-page-foot-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
+	<target name="load-download-page-foot" if="commons.release.version">
+		<echo level="info" message="*** loading download-page footer files ***" />
 
-    </target>
+		<!-- Load Footer -->
+		<loadresource property="download-page-foot-xml">
+			<javaresource name="${commonsMojoXdocDir}/download-page-foot.xml" />
+			<filterchain>
+				<replacetokens>
+					<token key="ID" value="${commons.componentid}" />
+				</replacetokens>
+			</filterchain>
+		</loadresource>
+		<echo message="${download-page-foot-xml}" file="${commonsMojoTempDir}/download_${commons.componentid}.xml" append="true" />
 
-    <target name="load-no-download-page-template" unless="commons.release.version">
-        <echo  level="info" message="*** copying no-download-page-template.xml ***" />
-        <loadresource property="no-downloadpage-xml">
-            <javaresource name="${commonsMojoXdocDir}/no-download-page-template.xml"/>
-        </loadresource>
-        <echo message="${no-downloadpage-xml}" file="${commonsMojoTempDir}/download-page-template.xml" append="false" />
-    </target>
+	</target>
 
-    <target name="copy-to-xdoc-dir">
-        <available file="xdocs"         type="dir" property="m1.xdocs.lib.present"/>
-        <available file="src/site/xdoc" type="dir" property="m2.xdocs.lib.present"/>
-        <antcall target="copy-to-m1-xdoc-dir"/>
-        <antcall target="copy-to-m2-xdoc-dir"/>
-    </target>
+	<target name="load-no-download-page-template" unless="commons.release.version">
+		<echo level="info" message="*** copying no-download-page-template.xml ***" />
+		<loadresource property="no-downloadpage-xml">
+			<javaresource name="${commonsMojoXdocDir}/no-download-page-template.xml" />
+		</loadresource>
+		<echo message="${no-downloadpage-xml}" file="${commonsMojoTempDir}/download-page-template.xml" append="false" />
+	</target>
 
-    <target name="copy-to-m1-xdoc-dir" if="m1.xdocs.lib.present">
-        <echo level="info" message="*** Copying ${file.name} to m1 xdocs dir ***" />
-        <copy file="${commonsMojoTempDir}/${file.name}" tofile="xdocs/${file.name}" overwrite="true" filtering="true"/>
-    </target>
+	<target name="copy-to-xdoc-dir">
+		<available file="xdocs" type="dir" property="m1.xdocs.lib.present" />
+		<available file="src/site/xdoc" type="dir" property="m2.xdocs.lib.present" />
+		<antcall target="copy-to-m1-xdoc-dir" />
+		<antcall target="copy-to-m2-xdoc-dir" />
+	</target>
 
-    <target name="copy-to-m2-xdoc-dir" if="m2.xdocs.lib.present">
-        <echo level="info" message="*** Copying ${file.name} to m2 src/site/xdoc dir ***" />
-        <copy file="${commonsMojoTempDir}/${file.name}" tofile="src/site/xdoc/${file.name}" overwrite="true" filtering="true"/>
-    </target>
+	<target name="copy-to-m1-xdoc-dir" if="m1.xdocs.lib.present">
+		<echo level="info" message="*** Copying ${file.name} to m1 xdocs dir ***" />
+		<copy file="${commonsMojoTempDir}/${file.name}" tofile="xdocs/${file.name}" overwrite="true" filtering="true" />
+	</target>
 
-    <!-- ========== Generate README.md file ================================ -->
+	<target name="copy-to-m2-xdoc-dir" if="m2.xdocs.lib.present">
+		<echo level="info" message="*** Copying ${file.name} to m2 src/site/xdoc dir ***" />
+		<copy file="${commonsMojoTempDir}/${file.name}" tofile="src/site/xdoc/${file.name}" overwrite="true" filtering="true" />
+	</target>
 
-    <target name="readme-md" description="Generate README.md">
+	<!-- ========== Generate README.md file ================================ -->
 
-        <echo level="${level}" message="----- commons-build:readme-md - Parameters - START -----" />
-        <echo level="${level}" message="project.name              : ${project.name}" />
-        <echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
-        <echo level="${level}" message="project.groupId           : ${project.groupId}" />
-        <echo level="${level}" message="project.description       : ${project.description}" />
-        <echo level="${level}" message="commons.jira.id           : ${commons.jira.id}" />
-        <echo level="${level}" message="commons.release.version   : ${commons.release.version}" />
-        <echo level="${level}" message="commons.componentid       : ${commons.componentid}" />
-        <echo level="${level}" message="----- commons-build:readme-md - Parameters - END   -----" />
+	<target name="readme-md" description="Generate README.md">
 
-        <echo level="info" message="*** Generating ${project.name} README.md ***" />
+		<echo level="${level}" message="----- commons-build:readme-md - Parameters - START -----" />
+		<echo level="${level}" message="project.name              : ${project.name}" />
+		<echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
+		<echo level="${level}" message="project.groupId           : ${project.groupId}" />
+		<echo level="${level}" message="project.description       : ${project.description}" />
+		<echo level="${level}" message="commons.jira.id           : ${commons.jira.id}" />
+		<echo level="${level}" message="commons.release.version   : ${commons.release.version}" />
+		<echo level="${level}" message="commons.componentid       : ${commons.componentid}" />
+		<echo level="${level}" message="----- commons-build:readme-md - Parameters - END   -----" />
 
-        <!-- Create a temporary directory to load the template files into -->
-        <mkdir dir="${commonsMojoTempDir}"/>
+		<echo level="info" message="*** Generating ${project.name} README.md ***" />
 
-        <!-- Load the readme-md template from mojo resources to temp directory -->
-        <loadresource property="readme-md">
-            <javaresource name="${commonsMojoXdocDir}/readme-md-template.md"/>
-        </loadresource>
-        <echo message="${readme-md}" file="${commonsMojoTempDir}/readme-md-template.md" append="false" />
+		<!-- Create a temporary directory to load the template files into -->
+		<mkdir dir="${commonsMojoTempDir}" />
 
-        <!-- Without using ant-contrib: remove "-project" for multi-module artifacts -->
-        <loadresource property="tmp.artifactId">
-            <propertyresource name="project.artifactId" />
-            <filterchain>
-                <tokenfilter>
-                    <filetokenizer/>
-                    <replacestring from="-project" to=""/>
-                </tokenfilter>
-            </filterchain>
-        </loadresource>
+		<!-- Load the readme-md template from mojo resources to temp directory -->
+		<loadresource property="readme-md">
+			<javaresource name="${commonsMojoXdocDir}/readme-md-template.md" />
+		</loadresource>
+		<echo message="${readme-md}" file="${commonsMojoTempDir}/readme-md-template.md" append="false" />
 
-        <!-- Copy the readme-md template filtering to replace properties -->
-        <copy file="${commonsMojoTempDir}/readme-md-template.md" tofile="README.md" overwrite="true">
-            <filterset>
-             <filter  token="NAME"           value="${project.name}"/>
-             <filter  token="ARTIFACTID"     value="${project.artifactId}"/>
-             <filter  token="ARTIFACTCOREID" value="${tmp.artifactId}"/>
-             <filter  token="GROUPID"        value="${project.groupId}"/>
-             <filter  token="JIRA_ID"        value="${commons.jira.id}"/>
-             <filter  token="VERSION"        value="${commons.release.version}"/>
-             <filter  token="DESCRIPTION"    value="${project.description}"/>
-             <filter  token="ID"             value="${commons.componentid}"/>
-            </filterset>
-        </copy>
+		<!-- Without using ant-contrib: remove "-project" for multi-module artifacts -->
+		<loadresource property="tmp.artifactId">
+			<propertyresource name="project.artifactId" />
+			<filterchain>
+				<tokenfilter>
+					<filetokenizer />
+					<replacestring from="-project" to="" />
+				</tokenfilter>
+			</filterchain>
+		</loadresource>
 
-    </target>
+		<!-- Copy the readme-md template filtering to replace properties -->
+		<copy file="${commonsMojoTempDir}/readme-md-template.md" tofile="README.md" overwrite="true">
+			<filterset>
+				<filter token="NAME" value="${project.name}" />
+				<filter token="ARTIFACTID" value="${project.artifactId}" />
+				<filter token="ARTIFACTCOREID" value="${tmp.artifactId}" />
+				<filter token="GROUPID" value="${project.groupId}" />
+				<filter token="JIRA_ID" value="${commons.jira.id}" />
+				<filter token="VERSION" value="${commons.release.version}" />
+				<filter token="DESCRIPTION" value="${project.description}" />
+				<filter token="ID" value="${commons.componentid}" />
+			</filterset>
+		</copy>
 
-    <!-- ========== Generate NOTICE.txt file ================================ -->
+	</target>
 
-    <target name="notice-txt" description="Generate NOTICE.txt">
+	<!-- ========== Generate NOTICE.txt file ================================ -->
 
-        <echo level="${level}" message="----- commons-build:notice-txt - Parameters - START -----" />
-        <echo level="${level}" message="project.name              : ${project.name}" />
-        <echo level="${level}" message="project.inceptionYear     : ${project.inceptionYear}" />
-        <echo level="${level}" message="----- commons-build:notice-txt - Parameters - END   -----" />
+	<target name="notice-txt" description="Generate NOTICE.txt">
 
-    	<script manager="javax" language="javascript"><![CDATA[
+		<echo level="${level}" message="----- commons-build:notice-txt - Parameters - START -----" />
+		<echo level="${level}" message="project.name              : ${project.name}" />
+		<echo level="${level}" message="project.inceptionYear     : ${project.inceptionYear}" />
+		<echo level="${level}" message="----- commons-build:notice-txt - Parameters - END   -----" />
+
+		<script manager="javax" language="javascript">
+			<![CDATA[
     		project.setProperty("commons.currentYear", new Date().getFullYear());
-    	]]></script>
-        	
-        <echo level="${level}" message="commons.currentYear       : ${commons.currentYear}" />
-        <echo level="info" message="*** Generating ${project.name} NOTICE.txt ***" />
+    	]]>
+		</script>
 
-        <!-- Create a temporary directory to load the template files into -->
-        <mkdir dir="${commonsMojoTempDir}"/>
+		<echo level="${level}" message="commons.currentYear       : ${commons.currentYear}" />
+		<echo level="info" message="*** Generating ${project.name} NOTICE.txt ***" />
 
-        <!-- Load the notice-txt template from mojo resources to temp directory -->
-        <loadresource property="notice-txt">
-            <javaresource name="${commonsMojoXdocDir}/notice-txt-template.txt"/>
-        </loadresource>
-        <echo message="${notice-txt}" file="${commonsMojoTempDir}/notice-txt-template.txt" append="false" />
+		<!-- Create a temporary directory to load the template files into -->
+		<mkdir dir="${commonsMojoTempDir}" />
 
-        <!-- Copy the notice-txt template filtering to replace properties -->
-        <copy file="${commonsMojoTempDir}/notice-txt-template.txt" tofile="NOTICE.txt" overwrite="true">
-          <filterset>
-            <filter  token="NAME"           value="${project.name}"/>
-            <filter  token="INCEPTIONYEAR"  value="${project.inceptionYear}"/>
-            <filter  token="CURRENTYEAR"    value="${commons.currentYear}"/>
-          </filterset>
-        </copy>
+		<!-- Load the notice-txt template from mojo resources to temp directory -->
+		<loadresource property="notice-txt">
+			<javaresource name="${commonsMojoXdocDir}/notice-txt-template.txt" />
+		</loadresource>
+		<echo message="${notice-txt}" file="${commonsMojoTempDir}/notice-txt-template.txt" append="false" />
 
-    </target>
+		<!-- Copy the notice-txt template filtering to replace properties -->
+		<copy file="${commonsMojoTempDir}/notice-txt-template.txt" tofile="NOTICE.txt" overwrite="true">
+			<filterset>
+				<filter token="NAME" value="${project.name}" />
+				<filter token="INCEPTIONYEAR" value="${project.inceptionYear}" />
+				<filter token="CURRENTYEAR" value="${commons.currentYear}" />
+			</filterset>
+		</copy>
 
-    <!-- ========== Generate CONTRIBUTING.md file ================================ -->
+	</target>
 
-    <target name="contributing-md" description="Generate CONTRIBUTING.md">
+	<!-- ========== Generate CONTRIBUTING.md file ================================ -->
 
-        <echo level="${level}" message="----- commons-build:readme-md - Parameters - START -----" />
-        <echo level="${level}" message="project.name              : ${project.name}" />
-        <echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
-        <echo level="${level}" message="commons.jira.id           : ${commons.jira.id}" />
-        <echo level="${level}" message="commons.componentid       : ${commons.componentid}" />
-        <echo level="${level}" message="----- commons-build:readme-md - Parameters - END   -----" />
+	<target name="contributing-md" description="Generate CONTRIBUTING.md">
 
-        <echo level="info" message="*** Generating ${project.name} CONTRIBUTING.md ***" />
+		<echo level="${level}" message="----- commons-build:readme-md - Parameters - START -----" />
+		<echo level="${level}" message="project.name              : ${project.name}" />
+		<echo level="${level}" message="project.artifactId        : ${project.artifactId}" />
+		<echo level="${level}" message="commons.jira.id           : ${commons.jira.id}" />
+		<echo level="${level}" message="commons.componentid       : ${commons.componentid}" />
+		<echo level="${level}" message="----- commons-build:readme-md - Parameters - END   -----" />
 
-        <!-- Create a temporary directory to load the template files into -->
-        <mkdir dir="${commonsMojoTempDir}"/>
+		<echo level="info" message="*** Generating ${project.name} CONTRIBUTING.md ***" />
 
-        <!-- Load the contributing-md template from mojo resources to temp directory -->
-        <loadresource property="contributing-md">
-           <javaresource name="${commonsMojoXdocDir}/contributing-md-template.md"/>
-        </loadresource>
-        <echo message="${contributing-md}" file="${commonsMojoTempDir}/contributing-md-template.md" append="false" />
+		<!-- Create a temporary directory to load the template files into -->
+		<mkdir dir="${commonsMojoTempDir}" />
 
-        <!-- Without using ant-contrib: remove "-project" for multi-module artifacts -->
-        <loadresource property="tmp.artifactId">
-            <propertyresource name="project.artifactId" />
-            <filterchain>
-                <tokenfilter>
-                    <filetokenizer/>
-                    <replacestring from="-project" to=""/>
-                </tokenfilter>
-            </filterchain>
-        </loadresource>
+		<!-- Load the contributing-md template from mojo resources to temp directory -->
+		<loadresource property="contributing-md">
+			<javaresource name="${commonsMojoXdocDir}/contributing-md-template.md" />
+		</loadresource>
+		<echo message="${contributing-md}" file="${commonsMojoTempDir}/contributing-md-template.md" append="false" />
 
-        <!-- Copy the mail-lists template filtering to replace properties -->
-        <copy file="${commonsMojoTempDir}/contributing-md-template.md" tofile="CONTRIBUTING.md" overwrite="true">
-            <filterset>
-                <filter  token="NAME"            value="${project.name}"/>
-                <filter  token="ARTIFACTID"      value="${project.artifactId}"/>
-                <filter  token="ARTIFACTCOREID"  value="${tmp.artifactId}"/>
-                <filter  token="JIRA_ID"         value="${commons.jira.id}"/>
-                <filter  token="ID"              value="${commons.componentid}"/>
-            </filterset>
-        </copy>
+		<!-- Without using ant-contrib: remove "-project" for multi-module artifacts -->
+		<loadresource property="tmp.artifactId">
+			<propertyresource name="project.artifactId" />
+			<filterchain>
+				<tokenfilter>
+					<filetokenizer />
+					<replacestring from="-project" to="" />
+				</tokenfilter>
+			</filterchain>
+		</loadresource>
 
-    </target>
+		<!-- Copy the mail-lists template filtering to replace properties -->
+		<copy file="${commonsMojoTempDir}/contributing-md-template.md" tofile="CONTRIBUTING.md" overwrite="true">
+			<filterset>
+				<filter token="NAME" value="${project.name}" />
+				<filter token="ARTIFACTID" value="${project.artifactId}" />
+				<filter token="ARTIFACTCOREID" value="${tmp.artifactId}" />
+				<filter token="JIRA_ID" value="${commons.jira.id}" />
+				<filter token="ID" value="${commons.componentid}" />
+			</filterset>
+		</copy>
+
+	</target>
 
 </project>
