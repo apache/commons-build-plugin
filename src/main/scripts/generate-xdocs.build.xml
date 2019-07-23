@@ -257,7 +257,6 @@
 					<token key="BINARY-SUFFIX" value="${commons.binary.suffix}" />
 					<token key="BINDIR" value="${BINDIR}" />
 					<token key="SRCDIR" value="${SRCDIR}" />
-					<token key="HASHUC" value="${HASHUC}" />
 					<token key="HASHLC" value="${HASHLC}" />
 				</replacetokens>
 			</filterchain>
@@ -294,7 +293,6 @@
 					<token key="BINARY-SUFFIX" value="${commons.release.2.binary.suffix}" />
 					<token key="BINDIR" value="${BINDIR}" />
 					<token key="SRCDIR" value="${SRCDIR}" />
-					<token key="HASHUC" value="${HASHUC}" />
 					<token key="HASHLC" value="${HASHLC}" />
 				</replacetokens>
 			</filterchain>
@@ -331,7 +329,6 @@
 					<token key="BINARY-SUFFIX" value="${commons.release.3.binary.suffix}" />
 					<token key="BINDIR" value="${BINDIR}" />
 					<token key="SRCDIR" value="${SRCDIR}" />
-					<token key="HASHUC" value="${HASHUC}" />
 					<token key="HASHLC" value="${HASHLC}" />
 				</replacetokens>
 			</filterchain>
@@ -368,7 +365,6 @@
 					<token key="BINARY-SUFFIX" value="${commons.release.4.binary.suffix}" />
 					<token key="BINDIR" value="${BINDIR}" />
 					<token key="SRCDIR" value="${SRCDIR}" />
-					<token key="HASHUC" value="${HASHUC}" />
 					<token key="HASHLC" value="${HASHLC}" />
 				</replacetokens>
 			</filterchain>
