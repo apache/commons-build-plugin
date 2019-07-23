@@ -63,6 +63,12 @@
             <td>The name of the alternative release of the project.<br/><strong>Default value is</strong>: <code>${commons.release.3.name}</code>.</td>
           </tr>
           <tr>
+            <td><strong><a href="#commons.release.4.name">commons.release.4.name</a></strong></td>
+            <td><code>String</code></td>
+            <td><code>-</code></td>
+            <td>The name of the alternative release of the project.<br/><strong>Default value is</strong>: <code>${commons.release.4.name}</code>.</td>
+          </tr>
+          <tr>
             <td><strong><a href="#basedir">basedir</a></strong></td>
             <td><code>File</code></td>
             <td><code>-</code></td>
@@ -206,8 +212,9 @@
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.desc}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.2.version">commons.release.2.version</a>:</strong></p>
+        </ul><hr/>
         <!-- Release 2 -->
+        <p><strong><a name="commons.release.2.version">commons.release.2.version</a>:</strong></p>
         <div>The version of an alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
@@ -231,8 +238,9 @@
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.2.binary.suffix}</code></li>
-        </ul><hr/><hr/><p><strong><a name="commons.release.3.version">commons.release.3.version</a>:</strong></p>
+        </ul><hr/><hr/>
         <!-- Release 3 -->
+        <p><strong><a name="commons.release.3.version">commons.release.3.version</a>:</strong></p>
         <div>The version of an alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
@@ -259,24 +267,25 @@
         </ul><hr/><p><strong><a name="basedir">basedir</a>:</strong></p>
         <div>The base directory from which to execute the Ant script.</div>
         <!-- Release 4 -->
+        <p><strong><a name="commons.release.4.version">commons.release.4.version</a>:</strong></p>
         <div>The version of an alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.4.version}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.3.name">commons.release.4.name</a>:</strong></p>
+        </ul><hr/><p><strong><a name="commons.release.4.name">commons.release.4.name</a>:</strong></p>
         <div>The name of the alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Default</strong>: <code>${commons.release.4.name}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.3.desc">commons.release.3.desc</a>:</strong></p>
+        </ul><hr/><p><strong><a name="commons.release.4.desc">commons.release.4.desc</a>:</strong></p>
         <div>Alternative Release Title or Description.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.4.desc}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.3.binary.suffix">commons.release.3.binary.suffix</a>:</strong></p>
+        </ul><hr/><p><strong><a name="commons.release.4.binary.suffix">commons.release.4.binary.suffix</a>:</strong></p>
         <div>The suffix for the alternative release binary distro.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
