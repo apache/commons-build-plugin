@@ -38,8 +38,8 @@
             See:
             </p>
             <ul>
-                <li><a href="https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/copy-javadoc-files.build.xml">copy-javadoc-files.build.xml</a> - Ant build script</li>
-                <li><a href="https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/copy-javadoc-files.mojos.xml">copy-javadoc-files.mojos.xml</a> - mapping document</li>
+                <li><a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/copy-javadoc-files.build.xml">copy-javadoc-files.build.xml</a> - Ant build script</li>
+                <li><a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/copy-javadoc-files.mojos.xml">copy-javadoc-files.mojos.xml</a> - mapping document</li>
                 <li><a href="copy-javadoc-files-mojo.html">Parameters</a></li>
             </ul>
 

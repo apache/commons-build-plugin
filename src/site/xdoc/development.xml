@@ -57,7 +57,7 @@
 
             <p>
             Both these files should be located in the
-            <a href="https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/">src/main/scripts</a>
+            <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/">src/main/scripts</a>
             directory.
             </p>
 

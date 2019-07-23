@@ -42,11 +42,11 @@
                 This goal uses the following:
                 <ul>
                     <li>The goal is mapped to the ant script/target using the <code>mail-page</code> mojo defintion in the 
-                        <a href="https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
+                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
                     <li>Executes the <code>mail-page</code> target in
-                        <a href="https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
+                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
                         ant script</li>
-                    <li>Uses the <a href="https://svn.apache.org/repos/asf/commons/proper/commons-build-plugin/trunk/src/main/resources/commons-xdoc-templates/mail-lists-template.xml">mail-lists-template.xml</a>
+                    <li>Uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/mail-lists-template.xml">mail-lists-template.xml</a>
                         template</li>
                     <li>Uses the <a href="mail-page-mojo.html">goal's (i.e. mojo's) parameters</a> to filter values in the template</li>
                 </ul>
