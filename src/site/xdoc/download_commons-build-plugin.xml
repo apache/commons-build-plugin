@@ -37,11 +37,11 @@ limitations under the License.
  |    - commons.release.desc    (optional)                              |
  |    - commons.release.subdir  (optional)                              |
  |                                                                      |
- |    - commons.release.2/3.version       (conditional)                 |
- |    - commons.release.2/3.name          (conditional)                 |
- |    - commons.release.2/3.binary.suffix (optional)                    |
- |    - commons.release.2/3.desc          (optional)                    |
- |    - commons.release.2/3.subdir        (optional)                    |
+ |    - commons.release.[234].version       (conditional)               |
+ |    - commons.release.[234].name          (conditional)               |
+ |    - commons.release.[234].binary.suffix (optional)                  |
+ |    - commons.release.[234].desc          (optional)                  |
+ |    - commons.release.[234].subdir        (optional)                  |
  |                                                                      |
  | 3) Example Properties                                                |
  |    (commons.release.name inherited by parent:                        |
