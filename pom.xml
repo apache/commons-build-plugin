@@ -31,7 +31,7 @@
     Apache Maven Mojo for Apache Commons Build tasks.
 
     For example:
-      mvn commons:download-page [-Dcommons.release.version=1.2.3]
+      mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
   </description>
   <url>https://commons.apache.org/proper/commons-build-plugin/</url>
   <issueManagement>
