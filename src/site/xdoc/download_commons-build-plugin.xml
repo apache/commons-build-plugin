@@ -102,7 +102,7 @@ limitations under the License.
         It is essential that you
         <a href="https://www.apache.org/info/verification.html">verify the integrity</a>
         of downloaded files, preferably using the <code>PGP</code> signature (<code>*.asc</code> files);
-        failing that using the <code>SHA1</code> hash (<code>*.sha1</code> checksum files).
+        failing that using the <code>SHA512</code> hash (<code>*.sha512</code> checksum files).
       </p>
       <p>
         The <a href="https://www.apache.org/dist/commons/KEYS">KEYS</a>
@@ -111,32 +111,32 @@ limitations under the License.
       </p>
     </subsection>
     </section>
-    <section name="Apache Commons Build Plugin Maven Mojo 1.10 ">
+    <section name="Apache Commons Build Plugin Maven Mojo 1.11 ">
       <subsection name="Binaries">
         <table>
           <tr>
-              <td><a href="[preferred]/commons/commons-build-plugin/binaries/commons-build-plugin-1.10-bin.tar.gz">commons-build-plugin-1.10-bin.tar.gz</a></td>
-              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/binaries/commons-build-plugin-1.10-bin.tar.gz.sha1">sha1</a></td>
-              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/binaries/commons-build-plugin-1.10-bin.tar.gz.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/commons-build-plugin/binaries/commons-build-plugin-1.11-bin.tar.gz">commons-build-plugin-1.11-bin.tar.gz</a></td>
+              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/binaries/commons-build-plugin-1.11-bin.tar.gz.sha512">sha512</a></td>
+              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/binaries/commons-build-plugin-1.11-bin.tar.gz.asc">pgp</a></td>
           </tr>
           <tr>
-              <td><a href="[preferred]/commons/commons-build-plugin/binaries/commons-build-plugin-1.10-bin.zip">commons-build-plugin-1.10-bin.zip</a></td>
-              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/binaries/commons-build-plugin-1.10-bin.zip.sha1">sha1</a></td>
-              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/binaries/commons-build-plugin-1.10-bin.zip.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/commons-build-plugin/binaries/commons-build-plugin-1.11-bin.zip">commons-build-plugin-1.11-bin.zip</a></td>
+              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/binaries/commons-build-plugin-1.11-bin.zip.sha512">sha512</a></td>
+              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/binaries/commons-build-plugin-1.11-bin.zip.asc">pgp</a></td>
           </tr>
         </table>
       </subsection>
       <subsection name="Source">
         <table>
           <tr>
-              <td><a href="[preferred]/commons/commons-build-plugin/source/commons-build-plugin-1.10-src.tar.gz">commons-build-plugin-1.10-src.tar.gz</a></td>
-              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/source/commons-build-plugin-1.10-src.tar.gz.sha1">sha1</a></td>
-              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/source/commons-build-plugin-1.10-src.tar.gz.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/commons-build-plugin/source/commons-build-plugin-1.11-src.tar.gz">commons-build-plugin-1.11-src.tar.gz</a></td>
+              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/source/commons-build-plugin-1.11-src.tar.gz.sha512">sha512</a></td>
+              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/source/commons-build-plugin-1.11-src.tar.gz.asc">pgp</a></td>
           </tr>
           <tr>
-              <td><a href="[preferred]/commons/commons-build-plugin/source/commons-build-plugin-1.10-src.zip">commons-build-plugin-1.10-src.zip</a></td>
-              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/source/commons-build-plugin-1.10-src.zip.sha1">sha1</a></td>
-              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/source/commons-build-plugin-1.10-src.zip.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/commons-build-plugin/source/commons-build-plugin-1.11-src.zip">commons-build-plugin-1.11-src.zip</a></td>
+              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/source/commons-build-plugin-1.11-src.zip.sha512">sha512</a></td>
+              <td><a href="https://www.apache.org/dist/commons/commons-build-plugin/source/commons-build-plugin-1.11-src.zip.asc">pgp</a></td>
           </tr>
         </table>
       </subsection>

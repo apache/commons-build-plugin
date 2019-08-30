@@ -25,7 +25,7 @@
   </parent>
   <artifactId>commons-build-plugin</artifactId>
   <packaging>maven-plugin</packaging>
-  <version>1.11-SNAPSHOT</version>
+  <version>1.11</version>
   <name>Apache Commons Build Plugin Maven Mojo</name>
   <description>
     Apache Maven Mojo for Apache Commons Build tasks.
