@@ -25,6 +25,14 @@
   </properties>
 
   <body>
+    <release version="1.12" date="YYYY-MM-DD" description="Feature release">
+      <action dev="ggregory" type="update">
+        Enable GitHub build.
+      </action>
+      <action dev="ggregory" type="update">
+        Update spotbugs-maven-plugin from 4.0.0 to 4.0.4.
+      </action>
+    </release>
     <release version="1.11" date="2019-08-30" description="Feature release">
       <action dev="ggregory" type="update">
         versions-maven-plugin 2.5 -> 2.7.
