@@ -161,12 +161,12 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>${spotbugs.plugin.version}</version>
+        <version>${commons.spotbugs.version}</version>
         <dependencies>
           <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs</artifactId>
-            <version>${spotbugs.impl.version}</version>
+            <version>${commons.spotbugs.impl.version}</version>
          </dependency>
         </dependencies>        
         <configuration>
@@ -194,7 +194,7 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>${spotbugs.plugin.version}</version>
+        <version>${commons.spotbugs.version}</version>
         <configuration>
         <!-- <excludeFilterFile>${basedir}/spotbugs-exclude-filter.xml</excludeFilterFile> -->
         </configuration>
@@ -242,8 +242,8 @@
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
     <commons.releaseManagerName>Rob Tompkins</commons.releaseManagerName>
     <commons.releaseManagerKey>B6E73D84EA4FCC47166087253FAAD2CD5ECBB314</commons.releaseManagerKey>
-    <spotbugs.plugin.version>4.0.4</spotbugs.plugin.version>
-    <spotbugs.impl.version>4.0.6</spotbugs.impl.version>
+    <commons.spotbugs.version>4.0.4</commons.spotbugs.version>
+    <commons.spotbugs.impl.version>4.0.6</commons.spotbugs.impl.version>    
   </properties>
   <profiles>
     <profile>
