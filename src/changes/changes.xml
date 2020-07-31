@@ -29,28 +29,27 @@
       <action dev="ggregory" type="update">
         Enable GitHub build.
       </action>
-      <action dev="ggregory" type="update">
-        Update spotbugs-maven-plugin from 4.0.0 to 4.0.4.
+      <action dev="ggregory" type="update" due-to="Gary Gregory, Dependabot">
+        Update spotbugs-maven-plugin from 4.0.0 to 4.1.1, #7.
       </action>
     </release>
     <release version="1.11" date="2019-08-30" description="Feature release">
       <action dev="ggregory" type="update">
-        versions-maven-plugin 2.5 -> 2.7.
+        Update versions-maven-plugin 2.5 -> 2.7.
       </action>
       <action dev="ggregory" type="update">
-        maven-plugin-plugin 3.5.2 -> 3.6.0.
+        Update maven-plugin-plugin 3.5.2 -> 3.6.0.
       </action>
       <action dev="ggregory" type="update">
-        maven-plugin-tools-ant  3.5.2 -> 3.6.0.
+        Update maven-plugin-tools-ant  3.5.2 -> 3.6.0.
       </action>
       <action dev="ggregory" type="update">
-        commons.release-plugin.version 1.5 -> 1.6.
+        Update commons.release-plugin.version 1.5 -> 1.6.
       </action>
       <action dev="ggregory" type="update">
         Replace http://mail-archives.apache.org with https://mail-archives.apache.org.
       </action>
     </release>
-
     <release version="1.10" date="2019-02-26" description="Feature release">
       <action dev="ggregory" type="update">
         Use SHA512 signatures as the default in the download page.
