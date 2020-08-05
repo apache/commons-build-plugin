@@ -43,7 +43,8 @@
 @NAME@
 ===================
 
-[![Build Status](https://travis-ci.org/apache/commons-@ID@.svg)](https://travis-ci.org/apache/commons-@ID@)
+[![Travis-CI Status](https://travis-ci.org/apache/commons-@ID@.svg)](https://travis-ci.org/apache/commons-@ID@)
+[![GitHub Actions Status](https://github.com/apache/commons-@ID@/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-@ID@/actions)
 [![Coverage Status](https://coveralls.io/repos/apache/commons-@ID@/badge.svg)](https://coveralls.io/r/apache/commons-@ID@)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/badge.svg)](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/)
 [![Javadocs](https://javadoc.io/badge/@GROUPID@/@ARTIFACTCOREID@/@VERSION@.svg)](https://javadoc.io/doc/@GROUPID@/@ARTIFACTCOREID@/@VERSION@)
