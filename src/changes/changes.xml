@@ -30,7 +30,7 @@
         Enable GitHub build.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory, Dependabot">
-        Update spotbugs-maven-plugin from 4.0.0 to 4.1.1, #7.
+        Update spotbugs-maven-plugin from 4.0.0 to 4.1.2, #7, #12.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
         Update actions/checkout from v2.3.1 to v2.3.2 #9.
