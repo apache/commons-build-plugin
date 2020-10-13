@@ -25,11 +25,11 @@
         Commons Build Plugin Test Project.
     </description>
 
-    <url>http://commons.apache.org/commons-build-plugin/</url>
+    <url>https://commons.apache.org/commons-build-plugin/</url>
 
     <issueManagement>
         <system>jira</system>
-        <url>http://issues.apache.org/jira/browse/COMMONSSITE</url>
+        <url>https://issues.apache.org/jira/browse/COMMONSSITE</url>
     </issueManagement>
 
     <build>

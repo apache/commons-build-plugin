@@ -73,7 +73,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-build-plugin</artifactId>
-  <version>1.9</version>
+  <version>1.11</version>
 </dependency>
 ```
 

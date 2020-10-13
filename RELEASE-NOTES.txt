@@ -7,8 +7,25 @@ INTRODUCTION:
 The Apache Commons Build Plugin is a Maven Plugin which can be used by Apache Commons components.
 
 See:
-   http://commons.apache.org/commons-build-plugin/
+   https://commons.apache.org/commons-build-plugin/
 
+VERSION 1.11 - 2019-08-30
+-------------------------
+
+Changes since the last release:
+1. versions-maven-plugin 2.5 -> 2.7. (update; ggregory)
+2. maven-plugin-plugin 3.5.2 -> 3.6.0. (update; ggregory)
+3. maven-plugin-tools-ant  3.5.2 -> 3.6.0. (update; ggregory)
+4. commons.release-plugin.version 1.5 -> 1.6. (update; ggregory)
+5. Replace http://mail-archives.apache.org with https://mail-archives.apache.org. (update; ggregory)
+
+
+VERSION 1.10 - 2019-02-26
+-------------------------
+
+Changes since the last release:
+1. Use SHA512 signatures as the default in the download page. (update; ggregory)
+2. Use SHA256 signatures as the default in the download page. (update; sebb)
 
 VERSION 1.9 - 2018-06-16
 ------------------------
