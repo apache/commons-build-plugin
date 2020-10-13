@@ -26,6 +26,9 @@
 
   <body>
     <release version="1.12" date="YYYY-MM-DD" description="Feature release">
+      <action dev="sebb" type="update">
+        commons-build:mail-page - add links to lists.apache.org
+      </action>
       <action dev="sebb" type="fix" issue="COMMONSSITE-137">
         commons-build:all ignores commons.release.hash settings
       </action>
