@@ -46,15 +46,15 @@ Apache Commons Build Plugin Maven Mojo
 [![Build Status](https://travis-ci.org/apache/commons-commons-build-plugin.svg)](https://travis-ci.org/apache/commons-commons-build-plugin)
 [![Coverage Status](https://coveralls.io/repos/apache/commons-commons-build-plugin/badge.svg)](https://coveralls.io/r/apache/commons-commons-build-plugin)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-build-plugin/1.9.svg)](https://javadoc.io/doc/org.apache.commons/commons-build-plugin/1.9)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-build-plugin/1.12.svg)](https://javadoc.io/doc/org.apache.commons/commons-build-plugin/1.12)
 
 Apache Maven Mojo for Apache Commons Build tasks.
 
     For example:
-      mvn commons:download-page [-Dcommons.release.version=1.2.3]
+      mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
 
     To use a SNAPSHOT version (for testing etc)
-      mvn org.apache.commons:commons-build-plugin:1.10-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
+      mvn org.apache.commons:commons-build-plugin:1.12-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
 
 Documentation
 -------------
@@ -73,7 +73,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-build-plugin</artifactId>
-  <version>1.11</version>
+  <version>1.12</version>
 </dependency>
 ```
 
