@@ -235,8 +235,8 @@
     
     <!-- Commons Release Plugin -->
     <commons.bc.version>1.10</commons.bc.version>
-    <commons.release.version>1.11</commons.release.version>
-    <commons.release-plugin.version>1.6</commons.release-plugin.version>
+    <commons.release.version>1.12</commons.release.version>
+    <commons.release-plugin.version>1.7</commons.release-plugin.version>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
@@ -258,6 +258,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.8</version>
             <executions>
               <execution>
                 <id>prepare-checkout</id>
