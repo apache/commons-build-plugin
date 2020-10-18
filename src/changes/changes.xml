@@ -25,7 +25,7 @@
   </properties>
 
   <body>
-    <release version="1.12" date="YYYY-MM-DD" description="Feature release">
+    <release version="1.12" date="2020-10-17" description="Feature release">
       <action dev="sebb" type="update">
         commons-build:mail-page - add links to lists.apache.org
       </action>
