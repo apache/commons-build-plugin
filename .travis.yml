@@ -22,9 +22,6 @@ matrix:
   include:
     - jdk: openjdk8
     - jdk: openjdk11
-    - jdk: openjdk12
-    - jdk: openjdk13
-    - jdk: oraclejdk11
     - jdk: openjdk-ea
   allow_failures:
     - jdk: openjdk-ea
