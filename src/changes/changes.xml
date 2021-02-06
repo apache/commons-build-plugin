@@ -39,7 +39,7 @@
         Update spotbugs-maven-plugin from 4.0.0 to 4.2.1, #7, #12, #15, #24.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
-        Update actions/checkout from v2.3.1 to v2.3.3 #9, #14.
+        Update actions/checkout from v2.3.1 to v2.3.4 #9, #14, #21.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
         Update versions-maven-plugin from 2.7 to 2.8.1 #10.
