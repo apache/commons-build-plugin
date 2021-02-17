@@ -35,6 +35,9 @@
       <action dev="ggregory" type="update" due-to="Dependabot">
         Update actions/checkout from v2.3.3 to v2.3.4 #9, #14, #21.
       </action>
+      <action dev="ggregory" type="update" due-to="Dependabot">
+        Bump actions/cache from v2 to v2.1.4 #25.
+      </action>
     </release>
     <release version="1.12" date="2020-10-17" description="Feature release">
       <action dev="sebb" type="update">
