@@ -108,7 +108,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-plugin-plugin</artifactId>
-        <version>3.6.0</version>
+        <version>3.6.1</version>
         <!-- Add the Ant plugin tools to the plugin -->
         <dependencies>
           <dependency>
