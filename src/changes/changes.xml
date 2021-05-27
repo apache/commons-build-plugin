@@ -39,7 +39,7 @@
         Update actions/checkout from v2.3.3 to v2.3.4 #9, #14, #21.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
-        Bump actions/cache from v2 to v2.1.4 #25.
+        Bump actions/cache from v2 to v2.1.5, #25, #34.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">
         Bump maven-plugin-plugin from 3.6.0 to 3.6.1.
