@@ -51,7 +51,7 @@
         Bump commons.spotbugs.version from 4.2.0 to 4.2.3.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">
-        Bump commons.spotbugs.impl.version from 4.2.0 to 4.2.3.
+        Bump commons.spotbugs.impl.version from 4.2.0 to 4.3.0.
       </action>
     </release>
     <release version="1.12" date="2020-10-17" description="Feature release">
