@@ -42,10 +42,10 @@
         Bump actions/cache from v2 to v2.1.7, #25, #37, #51.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">
-        Bump maven-plugin-plugin from 3.6.0 to 3.6.1, #33.
+        Bump maven-plugin-plugin from 3.6.0 to 3.6.2, #33, #52.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">
-        Bump maven-plugin-tools-ant from 3.6.0 to 3.6.2, #32, #52.
+        Bump maven-plugin-tools-ant from 3.6.0 to 3.6.2, #32, #53.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory, Dependabot">
         Bump commons.spotbugs.version from 4.2.0 to 4.3.0, #38.
