@@ -48,6 +48,7 @@
 [![Coverage Status](https://coveralls.io/repos/apache/commons-@ID@/badge.svg)](https://coveralls.io/r/apache/commons-@ID@)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/badge.svg)](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/)
 [![Javadocs](https://javadoc.io/badge/@GROUPID@/@ARTIFACTCOREID@/@VERSION@.svg)](https://javadoc.io/doc/@GROUPID@/@ARTIFACTCOREID@/@VERSION@)
+[![CodeQL](https://github.com/apache/commons-@ID@/workflows/CodeQL/badge.svg)](https://github.com/apache/commons-@ID@/actions?query=workflow%3ACodeQL)
 
 @DESCRIPTION@
 
