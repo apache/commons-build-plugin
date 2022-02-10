@@ -43,7 +43,6 @@
 Apache Commons Build Plugin Maven Mojo
 ===================
 
-[![Travis-CI Status](https://travis-ci.org/apache/commons-commons-build-plugin.svg)](https://travis-ci.org/apache/commons-commons-build-plugin)
 [![GitHub Actions Status](https://github.com/apache/commons-commons-build-plugin/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-commons-build-plugin/actions)
 [![Coverage Status](https://coveralls.io/repos/apache/commons-commons-build-plugin/badge.svg)](https://coveralls.io/r/apache/commons-commons-build-plugin)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/)
