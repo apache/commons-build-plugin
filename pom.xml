@@ -98,7 +98,7 @@
   </dependencies>
 
   <build>
-    <defaultGoal>clean apache-rat:check spotbugs:check javadoc:javadoc package</defaultGoal>
+    <defaultGoal>clean verify apache-rat:check spotbugs:check pmd:check javadoc:javadoc</defaultGoal>
     <resources>
       <resource>
         <directory>src/main/resources</directory>
