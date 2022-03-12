@@ -42,7 +42,7 @@
         Bump actions/cache from v2 to v2.1.7, #25, #37, #51.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">
-        Bump maven-plugin-plugin from 3.6.0 to 3.6.2, #33, #52.
+        Bump maven-plugin-plugin from 3.6.0 to 3.6.4, #33, #52, #61.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">
         Bump maven-plugin-tools-ant from 3.6.0 to 3.6.4, #32, #53, #59.
