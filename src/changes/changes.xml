@@ -26,6 +26,11 @@
 
   <body>
     <release version="1.13" date="20YY-MM-DD" description="Feature release">
+      <!--  ADD -->
+      <action dev="ggregory" type="update" due-to="Dependabot">
+        Add property commons.dist.subdir.
+      </action>
+      <!--  UPDATE -->
       <action dev="ggregory" type="update" due-to="Dependabot">
         Bump maven-antrun-plugin from 1.8 to 3.0.0, #18.
       </action>

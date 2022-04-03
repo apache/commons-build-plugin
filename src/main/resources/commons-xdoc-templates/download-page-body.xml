@@ -2,28 +2,28 @@
       <subsection name="Binaries">
         <table>
           <tr>
-              <td><a href="[preferred]/commons/@ID@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.tar.gz">@FINAL_NAME@@BINARY-SUFFIX@.tar.gz</a></td>
-              <td><a href="https://www.apache.org/dist/commons/@ID@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.tar.gz.@HASHLC@">@HASHLC@</a></td>
-              <td><a href="https://www.apache.org/dist/commons/@ID@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.tar.gz.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/@DISTDIR@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.tar.gz">@FINAL_NAME@@BINARY-SUFFIX@.tar.gz</a></td>
+              <td><a href="https://www.apache.org/dist/commons/@DISTDIR@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.tar.gz.@HASHLC@">@HASHLC@</a></td>
+              <td><a href="https://www.apache.org/dist/commons/@DISTDIR@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.tar.gz.asc">pgp</a></td>
           </tr>
           <tr>
-              <td><a href="[preferred]/commons/@ID@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.zip">@FINAL_NAME@@BINARY-SUFFIX@.zip</a></td>
-              <td><a href="https://www.apache.org/dist/commons/@ID@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.zip.@HASHLC@">@HASHLC@</a></td>
-              <td><a href="https://www.apache.org/dist/commons/@ID@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.zip.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/@DISTDIR@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.zip">@FINAL_NAME@@BINARY-SUFFIX@.zip</a></td>
+              <td><a href="https://www.apache.org/dist/commons/@DISTDIR@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.zip.@HASHLC@">@HASHLC@</a></td>
+              <td><a href="https://www.apache.org/dist/commons/@DISTDIR@/@BINDIR@/@FINAL_NAME@@BINARY-SUFFIX@.zip.asc">pgp</a></td>
           </tr>
         </table>
       </subsection>
       <subsection name="Source">
         <table>
           <tr>
-              <td><a href="[preferred]/commons/@ID@/@SRCDIR@/@FINAL_NAME@-src.tar.gz">@FINAL_NAME@-src.tar.gz</a></td>
-              <td><a href="https://www.apache.org/dist/commons/@ID@/@SRCDIR@/@FINAL_NAME@-src.tar.gz.@HASHLC@">@HASHLC@</a></td>
-              <td><a href="https://www.apache.org/dist/commons/@ID@/@SRCDIR@/@FINAL_NAME@-src.tar.gz.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/@DISTDIR@/@SRCDIR@/@FINAL_NAME@-src.tar.gz">@FINAL_NAME@-src.tar.gz</a></td>
+              <td><a href="https://www.apache.org/dist/commons/@DISTDIR@/@SRCDIR@/@FINAL_NAME@-src.tar.gz.@HASHLC@">@HASHLC@</a></td>
+              <td><a href="https://www.apache.org/dist/commons/@DISTDIR@/@SRCDIR@/@FINAL_NAME@-src.tar.gz.asc">pgp</a></td>
           </tr>
           <tr>
-              <td><a href="[preferred]/commons/@ID@/@SRCDIR@/@FINAL_NAME@-src.zip">@FINAL_NAME@-src.zip</a></td>
-              <td><a href="https://www.apache.org/dist/commons/@ID@/@SRCDIR@/@FINAL_NAME@-src.zip.@HASHLC@">@HASHLC@</a></td>
-              <td><a href="https://www.apache.org/dist/commons/@ID@/@SRCDIR@/@FINAL_NAME@-src.zip.asc">pgp</a></td>
+              <td><a href="[preferred]/commons/@DISTDIR@/@SRCDIR@/@FINAL_NAME@-src.zip">@FINAL_NAME@-src.zip</a></td>
+              <td><a href="https://www.apache.org/dist/commons/@DISTDIR@/@SRCDIR@/@FINAL_NAME@-src.zip.@HASHLC@">@HASHLC@</a></td>
+              <td><a href="https://www.apache.org/dist/commons/@DISTDIR@/@SRCDIR@/@FINAL_NAME@-src.zip.asc">pgp</a></td>
           </tr>
         </table>
       </subsection>

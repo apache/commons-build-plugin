@@ -155,6 +155,7 @@
 		<echo level="${level}" message="----- commons-build:download-page - Parameters - START -----" />
 		<echo level="${level}" message="project.name             : ${project.name}" />
 		<echo level="${level}" message="commons.componentid      : ${commons.componentid}" />
+		<echo level="${level}" message="commons.dist.subdir      : ${commons.dist.subdir}" />
 		<!-- Current release -->
 		<echo level="${level}" message="commons.release.version  : ${commons.release.version}" />
 		<echo level="${level}" message="commons.release.name     : ${commons.release.name}" />
@@ -233,6 +234,9 @@
 		<echo level="info" message="*** loading download-page body(1) file***" />
 
 		<!-- Set up the defaults -->
+		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
+			<isset property="commons.dist.subdir" />
+		</condition>
 		<condition property="BINDIR" value="${commons.release.subdir}" else="binaries">
 			<isset property="commons.release.subdir" />
 		</condition>
@@ -255,6 +259,7 @@
 					<token key="ID" value="${commons.componentid}" />
 					<token key="FINAL_NAME" value="${commons.release.name}" />
 					<token key="BINARY-SUFFIX" value="${commons.binary.suffix}" />
+					<token key="DISTDIR" value="${DISTDIR}" />
 					<token key="BINDIR" value="${BINDIR}" />
 					<token key="SRCDIR" value="${SRCDIR}" />
 					<token key="HASHLC" value="${HASHLC}" />
@@ -269,6 +274,9 @@
 		<echo level="info" message="*** loading download-page body(2) file***" />
 
 		<!-- Set up the defaults -->
+		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
+			<isset property="commons.dist.subdir" />
+		</condition>
 		<condition property="BINDIR" value="${commons.release.2.subdir}" else="binaries">
 			<isset property="commons.release.2.subdir" />
 		</condition>
@@ -291,6 +299,7 @@
 					<token key="ID" value="${commons.componentid}" />
 					<token key="FINAL_NAME" value="${commons.release.2.name}" />
 					<token key="BINARY-SUFFIX" value="${commons.release.2.binary.suffix}" />
+					<token key="DISTDIR" value="${DISTDIR}" />
 					<token key="BINDIR" value="${BINDIR}" />
 					<token key="SRCDIR" value="${SRCDIR}" />
 					<token key="HASHLC" value="${HASHLC}" />
@@ -305,6 +314,9 @@
 		<echo level="info" message="*** loading download-page body(3) file***" />
 
 		<!-- Set up the defaults -->
+		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
+			<isset property="commons.dist.subdir" />
+		</condition>
 		<condition property="BINDIR" value="${commons.release.3.subdir}" else="binaries">
 			<isset property="commons.release.3.subdir" />
 		</condition>
@@ -327,6 +339,7 @@
 					<token key="ID" value="${commons.componentid}" />
 					<token key="FINAL_NAME" value="${commons.release.3.name}" />
 					<token key="BINARY-SUFFIX" value="${commons.release.3.binary.suffix}" />
+					<token key="DISTDIR" value="${DISTDIR}" />
 					<token key="BINDIR" value="${BINDIR}" />
 					<token key="SRCDIR" value="${SRCDIR}" />
 					<token key="HASHLC" value="${HASHLC}" />
@@ -341,6 +354,9 @@
 		<echo level="info" message="*** loading download-page body(4) file***" />
 
 		<!-- Set up the defaults -->
+		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
+			<isset property="commons.dist.subdir" />
+		</condition>
 		<condition property="BINDIR" value="${commons.release.4.subdir}" else="binaries">
 			<isset property="commons.release.4.subdir" />
 		</condition>
@@ -363,6 +379,7 @@
 					<token key="ID" value="${commons.componentid}" />
 					<token key="FINAL_NAME" value="${commons.release.4.name}" />
 					<token key="BINARY-SUFFIX" value="${commons.release.4.binary.suffix}" />
+					<token key="DISTDIR" value="${DISTDIR}" />
 					<token key="BINDIR" value="${BINDIR}" />
 					<token key="SRCDIR" value="${SRCDIR}" />
 					<token key="HASHLC" value="${HASHLC}" />
@@ -376,12 +393,18 @@
 	<target name="load-download-page-foot" if="commons.release.version">
 		<echo level="info" message="*** loading download-page footer files ***" />
 
+		<!-- Set up the defaults -->
+		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
+			<isset property="commons.dist.subdir" />
+		</condition>
+
 		<!-- Load Footer -->
 		<loadresource property="download-page-foot-xml">
 			<javaresource name="${commonsMojoXdocDir}/download-page-foot.xml" />
 			<filterchain>
 				<replacetokens>
 					<token key="ID" value="${commons.componentid}" />
+					<token key="DISTDIR" value="${DISTDIR}" />
 				</replacetokens>
 			</filterchain>
 		</loadresource>

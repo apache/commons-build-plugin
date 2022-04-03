@@ -92,6 +92,15 @@
                     <description>The commons component id.</description>
                 </parameter>
                 <parameter>
+                    <name>commons.dist.subdir</name> 
+                    <property>commons.dist.subdir</property>
+                    <required>false</required>
+                    <readonly>false</readonly>
+                    <defaultValue>${commons.dist.subdir}</defaultValue>
+                    <type>java.lang.String</type>
+                    <description>The folder in commons for this component.</description>
+                </parameter>
+                <parameter>
                     <name>commons.jira.pid</name> 
                     <property>commons.jira.pid</property>
                     <required>true</required>
