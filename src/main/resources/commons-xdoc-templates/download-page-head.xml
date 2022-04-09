@@ -107,7 +107,7 @@ limitations under the License.
         failing that using the <code>@HASHUC@</code> hash (<code>*.@HASHLC@</code> checksum files).
       </p>
       <p>
-        The <a href="https://www.apache.org/dist/commons/KEYS">KEYS</a>
+        The <a href="https://downloads.apache.org/commons/KEYS">KEYS</a>
         file contains the public PGP keys used by Apache Commons developers
         to sign releases.
       </p>
