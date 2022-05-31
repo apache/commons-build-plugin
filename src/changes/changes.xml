@@ -31,8 +31,8 @@
         Add property commons.dist.subdir.
       </action>
       <!--  UPDATE -->
-      <action dev="ggregory" type="update" due-to="Dependabot">
-        Update actions/checkout from 2.3.3 to 3.0.2 #9, #14, #21, #48, #70.
+      <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">
+        Update actions/checkout from 2.3.3 to 3.0.3 #9, #14, #21, #48, #70.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">
         Bump actions/cache from 2 to 3.0.2, #25, #37, #51, #65.
