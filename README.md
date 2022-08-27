@@ -47,7 +47,6 @@ Apache Commons Build Plugin Maven Mojo
 [![Coverage Status](https://coveralls.io/repos/apache/commons-commons-build-plugin/badge.svg)](https://coveralls.io/r/apache/commons-commons-build-plugin)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/)
 [![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-build-plugin/1.12.svg)](https://javadoc.io/doc/org.apache.commons/commons-build-plugin/1.12)
-[![CodeQL](https://github.com/apache/commons-build-plugin/workflows/CodeQL/badge.svg)](https://github.com/apache/commons-build-plugin/actions?query=workflow%3ACodeQL)
 
 Apache Maven Mojo for Apache Commons Build tasks.
 
