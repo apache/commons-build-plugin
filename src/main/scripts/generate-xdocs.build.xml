@@ -192,7 +192,7 @@
 		<!-- Create a temporary directory to load the template files into -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the dowload-page template from mojo resources to temp directory -->
+		<!-- Load the download-page template from mojo resources to temp directory -->
 		<antcall target="load-no-download-page-template" />
 		<antcall target="load-download-page-head" />
 		<antcall target="load-download-page-body-1" />
