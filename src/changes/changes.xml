@@ -26,14 +26,15 @@
 
   <body>
     <release version="1.13" date="20YY-MM-DD" description="Feature release">
+      <!-- FIX -->
       <action dev="ggregory" type="fix" due-to="Marc Wrobel">
         Fix minor typos #79.
       </action>
-      <!--  ADD -->
+      <!-- ADD -->
       <action dev="ggregory" type="update" due-to="Dependabot">
         Add property commons.dist.subdir.
       </action>
-      <!--  UPDATE -->
+      <!-- UPDATE -->
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">
         Bump actions/cache from 2 to 3.0.7, #25, #37, #51, #65.
       </action>
