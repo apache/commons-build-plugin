@@ -42,7 +42,7 @@
                 <p>
                 This goal uses the following:
                 <ul>
-                    <li>The goal is mapped to the ant script/target using the <code>sandbox-jira-page</code> mojo defintion in the 
+                    <li>The goal is mapped to the ant script/target using the <code>sandbox-jira-page</code> mojo definition in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
                     <li>Executes the <code>sandbox-jira-page</code> target in
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>

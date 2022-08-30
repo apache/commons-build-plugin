@@ -87,7 +87,7 @@
         <section name="Modifying Existing Scripts">
 
             <p>
-            Not alot to say about this except, if you need access to additional variables from the component's
+            Not a lot to say about this except, if you need access to additional variables from the component's
             <code>pom.xml</code> in the ant build script then you will need to define additional <i>parameters</i>
             for these in the associated <i>mapping document</i>.
             </p>

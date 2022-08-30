@@ -111,7 +111,7 @@ Changes since the last release:
 2. Add assembly descriptors
 3. Minor documentation corrections
 4. COMMONSSITE-36 - plugin won't build because of missing OSGi manifest file.
-5. COOMONSSITE-35 - Upgrade to Ant 1.7.1 (fixes two problems/bugs when generating
+5. COMMONSSITE-35 - Upgrade to Ant 1.7.1 (fixes two problems/bugs when generating
                     Jira/download pages).
 
 VERSION 1.0 - 2008-02-24
