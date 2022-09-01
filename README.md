@@ -44,7 +44,7 @@ Apache Commons Build Plugin Maven Mojo
 ===================
 
 [![GitHub Actions Status](https://github.com/apache/commons-commons-build-plugin/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-commons-build-plugin/actions)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/?gav=true)
 [![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-build-plugin/1.12.svg)](https://javadoc.io/doc/org.apache.commons/commons-build-plugin/1.12)
 
 Apache Maven Mojo for Apache Commons Build tasks.
