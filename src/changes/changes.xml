@@ -66,7 +66,7 @@
         Bump versions-maven-plugin from 2.9.0 to 2.12.0 #64, #74, #81.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
-        Bump commons-parent from 52 to 53 #67.
+        Bump commons-parent from 52 to 54 #67, #86.
       </action>
     </release>
     <release version="1.12" date="2020-10-17" description="Feature release">
