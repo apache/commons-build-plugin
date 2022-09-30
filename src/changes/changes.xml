@@ -34,6 +34,9 @@
       <action dev="ggregory" type="update" due-to="Dependabot">
         Add property commons.dist.subdir.
       </action>
+      <action dev="ggregory" type="update" due-to="Dependabot">
+        Add  github/codeql-action.
+      </action>
       <!-- UPDATE -->
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">
         Bump actions/cache from 2 to 3.0.9, #25, #37, #51, #65, #88.
