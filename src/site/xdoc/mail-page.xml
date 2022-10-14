@@ -61,10 +61,10 @@
                 </ul>
                 </p>
                 <p>
-                Example configuration for Commons Chain:
+                Example configuration for Commons Text:
 <source><![CDATA[
     <properties>
-        <commons.componentid>chain</commons.componentid>
+        <commons.componentid>text</commons.componentid>
     </properties> 
 ]]></source>
                 </p>

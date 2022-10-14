@@ -60,10 +60,10 @@
                 </ul>
                 </p>
                 <p>
-                Example configuration for Commons Chain:
+                Example configuration for Commons Text:
 <source><![CDATA[
     <properties>
-        <commons.jira.id>CHAIN</commons.jira.id>
+        <commons.jira.id>TEXT</commons.jira.id>
     </properties>
 ]]></source>
                 </p>

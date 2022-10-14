@@ -76,11 +76,11 @@
                 </ul>
                 </p>
                 <p>
-                Example configuration for Commons Chain:
+                Example configuration for Commons Text:
 <source><![CDATA[
     <properties>
-        <commons.componentid>chain</commons.componentid>
-        <commons.release.version>1.2</commons.release.version>
+        <commons.componentid>text</commons.componentid>
+        <commons.release.version>1.10.0</commons.release.version>
     </properties> 
 ]]></source>
                 </p>

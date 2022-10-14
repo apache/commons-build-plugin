@@ -63,11 +63,11 @@
                 </ul>
                 </p>
                 <p>
-                Example configuration for Commons Chain:
+                Example configuration for Commons Text:
 <source><![CDATA[
     <properties>
-        <commons.jira.id>CHAIN</commons.jira.id>
-        <commons.jira.pid>12310462</commons.jira.pid>
+        <commons.jira.id>TEXT</commons.jira.id>
+        <commons.jira.pid>12318221</commons.jira.pid>
     </properties> 
 ]]></source>
                 </p>

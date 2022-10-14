@@ -61,10 +61,10 @@
                 </ul>
                 </p>
                 <p>
-                Example configuration for Commons Chain:
+                Example configuration for Commons Text:
 <source><![CDATA[
     <project>
-        <inceptionYear>2018</inceptionYear>
+        <inceptionYear>2014</inceptionYear>
     </project> 
 ]]></source>
                 </p>
