@@ -48,6 +48,9 @@
         Bump actions/setup-java from 2 to 3.6.0 #97.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
+        Bump actions/upload-artifact from 3.1.0 to 3.1.1.
+      </action>
+      <action dev="ggregory" type="update" due-to="Dependabot">
         Bump maven-antrun-plugin from 1.8 to 3.1.0, #18, #71.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory, Dependabot">
