@@ -51,7 +51,7 @@
         Bump actions/upload-artifact from 3.1.0 to 3.1.1.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
-        Bump github/codeql-action from 2.1.30 to 2.1.31 #103.
+        Bump github/codeql-action from 2.1.30 to 2.1.35 #103, #107.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
         Bump maven-antrun-plugin from 1.8 to 3.1.0, #18, #71.
