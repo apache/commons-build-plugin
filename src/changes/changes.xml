@@ -32,6 +32,9 @@
       <action dev="ggregory" type="fix" due-to="Marc Wrobel">
         Fix minor typos #79.
       </action>
+      <action dev="ggregory" type="fix" due-to="step-security-bot, Gary Gregory">
+        [StepSecurity] ci: Harden GitHub Actions #162.
+      </action>
       <!-- ADD -->
       <action dev="ggregory" type="update" due-to="Dependabot">
         Add property commons.dist.subdir.
