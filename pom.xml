@@ -228,20 +228,19 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <commons.manifestfile/>
-    <commons.componentid>commons-build-plugin</commons.componentid>
+    <commons.componentid>build-plugin</commons.componentid>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <commons.jira.pid>12310466&amp;amp;component=12312401</commons.jira.pid>
-    <commons.release.version>${project.version}</commons.release.version>
-    <commons.site.path>${commons.componentid}</commons.site.path>
+    <commons.site.path>commons-${commons.componentid}</commons.site.path>
     <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${commons.site.path}</commons.scmPubUrl>
     <commons.scmPubCheckoutDirectory>site-content</commons.scmPubCheckoutDirectory>
-    
+
     <!-- Commons Release Plugin -->
-    <commons.bc.version>1.12</commons.bc.version>
     <commons.release.version>1.13</commons.release.version>
+    <commons.bc.version>1.12</commons.bc.version>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
-    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
+    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.site.path}</commons.distSvnStagingUrl>
     <commons.releaseManagerName>Gary Gregory</commons.releaseManagerName>    
     <commons.releaseManagerKey>86fdc7e2a11262cb</commons.releaseManagerKey>
     
