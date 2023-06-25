@@ -27,7 +27,7 @@
   </properties>
 
   <body>
-    <release version="1.13" date="20YY-MM-DD" description="Feature release">
+    <release version="1.13" date="2023-06-25" description="Feature release">
       <!-- FIX -->
       <action dev="ggregory" type="fix" due-to="Gary Gregory">
         Fix running on Java 11 and up. Use GraalVM instead of Java 8 Nashorn for JavaScript, which was deprecated in Java 11 and removed in Java 15.
