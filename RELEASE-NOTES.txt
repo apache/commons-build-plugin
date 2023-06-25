@@ -1,4 +1,4 @@
-              Apache Commons Build Plugin Maven Mojo 1.13-SNAPSHOT RELEASE NOTES
+              Apache Commons Build Plugin Maven Mojo 1.13 RELEASE NOTES
 
 Apache Maven Mojo for Apache Commons Build tasks.
 
@@ -6,7 +6,7 @@ For example:
 mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
 
 To use a SNAPSHOT version (for testing etc)
-mvn org.apache.commons:commons-build-plugin:1.12-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
+mvn org.apache.commons:commons-build-plugin:1.13-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
 
 Feature release
 
@@ -33,14 +33,15 @@ o                   Fix running on Java 11 and up. Use GraalVM instead of Java 8
                     at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:239)
                     ... 5 more Thanks to Gary Gregory.
 o                   Fix minor typos #79. Thanks to Marc Wrobel.
+o                   [StepSecurity] ci: Harden GitHub Actions #162. Thanks to step-security-bot, Gary Gregory.
 
 Changes:
 o                   Bump Ant integration from org.apache.maven:maven-script-ant to org.apache.maven.plugin-tools:maven-script-ant 3.9.0. Thanks to Gary Gregory.
-o                   Bump actions/cache from 2 to 3.0.11, #25, #37, #51, #65, #88, #91, #94. Thanks to Dependabot, Gary Gregory.
-o                   Bump actions/checkout from 2.3.3 to 3.1.0 #9, #14, #21, #48, #70, #92. Thanks to Dependabot, Gary Gregory.
-o                   Bump actions/setup-java from 2 to 3.6.0 #97. Thanks to Gary Gregory, Dependabot.
-o                   Bump actions/upload-artifact from 3.1.0 to 3.1.1. Thanks to Dependabot.
-o                   Bump github/codeql-action from 2.1.30 to 2.1.35 #103, #107. Thanks to Dependabot.
+o                   Bump actions/cache. Thanks to Dependabot, Gary Gregory.
+o                   Bump actions/checkout. Thanks to Dependabot, Gary Gregory.
+o                   Bump actions/setup-java. Thanks to Gary Gregory, Dependabot.
+o                   Bump actions/upload-artifact. Thanks to Dependabot.
+o                   Bump github/codeql-action. Thanks to Dependabot.
 o                   Bump maven-antrun-plugin from 1.8 to 3.1.0, #18, #71. Thanks to Dependabot.
 o                   Bump spotbugs-maven-plugin from 4.1.3 to 4.7.3.0 #56, #58, #66, #73, #75, #77, #82, #93, #106. Thanks to Gary Gregory, Dependabot.
 o                   Bump spotbugs from 4.1.3 to 4.7.3, #24, #26, #57, #63, #72, #80, #98. Thanks to Gary Gregory, Dependabot.
