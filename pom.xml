@@ -83,17 +83,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.apache.maven</groupId>
+      <groupId>org.apache.maven.plugin-tools</groupId>
       <artifactId>maven-script-ant</artifactId>
-      <version>2.2.1</version>
-      <!-- maven-script-ant 2.2.1 depends on org.apache.ant 1.7.1 -->
-      <!-- Ant 1.7.0+ required for the "loadresource" Task -->
-      <!-- Ant 1.7.1 required for COMMONSSITE-35 -->
-    </dependency>
-    <dependency>
-      <groupId>org.apache.ant</groupId>
-      <artifactId>ant-nodeps</artifactId>
-      <version>1.8.1</version>
+      <version>3.9.0</version>
     </dependency>
   </dependencies>
 
@@ -242,6 +234,10 @@
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
     <commons.releaseManagerName>Rob Tompkins</commons.releaseManagerName>
     <commons.releaseManagerKey>B6E73D84EA4FCC47166087253FAAD2CD5ECBB314</commons.releaseManagerKey>
+    
+    <!-- JS -->
+    <!-- 22.1.0 requires Java 11 -->
+    <graalvm.version>22.0.0.2</graalvm.version>
   </properties>
   <profiles>
     <profile>
