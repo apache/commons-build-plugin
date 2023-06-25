@@ -47,6 +47,10 @@
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-build-plugin.git</developerConnection>
     <url>https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git</url>
   </scm>
+  <ciManagement>
+    <system>GitHub</system>
+    <url>https://github.com/apache/commons-build-plugin/actions</url>
+  </ciManagement>
   <distributionManagement>
     <site>
       <id>commons.site</id>
