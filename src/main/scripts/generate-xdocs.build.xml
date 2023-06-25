@@ -500,7 +500,7 @@
 
 		<script manager="javax" language="javascript">
 			<![CDATA[
-    		project.setProperty("commons.currentYear", new Date().getFullYear());
+    		project.setProperty("commons.currentYear", parseInt(new Date().getFullYear()));
     	]]>
 		</script>
 

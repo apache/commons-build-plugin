@@ -1,119 +1,58 @@
-			 Apache Commons Build Plugin
-			       Release Notes
+              Apache Commons Build Plugin Maven Mojo 1.13-SNAPSHOT RELEASE NOTES
+
+Apache Maven Mojo for Apache Commons Build tasks.
+
+For example:
+mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
+
+To use a SNAPSHOT version (for testing etc)
+mvn org.apache.commons:commons-build-plugin:1.12-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
+
+Feature release
+
+Changes in this version include:
+
+New features:
+o                   Add property commons.dist.subdir. Thanks to Gary Gregory.
+o                   Add github/codeql-action. Thanks to Gary Gregory.
+
+Fixed Bugs:
+o                   Fix running on Java 11 and up. Use GraalVM instead of Java 8 Nashorn for JavaScript, which was deprecated in Java 11 and removed in Java 15.
+                    Unfortunately, you will see this output on the console at the end of a successful build:
+                    
+                    Exception in thread "Thread-2" java.lang.NoClassDefFoundError: org/graalvm/collections/EconomicMapImpl$3
+                    at org.graalvm.collections.EconomicMapImpl.iterator(EconomicMapImpl.java:846)
+                    at com.oracle.truffle.polyglot.PolyglotEngineImpl.collectAliveContexts(PolyglotEngineImpl.java:1261)
+                    at com.oracle.truffle.polyglot.PolyglotEngineImpl.ensureClosed(PolyglotEngineImpl.java:1158)
+                    at com.oracle.truffle.polyglot.PolyglotEngineImpl$PolyglotShutDownHook.run(PolyglotEngineImpl.java:1407)
+                    at java.lang.Thread.run(Thread.java:750)
+                    Caused by: java.lang.ClassNotFoundException: org.graalvm.collections.EconomicMapImpl$3
+                    at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:50)
+                    at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:271)
+                    at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:247)
+                    at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:239)
+                    ... 5 more Thanks to Gary Gregory.
+o                   Fix minor typos #79. Thanks to Marc Wrobel.
+
+Changes:
+o                   Bump Ant integration from org.apache.maven:maven-script-ant to org.apache.maven.plugin-tools:maven-script-ant 3.9.0. Thanks to Gary Gregory.
+o                   Bump actions/cache from 2 to 3.0.11, #25, #37, #51, #65, #88, #91, #94. Thanks to Dependabot, Gary Gregory.
+o                   Bump actions/checkout from 2.3.3 to 3.1.0 #9, #14, #21, #48, #70, #92. Thanks to Dependabot, Gary Gregory.
+o                   Bump actions/setup-java from 2 to 3.6.0 #97. Thanks to Gary Gregory, Dependabot.
+o                   Bump actions/upload-artifact from 3.1.0 to 3.1.1. Thanks to Dependabot.
+o                   Bump github/codeql-action from 2.1.30 to 2.1.35 #103, #107. Thanks to Dependabot.
+o                   Bump maven-antrun-plugin from 1.8 to 3.1.0, #18, #71. Thanks to Dependabot.
+o                   Bump spotbugs-maven-plugin from 4.1.3 to 4.7.3.0 #56, #58, #66, #73, #75, #77, #82, #93, #106. Thanks to Gary Gregory, Dependabot.
+o                   Bump spotbugs from 4.1.3 to 4.7.3, #24, #26, #57, #63, #72, #80, #98. Thanks to Gary Gregory, Dependabot.
+o                   Bump maven-plugin-plugin from 3.6.0 to 3.9.0, #33, #52, #61, #104, #127, #138, #154. Thanks to Gary Gregory.
+o                   Bump maven-plugin-tools-ant from 3.6.0 to 3.9.0, #32, #53, #59, #126, #139, #152. Thanks to Gary Gregory.
+o                   Bump versions-maven-plugin from 2.9.0 to 2.15.0 #64, #74, #81, #101. #115, #119. #136. Thanks to Dependabot.
+o                   Bump commons-parent from 52 to 58 #67, #86, #110, #120, #153. Thanks to Dependabot, Gary Gregory.
 
 
-INTRODUCTION:
+For complete information on Apache Commons Build Plugin Maven Mojo, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Build Plugin Maven Mojo website:
 
-The Apache Commons Build Plugin is a Maven Plugin which can be used by Apache Commons components.
+https://commons.apache.org/proper/commons-build-plugin/
 
-See:
-   https://commons.apache.org/commons-build-plugin/
-
-VERSION 1.12 - 2020-10-17
--------------------------
-
-Changes since the last release:
-1. COMMONSSITE-137 - commons-build:all ignores commons.release.hash settings (fix; sebb)
-2. commons-build:mail-page - add links to lists.apache.org (update;sebb)
-3. Enable GitHub build (update; ggregory)
-4. spotbugs-maven-plugin 4.0.0 -> 4.1.3 (update; Dependabot)
-5. actions/checkout v2.3.1 -> v2.3.3 (update; Dependabot)
-6. versions-maven-plugin 2.7 -> 2.8.1 (update; Dependabot)
-7. actions/setup-java v1.4.0 -> v1.4.2 (update; Dependabot)
-
-VERSION 1.11 - 2019-08-30
--------------------------
-
-Changes since the last release:
-1. versions-maven-plugin 2.5 -> 2.7. (update; ggregory)
-2. maven-plugin-plugin 3.5.2 -> 3.6.0. (update; ggregory)
-3. maven-plugin-tools-ant  3.5.2 -> 3.6.0. (update; ggregory)
-4. commons.release-plugin.version 1.5 -> 1.6. (update; ggregory)
-5. Replace http://mail-archives.apache.org with https://mail-archives.apache.org. (update; ggregory)
-
-
-VERSION 1.10 - 2019-02-26
--------------------------
-
-Changes since the last release:
-1. Use SHA512 signatures as the default in the download page. (update; ggregory)
-2. Use SHA256 signatures as the default in the download page. (update; sebb)
-
-VERSION 1.9 - 2018-06-16
-------------------------
-
-Changes since the last release:
-1. Fix in src/main/resources/commons-xdoc-templates/readme-md-template.md for components that have a major version number in their artifact IDs.
-2. Add a goal for creating all items for pre-release. 
-3. Fix README.md generation typo: 'JavaDoc' -> 'Javadoc'.
-4. Change the Maven goal prefix from "commons" to "commons-build".
-5. Add a goal for generating the NOTICE.txt file.
-6. Update platform requirement from Java 7 to Java 8.
-
-VERSION 1.8 - 2018-04-02
-------------------------
-
-Changes since the last release:
-1. Fix EOL-style so generated files have correct setting
-2. Change download page from MD5 to SHA1
-3. Include Javadoc badge in README.md file.
-
-VERSION 1.7 - 2016-11-18
-------------------------
-
-Changes since the last release:
-1. Include badges in the README.md file.  Issue: COMMONSSITE-90. 
-2. Build plugin does not pass the JIRA_ID property when generating README.md.  Issue: COMMONSSITE-91. 
-
-VERSION 1.6 - 2016-04-24
-------------------------
-
-Changes since the last release
-1. Added new download-page subdir property: set this (e.g. to '1.2' or 'lang-1.2' etc) to override the default of binaries/source 
-
-VERSION 1.5 - 2015-11-28
-------------------------
-
-Changes since the last release:
-1. Added new goals: contributing-md and readme-md - to build Markdown formatted intro files for GitHub.
-2. Download Page - Better describes KEYS file (and uses https links) 
-3. Use Apache Commons rather than just Commons
-
-VERSION 1.4 - 2012-03-06
-------------------------
-
-Changes since the last release:
-1. Fix announce mod_mbox link
-2. Mailing List Page - Make it clear that you have to be subscribed to post.
-3. COMMONSSITE-66 - Add support for a "commons.release.3" set of properties to offer a 3rd download option.
-
-VERSION 1.3 - 2010-04-15
-------------------------
-
-Changes since the last release:
-1. Add facility to generate custom mailing list page
-2. Add new ${commons.release.name} property for the download page generation
-
-
-VERSION 1.2 - 2010-02-23
-------------------------
-
-Changes since the last release:
-1. Improve the L&F of the download page
-2. Add facility to add a second version to the download page
-3. Upgrade to commons-parent version 12
-
-VERSION 1.1 - 2008-07-16
-------------------------
-
-Changes since the last release:
-1. Upgrade to commons-parent version 10
-2. Add assembly descriptors
-3. Minor documentation corrections
-4. COMMONSSITE-36 - plugin won't build because of missing OSGi manifest file.
-5. COMMONSSITE-35 - Upgrade to Ant 1.7.1 (fixes two problems/bugs when generating
-                    Jira/download pages).
-
-VERSION 1.0 - 2008-02-24
-------------------------
-Initial Release
+Download page: https://commons.apache.org/proper/commons-build-plugin/download_codec.cgi
