@@ -33,10 +33,10 @@
         Fix minor typos #79.
       </action>
       <!-- ADD -->
-      <action dev="ggregory" type="update" due-to="Dependabot">
+      <action dev="ggregory" type="add" due-to="Dependabot">
         Add property commons.dist.subdir.
       </action>
-      <action dev="ggregory" type="update" due-to="Dependabot">
+      <action dev="ggregory" type="add" due-to="Dependabot">
         Add github/codeql-action.
       </action>
       <!-- UPDATE -->
