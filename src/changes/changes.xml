@@ -61,19 +61,19 @@
         Bump Ant integration from org.apache.maven:maven-script-ant to org.apache.maven.plugin-tools:maven-script-ant 3.9.0.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">
-        Bump actions/cache from 2 to 3.0.11, #25, #37, #51, #65, #88, #91, #94.
+        Bump actions/cache.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">
-        Bump actions/checkout from 2.3.3 to 3.1.0 #9, #14, #21, #48, #70, #92.
+        Bump actions/checkout.
       </action>
       <action dev="ggregory" type="update" due-to="Gary Gregory, Dependabot">
-        Bump actions/setup-java from 2 to 3.6.0 #97.
+        Bump actions/setup-java.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
-        Bump actions/upload-artifact from 3.1.0 to 3.1.1.
+        Bump actions/upload-artifact.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
-        Bump github/codeql-action from 2.1.30 to 2.1.35 #103, #107.
+        Bump github/codeql-action.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot">
         Bump maven-antrun-plugin from 1.8 to 3.1.0, #18, #71.
