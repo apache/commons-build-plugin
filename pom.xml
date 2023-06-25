@@ -104,7 +104,8 @@
   </dependencies>
 
   <build>
-    <defaultGoal>clean verify apache-rat:check spotbugs:check pmd:check pmd:cpd-check javadoc:javadoc</defaultGoal>
+	<!-- include the site goal to detect problems previously encountered with maven-plugin-plugin 3.9.0 -->
+    <defaultGoal>clean verify apache-rat:check spotbugs:check pmd:check pmd:cpd-check javadoc:javadoc site</defaultGoal>
     <resources>
       <resource>
         <directory>src/main/resources</directory>
@@ -122,7 +123,10 @@
     <plugins>
       <plugin>
         <artifactId>maven-plugin-plugin</artifactId>
-        <version>3.9.0</version>
+        <!-- 3.9.0 blows up with: 
+        [ERROR] Could not find goal 'report' in plugin org.apache.maven.plugins:maven-plugin-plugin:3.9.0 among available goals addPluginArtifactMetadata, descriptor, help, helpmojo -> [Help 1]
+        -->
+        <version>3.8.2</version>
         <!-- Add the Ant plugin tools to the plugin -->
         <dependencies>
           <dependency>
@@ -274,7 +278,7 @@
                   <goal>run</goal>
                 </goals>
                 <configuration>
-                  <tasks>
+                  <target>
                     <exec executable="svn">
                       <arg line="checkout --depth immediates ${commons.scmPubUrl} ${commons.scmPubCheckoutDirectory}"/>
                     </exec>
@@ -289,7 +293,7 @@
                     <exec executable="svn">
                       <arg line="update --set-depth infinity ${dirs}"/>
                     </exec>
-                  </tasks>
+                  </target>
                 </configuration>
               </execution>
             </executions>
