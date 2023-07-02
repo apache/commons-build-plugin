@@ -27,6 +27,11 @@
   </properties>
 
   <body>
+    <release version="1.14" date="20YY-MM-DD" description="Feature release">
+      <!-- FIX -->
+      <!-- ADD -->
+      <!-- UPDATE -->
+    </release>
     <release version="1.13" date="2023-06-25" description="Feature release">
       <!-- FIX -->
       <action dev="ggregory" type="fix" due-to="Gary Gregory">
