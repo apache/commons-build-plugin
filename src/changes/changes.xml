@@ -31,6 +31,9 @@
       <!-- FIX -->
       <!-- ADD -->
       <!-- UPDATE -->
+      <action dev="ggregory" type="update" due-to="Gary Gregory">
+        Bump commons-parent from 58 to 59.
+      </action>
     </release>
     <release version="1.13" date="2023-06-25" description="Feature release">
       <!-- FIX -->
