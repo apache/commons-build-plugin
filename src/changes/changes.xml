@@ -27,7 +27,7 @@
   </properties>
 
   <body>
-    <release version="1.14" date="20YY-MM-DD" description="Feature release">
+    <release version="1.14.0" date="20YY-MM-DD" description="Feature release">
       <!-- FIX -->
       <!-- ADD -->
       <!-- UPDATE -->
