@@ -48,7 +48,7 @@
       <action dev="ggregory" type="fix" due-to="Gary Gregory">
         Fix running on Java 11 and up. Use GraalVM instead of Java 8 Nashorn for JavaScript, which was deprecated in Java 11 and removed in Java 15.
         Unfortunately, you will see this output on the console at the end of a successful build:<![CDATA[
-        
+
         Exception in thread "Thread-2" java.lang.NoClassDefFoundError: org/graalvm/collections/EconomicMapImpl$3
             at org.graalvm.collections.EconomicMapImpl.iterator(EconomicMapImpl.java:846)
             at com.oracle.truffle.polyglot.PolyglotEngineImpl.collectAliveContexts(PolyglotEngineImpl.java:1261)
@@ -197,7 +197,7 @@
     </release>
     <release version="1.7" date="2016-11-18" description="Feature release">
       <action dev="ggregory" type="add" issue="COMMONSSITE-90">
-        Include badges in the README.md file. 
+        Include badges in the README.md file.
       </action>
       <action dev="ggregory" type="add" issue="COMMONSSITE-91">
         Build plugin does not pass the JIRA_ID property when generating README.md.
@@ -206,7 +206,7 @@
 
     <release version="1.6" date="2016-04-24" description="Feature release">
       <action dev="sebb" type="add">
-        Added new download-page subdir property: set this (e.g. to '1.2' or 'lang-1.2' etc) to override the default of binaries/source 
+        Added new download-page subdir property: set this (e.g. to '1.2' or 'lang-1.2' etc) to override the default of binaries/source
       </action>
     </release>
 

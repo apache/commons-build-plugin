@@ -83,7 +83,7 @@
                     <description>The external JIRA id for the project (alphabetic, upper case.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.componentid</name> 
+                    <name>commons.componentid</name>
                     <property>commons.componentid</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -92,7 +92,7 @@
                     <description>The commons component id.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.dist.subdir</name> 
+                    <name>commons.dist.subdir</name>
                     <property>commons.dist.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -101,7 +101,7 @@
                     <description>The folder in commons for this component.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.jira.pid</name> 
+                    <name>commons.jira.pid</name>
                     <property>commons.jira.pid</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -110,7 +110,7 @@
                     <description>The internal JIRA id for the project (numeric.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.version</name> 
+                    <name>commons.release.version</name>
                     <property>commons.release.version</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -119,7 +119,7 @@
                     <description>The version of the latest release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.name</name> 
+                    <name>commons.release.name</name>
                     <property>commons.release.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -128,7 +128,7 @@
                     <description>The name of the latest release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.binary.suffix</name> 
+                    <name>commons.binary.suffix</name>
                     <property>commons.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -137,7 +137,7 @@
                     <description>The suffix for the binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.desc</name> 
+                    <name>commons.release.desc</name>
                     <property>commons.release.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -146,7 +146,7 @@
                     <description>Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.subdir</name> 
+                    <name>commons.release.subdir</name>
                     <property>commons.release.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -155,7 +155,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.hash</name> 
+                    <name>commons.release.hash</name>
                     <property>commons.release.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -165,7 +165,7 @@
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
-                    <name>commons.release.2.version</name> 
+                    <name>commons.release.2.version</name>
                     <property>commons.release.2.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -174,7 +174,7 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.name</name> 
+                    <name>commons.release.2.name</name>
                     <property>commons.release.2.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -183,7 +183,7 @@
                     <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.desc</name> 
+                    <name>commons.release.2.desc</name>
                     <property>commons.release.2.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -192,7 +192,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.binary.suffix</name> 
+                    <name>commons.release.2.binary.suffix</name>
                     <property>commons.release.2.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -201,7 +201,7 @@
                     <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.subdir</name> 
+                    <name>commons.release.2.subdir</name>
                     <property>commons.release.2.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -210,7 +210,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.hash</name> 
+                    <name>commons.release.2.hash</name>
                     <property>commons.release.2.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -220,7 +220,7 @@
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
-                    <name>commons.release.3.version</name> 
+                    <name>commons.release.3.version</name>
                     <property>commons.release.3.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -229,7 +229,7 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.name</name> 
+                    <name>commons.release.3.name</name>
                     <property>commons.release.3.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -238,7 +238,7 @@
                     <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.desc</name> 
+                    <name>commons.release.3.desc</name>
                     <property>commons.release.3.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -247,7 +247,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.binary.suffix</name> 
+                    <name>commons.release.3.binary.suffix</name>
                     <property>commons.release.3.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -256,7 +256,7 @@
                     <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.subdir</name> 
+                    <name>commons.release.3.subdir</name>
                     <property>commons.release.3.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -265,7 +265,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.hash</name> 
+                    <name>commons.release.3.hash</name>
                     <property>commons.release.3.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -275,7 +275,7 @@
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
-                    <name>commons.release.4.version</name> 
+                    <name>commons.release.4.version</name>
                     <property>commons.release.4.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -284,7 +284,7 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.name</name> 
+                    <name>commons.release.4.name</name>
                     <property>commons.release.4.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -293,7 +293,7 @@
                     <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.desc</name> 
+                    <name>commons.release.4.desc</name>
                     <property>commons.release.4.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -302,7 +302,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.binary.suffix</name> 
+                    <name>commons.release.4.binary.suffix</name>
                     <property>commons.release.4.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -311,7 +311,7 @@
                     <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.subdir</name> 
+                    <name>commons.release.4.subdir</name>
                     <property>commons.release.4.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -320,7 +320,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.hash</name> 
+                    <name>commons.release.4.hash</name>
                     <property>commons.release.4.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -373,7 +373,7 @@
                     <description>The external JIRA id for the project (alphabetic, upper case.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.componentid</name> 
+                    <name>commons.componentid</name>
                     <property>commons.componentid</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -382,7 +382,7 @@
                     <description>The commons component id.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.jira.pid</name> 
+                    <name>commons.jira.pid</name>
                     <property>commons.jira.pid</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -391,7 +391,7 @@
                     <description>The internal JIRA id for the project (numeric.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.version</name> 
+                    <name>commons.release.version</name>
                     <property>commons.release.version</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -400,7 +400,7 @@
                     <description>The version of the latest release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.name</name> 
+                    <name>commons.release.name</name>
                     <property>commons.release.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -409,7 +409,7 @@
                     <description>The name of the latest release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.binary.suffix</name> 
+                    <name>commons.binary.suffix</name>
                     <property>commons.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -418,7 +418,7 @@
                     <description>The suffix for the binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.desc</name> 
+                    <name>commons.release.desc</name>
                     <property>commons.release.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -427,7 +427,7 @@
                     <description>Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.subdir</name> 
+                    <name>commons.release.subdir</name>
                     <property>commons.release.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -436,7 +436,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.hash</name> 
+                    <name>commons.release.hash</name>
                     <property>commons.release.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -446,7 +446,7 @@
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
-                    <name>commons.release.2.version</name> 
+                    <name>commons.release.2.version</name>
                     <property>commons.release.2.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -455,7 +455,7 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.name</name> 
+                    <name>commons.release.2.name</name>
                     <property>commons.release.2.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -464,7 +464,7 @@
                     <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.desc</name> 
+                    <name>commons.release.2.desc</name>
                     <property>commons.release.2.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -473,7 +473,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.binary.suffix</name> 
+                    <name>commons.release.2.binary.suffix</name>
                     <property>commons.release.2.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -482,7 +482,7 @@
                     <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.subdir</name> 
+                    <name>commons.release.2.subdir</name>
                     <property>commons.release.2.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -491,7 +491,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.hash</name> 
+                    <name>commons.release.2.hash</name>
                     <property>commons.release.2.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -501,7 +501,7 @@
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
-                    <name>commons.release.3.version</name> 
+                    <name>commons.release.3.version</name>
                     <property>commons.release.3.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -510,7 +510,7 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.name</name> 
+                    <name>commons.release.3.name</name>
                     <property>commons.release.3.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -519,7 +519,7 @@
                     <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.desc</name> 
+                    <name>commons.release.3.desc</name>
                     <property>commons.release.3.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -528,7 +528,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.binary.suffix</name> 
+                    <name>commons.release.3.binary.suffix</name>
                     <property>commons.release.3.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -537,7 +537,7 @@
                     <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.subdir</name> 
+                    <name>commons.release.3.subdir</name>
                     <property>commons.release.3.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -546,7 +546,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.hash</name> 
+                    <name>commons.release.3.hash</name>
                     <property>commons.release.3.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -556,7 +556,7 @@
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
-                    <name>commons.release.4.version</name> 
+                    <name>commons.release.4.version</name>
                     <property>commons.release.4.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -565,7 +565,7 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.name</name> 
+                    <name>commons.release.4.name</name>
                     <property>commons.release.4.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -574,7 +574,7 @@
                     <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.desc</name> 
+                    <name>commons.release.4.desc</name>
                     <property>commons.release.4.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -583,7 +583,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.binary.suffix</name> 
+                    <name>commons.release.4.binary.suffix</name>
                     <property>commons.release.4.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -592,7 +592,7 @@
                     <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.subdir</name> 
+                    <name>commons.release.4.subdir</name>
                     <property>commons.release.4.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -601,7 +601,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.hash</name> 
+                    <name>commons.release.4.hash</name>
                     <property>commons.release.4.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -618,7 +618,7 @@
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
-                    <name>project.name</name> 
+                    <name>project.name</name>
                     <property>project.name</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -627,7 +627,7 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.componentid</name> 
+                    <name>commons.componentid</name>
                     <property>commons.componentid</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -644,7 +644,7 @@
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
-                    <name>project.name</name> 
+                    <name>project.name</name>
                     <property>project.name</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -653,7 +653,7 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.jira.id</name> 
+                    <name>commons.jira.id</name>
                     <property>commons.jira.id</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -662,7 +662,7 @@
                     <description>The external JIRA id for the project (alphabetic, upper case.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.jira.pid</name> 
+                    <name>commons.jira.pid</name>
                     <property>commons.jira.pid</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -679,7 +679,7 @@
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
-                    <name>project.name</name> 
+                    <name>project.name</name>
                     <property>project.name</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -688,7 +688,7 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.jira.componentid</name> 
+                    <name>commons.jira.componentid</name>
                     <property>commons.jira.componentid</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -705,7 +705,7 @@
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
-                    <name>project.name</name> 
+                    <name>project.name</name>
                     <property>project.name</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -714,7 +714,7 @@
                     <description>The name of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>project.artifactId</name> 
+                    <name>project.artifactId</name>
                     <property>project.artifactId</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -723,7 +723,7 @@
                     <description>The artifactId of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.componentid</name> 
+                    <name>commons.componentid</name>
                     <property>commons.componentid</property>
                     <required>true</required>
                     <readonly>true</readonly>
@@ -732,7 +732,7 @@
                     <description>The commons component id.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.version</name> 
+                    <name>commons.release.version</name>
                     <property>commons.release.version</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -741,7 +741,7 @@
                     <description>The version of the latest release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.name</name> 
+                    <name>commons.release.name</name>
                     <property>commons.release.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -750,7 +750,7 @@
                     <description>The name of the latest release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.binary.suffix</name> 
+                    <name>commons.binary.suffix</name>
                     <property>commons.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -759,7 +759,7 @@
                     <description>The suffix for the binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.desc</name> 
+                    <name>commons.release.desc</name>
                     <property>commons.release.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -768,7 +768,7 @@
                     <description>Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.subdir</name> 
+                    <name>commons.release.subdir</name>
                     <property>commons.release.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -777,7 +777,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.hash</name> 
+                    <name>commons.release.hash</name>
                     <property>commons.release.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -787,7 +787,7 @@
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
-                    <name>commons.release.2.version</name> 
+                    <name>commons.release.2.version</name>
                     <property>commons.release.2.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -796,7 +796,7 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.name</name> 
+                    <name>commons.release.2.name</name>
                     <property>commons.release.2.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -805,7 +805,7 @@
                     <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.desc</name> 
+                    <name>commons.release.2.desc</name>
                     <property>commons.release.2.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -814,7 +814,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.binary.suffix</name> 
+                    <name>commons.release.2.binary.suffix</name>
                     <property>commons.release.2.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -823,7 +823,7 @@
                     <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.subdir</name> 
+                    <name>commons.release.2.subdir</name>
                     <property>commons.release.2.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -832,7 +832,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.2.hash</name> 
+                    <name>commons.release.2.hash</name>
                     <property>commons.release.2.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -842,7 +842,7 @@
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
-                    <name>commons.release.3.version</name> 
+                    <name>commons.release.3.version</name>
                     <property>commons.release.3.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -851,7 +851,7 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.name</name> 
+                    <name>commons.release.3.name</name>
                     <property>commons.release.3.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -860,7 +860,7 @@
                     <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.desc</name> 
+                    <name>commons.release.3.desc</name>
                     <property>commons.release.3.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -869,7 +869,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.binary.suffix</name> 
+                    <name>commons.release.3.binary.suffix</name>
                     <property>commons.release.3.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -878,7 +878,7 @@
                     <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.subdir</name> 
+                    <name>commons.release.3.subdir</name>
                     <property>commons.release.3.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -887,7 +887,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.3.hash</name> 
+                    <name>commons.release.3.hash</name>
                     <property>commons.release.3.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -897,7 +897,7 @@
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
-                    <name>commons.release.4.version</name> 
+                    <name>commons.release.4.version</name>
                     <property>commons.release.4.version</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -906,7 +906,7 @@
                     <description>The version of an alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.name</name> 
+                    <name>commons.release.4.name</name>
                     <property>commons.release.4.name</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -915,7 +915,7 @@
                     <description>The name of the alternative release of the project.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.desc</name> 
+                    <name>commons.release.4.desc</name>
                     <property>commons.release.4.desc</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -924,7 +924,7 @@
                     <description>Alternative Release Title or Description.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.binary.suffix</name> 
+                    <name>commons.release.4.binary.suffix</name>
                     <property>commons.release.4.binary.suffix</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -933,7 +933,7 @@
                     <description>The suffix for the alternative release binary distribution.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.subdir</name> 
+                    <name>commons.release.4.subdir</name>
                     <property>commons.release.4.subdir</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -942,7 +942,7 @@
                     <description>Subdirectory (instead of source/binaries.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.release.4.hash</name> 
+                    <name>commons.release.4.hash</name>
                     <property>commons.release.4.hash</property>
                     <required>false</required>
                     <readonly>false</readonly>
@@ -995,7 +995,7 @@
                     <description>The groupId of the project currently being built.</description>
                 </parameter>
                 <parameter>
-                    <name>commons.jira.id</name> 
+                    <name>commons.jira.id</name>
                     <property>commons.jira.id</property>
                     <required>true</required>
                     <readonly>false</readonly>
@@ -1083,7 +1083,7 @@
                     <description>The external JIRA id for the project (alphabetic, upper case.)</description>
                 </parameter>
                 <parameter>
-                    <name>commons.componentid</name> 
+                    <name>commons.componentid</name>
                     <property>commons.componentid</property>
                     <required>true</required>
                     <readonly>true</readonly>

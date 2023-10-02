@@ -40,7 +40,7 @@
                 </p>
 
                 <p>
-                <strong>Note:</strong> The Download page should only need to be re-generated after a new release of the component 
+                <strong>Note:</strong> The Download page should only need to be re-generated after a new release of the component
                 or if the download page template changes.
                 </p>
 
@@ -53,7 +53,7 @@
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
                         ant script</li>
                     <li>Uses either the
-                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/resources/commons-xdoc-templates/download-page-body.xml">download-page-body.xml</a> or 
+                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/resources/commons-xdoc-templates/download-page-body.xml">download-page-body.xml</a> or
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/resources/commons-xdoc-templates/no-download-page-template.xml">no-download-page-template.xml</a>
                         template, depending on whether the <code>commons.release.version</code> property is set or not.
                         </li>
@@ -81,7 +81,7 @@
     <properties>
         <commons.componentid>text</commons.componentid>
         <commons.release.version>1.10.0</commons.release.version>
-    </properties> 
+    </properties>
 ]]></source>
                 </p>
 
@@ -91,7 +91,7 @@
                     <li><b>commons.release.2.version</b> - The version number of the alternative release of the component</li>
                     <li><b>commons.release.2.name</b> - (<i>optional - defaults to <code>${commons.release.2.name}</code></i>) The name of the alternative release of the component</li>
                     <li><b>commons.release.2.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
-                    <li><b>commons.release.2.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative 
+                    <li><b>commons.release.2.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative
                         binary release (some components use "-bin", others have no suffix)</li>
                     <li><b>commons.release.2.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the directory for both.</li>
                 </ul>
@@ -102,22 +102,22 @@
                     <li><b>commons.release.3.version</b> - The version number of the alternative release of the component</li>
                     <li><b>commons.release.3.name</b> - (<i>optional - defaults to <code>${commons.release.3.name}</code></i>) The name of the alternative release of the component</li>
                     <li><b>commons.release.3.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
-                    <li><b>commons.release.3.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative 
+                    <li><b>commons.release.3.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative
                         binary release (some components use "-bin", others have no suffix)</li>
                     <li><b>commons.release.3.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the directory for both.</li>
                 </ul>
-                </p>                
+                </p>
                 <p>
                 You can have a fourth version on the download page. This can be achieved using the following properties:
                 <ul>
                     <li><b>commons.release.4.version</b> - The version number of the alternative release of the component</li>
                     <li><b>commons.release.4.name</b> - (<i>optional - defaults to <code>${commons.release.4.name}</code></i>) The name of the alternative release of the component</li>
                     <li><b>commons.release.4.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
-                    <li><b>commons.release.4.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative 
+                    <li><b>commons.release.4.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative
                         binary release (some components use "-bin", others have no suffix)</li>
                     <li><b>commons.release.4.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the directory for both.</li>
                 </ul>
-                </p>                
+                </p>
                 <p>
                 Example configuration for Commons DBCP with two releases:
 <source><![CDATA[
@@ -127,7 +127,7 @@
         <commons.release.desc>for JDBC 4 (JDK 1.6)</commons.release.desc>
         <commons.release.2.version>1.3</commons.release.2.version>
         <commons.release.2.desc> for JDBC 3 (JDK 1.4-1.5)</commons.release.2.desc>
-    </properties> 
+    </properties>
 ]]></source>
                 </p>
                 <p>

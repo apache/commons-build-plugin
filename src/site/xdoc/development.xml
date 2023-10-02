@@ -27,7 +27,7 @@
         <section name="Help with Maven Ant Mojos">
 
             <p>
-            The best sources of information are:           
+            The best sources of information are:
             </p>
             <ul>
               <li><a href="https://maven.apache.org/guides/mini/guide-using-ant.html">Apache Maven Guide to using Ant with Maven</a></li>
