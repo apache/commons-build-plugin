@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE xml/>
 <!--
  Licensed to the Apache Software Foundation (ASF) under one or more
  contributor license agreements.  See the NOTICE file distributed with
@@ -107,12 +108,14 @@
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
       <version>3.9.4</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <!-- Try to deal with https://bz.apache.org/bugzilla/show_bug.cgi?id=66951 -->
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-core</artifactId>
       <version>3.9.4</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugin-tools</groupId>
