@@ -132,7 +132,6 @@ Apache Commons Components
 | Apache Commons Email | [commons-email](https://github.com/apache/commons-email) | [commons-email](https://commons.apache.org/proper/commons-email) |
 | Apache Commons Exec | [commons-exec](https://github.com/apache/commons-exec) | [commons-exec](https://commons.apache.org/proper/commons-exec) |
 | Apache Commons Fileupload | [commons-fileupload](https://github.com/apache/commons-fileupload) | [commons-fileupload](https://commons.apache.org/proper/commons-fileupload) |
-| Apache Commons Functor | [commons-functor](https://github.com/apache/commons-functor) | [commons-functor](https://commons.apache.org/proper/commons-functor) |
 | Apache Commons Geometry | [commons-geometry](https://github.com/apache/commons-geometry) | [commons-geometry](https://commons.apache.org/proper/commons-geometry) |
 | Apache Commons Graph | [commons-graph](https://github.com/apache/commons-graph) | [commons-graph](https://commons.apache.org/proper/commons-graph) |
 | Apache Commons Imaging | [commons-imaging](https://github.com/apache/commons-imaging) | [commons-imaging](https://commons.apache.org/proper/commons-imaging) |
@@ -154,7 +153,6 @@ Apache Commons Components
 | Apache Commons Release-plugin | [commons-release-plugin](https://github.com/apache/commons-release-plugin) | [commons-release-plugin](https://commons.apache.org/proper/commons-release-plugin) |
 | Apache Commons Rng | [commons-rng](https://github.com/apache/commons-rng) | [commons-rng](https://commons.apache.org/proper/commons-rng) |
 | Apache Commons Scxml | [commons-scxml](https://github.com/apache/commons-scxml) | [commons-scxml](https://commons.apache.org/proper/commons-scxml) |
-| Apache Commons Signing | [commons-signing](https://github.com/apache/commons-signing) | [commons-signing](https://commons.apache.org/proper/commons-signing) |
 | Apache Commons Skin | [commons-skin](https://github.com/apache/commons-skin) | [commons-skin](https://commons.apache.org/proper/commons-skin) |
 | Apache Commons Statistics | [commons-statistics](https://github.com/apache/commons-statistics) | [commons-statistics](https://commons.apache.org/proper/commons-statistics) |
 | Apache Commons Testing | [commons-testing](https://github.com/apache/commons-testing) | [commons-testing](https://commons.apache.org/proper/commons-testing) |
