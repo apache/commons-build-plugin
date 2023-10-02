@@ -275,6 +275,14 @@
     <!-- JS -->
     <!-- 22.1.0 requires Java 11 -->
     <graalvm.version>22.0.0.2</graalvm.version>
+
+    <!-- moditect currently fails. Disable the check until we need to use Java plugins -->
+    <moditect.skip>true</moditect.skip>
+
+    <!-- Not needed for plugins intended for developer use only -->
+    <cyclonedx.skip>true</cyclonedx.skip>
+    <!-- Not available until version 0.7.1 -->
+    <spdx.skip>true</spdx.skip>
   </properties>
   <profiles>
     <profile>
