@@ -59,9 +59,9 @@ limitations under the License.
       </p>
       <p>
         Questions related to the usage of Apache Commons Build Plugin Maven Mojo should be posted to the
-        <a href="https://mail-archives.apache.org/mod_mbox/commons-user/">User List</a>.
+        <a href="https://lists.apache.org/list.html?user@commons.apache.org">User List</a>.
         <br />
-        The <a href="https://mail-archives.apache.org/mod_mbox/commons-dev/">Developer List</a>
+        The <a href="https://lists.apache.org/list.html?dev@commons.apache.org">Developer List</a>
         is for questions and discussion related to the development of Apache Commons Build Plugin Maven Mojo.
         <br />
         Please do not cross-post; developers are also subscribed to the user list.
@@ -105,7 +105,7 @@ limitations under the License.
           <td><a href="mailto:user-subscribe@commons.apache.org">Subscribe</a></td>
           <td><a href="mailto:user-unsubscribe@commons.apache.org">Unsubscribe</a></td>
           <td><a href="mailto:user@commons.apache.org?subject=[build-plugin]">Post</a></td>
-          <td><a href="https://mail-archives.apache.org/mod_mbox/commons-user/">mail-archives.apache.org</a><br />
+          <td>
               <a href="https://lists.apache.org/list.html?user@commons.apache.org">lists.apache.org</a>
           </td>
           <td>
@@ -124,7 +124,7 @@ limitations under the License.
           <td><a href="mailto:dev-subscribe@commons.apache.org">Subscribe</a></td>
           <td><a href="mailto:dev-unsubscribe@commons.apache.org">Unsubscribe</a></td>
           <td><a href="mailto:dev@commons.apache.org?subject=[build-plugin]">Post</a></td>
-          <td><a href="https://mail-archives.apache.org/mod_mbox/commons-dev/">mail-archives.apache.org</a><br />
+          <td>
               <a href="https://lists.apache.org/list.html?dev@commons.apache.org">lists.apache.org</a>
           </td>
           <td>
@@ -143,7 +143,7 @@ limitations under the License.
           <td><a href="mailto:issues-subscribe@commons.apache.org">Subscribe</a></td>
           <td><a href="mailto:issues-unsubscribe@commons.apache.org">Unsubscribe</a></td>
           <td><i>read only</i></td>
-          <td><a href="https://mail-archives.apache.org/mod_mbox/commons-issues/">mail-archives.apache.org</a><br />
+          <td>
               <a href="https://lists.apache.org/list.html?issues@commons.apache.org">lists.apache.org</a>
           </td>
           <td>
@@ -162,7 +162,7 @@ limitations under the License.
           <td><a href="mailto:commits-subscribe@commons.apache.org">Subscribe</a></td>
           <td><a href="mailto:commits-unsubscribe@commons.apache.org">Unsubscribe</a></td>
           <td><i>read only</i></td>
-          <td><a href="https://mail-archives.apache.org/mod_mbox/commons-commits/">mail-archives.apache.org</a><br />
+          <td>
               <a href="https://lists.apache.org/list.html?commits@commons.apache.org">lists.apache.org</a>
           </td>
           <td>
@@ -197,7 +197,7 @@ limitations under the License.
           <td><a class="externalLink" href="mailto:announce-subscribe@apache.org">Subscribe</a></td>
           <td><a class="externalLink" href="mailto:announce-unsubscribe@apache.org">Unsubscribe</a></td>
           <td><i>read only</i></td>
-          <td><a class="externalLink" href="https://mail-archives.apache.org/mod_mbox/www-announce/">mail-archives.apache.org</a><br />
+          <td>
               <a class="externalLink" href="https://lists.apache.org/list.html?announce@apache.org">lists.apache.org</a>
           </td>
           <td>
