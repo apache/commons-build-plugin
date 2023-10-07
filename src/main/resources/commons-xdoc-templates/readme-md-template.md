@@ -73,6 +73,14 @@ Alternatively, you can pull it from  the central Maven repositories:
 </dependency>
 ```
 
+Building
+--------
+
+Building requires a Java JDK and [Apache Maven](https://maven.apache.org/). 
+The required Java version is found in `pom.xml`'s `maven.compiler.source` property.
+
+From a command shell, run `mvn` without arguments to invoke the default Maven goal to run all tests and checks.
+
 Contributing
 ------------
 
