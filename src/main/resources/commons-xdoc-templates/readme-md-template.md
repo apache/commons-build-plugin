@@ -59,8 +59,8 @@ More information can be found on the [@NAME@ homepage](https://commons.apache.or
 The [Javadoc](https://commons.apache.org/proper/commons-@ID@/apidocs) can be browsed.
 Questions related to the usage of @NAME@ should be posted to the [user mailing list][ml].
 
-Where can I get the latest release?
------------------------------------
+Getting the latest release
+--------------------------
 You can download source and binaries from our [download page](https://commons.apache.org/proper/commons-@ID@/download_@ID@.cgi).
 
 Alternatively, you can pull it from  the central Maven repositories:
@@ -100,8 +100,8 @@ This code is under the [Apache License v2](https://www.apache.org/licenses/LICEN
 
 See the `NOTICE.txt` file for required notices and attributions.
 
-Donations
----------
+Donating
+--------
 You like @NAME@? Then [donate back to the ASF](https://www.apache.org/foundation/contributing.html) to support the development.
 
 Additional Resources
