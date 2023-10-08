@@ -498,11 +498,10 @@
 		<echo level="${level}" message="project.inceptionYear     : ${project.inceptionYear}" />
 		<echo level="${level}" message="----- commons-build:notice-txt - Parameters - END   -----" />
 
-		<script manager="javax" language="javascript">
-			<![CDATA[
-    		project.setProperty("commons.currentYear", parseInt(new Date().getFullYear()));
-    	]]>
-		</script>
+		<tstamp>
+		<format property="commons.currentYear"
+			pattern="yyyy"/>
+		</tstamp>
 
 		<echo level="${level}" message="commons.currentYear       : ${commons.currentYear}" />
 		<echo level="info" message="*** Generating ${project.name} NOTICE.txt ***" />
