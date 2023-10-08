@@ -87,7 +87,7 @@ Contributing
 We accept Pull Requests via GitHub. The [developer mailing list](https://commons.apache.org/mail-lists.html) is the main channel of communication for contributors.
 There are some guidelines which will make applying PRs easier for us:
 + No tabs! Please use spaces for indentation.
-+ Respect the code style.
++ Respect the existing code style for each file.
 + Create minimal diffs - disable on save actions like reformat source code or organize imports. If you feel the source code should be reformatted create a separate PR for this change.
 + Provide JUnit tests for your changes and make sure your changes don't break any existing tests by running ```mvn```.
 
@@ -96,13 +96,13 @@ You can learn more about contributing via GitHub in our [contribution guidelines
 
 License
 -------
-This code is under the [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0).
+This code is released under the [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0).
 
 See the `NOTICE.txt` file for required notices and attributions.
 
 Donating
 --------
-You like @NAME@? Then [donate back to the ASF](https://www.apache.org/foundation/contributing.html) to support the development.
+You like @NAME@? Then [donate back to the ASF](https://www.apache.org/foundation/contributing.html) to support development.
 
 Additional Resources
 --------------------
