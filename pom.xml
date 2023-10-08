@@ -87,16 +87,6 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.graalvm.js</groupId>
-      <artifactId>js</artifactId>
-      <version>${graalvm.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.graalvm.js</groupId>
-      <artifactId>js-scriptengine</artifactId>
-      <version>${graalvm.version}</version>
-    </dependency>
-    <dependency>
       <!-- Try to deal with https://bz.apache.org/bugzilla/show_bug.cgi?id=66951 -->
       <groupId>org.apache.ant</groupId>
       <artifactId>ant-launcher</artifactId>
@@ -277,9 +267,8 @@
       commons.releaseManagerKey
     -->
 
-    <!-- JS -->
-    <!-- 22.1.0 requires Java 11 -->
-    <graalvm.version>22.0.0.2</graalvm.version>
+    <!-- JS for Java 11+ (see profiles) -->
+    <graalvm.version>22.3.3</graalvm.version>
 
     <!-- moditect currently fails. Disable the check until we need to use Java plugins -->
     <moditect.skip>true</moditect.skip>
@@ -290,6 +279,23 @@
     <spdx.skip>true</spdx.skip>
   </properties>
   <profiles>
+    <profile>
+      <activation>
+    		<jdk>[11,)</jdk>
+      </activation>
+      <dependencies>
+        <dependency>
+          <groupId>org.graalvm.js</groupId>
+          <artifactId>js</artifactId>
+          <version>${graalvm.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.graalvm.js</groupId>
+          <artifactId>js-scriptengine</artifactId>
+          <version>${graalvm.version}</version>
+        </dependency>
+      </dependencies>
+    </profile>
     <profile>
       <id>setup-checkout</id>
       <activation>
