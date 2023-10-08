@@ -77,7 +77,7 @@ Building
 --------
 
 Building requires a Java JDK and [Apache Maven](https://maven.apache.org/). 
-The required Java version is found in `pom.xml`'s `maven.compiler.source` property.
+The required Java version is found in the `pom.xml` as the `maven.compiler.source` property.
 
 From a command shell, run `mvn` without arguments to invoke the default Maven goal to run all tests and checks.
 
@@ -96,7 +96,7 @@ You can learn more about contributing via GitHub in our [contribution guidelines
 
 License
 -------
-This code is released under the [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0).
+This code is licensed under the [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0).
 
 See the `NOTICE.txt` file for required notices and attributions.
 
