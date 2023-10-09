@@ -32,7 +32,7 @@
       <!-- ADD -->
       <!-- UPDATE -->
       <action dev="ggregory" type="update" due-to="Gary Gregory">
-        Bump commons-parent from 58 to 61.
+        Bump commons-parent from 58 to 64.
       </action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">
         Bump org.apache.ant:ant-launcher from 1.10.12 to 1.10.14 #174.
