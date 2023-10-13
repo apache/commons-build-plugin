@@ -268,7 +268,8 @@
     -->
 
     <!-- JS for Java 11+ (see profiles) -->
-    <graalvm.version>22.3.3</graalvm.version>
+    <graalvm.version>23.0.1</graalvm.version>
+    <graalvm.js.version>23.1.0</graalvm.js.version>
 
     <!-- moditect currently fails. Disable the check until we need to use Java plugins -->
     <moditect.skip>true</moditect.skip>
@@ -292,7 +293,7 @@
         <dependency>
           <groupId>org.graalvm.js</groupId>
           <artifactId>js-scriptengine</artifactId>
-          <version>${graalvm.version}</version>
+          <version>${graalvm.js.version}</version>
         </dependency>
       </dependencies>
     </profile>
