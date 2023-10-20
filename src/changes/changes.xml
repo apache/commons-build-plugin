@@ -29,6 +29,7 @@
   <body>
     <release version="1.14.0" date="20YY-MM-DD" description="Feature release">
       <!-- FIX -->
+      <action dev="sebb" type="fix">Fix up errors in GHA badges for Java and CodeQL</action>
       <action dev="sebb" type="fix">Only use graalvm on Java11+; update to 22.3.3 which avoids NoClassDefFoundError messages</action>
       <action dev="sebb" type="fix">Replace mail-archives.apache.org with lists.apache.org</action>
       <action dev="sebb" type="fix">Drop mail archives that no longer exist (markmail, gmane, old.nabble)</action>
