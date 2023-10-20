@@ -29,14 +29,14 @@
   <body>
     <release version="1.14.0" date="20YY-MM-DD" description="Feature release">
       <!-- FIX -->
-      <!-- ADD -->
-      <!-- UPDATE -->
-      <action dev="ggregory" type="update" due-to="Gary Gregory">Bump commons-parent from 58 to 64.</action>
-      <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.ant:ant-launcher from 1.10.12 to 1.10.14 #174.</action>
       <action dev="sebb" type="fix">Only use graalvm on Java11+; update to 22.3.3 which avoids NoClassDefFoundError messages</action>
       <action dev="sebb" type="fix">Replace mail-archives.apache.org with lists.apache.org</action>
       <action dev="sebb" type="fix">Drop mail archives that no longer exist (markmail, gmane, old.nabble)</action>
       <action dev="sebb" type="fix">Disable moditect as it fails currently</action>
+      <!-- ADD -->
+      <!-- UPDATE -->
+      <action dev="ggregory" type="update" due-to="Gary Gregory">Bump commons-parent from 58 to 64.</action>
+      <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.ant:ant-launcher from 1.10.12 to 1.10.14 #174.</action>
       <action dev="sebb" type="update">Disable cyclonedx - not needed</action>
       <action dev="sebb" type="update">Drop outdated, unmaintained table of components in README in favour of link to website.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.graalvm.js:js-scriptengine from 23.1.0 to 23.1.1 #190.</action>
