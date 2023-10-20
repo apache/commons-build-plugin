@@ -43,11 +43,11 @@
 Apache Commons Build Plugin Maven Mojo
 ===================
 
-[![GitHub Actions Status](https://github.com/apache/commons-build-plugin/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-build-plugin/actions)
+[![Java CI](https://github.com/apache/commons-build-plugin/actions/workflows/maven.yml/badge.svg)](https://github.com/apache/commons-build-plugin/actions/workflows/maven.yml)
 [![Coverage Status](https://codecov.io/gh/apache/commons-build-plugin/branch/master/graph/badge.svg)](https://app.codecov.io/gh/apache/commons-build-plugin)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/?gav=true)
 [![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-build-plugin/1.14.0.svg)](https://javadoc.io/doc/org.apache.commons/commons-build-plugin/1.14.0)
-[![CodeQL](https://github.com/apache/commons-build-plugin/workflows/CodeQL/badge.svg)](https://github.com/apache/commons-build-plugin/actions/workflows/codeql-analysis.yml?query=workflow%3ACodeQL)
+[![CodeQL](https://github.com/apache/commons-build-plugin/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-build-plugin/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-build-plugin/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-build-plugin)
 
 Apache Maven Mojo for Apache Commons Build tasks.
