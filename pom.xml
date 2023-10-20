@@ -133,7 +133,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-plugin-plugin</artifactId>
-        <!-- 3.9.0 blows up with:
+        <!-- 3.9.0 'mvn site' blows up with:
         [ERROR] Could not find goal 'report' in plugin org.apache.maven.plugins:maven-plugin-plugin:3.9.0 among available goals addPluginArtifactMetadata, descriptor, help, helpmojo -> [Help 1]
         -->
         <version>3.8.2</version>
