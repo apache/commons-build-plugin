@@ -30,15 +30,12 @@ limitations under the License.
  |                                                                      |
  | 2) Set the following properties in the component's pom:              |
  |    - commons.componentid (required, alphabetic, lower case)          |
- |    - commons.release.version (required)                              |
- |    - commons.binary.suffix (optional)                                |
- |      (defaults to "-bin", set to "" for pre-maven2 releases)         |
+ |    This template is used if commons.release.version is undefined.    |
  |                                                                      |
  | 3) Example Properties                                                |
  |                                                                      |
  |  <properties>                                                        |
  |    <commons.componentid>math</commons.componentid>                   |
- |    <commons.release.version>1.2</commons.release.version>            |
  |  </properties>                                                       |
  |                                                                      |
  +======================================================================+
