@@ -109,7 +109,6 @@ Additional Resources
 + [General GitHub documentation](https://help.github.com/)
 + [GitHub pull request documentation](https://help.github.com/articles/creating-a-pull-request/)
 + [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
-+ `#apache-commons` IRC channel on `irc.freenode.net`
 
 [cla]:https://www.apache.org/licenses/#clas
 [jira]:https://issues.apache.org/jira/browse/COMMONSSITE

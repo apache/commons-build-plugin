@@ -117,7 +117,6 @@ Additional Resources
 + [Apache Issue Tracker (JIRA)](https://issues.apache.org/jira/browse/COMMONSSITE)
 + [Apache Commons Slack Channel](https://the-asf.slack.com/archives/C60NVB8AD)
 + [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
-+ `#apache-commons` IRC channel on `irc.freenode.org`
 
 Apache Commons Components
 -------------------------
