@@ -63,7 +63,7 @@ Documentation
 
 More information can be found on the [Apache Commons Build Plugin Maven Mojo homepage](https://commons.apache.org/proper/commons-build-plugin).
 The [Javadoc](https://commons.apache.org/proper/commons-build-plugin/apidocs) can be browsed.
-Questions related to the usage of Apache Commons Build Plugin Maven Mojo should be posted to the [user mailing list][ml].
+Questions related to the usage of Apache Commons Build Plugin Maven Mojo should be posted to the [user mailing list](https://commons.apache.org/mail-lists.html).
 
 Getting the latest release
 --------------------------
