@@ -136,7 +136,7 @@
         <!-- 3.9.0 'mvn site' blows up with:
         [ERROR] Could not find goal 'report' in plugin org.apache.maven.plugins:maven-plugin-plugin:3.9.0 among available goals addPluginArtifactMetadata, descriptor, help, helpmojo -> [Help 1]
         -->
-        <version>3.8.2</version>
+        <version>3.10.2</version>
         <!-- Add the Ant plugin tools to the plugin -->
         <dependencies>
           <dependency>
