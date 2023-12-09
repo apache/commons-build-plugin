@@ -133,10 +133,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-plugin-plugin</artifactId>
-        <!-- 3.9.0 'mvn site' blows up with:
-        [ERROR] Could not find goal 'report' in plugin org.apache.maven.plugins:maven-plugin-plugin:3.9.0 among available goals addPluginArtifactMetadata, descriptor, help, helpmojo -> [Help 1]
-        -->
-        <version>3.8.2</version>
+        <version>3.10.2</version>
         <!-- Add the Ant plugin tools to the plugin -->
         <dependencies>
           <dependency>
@@ -150,17 +147,6 @@
           <goalPrefix>commons-build</goalPrefix>
         </configuration>
 
-        <executions>
-          <execution>
-            <phase>pre-site</phase>
-            <goals>
-              <goal>report</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>target/plugin-generated-xdocs</outputDirectory>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
@@ -211,6 +197,11 @@
             <exclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</exclude>
           </excludes>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-plugin-report-plugin</artifactId>
       </plugin>
 
       <plugin>
