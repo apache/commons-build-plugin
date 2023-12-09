@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-parent</artifactId>
-    <version>64</version>
+    <version>65</version>
   </parent>
   <artifactId>commons-build-plugin</artifactId>
   <packaging>maven-plugin</packaging>
@@ -34,7 +34,7 @@
       mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
 
     To use a SNAPSHOT version (for testing etc)
-      mvn org.apache.commons:commons-build-plugin:1.12-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
+      mvn org.apache.commons:commons-build-plugin:1.14.0-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
   </description>
   <url>https://commons.apache.org/proper/commons-build-plugin/</url>
   <issueManagement>
@@ -96,20 +96,20 @@
       <!-- Try to deal with https://bz.apache.org/bugzilla/show_bug.cgi?id=66951 -->
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
-      <version>3.9.5</version>
+      <version>3.9.6</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <!-- Try to deal with https://bz.apache.org/bugzilla/show_bug.cgi?id=66951 -->
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-core</artifactId>
-      <version>3.9.5</version>
+      <version>3.9.6</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugin-tools</groupId>
       <artifactId>maven-script-ant</artifactId>
-      <version>3.10.1</version>
+      <version>3.10.2</version>
     </dependency>
   </dependencies>
 
@@ -133,16 +133,13 @@
     <plugins>
       <plugin>
         <artifactId>maven-plugin-plugin</artifactId>
-        <!-- 3.9.0 'mvn site' blows up with:
-        [ERROR] Could not find goal 'report' in plugin org.apache.maven.plugins:maven-plugin-plugin:3.9.0 among available goals addPluginArtifactMetadata, descriptor, help, helpmojo -> [Help 1]
-        -->
-        <version>3.8.2</version>
+        <version>3.10.2</version>
         <!-- Add the Ant plugin tools to the plugin -->
         <dependencies>
           <dependency>
             <groupId>org.apache.maven.plugin-tools</groupId>
             <artifactId>maven-plugin-tools-ant</artifactId>
-            <version>3.9.0</version>
+            <version>3.10.2</version>
           </dependency>
         </dependencies>
 
@@ -150,17 +147,6 @@
           <goalPrefix>commons-build</goalPrefix>
         </configuration>
 
-        <executions>
-          <execution>
-            <phase>pre-site</phase>
-            <goals>
-              <goal>report</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>target/plugin-generated-xdocs</outputDirectory>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
@@ -211,6 +197,11 @@
             <exclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</exclude>
           </excludes>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-plugin-report-plugin</artifactId>
       </plugin>
 
       <plugin>

@@ -56,14 +56,14 @@ Apache Maven Mojo for Apache Commons Build tasks.
       mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
 
     To use a SNAPSHOT version (for testing etc)
-      mvn org.apache.commons:commons-build-plugin:1.12-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
+      mvn org.apache.commons:commons-build-plugin:1.14.0-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
 
 Documentation
 -------------
 
 More information can be found on the [Apache Commons Build Plugin Maven Mojo homepage](https://commons.apache.org/proper/commons-build-plugin).
 The [Javadoc](https://commons.apache.org/proper/commons-build-plugin/apidocs) can be browsed.
-Questions related to the usage of Apache Commons Build Plugin Maven Mojo should be posted to the [user mailing list][ml].
+Questions related to the usage of Apache Commons Build Plugin Maven Mojo should be posted to the [user mailing list](https://commons.apache.org/mail-lists.html).
 
 Getting the latest release
 --------------------------
@@ -117,7 +117,6 @@ Additional Resources
 + [Apache Issue Tracker (JIRA)](https://issues.apache.org/jira/browse/COMMONSSITE)
 + [Apache Commons Slack Channel](https://the-asf.slack.com/archives/C60NVB8AD)
 + [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
-+ `#apache-commons` IRC channel on `irc.freenode.org`
 
 Apache Commons Components
 -------------------------

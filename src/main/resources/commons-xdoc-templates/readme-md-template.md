@@ -57,7 +57,7 @@ Documentation
 
 More information can be found on the [@NAME@ homepage](https://commons.apache.org/proper/commons-@ID@).
 The [Javadoc](https://commons.apache.org/proper/commons-@ID@/apidocs) can be browsed.
-Questions related to the usage of @NAME@ should be posted to the [user mailing list][ml].
+Questions related to the usage of @NAME@ should be posted to the [user mailing list](https://commons.apache.org/mail-lists.html).
 
 Getting the latest release
 --------------------------
@@ -111,7 +111,6 @@ Additional Resources
 + [Apache Issue Tracker (JIRA)](https://issues.apache.org/jira/browse/@JIRA_ID@)
 + [Apache Commons Slack Channel](https://the-asf.slack.com/archives/C60NVB8AD)
 + [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
-+ `#apache-commons` IRC channel on `irc.freenode.org`
 
 Apache Commons Components
 -------------------------
