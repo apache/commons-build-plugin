@@ -56,7 +56,7 @@ Apache Maven Mojo for Apache Commons Build tasks.
       mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
 
     To use a SNAPSHOT version (for testing etc)
-      mvn org.apache.commons:commons-build-plugin:1.12-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
+      mvn org.apache.commons:commons-build-plugin:1.14.0-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
 
 Documentation
 -------------
