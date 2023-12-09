@@ -29,6 +29,7 @@
   <body>
     <release version="1.14.0" date="20YY-MM-DD" description="Feature release">
       <!-- FIX -->
+      <action dev="sebb" type="fix">maven-plugin-report-plugin replaces maven-plugin-plugin report goal</action>
       <action dev="sebb" type="fix">Fix up errors in GHA badges for Java and CodeQL</action>
       <action dev="sebb" type="fix">Only use graalvm on Java11+; update to 22.3.3 which avoids NoClassDefFoundError messages</action>
       <action dev="sebb" type="fix">Replace mail-archives.apache.org with lists.apache.org</action>
@@ -36,6 +37,7 @@
       <action dev="sebb" type="fix">Disable moditect as it fails currently</action>
       <!-- ADD -->
       <!-- UPDATE -->
+      <action dev="sebb" type="update">Bump maven-plugin-plugin to 3.10.2</action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">Drop IRC references</action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">Bump commons-parent from 58 to 65.</action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.ant:ant-launcher from 1.10.12 to 1.10.14 #174.</action>
