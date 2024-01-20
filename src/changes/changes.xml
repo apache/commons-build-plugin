@@ -43,7 +43,7 @@
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.ant:ant-launcher from 1.10.12 to 1.10.14.</action>
       <action dev="sebb" type="update">Disable cyclonedx - not needed</action>
       <action dev="sebb" type="update">Drop outdated, unmaintained table of components in README in favour of link to website.</action>
-      <action dev="ggregory" type="update" due-to="Dependabot">Bump org.graalvm.js:js-scriptengine from 23.1.0 to 23.1.1.</action>
+      <action dev="ggregory" type="update" due-to="Dependabot">Bump org.graalvm.js:js-scriptengine from 23.1.0 to 23.1.2.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.graalvm.js:js from 23.0.1 to 23.0.2.</action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">Bump org.apache.maven:maven-core 3.9.4 to 3.9.6.</action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">Bump org.apache.maven:maven-plugin-api 3.9.4 to 3.9.6.</action>
