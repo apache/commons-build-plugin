@@ -269,6 +269,7 @@
     <cyclonedx.skip>true</cyclonedx.skip>
     <!-- Not available until version 0.7.1 -->
     <spdx.skip>true</spdx.skip>
+    <project.build.outputTimestamp>2024-01-01T00:00:00Z</project.build.outputTimestamp>
   </properties>
   <profiles>
     <profile>
