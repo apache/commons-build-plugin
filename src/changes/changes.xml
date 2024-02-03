@@ -36,6 +36,7 @@
       <action dev="sebb" type="fix">Drop mail archives that no longer exist (markmail, gmane, old.nabble)</action>
       <action dev="sebb" type="fix">Disable moditect as it fails currently</action>
       <!-- ADD -->
+      <action type="add" dev="ggregory" due-to="Gary Gregory">Add Maven property project.build.outputTimestamp for build reproducibility.</action>
       <!-- UPDATE -->
       <action dev="sebb" type="update" due-to="Dependabot">Bump org.apache.maven.plugins:maven-plugin-plugin from 3.10.2 to 3.11.0</action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">Drop IRC references</action>
