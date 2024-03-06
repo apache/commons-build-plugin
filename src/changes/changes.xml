@@ -25,7 +25,6 @@
     <title>Apache Commons Build Plugin Release Notes</title>
     <author email="dev@commons.apache.org">Apache Commons Developers</author>
   </properties>
-
   <body>
     <release version="1.14.0" date="20YY-MM-DD" description="Feature release">
       <!-- FIX -->
@@ -40,7 +39,7 @@
       <!-- UPDATE -->
       <action dev="sebb" type="update" due-to="Dependabot">Bump org.apache.maven.plugins:maven-plugin-plugin from 3.10.2 to 3.11.0</action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">Drop IRC references</action>
-      <action dev="ggregory" type="update" due-to="Gary Gregory">Bump commons-parent from 58 to 66.</action>
+      <action dev="ggregory" type="update" due-to="Gary Gregory">Bump commons-parent from 58 to 67.</action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.ant:ant-launcher from 1.10.12 to 1.10.14.</action>
       <action dev="sebb" type="update">Disable cyclonedx - not needed</action>
       <action dev="sebb" type="update">Drop outdated, unmaintained table of components in README in favour of link to website.</action>
