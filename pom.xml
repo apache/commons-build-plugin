@@ -246,6 +246,7 @@
 
     <!-- Commons Release Plugin -->
     <commons.release.version>1.14.0</commons.release.version>
+    <commons.release.next>1.14.1</commons.release.next>
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
     <commons.bc.version>1.13</commons.bc.version>
     <commons.rc.version>RC1</commons.rc.version>
