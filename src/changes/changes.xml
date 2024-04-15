@@ -26,6 +26,11 @@
     <author email="dev@commons.apache.org">Apache Commons Developers</author>
   </properties>
   <body>
+    <release version="1.14.1" date="YYYY-MM-DD" description="Maintenance release">
+      <!-- FIX -->
+      <!-- ADD -->
+      <!-- UPDATE -->
+    </release>
     <release version="1.14.0" date="2024-04-12" description="Feature release">
       <!-- FIX -->
       <action dev="sebb" type="fix">maven-plugin-report-plugin replaces maven-plugin-plugin report goal</action>
