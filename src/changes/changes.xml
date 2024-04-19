@@ -30,6 +30,7 @@
       <!-- FIX -->
       <!-- ADD -->
       <!-- UPDATE -->
+       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.graalvm.js:js-scriptengine from 24.0.0 to 24.0.1 #248.</action>
     </release>
     <release version="1.14.0" date="2024-04-12" description="Feature release">
       <!-- FIX -->
