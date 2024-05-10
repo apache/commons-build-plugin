@@ -133,7 +133,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-plugin-plugin</artifactId>
-        <version>3.12.0</version>
+        <version>3.13.0</version>
         <!-- Add the Ant plugin tools to the plugin -->
         <dependencies>
           <dependency>
