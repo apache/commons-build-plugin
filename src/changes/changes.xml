@@ -35,7 +35,7 @@
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven.plugin-tools:maven-plugin-tools-ant from 3.12.0 to 3.13.1 #260, #272.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven.plugin-tools:maven-script-ant from 3.12.0 to 3.13.1 #259, #270.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven.plugins:maven-plugin-plugin from 3.12.0 to 3.13.1 #258, #271.</action>
-      <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.commons:commons-parent from 69 to 70 #264.</action>
+      <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.commons:commons-parent from 69 to 71 #264, #276.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven:maven-plugin-api from 3.9.6 to 3.9.7 #267.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven:maven-core from 3.9.6 to 3.9.7 #268.</action>
     </release>
