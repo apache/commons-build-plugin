@@ -38,6 +38,8 @@
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.commons:commons-parent from 69 to 71 #264, #276.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven:maven-plugin-api from 3.9.6 to 3.9.8 #267, #277.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven:maven-core from 3.9.6 to 3.9.8 #268, #278.</action>
+      <!-- REMVOE -->
+      <action dev="ggregory" type="remove" due-to="Gary Gregory">Drop codecov.io badge.</action>
     </release>
     <release version="1.14.0" date="2024-04-12" description="Feature release">
       <!-- FIX -->
