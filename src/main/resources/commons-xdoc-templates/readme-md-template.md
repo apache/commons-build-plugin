@@ -47,6 +47,7 @@
 [![Coverage Status](https://codecov.io/gh/apache/commons-@ID@/branch/master/graph/badge.svg)](https://app.codecov.io/gh/apache/commons-@ID@)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/@GROUPID@/@ARTIFACTCOREID@/?gav=true)
 [![Javadocs](https://javadoc.io/badge/@GROUPID@/@ARTIFACTCOREID@/@VERSION@.svg)](https://javadoc.io/doc/@GROUPID@/@ARTIFACTCOREID@/@VERSION@)
+[![CodeQL](https://github.com/apache/commons-@ID@/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-@ID@/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-@ID@/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-@ID@)
 
 @DESCRIPTION@
