@@ -38,6 +38,7 @@
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-parent from 69 to 74 #264, #276, #291, #301.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven:maven-plugin-api from 3.9.6 to 3.9.9 #267, #277, #293.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven:maven-core from 3.9.6 to 3.9.9 #268, #278, #294.</action>
+      <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.ant:ant-launcher from 1.10.14 to 1.10.15 #303.</action> 
       <!-- REMVOE -->
       <action dev="ggregory" type="remove" due-to="Gary Gregory">Drop codecov.io badge.</action>
     </release>
