@@ -44,7 +44,7 @@ Apache Commons Build Plugin Maven Mojo
 ===================
 
 [![Java CI](https://github.com/apache/commons-build-plugin/actions/workflows/maven.yml/badge.svg)](https://github.com/apache/commons-build-plugin/actions/workflows/maven.yml)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-build-plugin/?gav=true)
+[![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-build-plugin?label=Maven%20Central)](https://search.maven.org/artifact/org.apache.commons/commons-build-plugin)
 [![CodeQL](https://github.com/apache/commons-build-plugin/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-build-plugin/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-build-plugin/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-build-plugin)
 
