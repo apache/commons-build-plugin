@@ -28,6 +28,7 @@
   <body>
     <release version="1.14.1" date="YYYY-MM-DD" description="Maintenance release">
       <!-- FIX -->
+      <action dev="ggregory" type="fix" due-to="Capt. Cutlass">Fix broken URL to project location in Maven Central #320.</action> 
       <!-- ADD -->
       <!-- UPDATE -->
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.graalvm.js:js-scriptengine from 24.0.0 to 24.1.0 #248, #282, #308.</action>
@@ -40,7 +41,6 @@
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven:maven-core from 3.9.6 to 3.9.9 #268, #278, #294.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.ant:ant-launcher from 1.10.14 to 1.10.15 #303.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.codehaus.mojo:jdepend-maven-plugin from 2.0 to 2.1 #311.</action>
-      <action dev="ggregory" type="update" due-to="Capt. Cutlass">Fix broken URL to project location in Maven Central #320.</action> 
       <!-- REMVOE -->
       <action dev="ggregory" type="remove" due-to="Gary Gregory">Drop codecov.io badge.</action>
     </release>
