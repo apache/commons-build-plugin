@@ -1,3 +1,51 @@
+Apache Commons Build Plugin Maven Mojo 1.14.1 RELEASE NOTES
+-----------------------------------------------------------
+
+Apache Maven Mojo for Apache Commons Build tasks.
+
+For example:
+mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
+
+To use a SNAPSHOT version (for testing etc)
+mvn org.apache.commons:commons-build-plugin:1.14.0-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
+
+Maintenance release
+
+Changes in this version include:
+
+
+Fixed Bugs
+----------
+
+*                   Fix broken URL to project location in Maven Central #320. Thanks to Capt. Cutlass.
+
+Changes
+-------
+
+*                   Bump org.apache.commons:commons-parent from 69 to 78 #264, #276, #291, #301, #307, #312, #324. Thanks to Dependabot, Gary Gregory.
+*                   Bump org.graalvm.js:js-scriptengine from 24.0.0 to 24.1.1 #248, #282, #308, #322. Thanks to Dependabot.
+*                   Bump org.graalvm.js:js from 23.0.3 to 23.0.6 #247, #281, #321. Thanks to Dependabot.
+*                   Bump org.apache.maven.plugin-tools:maven-plugin-tools-ant from 3.12.0 to 3.15.1 #260, #272, #292, #298. Thanks to Dependabot.
+*                   Bump org.apache.maven.plugin-tools:maven-script-ant from 3.12.0 to 3.15.1 #259, #270, #295, #300. Thanks to Dependabot.
+*                   Bump org.apache.maven.plugins:maven-plugin-plugin from 3.12.0 to 3.15.1 #258, #271, #299. Thanks to Dependabot.
+*                   Bump org.apache.maven:maven-plugin-api from 3.9.6 to 3.9.9 #267, #277, #293. Thanks to Dependabot.
+*                   Bump org.apache.maven:maven-core from 3.9.6 to 3.9.9 #268, #278, #294. Thanks to Dependabot.
+*                   Bump org.apache.ant:ant-launcher from 1.10.14 to 1.10.15 #303. Thanks to Dependabot.
+*                   Bump org.codehaus.mojo:jdepend-maven-plugin from 2.0 to 2.1 #311. Thanks to Dependabot.
+
+Removed
+-------
+
+*                   Drop codecov.io badge. Thanks to Gary Gregory.
+
+For complete information on Apache Commons Build Plugin Maven Mojo, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Build Plugin Maven Mojo website:
+
+https://commons.apache.org/proper/commons-build-plugin/
+
+Download page: https://commons.apache.org/proper/commons-build-plugin/download_codec.cgi
+
+-----------------------------------------------------------------------------
 Apache Commons Build Plugin Maven Mojo 1.14.0 RELEASE NOTES
 -----------------------------------------------------------
 

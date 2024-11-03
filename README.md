@@ -45,6 +45,7 @@ Apache Commons Build Plugin Maven Mojo
 
 [![Java CI](https://github.com/apache/commons-build-plugin/actions/workflows/maven.yml/badge.svg)](https://github.com/apache/commons-build-plugin/actions/workflows/maven.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-build-plugin?label=Maven%20Central)](https://search.maven.org/artifact/org.apache.commons/commons-build-plugin)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-build-plugin/1.14.1.svg)](https://javadoc.io/doc/org.apache.commons/commons-build-plugin/1.14.1)
 [![CodeQL](https://github.com/apache/commons-build-plugin/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-build-plugin/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-build-plugin/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-build-plugin)
 
@@ -73,7 +74,7 @@ Alternatively, you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-build-plugin</artifactId>
-  <version>1.14.0</version>
+  <version>1.14.1</version>
 </dependency>
 ```
 
