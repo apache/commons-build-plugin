@@ -26,7 +26,7 @@
     <author email="dev@commons.apache.org">Apache Commons Developers</author>
   </properties>
   <body>
-    <release version="1.14.1" date="YYYY-MM-DD" description="Maintenance release">
+    <release version="1.14.1" date="2024-11-03" description="Maintenance release">
       <!-- FIX -->
       <action dev="ggregory" type="fix" due-to="Capt. Cutlass">Fix broken URL to project location in Maven Central #320.</action> 
       <!-- ADD -->
