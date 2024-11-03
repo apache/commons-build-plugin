@@ -25,7 +25,7 @@
   </parent>
   <artifactId>commons-build-plugin</artifactId>
   <packaging>maven-plugin</packaging>
-  <version>1.14.1-SNAPSHOT</version>
+  <version>1.14.1</version>
   <name>Apache Commons Build Plugin Maven Mojo</name>
   <description>
     Apache Maven Mojo for Apache Commons Build tasks.
@@ -271,7 +271,7 @@
     <cyclonedx.skip>true</cyclonedx.skip>
     <!-- Not available until version 0.7.1 -->
     <spdx.skip>true</spdx.skip>
-    <project.build.outputTimestamp>2024-04-15T22:53:12Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2024-11-03T19:47:33Z</project.build.outputTimestamp>
   </properties>
   <profiles>
     <profile>
