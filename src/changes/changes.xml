@@ -27,6 +27,8 @@
   </properties>
   <body>
     <release version="1.14.2" date="YYYY-MM-DD" description="Maintenance release">
+      <!-- FIX -->
+      <action dev="ggregory" type="fix" due-to="Gary Gregory">Pick up maven-antrun-plugin version from parent POM org.apache:apache.</action> 
       <!-- UPDATE -->
     </release>
     <release version="1.14.1" date="2024-11-03" description="Maintenance release">
