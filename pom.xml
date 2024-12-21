@@ -114,7 +114,7 @@
   </dependencies>
 
   <build>
-	<!-- include the site goal to detect problems previously encountered with maven-plugin-plugin 3.9.0 -->
+    <!-- include the site goal to detect problems previously encountered with maven-plugin-plugin 3.9.0 -->
     <defaultGoal>clean verify apache-rat:check spotbugs:check pmd:check pmd:cpd-check javadoc:javadoc site</defaultGoal>
     <resources>
       <resource>
