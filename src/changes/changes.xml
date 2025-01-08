@@ -26,7 +26,7 @@
     <author email="dev@commons.apache.org">Apache Commons Developers</author>
   </properties>
   <body>
-    <release version="1.14.2" date="2025-01-08" description="This is a maintenance release.">
+    <release version="1.15.0" date="2025-01-08" description="This is a maintenance release.">
       <!-- FIX -->
       <action dev="ggregory" type="fix" due-to="Gary Gregory">Pick up maven-antrun-plugin version from parent POM org.apache:apache.</action> 
       <!-- UPDATE -->

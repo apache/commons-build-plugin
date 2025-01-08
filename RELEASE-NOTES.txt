@@ -1,3 +1,38 @@
+Apache Commons Build Plugin Maven Mojo 1.15.0 RELEASE NOTES
+-----------------------------------------------------------
+
+Apache Maven Mojo for Apache Commons Build tasks.
+
+For example:
+mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
+
+To use a SNAPSHOT version (for testing etc)
+mvn org.apache.commons:commons-build-plugin:1.14.0-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
+
+This is a maintenance release.
+
+Changes in this version include:
+
+
+Fixed Bugs
+----------
+
+*                   Pick up maven-antrun-plugin version from parent POM org.apache:apache. Thanks to Gary Gregory.
+
+Changes
+-------
+
+*                   Bump org.apache.commons:commons-parent from 78 to 79, upgrades Doxia from 1 to 2. Thanks to Gary Gregory.
+
+
+For complete information on Apache Commons Build Plugin Maven Mojo, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Build Plugin Maven Mojo website:
+
+https://commons.apache.org/proper/commons-build-plugin/
+
+Download page: https://commons.apache.org/proper/commons-build-plugin/download_codec.cgi
+
+-----------------------------------------------------------------------------
 Apache Commons Build Plugin Maven Mojo 1.14.1 RELEASE NOTES
 -----------------------------------------------------------
 
