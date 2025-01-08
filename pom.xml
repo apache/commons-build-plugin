@@ -58,33 +58,6 @@
       <url>scm:svn:${commons.scmPubUrl}</url>
     </site>
   </distributionManagement>
-  <developers>
-    <developer>
-      <name>Niall Pemberton</name>
-      <id>niallp</id>
-      <email>niallp AT apache.org</email>
-    </developer>
-    <developer>
-      <name>Dennis Lundberg</name>
-      <id>dennisl</id>
-    </developer>
-    <developer>
-      <id>ggregory</id>
-      <name>Gary Gregory</name>
-      <email>ggregory at apache.org</email>
-      <url>https://www.garygregory.com</url>
-      <organization>The Apache Software Foundation</organization>
-      <organizationUrl>https://www.apache.org/</organizationUrl>
-      <roles>
-        <role>PMC Member</role>
-      </roles>
-      <timezone>America/New_York</timezone>
-      <properties>
-        <picUrl>https://people.apache.org/~ggregory/img/garydgregory80.png</picUrl>
-      </properties>
-    </developer>
-  </developers>
-
   <dependencies>
     <dependency>
       <!-- Try to deal with https://bz.apache.org/bugzilla/show_bug.cgi?id=66951 -->
@@ -112,7 +85,6 @@
       <version>3.15.1</version>
     </dependency>
   </dependencies>
-
   <build>
     <!-- include the site goal to detect problems previously encountered with maven-plugin-plugin 3.9.0 -->
     <defaultGoal>clean verify apache-rat:check spotbugs:check pmd:check pmd:cpd-check javadoc:javadoc site</defaultGoal>
@@ -335,4 +307,30 @@
       </build>
     </profile>
   </profiles>
+  <developers>
+    <developer>
+      <name>Niall Pemberton</name>
+      <id>niallp</id>
+      <email>niallp AT apache.org</email>
+    </developer>
+    <developer>
+      <name>Dennis Lundberg</name>
+      <id>dennisl</id>
+    </developer>
+    <developer>
+      <id>ggregory</id>
+      <name>Gary Gregory</name>
+      <email>ggregory at apache.org</email>
+      <url>https://www.garygregory.com</url>
+      <organization>The Apache Software Foundation</organization>
+      <organizationUrl>https://www.apache.org/</organizationUrl>
+      <roles>
+        <role>PMC Member</role>
+      </roles>
+      <timezone>America/New_York</timezone>
+      <properties>
+        <picUrl>https://people.apache.org/~ggregory/img/garydgregory80.png</picUrl>
+      </properties>
+    </developer>
+  </developers>
 </project>
