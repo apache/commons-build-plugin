@@ -114,11 +114,9 @@
             <version>3.15.1</version>
           </dependency>
         </dependencies>
-
         <configuration>
           <goalPrefix>commons-build</goalPrefix>
         </configuration>
-
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
@@ -171,12 +169,10 @@
           </excludes>
         </configuration>
       </plugin>
-
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin-report-plugin</artifactId>
       </plugin>
-
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
@@ -184,7 +180,6 @@
         <!-- <excludeFilterFile>${basedir}/spotbugs-exclude-filter.xml</excludeFilterFile> -->
         </configuration>
       </plugin>
-
       <!-- exclude surefire report -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -193,7 +188,6 @@
           <reportSet/>
         </reportSets>
       </plugin>
-
       <!-- exclude jdepend report -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -216,7 +210,6 @@
     <commons.site.path>commons-${commons.componentid}</commons.site.path>
     <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${commons.site.path}</commons.scmPubUrl>
     <commons.scmPubCheckoutDirectory>site-content</commons.scmPubCheckoutDirectory>
-
     <!-- Commons Release Plugin -->
     <commons.bc.version>1.14.0</commons.bc.version>
     <commons.release.version>1.14.1</commons.release.version>
@@ -231,14 +224,11 @@
       commons.releaseManagerName
       commons.releaseManagerKey
     -->
-
     <!-- JS for Java 11+ (see profiles) -->
     <graalvm.version>23.0.6</graalvm.version>
     <graalvm.js.version>24.1.1</graalvm.js.version>
-
     <!-- moditect currently fails. Disable the check until we need to use Java plugins -->
     <moditect.skip>true</moditect.skip>
-
     <!-- Not needed for plugins intended for developer use only -->
     <cyclonedx.skip>true</cyclonedx.skip>
     <!-- Not available until version 0.7.1 -->
@@ -287,11 +277,9 @@
                     <exec executable="svn">
                       <arg line="checkout --depth immediates ${commons.scmPubUrl} ${commons.scmPubCheckoutDirectory}"/>
                     </exec>
-
                     <exec executable="svn">
                       <arg line="update --set-depth exclude ${commons.scmPubCheckoutDirectory}/javadocs"/>
                     </exec>
-
                     <pathconvert pathsep=" " property="dirs">
                       <dirset dir="${commons.scmPubCheckoutDirectory}" includes="*"/>
                     </pathconvert>
