@@ -26,13 +26,13 @@
     <author email="dev@commons.apache.org">Apache Commons Developers</author>
   </properties>
   <body>
-    <release version="1.14.2" date="YYYY-MM-DD" description="Maintenance release">
+    <release version="1.14.2" date="YYYY-MM-DD" description="This is a maintenance release.">
       <!-- FIX -->
       <action dev="ggregory" type="fix" due-to="Gary Gregory">Pick up maven-antrun-plugin version from parent POM org.apache:apache.</action> 
       <!-- UPDATE -->
-      <action dev="ggregory" type="update" due-to="Gary Gregory">Bump org.apache.commons:commons-parent from 78 to 79.</action>
+      <action dev="ggregory" type="update" due-to="Gary Gregory">Bump org.apache.commons:commons-parent from 78 to 79, upgrades Doxia from 1 to 2.</action>
     </release>
-    <release version="1.14.1" date="2024-11-03" description="Maintenance release">
+    <release version="1.14.1" date="2024-11-03" description="This is a maintenance release.">
       <!-- FIX -->
       <action dev="ggregory" type="fix" due-to="Capt. Cutlass">Fix broken URL to project location in Maven Central #320.</action> 
       <!-- ADD -->
@@ -50,7 +50,7 @@
       <!-- REMVOE -->
       <action dev="ggregory" type="remove" due-to="Gary Gregory">Drop codecov.io badge.</action>
     </release>
-    <release version="1.14.0" date="2024-04-12" description="Feature release">
+    <release version="1.14.0" date="2024-04-12" description="This is feature release.">
       <!-- FIX -->
       <action dev="sebb" type="fix">maven-plugin-report-plugin replaces maven-plugin-plugin report goal</action>
       <action dev="sebb" type="fix">Fix up errors in GHA badges for Java and CodeQL</action>
@@ -75,7 +75,7 @@
       <action dev="ggregory" type="update" due-to="Gary Gregory">Bump org.apache.maven.plugin-tools:maven-plugin-tools-ant from 3.9.0 to 3.12.0 #242.</action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-artifact-plugin from 3.5.0 to 3.5.1 #393.</action>
     </release>
-    <release version="1.13" date="2023-06-25" description="Feature release">
+    <release version="1.13" date="2023-06-25" description="This is feature release.">
       <!-- FIX -->
       <action dev="ggregory" type="fix" due-to="Gary Gregory">
         Fix running on Java 11 and up. Use GraalVM instead of Java 8 Nashorn for JavaScript, which was deprecated in Java 11 and removed in Java 15.
@@ -148,7 +148,7 @@
         Bump commons-parent from 52 to 61 #67, #86, #110, #120, #153.
       </action>
     </release>
-    <release version="1.12" date="2020-10-17" description="Feature release">
+    <release version="1.12" date="2020-10-17" description="This is feature release.">
       <action dev="sebb" type="update">
         commons-build:mail-page - add links to lists.apache.org.
       </action>
@@ -171,7 +171,7 @@
         Update actions/setup-java from v1.4.0 to v1.4.2 #13.
       </action>
     </release>
-    <release version="1.11" date="2019-08-30" description="Feature release">
+    <release version="1.11" date="2019-08-30" description="This is feature release.">
       <action dev="ggregory" type="update">
         Update versions-maven-plugin 2.5 -> 2.7.
       </action>
@@ -188,7 +188,7 @@
         Replace http://mail-archives.apache.org with https://mail-archives.apache.org.
       </action>
     </release>
-    <release version="1.10" date="2019-02-26" description="Feature release">
+    <release version="1.10" date="2019-02-26" description="This is feature release.">
       <action dev="ggregory" type="update">
         Use SHA512 signatures as the default in the download page.
       </action>
@@ -196,7 +196,7 @@
         Use SHA256 signatures as the default in the download page.
       </action>
     </release>
-    <release version="1.9" date="2018-06-16" description="Feature release">
+    <release version="1.9" date="2018-06-16" description="This is feature release.">
       <action dev="ggregory" type="fix">
         Fix in src/main/resources/commons-xdoc-templates/readme-md-template.md for components that have a major version number in their artifact IDs.
       </action>
@@ -216,7 +216,7 @@
         Update platform requirement from Java 7 to Java 8.
       </action>
     </release>
-    <release version="1.8" date="2018-04-02" description="Feature release">
+    <release version="1.8" date="2018-04-02" description="This is feature release.">
       <action dev="sebb" type="update">
         Use sha1 signatures as opposed to md5 signatures in download page.
       </action>
@@ -227,7 +227,7 @@
         Add eol-style:native otherwise generated files can cause commit errors
       </action>
     </release>
-    <release version="1.7" date="2016-11-18" description="Feature release">
+    <release version="1.7" date="2016-11-18" description="This is feature release.">
       <action dev="ggregory" type="add" issue="COMMONSSITE-90">
         Include badges in the README.md file.
       </action>
@@ -236,13 +236,13 @@
       </action>
     </release>
 
-    <release version="1.6" date="2016-04-24" description="Feature release">
+    <release version="1.6" date="2016-04-24" description="This is feature release.">
       <action dev="sebb" type="add">
         Added new download-page subdir property: set this (e.g. to '1.2' or 'lang-1.2' etc) to override the default of binaries/source
       </action>
     </release>
 
-    <release version="1.5" date="2015-11-28" description="Feature and fix release">
+    <release version="1.5" date="2015-11-28" description="This is a feature and fix release.">
       <action dev="ecki" type="update" issue="COMMONSSITE-81">
         commons-build-plugin README/CONTRIBUTING.md handle multi-modules
       </action>
@@ -254,7 +254,7 @@
       </action>
     </release>
 
-    <release version="1.4" date="3 March 2012" description="Feature and fix release.">
+    <release version="1.4" date="3 March 2012" description="This is a feature and fix release.">
       <action dev="ggregory" type="fix" issue="COMMONSSITE-66">
         Add support for a "commons.release.3" set of properties to offer a 3rd download option.
       </action>
