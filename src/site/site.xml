@@ -16,7 +16,6 @@
  limitations under the License.
 -->
 <project name="Commons Build Plugin">
-
     <body>
         <menu name="Build Plugin">
             <item name="Overview"                href="/index.html"/>
@@ -57,5 +56,4 @@
             </item>
         </menu>
     </body>
-
 </project>
