@@ -17,6 +17,8 @@
 ${project.name} ${version} RELEASE NOTES
 -----------------------------------------------------------
 
+The Apache Commons team is pleased to announce ${project.name} ${version}. 
+
 $introduction.replaceAll("(?<!\015)\012", "
 ").replaceAll("(?m)^ +","")
 
