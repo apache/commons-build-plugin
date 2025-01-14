@@ -7,7 +7,7 @@ The ASF licenses this file to You under the Apache License, Version 2.0
 (the "License"); you may not use this file except in compliance with
 the License.  You may obtain a copy of the License at
 
-     http://www.apache.org/licenses/LICENSE-2.0
+     https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -39,9 +39,9 @@ limitations under the License.
  |                                                                      |
  +======================================================================+
 -->
-<document xmlns="http://maven.apache.org/XDOC/2.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+<document xmlns="https://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://maven.apache.org/XDOC/2.0 https://maven.apache.org/xsd/xdoc-2.0.xsd">
   <properties>
     <title>@NAME@ Mailing Lists</title>
     <author email="dev@commons.apache.org">Apache Commons Documentation Team</author>
