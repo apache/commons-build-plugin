@@ -15,8 +15,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<document>
-
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
         <title>Generating All Sandbox Pages</title>
         <author email="dev@commons.apache.org">Apache Commons Documentation Team</author>
@@ -25,7 +26,7 @@
     <body>
 
 
-        <section name="commons-build:all-sandbox" href="all-sandbox">
+        <section name="commons-build:all-sandbox" id="all-sandbox">
 
             <subsection name="Overview">
                 <p>
@@ -35,6 +36,7 @@
                 </p>
                 <p>
                 This goal uses the following:
+                </p>
                 <ul>
                     <li>The goal is mapped to the ant script/target using the <code>all-sandbox</code> Mojo definition in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
@@ -42,7 +44,6 @@
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
                         ant script</li>
                 </ul>
-                </p>
             </subsection>
 
             <subsection name="Configuration">

@@ -15,9 +15,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<document>
-
-    <properties>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">    <properties>
         <title>Generating JIRA Page</title>
         <author email="dev@commons.apache.org">Apache Commons Documentation Team</author>
     </properties>
@@ -25,7 +25,7 @@
     <body>
 
 
-        <section name="commons-build:jira-page" href="jira-page">
+        <section name="commons-build:jira-page" id="jira-page">
 
             <subsection name="Overview">
                 <p>
@@ -41,6 +41,7 @@
 
                 <p>
                 This goal uses the following:
+                </p>
                 <ul>
                     <li>The goal is mapped to the ant script/target using the <code>jira-page</code> mojo definition in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
@@ -51,17 +52,16 @@
                         template</li>
                     <li>Uses the <a href="jira-page-mojo.html">goal's (i.e. mojo's) parameters</a> to filter values in the template</li>
                 </ul>
-                </p>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
                 To generate a JIRA page, the following <a href="jira-page-mojo.html">properties</a>  are configured in the component's <code>pom.xml</code>
+                </p>
                 <ul>
                     <li><b>commons.jira.id</b> - JIRA's external (upper case) project id for the component</li>
                     <li><b>commons.jira.pid</b> - JIRA's internal (numeric) project id for the component</li>
                 </ul>
-                </p>
                 <p>
                 Example configuration for Commons Text:
 <source><![CDATA[

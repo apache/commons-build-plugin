@@ -32,6 +32,7 @@
       <action dev="ggregory" type="fix" due-to="Gary Gregory">Migrate mail-lists-template.xml to xdoc-2.0.xsd.</action> 
       <action dev="ggregory" type="fix" due-to="Gary Gregory">Migrate no-download-page-template.xml to xdoc-2.0.xsd.</action> 
       <action dev="ggregory" type="fix" due-to="Gary Gregory">Migrate sandbox-issue-tracking-template.xml to xdoc-2.0.xsd.</action> 
+      <action dev="ggregory" type="fix" due-to="Gary Gregory">Migrate src/site/xdoc/* to xdoc-2.0.xsd.</action> 
       <!-- ADD -->
       <!-- UPDATE -->
     </release>

@@ -15,8 +15,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<document>
-
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
         <title>Development</title>
         <author email="dev@commons.apache.org">Apache Commons Documentation Team</author>
@@ -40,6 +41,7 @@
 
             <p>
             Each ant script requires two files, which have to be named following the conventions for ant plugins:
+            </p>
             <ul>
                 <li>An ant build file
                     <ul><li>[naming convention: <i>basename</i><b>.build.xml</b>]</li></ul>
@@ -48,7 +50,6 @@
                     <ul><li>[naming convention: <i>basename</i><b>.mojos.xml</b>]</li></ul>
                 </li>
             </ul>
-            </p>
 
             <p>
             So if you want to add a new <i>foo-bar</i> ant script you would create a <code>foo-bar.build.xml</code>
@@ -64,12 +65,12 @@
             <p>
             If you want to access variables from the component's <code>pom.xml</code> in the ant script
             then you need to do two things in the <i>mapping document</i>:
+            </p>
             <ul>
                 <li>Add the <code>&lt;requiresProject&gt;true&lt;/requiresProject&gt;</code></li>
                 <li>Add <code>&lt;parameter&gt;</code> elements for each of the variables you
                     want to use.</li>
             </ul>
-            </p>
 
         </section>
 

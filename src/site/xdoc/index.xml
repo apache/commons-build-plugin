@@ -15,8 +15,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<document>
-
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
     <properties>
         <title>Overview</title>
         <author email="dev@commons.apache.org">Apache Commons Documentation Team</author>
@@ -39,6 +40,7 @@
         <section name="Plugin goals:">
             <p>
             Available Goals:
+            </p>
             <ul>
                 <li><a href="all.html">commons-build:all</a> - Generate all pages for the component's latest release (but not sandbox pages.)</li>
                 <li><a href="all-sandbox.html">commons-build:all-sandbox</a> - Generate all pages for the sandbox component's latest release.</li>
@@ -50,7 +52,6 @@
                 <li><a href="readme-md.html">commons-build:readme-md</a> - Generate a README.md file containing information for contributors from GitHub.</li>
                 <li><a href="contributing-md.html">commons-build:contributing-md</a> - Generate a CONTRIBUTING.md file containing information on how to contribute for contributors from GitHub.</li>
             </ul>
-            </p>
         </section>
 
         <section name="Trying out the plugin">
