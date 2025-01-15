@@ -35,7 +35,7 @@
 
                 <p>
                 The above command generates an <i>xdoc</i> page named download_<i>componentid</i><b>.xml</b> in either the <code>xdocs</code>
-                or <code>src/site/xdoc</code> directory (depending on which exists), which should be checked into subversion.
+                or <code>src/site/xdoc</code> directory (depending on which exists), which should be checked into git.
                 This will cause a download_<i>componentid</i><b>.html</b> page to be generated when the <code>mvn site</code> is run.
                 Remember to add a <i>Download</i> link to download_<i>componentid</i><b>.cgi</b> to the maven <code>site.xml</code>.
                 </p>
