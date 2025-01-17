@@ -32,7 +32,7 @@ patches, or suggestions for improvement, see the Apache Commons Build Plugin Mav
 
 https://commons.apache.org/proper/commons-build-plugin/
 
-Download page: https://commons.apache.org/proper/commons-build-plugin/download_release-plugin.cgi
+Download page: https://commons.apache.org/proper/commons-build-plugin/download_build-plugin.cgi
 
 -----------------------------------------------------------------------------
 Apache Commons Build Plugin Maven Mojo 1.14.1 RELEASE NOTES
@@ -80,7 +80,7 @@ patches, or suggestions for improvement, see the Apache Commons Build Plugin Mav
 
 https://commons.apache.org/proper/commons-build-plugin/
 
-Download page: https://commons.apache.org/proper/commons-build-plugin/download_release-plugin.cgi
+Download page: https://commons.apache.org/proper/commons-build-plugin/download_build-plugin.cgi
 
 -----------------------------------------------------------------------------
 Apache Commons Build Plugin Maven Mojo 1.14.0 RELEASE NOTES
@@ -136,7 +136,7 @@ patches, or suggestions for improvement, see the Apache Commons Build Plugin Mav
 
 https://commons.apache.org/proper/commons-build-plugin/
 
-Download page: https://commons.apache.org/proper/commons-build-plugin/download_release-plugin.cgi
+Download page: https://commons.apache.org/proper/commons-build-plugin/download_build-plugin.cgi
 
 -----------------------------------------------------------------------------
 Apache Commons Build Plugin Maven Mojo 1.14.0 RELEASE NOTES
@@ -192,7 +192,7 @@ patches, or suggestions for improvement, see the Apache Commons Build Plugin Mav
 
 https://commons.apache.org/proper/commons-build-plugin/
 
-Download page: https://commons.apache.org/proper/commons-build-plugin/download_release-plugin.cgi
+Download page: https://commons.apache.org/proper/commons-build-plugin/download_build-plugin.cgi
 
 -----------------------------------------------------------------------------
 
@@ -259,6 +259,6 @@ patches, or suggestions for improvement, see the Apache Commons Build Plugin Mav
 
 https://commons.apache.org/proper/commons-build-plugin/
 
-Download page: https://commons.apache.org/proper/commons-build-plugin/download_release-plugin.cgi
+Download page: https://commons.apache.org/proper/commons-build-plugin/download_build-plugin.cgi
 
 -----------------------------------------------------------------------------

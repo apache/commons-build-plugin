@@ -113,6 +113,6 @@ patches, or suggestions for improvement, see the ${project.name} website:
 
 ${project.url}
 
-Download page: ${project.url}download_release-plugin.cgi
+Download page: ${project.url}download_build-plugin.cgi
 
 -----------------------------------------------------------------------------
