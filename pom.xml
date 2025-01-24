@@ -226,7 +226,7 @@
     -->
     <!-- JS for Java 11+ (see profiles) -->
     <graalvm.version>23.0.7</graalvm.version>
-    <graalvm.js.version>24.1.1</graalvm.js.version>
+    <graalvm.js.version>24.1.2</graalvm.js.version>
     <!-- moditect currently fails. Disable the check until we need to use Java plugins -->
     <moditect.skip>true</moditect.skip>
     <!-- Not needed for plugins intended for developer use only -->
