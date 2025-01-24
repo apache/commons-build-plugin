@@ -81,7 +81,7 @@ limitations under the License.
         mirrors (at the end of the mirrors list) that should be
         available.
         <br></br>
-        [if-any logo]<a href="[link]"><img align="right" src="[logo]" border="0"></img></a>[end]
+        [if-any logo]<a href="[link]"><img align="right" src="[logo]" border="0" alt="Logo"></img></a>[end]
       </p>
 
       <form action="[location]" method="get" id="SelectMirror">
