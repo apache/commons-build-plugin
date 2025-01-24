@@ -7,7 +7,7 @@ The ASF licenses this file to You under the Apache License, Version 2.0
 (the "License"); you may not use this file except in compliance with
 the License.  You may obtain a copy of the License at
 
-     http://www.apache.org/licenses/LICENSE-2.0
+     https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -46,20 +46,23 @@ limitations under the License.
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 https://maven.apache.org/xsd/xdoc-2.0.xsd">
   <properties>
     <title>Apache Commons Build Plugin Maven Mojo Issue tracking</title>
-    <author email="dev@commons.apache.org">Apache Commons Documentation Team</author>
+    <author email="dev@commons.apache.org">Apache Commons Team</author>
   </properties>
   <body>
+
     <section name="Apache Commons Build Plugin Maven Mojo Issue tracking">
       <p>
       Apache Commons Build Plugin Maven Mojo uses <a href="https://issues.apache.org/jira/">ASF JIRA</a> for tracking issues.
       See the <a href="https://issues.apache.org/jira/browse/COMMONSSITE">Apache Commons Build Plugin Maven Mojo JIRA project page</a>.
       </p>
+
       <p>
       To use JIRA you may need to <a href="https://issues.apache.org/jira/secure/Signup!default.jspa">create an account</a>
       (if you have previously created/updated Commons issues using Bugzilla an account will have been automatically
       created and you can use the <a href="https://issues.apache.org/jira/secure/ForgotPassword!default.jspa">Forgot Password</a>
       page to get a new password).
       </p>
+
       <p>
       If you would like to report a bug, or raise an enhancement request with
       Apache Commons Build Plugin Maven Mojo please do the following:
@@ -73,6 +76,7 @@ limitations under the License.
         <li>Submit either a <a href="https://issues.apache.org/jira/secure/CreateIssueDetails!init.jspa?pid=12310466&amp;component=12312401&amp;issuetype=1&amp;priority=4&amp;assignee=-1">bug report</a>
             or <a href="https://issues.apache.org/jira/secure/CreateIssueDetails!init.jspa?pid=12310466&amp;component=12312401&amp;issuetype=4&amp;priority=4&amp;assignee=-1">enhancement request</a>.</li>
       </ol>
+
       <p>
       Please also remember these points:
       </p>
@@ -81,10 +85,12 @@ limitations under the License.
         <li>test cases are vital, particularly for any proposed enhancements</li>
         <li>the developers of Apache Commons Build Plugin Maven Mojo are all unpaid volunteers</li>
       </ul>
+
       <p>
       For more information on creating patches see the
       <a href="https://www.apache.org/dev/contributors.html">Apache Contributors Guide</a>.
       </p>
+
       <p>
       You may also find these links useful:
       </p>
