@@ -67,7 +67,7 @@ Making Changes
   * Make sure your commit messages are meaningful and in the proper format. Your commit message should contain the key of the JIRA issue.
   * For example, `[@JIRA_ID@-123] Close input stream sooner`
 + Respect the original code style:
-  + Only use spaces for indentation. Check for unnecessary whitespace with `git diff` before committing.
+  + Only use spaces for indentation; you can check for unnecessary whitespace with `git diff` before committing.
   + Create minimal diffs - disable _On Save_ actions like _Reformat Source Code_ or _Organize Imports_. If you feel the source code should be reformatted create a separate PR for this change first.
 + Write unit tests that match behavioral changes, where the tests fail if the changes to the runtime are not applied. This may not always be possible but is a best-practice.
 Unit tests are typically in the `src/test/java` directory.
