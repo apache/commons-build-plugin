@@ -34,7 +34,7 @@
       <!-- UPDATE -->
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.graalvm.js:js from 23.0.6 to 23.0.7 #347.</action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.graalvm.js:js-scriptengine from 24.1.1 to 24.1.2 #346.</action>
-      <action dev="ggregory" type="update" due-to="Gary Gregory">Bump org.apache.commons:commons-parent from 79 to 80.</action>
+      <action dev="ggregory" type="update" due-to="Gary Gregory">Bump org.apache.commons:commons-parent from 79 to 81.</action>
     </release>
     <release version="1.15.0" date="2025-01-08" description="This is a feature and maintenance release. Java 8 or later is required.">
       <!-- FIX -->
