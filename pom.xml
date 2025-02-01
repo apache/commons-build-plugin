@@ -84,9 +84,6 @@
       commons.releaseManagerName
       commons.releaseManagerKey
     -->
-    <!-- JS for Java 11+ (see profiles) -->
-    <graalvm.version>23.0.7</graalvm.version>
-    <graalvm.js.version>24.1.2</graalvm.js.version>
     <!-- moditect currently fails. Disable the check until we need to use Java plugins -->
     <moditect.skip>true</moditect.skip>
     <!-- Not needed for plugins intended for developer use only -->
@@ -239,9 +236,13 @@
   </reporting>
   <profiles>
     <profile>
+      <id>java-11</id>
       <activation>
-        <jdk>[11,)</jdk>
+        <jdk>[11,17)</jdk>
       </activation>
+      <properties>
+        <graalvm.version>22.3.3</graalvm.version>
+      </properties>
       <dependencies>
         <dependency>
           <groupId>org.graalvm.js</groupId>
@@ -251,7 +252,35 @@
         <dependency>
           <groupId>org.graalvm.js</groupId>
           <artifactId>js-scriptengine</artifactId>
-          <version>${graalvm.js.version}</version>
+          <version>${graalvm.version}</version>
+        </dependency>
+      </dependencies>
+    </profile>
+    <profile>
+      <id>java-17-plus</id>
+      <activation>
+        <jdk>[17,)</jdk>
+      </activation>
+      <properties>
+        <graalvm.version>24.1.2</graalvm.version>
+      </properties>
+      <dependencies>
+        <dependency>
+          <groupId>org.graalvm.polyglot</groupId>
+          <artifactId>js</artifactId>
+          <version>${graalvm.version}</version>
+          <scope>import</scope>
+          <type>pom</type>
+        </dependency>
+        <dependency>
+          <groupId>org.graalvm.polyglot</groupId>
+          <artifactId>polyglot</artifactId>
+          <version>${graalvm.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.graalvm.js</groupId>
+          <artifactId>js-scriptengine</artifactId>
+          <version>${graalvm.version}</version>
         </dependency>
       </dependencies>
     </profile>
