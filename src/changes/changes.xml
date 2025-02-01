@@ -31,6 +31,7 @@
       <action type="fix" dev="ggregory" due-to="Gary Gregory">Migrate site generation templates to https://maven.apache.org/xsd/xdoc-2.0.xsd.</action>
       <action type="fix" dev="ggregory" due-to="Gary Gregory">Remove -nouses directive from maven-bundle-plugin. OSGi package imports now state 'uses' definitions for package imports, this doesn't affect JPMS (from org.apache.commons:commons-parent:80).</action>
       <!-- ADD -->
+      <action type="add" dev="ggregory" due-to="Gary Gregory">Refactor version for Maven core plugin dependencies into a new property commons.maven.version.</action>
       <!-- UPDATE -->
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.graalvm.js:js from 23.0.6 to 23.0.7 #347.</action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.graalvm.js:js-scriptengine from 24.1.1 to 24.1.2 #346.</action>
