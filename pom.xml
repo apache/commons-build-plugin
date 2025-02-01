@@ -58,6 +58,43 @@
       <url>scm:svn:${commons.scmPubUrl}</url>
     </site>
   </distributionManagement>
+  <properties>
+    <enforcer.skip>true</enforcer.skip>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <commons.manifestfile/>
+    <commons.componentid>build-plugin</commons.componentid>
+    <commons.jira.id>COMMONSSITE</commons.jira.id>
+    <commons.jira.pid>12310466&amp;amp;component=12312401</commons.jira.pid>
+    <commons.site.path>commons-${commons.componentid}</commons.site.path>
+    <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${commons.site.path}</commons.scmPubUrl>
+    <commons.scmPubCheckoutDirectory>site-content</commons.scmPubCheckoutDirectory>
+    <!-- Commons Release Plugin -->
+    <commons.bc.version>1.14.1</commons.bc.version>
+    <commons.release.version>1.15.0</commons.release.version>
+    <commons.release.next>1.15.1</commons.release.next>
+    <!-- Previous version of the component (used for reporting binary compatibility check)-->
+    <commons.rc.version>RC1</commons.rc.version>
+    <commons.release.isDistModule>true</commons.release.isDistModule>
+    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
+    <!--
+      Define the following in ~/.m2/settings.xml in an active profile:
+      (or provide them on the command line)
+      commons.releaseManagerName
+      commons.releaseManagerKey
+    -->
+    <!-- JS for Java 11+ (see profiles) -->
+    <graalvm.version>23.0.7</graalvm.version>
+    <graalvm.js.version>24.1.2</graalvm.js.version>
+    <!-- moditect currently fails. Disable the check until we need to use Java plugins -->
+    <moditect.skip>true</moditect.skip>
+    <!-- Not needed for plugins intended for developer use only -->
+    <cyclonedx.skip>true</cyclonedx.skip>
+    <!-- Not available until version 0.7.1 -->
+    <spdx.skip>true</spdx.skip>
+    <!-- project.build.outputTimestamp is managed by Maven plugins, see https://maven.apache.org/guides/mini/guide-reproducible-builds.html -->
+    <project.build.outputTimestamp>2025-01-11T13:42:07Z</project.build.outputTimestamp>
+  </properties>
   <dependencies>
     <dependency>
       <!-- Try to deal with https://bz.apache.org/bugzilla/show_bug.cgi?id=66951 -->
@@ -199,43 +236,6 @@
       </plugin>
     </plugins>
   </reporting>
-  <properties>
-    <enforcer.skip>true</enforcer.skip>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <commons.manifestfile/>
-    <commons.componentid>build-plugin</commons.componentid>
-    <commons.jira.id>COMMONSSITE</commons.jira.id>
-    <commons.jira.pid>12310466&amp;amp;component=12312401</commons.jira.pid>
-    <commons.site.path>commons-${commons.componentid}</commons.site.path>
-    <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${commons.site.path}</commons.scmPubUrl>
-    <commons.scmPubCheckoutDirectory>site-content</commons.scmPubCheckoutDirectory>
-    <!-- Commons Release Plugin -->
-    <commons.bc.version>1.14.1</commons.bc.version>
-    <commons.release.version>1.15.0</commons.release.version>
-    <commons.release.next>1.15.1</commons.release.next>
-    <!-- Previous version of the component (used for reporting binary compatibility check)-->
-    <commons.rc.version>RC1</commons.rc.version>
-    <commons.release.isDistModule>true</commons.release.isDistModule>
-    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
-    <!--
-      Define the following in ~/.m2/settings.xml in an active profile:
-      (or provide them on the command line)
-      commons.releaseManagerName
-      commons.releaseManagerKey
-    -->
-    <!-- JS for Java 11+ (see profiles) -->
-    <graalvm.version>23.0.7</graalvm.version>
-    <graalvm.js.version>24.1.2</graalvm.js.version>
-    <!-- moditect currently fails. Disable the check until we need to use Java plugins -->
-    <moditect.skip>true</moditect.skip>
-    <!-- Not needed for plugins intended for developer use only -->
-    <cyclonedx.skip>true</cyclonedx.skip>
-    <!-- Not available until version 0.7.1 -->
-    <spdx.skip>true</spdx.skip>
-    <!-- project.build.outputTimestamp is managed by Maven plugins, see https://maven.apache.org/guides/mini/guide-reproducible-builds.html -->
-    <project.build.outputTimestamp>2025-01-11T13:42:07Z</project.build.outputTimestamp>
-  </properties>
   <profiles>
     <profile>
       <activation>
