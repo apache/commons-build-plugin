@@ -43,7 +43,7 @@
   </issueManagement>
   <inceptionYear>2008</inceptionYear>
   <scm>
-    <connection>scm:git:http://gitbox.apache.org/repos/asf/commons-build-plugin.git</connection>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/commons-build-plugin.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-build-plugin.git</developerConnection>
     <url>https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git</url>
   </scm>
