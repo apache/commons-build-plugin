@@ -38,6 +38,7 @@
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.graalvm.js:js from 23.0.6 to 23.0.7 #347.</action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump graalvm.version from 24.1.2 to 24.2.1 #346, #357, #365 (when on Java 17 and up).</action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump commons.maven.version from 3.9.9 to 3.9.10 #374.</action> 
+      <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump commons.maven.version from 3.9.10 to 3.9.11.</action> 
     </release>
     <release version="1.15.0" date="2025-01-08" description="This is a feature and maintenance release. Java 8 or later is required.">
       <!-- FIX -->
