@@ -1,3 +1,49 @@
+Apache Commons Build Plugin Maven Mojo 1.16.0 RELEASE NOTES
+-----------------------------------------------------------
+
+The Apache Commons team is pleased to announce Apache Commons Build Plugin Maven Mojo 1.16.0. 
+
+Apache Maven Mojo for Apache Commons Build tasks.
+
+For example:
+mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
+
+To use a SNAPSHOT version (for testing and so on):
+mvn org.apache.commons:commons-build-plugin:1.14.0-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+Changes in this version include:
+
+New features
+------------
+
+*                   Refactor version for Maven core plugin dependencies into a new property commons.maven.version. Thanks to Gary Gregory.
+*                   Refactor unnamed profile into two for JavaScript dependency: java-11 and java-17-plus. Thanks to Gary Gregory.
+
+Fixed Bugs
+----------
+
+*                   Migrate site generation templates to https://maven.apache.org/xsd/xdoc-2.0.xsd. Thanks to Gary Gregory.
+*                   Remove -nouses directive from maven-bundle-plugin. OSGi package imports now state 'uses' definitions for package imports, this doesn't affect JPMS (from org.apache.commons:commons-parent:80). Thanks to Gary Gregory.
+
+Changes
+-------
+
+*                   Bump org.apache.commons:commons-parent from 79 to 85 #367. Thanks to Gary Gregory.
+*                   Bump org.graalvm.js:js from 23.0.6 to 23.0.7 #347. Thanks to Dependabot, Gary Gregory.
+*                   Bump graalvm.version from 24.1.2 to 24.2.2 on Java 17 and up #346, #357, #365. Thanks to Dependabot, Gary Gregory.
+*                   Bump commons.maven.version from 3.9.9 to 3.9.11 #374. Thanks to Dependabot, Gary Gregory.
+
+
+For complete information on Apache Commons Build Plugin Maven Mojo, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Build Plugin Maven Mojo website:
+
+https://commons.apache.org/proper/commons-build-plugin/
+
+Download page: https://commons.apache.org/proper/commons-build-plugin/download_build-plugin.cgi
+
+-----------------------------------------------------------------------------
 Apache Commons Build Plugin Maven Mojo 1.15.0 RELEASE NOTES
 -----------------------------------------------------------
 
