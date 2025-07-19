@@ -25,7 +25,7 @@
   </parent>
   <artifactId>commons-build-plugin</artifactId>
   <packaging>maven-plugin</packaging>
-  <version>1.15.1-SNAPSHOT</version>
+  <version>1.16.0-SNAPSHOT</version>
   <name>Apache Commons Build Plugin Maven Mojo</name>
   <description>
     Apache Maven Mojo for Apache Commons Build tasks.
@@ -33,7 +33,7 @@
     For example:
       mvn commons-build:download-page [-Dcommons.release.version=1.2.3]
 
-    To use a SNAPSHOT version (for testing etc)
+    To use a SNAPSHOT version (for testing and so on):
       mvn org.apache.commons:commons-build-plugin:1.14.0-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]
   </description>
   <url>https://commons.apache.org/proper/commons-build-plugin/</url>
@@ -70,9 +70,9 @@
     <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${commons.site.path}</commons.scmPubUrl>
     <commons.scmPubCheckoutDirectory>site-content</commons.scmPubCheckoutDirectory>
     <!-- Commons Release Plugin -->
-    <commons.bc.version>1.14.1</commons.bc.version>
-    <commons.release.version>1.15.0</commons.release.version>
-    <commons.release.next>1.15.1</commons.release.next>
+    <commons.bc.version>1.15.0</commons.bc.version>
+    <commons.release.version>1.16.0</commons.release.version>
+    <commons.release.next>1.16.1</commons.release.next>
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
     <commons.rc.version>RC1</commons.rc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
