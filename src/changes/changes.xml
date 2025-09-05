@@ -30,6 +30,7 @@
       <!-- FIX -->
       <!-- ADD -->
       <!-- UPDATE -->
+      <action dev="sebb" type="update" due-to="seshathri044">Tweak README (grammar and clarity). See: https://github.com/apache/commons-lang/pull/1442</action>
     </release>
     <release version="1.16.0" date="2025-07-19" description="This is a feature and maintenance release. Java 8 or later is required.">
       <!-- FIX -->
