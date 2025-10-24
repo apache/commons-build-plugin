@@ -262,7 +262,7 @@
         <jdk>[17,)</jdk>
       </activation>
       <properties>
-        <graalvm.version>25.0.0</graalvm.version>
+        <graalvm.version>25.0.1</graalvm.version>
       </properties>
       <dependencies>
         <dependency>
