@@ -31,11 +31,11 @@
       <action dev="sebb" type="fix" due-to="seshathri044">Tweak README (grammar and clarity). See: https://github.com/apache/commons-lang/pull/1442</action>
       <!-- ADD -->
       <!-- UPDATE -->
-      <action dev="sebb" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-parent from 85 to 90 #391.</action>
-      <action dev="sebb" type="update" due-to="Dependabot, Gary Gregory">Bump graalvm.version from 24.2.2 to 25.0.1 #390, #401.</action>
-      <action dev="sebb" type="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugin-tools:maven-script-ant from 3.15.1 to 3.15.2 #407.</action>
-      <action dev="sebb" type="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugin-tools:maven-plugin-tools-ant from 3.15.1 to 3.15.2 #405.</action>
-      <action dev="sebb" type="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-plugin-plugin from 3.15.1 to 3.15.2 #408.</action>
+      <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-parent from 85 to 90 #391.</action>
+      <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump graalvm.version from 24.2.2 to 25.0.1 #390, #401.</action>
+      <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugin-tools:maven-script-ant from 3.15.1 to 3.15.2 #407.</action>
+      <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugin-tools:maven-plugin-tools-ant from 3.15.1 to 3.15.2 #405.</action>
+      <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-plugin-plugin from 3.15.1 to 3.15.2 #408.</action>
     </release>
     <release version="1.16.0" date="2025-07-19" description="This is a feature and maintenance release. Java 8 or later is required.">
       <!-- FIX -->
