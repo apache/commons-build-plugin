@@ -29,6 +29,7 @@
     <release version="1.16.1" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
       <!-- FIX -->
       <action dev="sebb" type="fix" due-to="seshathri044">Tweak README (grammar and clarity). See: https://github.com/apache/commons-lang/pull/1442</action>
+      <action type="fix" dev="ggregory" due-to="Gary Gregory">Fix Apache RAT plugin console warnings.</action>
       <!-- ADD -->
       <!-- UPDATE -->
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-parent from 85 to 93 #391, #411, #412.</action>

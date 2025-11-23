@@ -166,13 +166,12 @@
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
         <configuration>
-          <useDefaultExcludes>true</useDefaultExcludes>
-          <excludes>
+          <inputExcludes>
             <!-- template files which will be inserted into the middle of resulting page -->
-            <exclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</exclude>
-            <exclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</exclude>
-            <exclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</exclude>
-          </excludes>
+            <inputExclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</inputExclude>
+            <inputExclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</inputExclude>
+            <inputExclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</inputExclude>
+          </inputExcludes>
         </configuration>
       </plugin>
       <plugin>
@@ -194,13 +193,12 @@
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
         <configuration>
-          <useDefaultExcludes>true</useDefaultExcludes>
-          <excludes>
+          <inputExclude>
             <!-- template files which will be inserted into the middle of resulting page -->
-            <exclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</exclude>
-            <exclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</exclude>
-            <exclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</exclude>
-          </excludes>
+            <inputExclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</inputExclude>
+            <inputExclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</inputExclude>
+            <inputExclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</inputExclude>
+          </inputExclude>
         </configuration>
       </plugin>
       <plugin>
