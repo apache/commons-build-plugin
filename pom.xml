@@ -76,7 +76,7 @@
     <commons.rc.version>RC1</commons.rc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
-    <commons.maven.version>3.9.11</commons.maven.version>
+    <commons.maven.version>3.9.12</commons.maven.version>
     <!--
       Define the following in ~/.m2/settings.xml in an active profile:
       (or provide them on the command line)
