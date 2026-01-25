@@ -25,7 +25,7 @@
   </parent>
   <artifactId>commons-build-plugin</artifactId>
   <packaging>maven-plugin</packaging>
-  <version>1.16.1-SNAPSHOT</version>
+  <version>1.16.1</version>
   <name>Apache Commons Build Plugin Maven Mojo</name>
   <description>
     Apache Maven Mojo for Apache Commons Build tasks.
@@ -90,7 +90,7 @@
     <!-- Not available until version 0.7.1 -->
     <spdx.skip>true</spdx.skip>
     <!-- project.build.outputTimestamp is managed by Maven plugins, see https://maven.apache.org/guides/mini/guide-reproducible-builds.html -->
-    <project.build.outputTimestamp>2025-07-22T18:46:13Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2026-01-25T14:50:15Z</project.build.outputTimestamp>
   </properties>
   <dependencies>
     <dependency>
