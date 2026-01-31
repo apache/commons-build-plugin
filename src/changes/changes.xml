@@ -26,6 +26,11 @@
     <author email="dev@commons.apache.org">Apache Commons Developers</author>
   </properties>
   <body>
+    <release version="1.16.2" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
+      <!-- FIX -->
+      <!-- ADD -->
+      <!-- UPDATE -->
+    </release>
     <release version="1.16.1" date="2026-01-25" description="This is a feature and maintenance release. Java 8 or later is required.">
       <!-- FIX -->
       <action type="fix" dev="ecki" due-to="Bernd Eckenfels">Removed outdated social media link from README.md and CONTRIBUTING.md</action>
