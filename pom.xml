@@ -69,9 +69,9 @@
     <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${commons.site.path}</commons.scmPubUrl>
     <commons.scmPubCheckoutDirectory>site-content</commons.scmPubCheckoutDirectory>
     <!-- Commons Release Plugin -->
-    <commons.bc.version>1.16.0</commons.bc.version>
-    <commons.release.version>1.16.1</commons.release.version>
-    <commons.release.next>1.16.2</commons.release.next>
+    <commons.bc.version>1.16.1</commons.bc.version>
+    <commons.release.version>1.16.2</commons.release.version>
+    <commons.release.next>1.16.3</commons.release.next>
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
     <commons.rc.version>RC1</commons.rc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
