@@ -18,6 +18,8 @@ package org.apache.commons.build.models.slsa.v1_2;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -30,13 +32,13 @@ import java.util.Objects;
 public class Builder {
 
     @JsonProperty("id")
-    private String id;
+    private String id = "https://commons.apache.org/builds/0.1.0";
 
     @JsonProperty("builderDependencies")
-    private List<ResourceDescriptor> builderDependencies;
+    private List<ResourceDescriptor> builderDependencies = new ArrayList<>();
 
     @JsonProperty("version")
-    private Map<String, String> version;
+    private Map<String, String> version = new HashMap<>();
 
     /** Creates a new Builder instance. */
     public Builder() {

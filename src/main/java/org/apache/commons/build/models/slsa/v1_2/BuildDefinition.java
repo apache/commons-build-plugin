@@ -16,11 +16,12 @@
  */
 package org.apache.commons.build.models.slsa.v1_2;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Inputs that define the build: the build type, external and internal parameters, and resolved dependencies.
@@ -30,17 +31,16 @@ import java.util.Objects;
  *
  * @see <a href="https://slsa.dev/spec/v1.2">SLSA v1.2 Specification</a>
  */
-@JsonInclude(JsonInclude.Include.NON_NULL)
 public class BuildDefinition {
 
   @JsonProperty("buildType")
   private String buildType = "https://commons.apache.org/builds/0.1.0";
 
   @JsonProperty("externalParameters")
-  private Map<String, Object> externalParameters;
+  private Map<String, Object> externalParameters = new HashMap<>();
 
   @JsonProperty("internalParameters")
-  private Map<String, Object> internalParameters;
+  private Map<String, Object> internalParameters = new HashMap<>();
 
   @JsonProperty("resolvedDependencies")
   private List<ResourceDescriptor> resolvedDependencies;
