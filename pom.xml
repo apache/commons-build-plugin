@@ -57,6 +57,17 @@
       <url>scm:svn:${commons.scmPubUrl}</url>
     </site>
   </distributionManagement>
+  <!-- Temporarily add Apache Snapshots repository -->
+  <repositories>
+    <repository>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Repository</name>
+      <url>https://repository.apache.org/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+  </repositories>
   <properties>
     <enforcer.skip>true</enforcer.skip>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -98,6 +109,11 @@
       <groupId>org.apache.ant</groupId>
       <artifactId>ant-launcher</artifactId>
       <version>1.10.15</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.22.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <!-- Try to deal with https://bz.apache.org/bugzilla/show_bug.cgi?id=66951 -->
