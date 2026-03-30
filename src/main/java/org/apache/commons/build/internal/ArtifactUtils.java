@@ -25,16 +25,32 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.plugin.MojoExecutionException;
 
+/**
+ * Utilities to convert {@link Artifact} from and to other types.
+ */
 public final class ArtifactUtils {
 
     private ArtifactUtils() {
         // prevent instantiation
     }
 
+    /**
+     * Returns the conventional filename for the given artifact.
+     *
+     * @param artifact A Maven artifact.
+     * @return A filename.
+     */
     public static String getFileName(Artifact artifact) {
         return getFileName(artifact, artifact.getArtifactHandler().getExtension());
     }
 
+    /**
+     * Returns the filename for the given artifact with a changed extension.
+     *
+     * @param artifact A Maven artifact.
+     * @param extension The file name extension.
+     * @return A filename.
+     */
     public static String getFileName(Artifact artifact, String extension) {
         StringBuilder fileName = new StringBuilder();
         fileName.append(artifact.getArtifactId()).append("-").append(artifact.getVersion());
@@ -45,6 +61,12 @@ public final class ArtifactUtils {
         return fileName.toString();
     }
 
+    /**
+     * Returns the Package URL corresponding to this artifact.
+     *
+     * @param artifact A maven artifact.
+     * @return A PURL for the given artifact.
+     */
     public static String getPackageUrl(Artifact artifact) {
         StringBuilder sb = new StringBuilder();
         sb.append("pkg:maven/").append(artifact.getGroupId()).append("/").append(artifact.getArtifactId()).append("@").append(artifact.getVersion())
@@ -57,7 +79,7 @@ public final class ArtifactUtils {
         return sb.toString();
     }
 
-    public static Map<String, String> getChecksums(Artifact artifact) throws IOException {
+    private static Map<String, String> getChecksums(Artifact artifact) throws IOException {
         Map<String, String> checksums = new HashMap<>();
         DigestUtils digest = new DigestUtils(DigestUtils.getSha256Digest());
         String sha256sum = digest.digestAsHex(artifact.getFile());
@@ -65,6 +87,13 @@ public final class ArtifactUtils {
         return checksums;
     }
 
+    /**
+     * Converts a Maven artifact to a SLSA {@link ResourceDescriptor}.
+     *
+     * @param artifact A Maven artifact.
+     * @return A SLSA resource descriptor.
+     * @throws MojoExecutionException If an I/O error occurs retrieving the artifact.
+     */
     public static ResourceDescriptor toResourceDescriptor(Artifact artifact) throws MojoExecutionException {
         ResourceDescriptor descriptor = new ResourceDescriptor();
         descriptor.setName(getFileName(artifact));

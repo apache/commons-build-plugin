@@ -26,8 +26,18 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
 
+/**
+ * Utilities for Git operations.
+ */
 public final class GitUtils {
 
+    /**
+     * Returns the Git tree hash for the given directory.
+     *
+     * @param path A directory path.
+     * @return A hex-encoded SHA-1 tree hash.
+     * @throws IOException If the path is not a directory or an I/O error occurs.
+     */
     public static String gitTree(Path path) throws IOException {
         if (!Files.isDirectory(path)) {
             throw new IOException("Path is not a directory: " + path);
@@ -36,6 +46,13 @@ public final class GitUtils {
         return Hex.encodeHexString(DigestUtils.gitTree(digest, path));
     }
 
+    /**
+     * Returns the Git blob hash for the given file.
+     *
+     * @param path A regular file path.
+     * @return A hex-encoded SHA-1 blob hash.
+     * @throws IOException If the path is not a regular file or an I/O error occurs.
+     */
     public static String gitBlob(Path path) throws IOException {
         if (!Files.isRegularFile(path)) {
             throw new IOException("Path is not a regular file: " + path);
@@ -44,6 +61,14 @@ public final class GitUtils {
         return Hex.encodeHexString(DigestUtils.gitBlob(digest, path));
     }
 
+    /**
+     * Converts an SCM URI to a download URI suffixed with the current branch name.
+     *
+     * @param scmUri A Maven SCM URI starting with {@code scm:git}.
+     * @param repositoryPath A path inside the Git repository.
+     * @return A download URI of the form {@code git+<url>@<branch>}.
+     * @throws IOException If the current branch cannot be determined.
+     */
     public static String scmToDownloadUri(String scmUri, Path repositoryPath) throws IOException {
         if (!scmUri.startsWith("scm:git")) {
             throw new IllegalArgumentException("Invalid scmUri: " + scmUri);
@@ -52,6 +77,15 @@ public final class GitUtils {
         return "git+" + scmUri.substring(8) + "@" + currentBranch;
     }
 
+    /**
+     * Returns the current branch name for the given repository path.
+     *
+     * <p>Returns the commit SHA if the repository is in a detached HEAD state.
+     *
+     * @param repositoryPath A path inside the Git repository.
+     * @return The current branch name, or the commit SHA for a detached HEAD.
+     * @throws IOException If the {@code .git} directory cannot be found or read.
+     */
     public static String getCurrentBranch(Path repositoryPath) throws IOException {
         Path gitDir = findGitDir(repositoryPath);
         String head = new String(Files.readAllBytes(gitDir.resolve("HEAD")), StandardCharsets.UTF_8).trim();

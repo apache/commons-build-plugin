@@ -124,6 +124,15 @@ public class BuildAttestationMojo extends AbstractMojo {
      */
     private final MavenProjectHelper mavenProjectHelper;
 
+    /**
+     * Creates a new instance with the given dependencies.
+     *
+     * @param project A Maven project.
+     * @param scmManager A SCM manager.
+     * @param runtimeInformation Maven runtime information.
+     * @param session A Maven session.
+     * @param mavenProjectHelper A helper to attach artifacts to the project.
+     */
     @Inject
     public BuildAttestationMojo(MavenProject project, ScmManager scmManager, RuntimeInformation runtimeInformation, MavenSession session,
             MavenProjectHelper mavenProjectHelper) {
@@ -138,10 +147,20 @@ public class BuildAttestationMojo extends AbstractMojo {
         this.outputDirectory = outputDirectory;
     }
 
+    /**
+     * Returns the SCM directory.
+     *
+     * @return The SCM directory.
+     */
     public File getScmDirectory() {
         return scmDirectory;
     }
 
+    /**
+     * Sets the SCM directory.
+     *
+     * @param scmDirectory The SCM directory.
+     */
     public void setScmDirectory(File scmDirectory) {
         this.scmDirectory = scmDirectory;
     }
