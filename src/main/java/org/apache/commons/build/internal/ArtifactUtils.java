@@ -16,15 +16,14 @@
  */
 package org.apache.commons.build.internal;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.commons.build.models.slsa.v1_2.ResourceDescriptor;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.plugin.MojoExecutionException;
-import org.apache.maven.plugin.MojoFailureException;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 public final class ArtifactUtils {
 
