@@ -47,21 +47,6 @@ public final class GitUtils {
     }
 
     /**
-     * Returns the Git blob hash for the given file.
-     *
-     * @param path A regular file path.
-     * @return A hex-encoded SHA-1 blob hash.
-     * @throws IOException If the path is not a regular file or an I/O error occurs.
-     */
-    public static String gitBlob(Path path) throws IOException {
-        if (!Files.isRegularFile(path)) {
-            throw new IOException("Path is not a regular file: " + path);
-        }
-        MessageDigest digest = DigestUtils.getSha1Digest();
-        return Hex.encodeHexString(DigestUtils.gitBlob(digest, path));
-    }
-
-    /**
      * Converts an SCM URI to a download URI suffixed with the current branch name.
      *
      * @param scmUri A Maven SCM URI starting with {@code scm:git}.
