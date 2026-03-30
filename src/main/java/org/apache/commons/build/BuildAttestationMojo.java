@@ -84,12 +84,6 @@ public class BuildAttestationMojo extends AbstractMojo {
     @Parameter(defaultValue = "${project.scm.connection}", readonly = true)
     private String scmConnectionUrl;
 
-    @Parameter(defaultValue = "${project.scm.developerConnection}", readonly = true)
-    private String scmDeveloperConnectionUrl;
-
-    @Parameter(defaultValue = "${project.scm.tag}", readonly = true)
-    private String scmTag;
-
     @Parameter(defaultValue = "${maven.home}", readonly = true)
     private File mavenHome;
 
@@ -154,14 +148,6 @@ public class BuildAttestationMojo extends AbstractMojo {
 
     void setScmConnectionUrl(String scmConnectionUrl) {
         this.scmConnectionUrl = scmConnectionUrl;
-    }
-
-    void setScmDeveloperConnectionUrl(String scmDeveloperConnectionUrl) {
-        this.scmDeveloperConnectionUrl = scmDeveloperConnectionUrl;
-    }
-
-    void setScmTag(String scmTag) {
-        this.scmTag = scmTag;
     }
 
     void setMavenHome(File mavenHome) {

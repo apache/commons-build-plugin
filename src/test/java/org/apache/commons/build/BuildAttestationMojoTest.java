@@ -102,8 +102,6 @@ public class BuildAttestationMojoTest {
         mojo.setOutputDirectory(new File("target/attestations"));
         mojo.setScmDirectory(new File("."));
         mojo.setScmConnectionUrl("scm:git:https://github.com/apache/commons-lang.git");
-        mojo.setScmDeveloperConnectionUrl("scm:git:ssh://git@github.com/apache/commons-lang.git");
-        mojo.setScmTag("tag");
         mojo.setMavenHome(new File(System.getProperty("maven.home", ".")));
         mojo.execute();
 
