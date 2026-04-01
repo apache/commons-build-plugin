@@ -31,6 +31,7 @@
       <!-- ADD -->
       <!-- UPDATE -->
       <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.commons:commons-parent from 96 to 97.</action>
+      <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:jdepend-maven-plugin from 2.1 to 2.2.0 #420 https://github.com/mojohaus/jdepend-maven-plugin/compare/2.1...jdepend-maven-plugin-2.2.0.</action>
     </release>
     <release version="1.16.1" date="2026-01-25" description="This is a feature and maintenance release. Java 8 or later is required.">
       <!-- FIX -->
