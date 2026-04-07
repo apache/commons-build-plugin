@@ -30,7 +30,7 @@
       <!-- FIX -->
       <!-- ADD -->
       <!-- UPDATE -->
-      <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.commons:commons-parent from 96 to 97.</action>
+      <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.commons:commons-parent from 96 to 98.</action>
       <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:jdepend-maven-plugin from 2.1 to 2.2.0 #420 https://github.com/mojohaus/jdepend-maven-plugin/compare/2.1...jdepend-maven-plugin-2.2.0.</action>
       <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.maven.version from 3.9.12 to 3.9.14 #418 https://github.com/apache/maven/compare/maven-3.9.12...maven-3.9.14.</action>
     </release>
