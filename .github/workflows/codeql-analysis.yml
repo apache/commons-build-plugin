@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Dummy job for now because there is no code to analyse
+# Dummy job for now because there is no code to analyze
 
 name: CodeQL
 
