@@ -254,12 +254,12 @@
       </dependencies>
     </profile>
     <profile>
-      <id>java-17-plus</id>
+      <id>java-25-plus</id>
       <activation>
-        <jdk>[17,)</jdk>
+        <jdk>[25,)</jdk>
       </activation>
       <properties>
-        <graalvm.version>25.1.3</graalvm.version>
+        <graalvm.version>25.3.4.1</graalvm.version>
       </properties>
       <dependencies>
         <dependency>
