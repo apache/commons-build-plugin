@@ -47,7 +47,7 @@
 [![Maven Central](https://img.shields.io/maven-central/v/@GROUPID@/@ARTIFACTCOREID@?label=Maven%20Central)](https://search.maven.org/artifact/@GROUPID@/@ARTIFACTCOREID@)
 [![Javadocs](https://javadoc.io/badge/@GROUPID@/@ARTIFACTCOREID@/@VERSION@.svg)](https://javadoc.io/doc/@GROUPID@/@ARTIFACTCOREID@/@VERSION@)
 [![CodeQL](https://github.com/apache/commons-@ID@/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-@ID@/actions/workflows/codeql-analysis.yml)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-@ID@/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-@ID@)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-@ID@/badge)](https://scorecard.dev/viewer/?uri=github.com/apache/commons-@ID@)
 
 @DESCRIPTION@
 
