@@ -83,7 +83,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.id}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The external JIRA id for the project (alphabetic, upper case.)</description>
+                    <description>The external JIRA ID for the project (alphabetic, uppercase).</description>
                 </parameter>
                 <parameter>
                     <name>commons.componentid</name>
@@ -92,7 +92,7 @@
                     <readonly>true</readonly>
                     <defaultValue>${commons.componentid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The commons component id.</description>
+                    <description>The Commons component ID.</description>
                 </parameter>
                 <parameter>
                     <name>commons.dist.subdir</name>
@@ -110,7 +110,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.pid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The internal JIRA id for the project (numeric.)</description>
+                    <description>The internal JIRA ID for the project (numeric).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.version</name>
@@ -155,7 +155,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.hash</name>
@@ -164,7 +164,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
@@ -210,7 +210,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.hash</name>
@@ -219,7 +219,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -265,7 +265,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.hash</name>
@@ -274,7 +274,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
@@ -320,7 +320,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.hash</name>
@@ -329,7 +329,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
             </parameters>
         </mojo>
@@ -373,7 +373,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.id}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The external JIRA id for the project (alphabetic, upper case.)</description>
+                    <description>The external JIRA ID for the project (alphabetic, uppercase).</description>
                 </parameter>
                 <parameter>
                     <name>commons.componentid</name>
@@ -382,7 +382,7 @@
                     <readonly>true</readonly>
                     <defaultValue>${commons.componentid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The commons component id.</description>
+                    <description>The Commons component ID.</description>
                 </parameter>
                 <parameter>
                     <name>commons.jira.pid</name>
@@ -391,7 +391,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.pid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The internal JIRA id for the project (numeric.)</description>
+                    <description>The internal JIRA ID for the project (numeric).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.version</name>
@@ -436,7 +436,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.hash</name>
@@ -445,7 +445,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
@@ -491,7 +491,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.hash</name>
@@ -500,7 +500,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -546,7 +546,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.hash</name>
@@ -555,7 +555,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
@@ -601,7 +601,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.hash</name>
@@ -610,7 +610,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
             </parameters>
         </mojo>
@@ -636,7 +636,7 @@
                     <readonly>true</readonly>
                     <defaultValue>${commons.componentid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The commons component id.</description>
+                    <description>The Commons component ID.</description>
                 </parameter>
             </parameters>
         </mojo>
@@ -662,7 +662,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.id}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The external JIRA id for the project (alphabetic, upper case.)</description>
+                    <description>The external JIRA ID for the project (alphabetic, uppercase).</description>
                 </parameter>
                 <parameter>
                     <name>commons.jira.pid</name>
@@ -671,7 +671,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.pid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The internal JIRA id for the project (numeric.)</description>
+                    <description>The internal JIRA ID for the project (numeric).</description>
                 </parameter>
             </parameters>
         </mojo>
@@ -697,7 +697,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.componentid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The internal JIRA component id (numeric.)</description>
+                    <description>The internal JIRA component ID (numeric).</description>
                 </parameter>
             </parameters>
         </mojo>
@@ -732,7 +732,7 @@
                     <readonly>true</readonly>
                     <defaultValue>${commons.componentid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The commons component id.</description>
+                    <description>The Commons component ID.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.version</name>
@@ -777,7 +777,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.hash</name>
@@ -786,7 +786,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
@@ -832,7 +832,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.hash</name>
@@ -841,7 +841,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -887,7 +887,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.hash</name>
@@ -896,7 +896,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
@@ -942,7 +942,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries.)</description>
+                    <description>Subdirectory (instead of source/binaries).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.hash</name>
@@ -951,7 +951,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lower case, e.g. sha512)</description>
+                    <description>Type of hash (lowercase, e.g., sha512)</description>
                 </parameter>
             </parameters>
         </mojo>
@@ -1004,7 +1004,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.id}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The external JIRA id for the project (alphabetic, upper case.)</description>
+                    <description>The external JIRA ID for the project (alphabetic, uppercase).</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.version</name>
@@ -1022,7 +1022,7 @@
                     <readonly>true</readonly>
                     <defaultValue>${commons.componentid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The commons component id.</description>
+                    <description>The Commons component ID.</description>
                 </parameter>
             </parameters>
         </mojo>
@@ -1083,7 +1083,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.jira.id}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The external JIRA id for the project (alphabetic, upper case.)</description>
+                    <description>The external JIRA ID for the project (alphabetic, uppercase).</description>
                 </parameter>
                 <parameter>
                     <name>commons.componentid</name>
@@ -1092,7 +1092,7 @@
                     <readonly>true</readonly>
                     <defaultValue>${commons.componentid}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The commons component id.</description>
+                    <description>The Commons component ID.</description>
                 </parameter>
             </parameters>
         </mojo>

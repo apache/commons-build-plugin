@@ -29,8 +29,8 @@
 
             <subsection name="Overview">
                 <p>
-                The <code>commons-build:sandbox-jira-page</code> goal generates a custom JIRA Issue Tracking page for a <strong>Sandbox</strong> component.
-                (for  <strong>Proper</strong> components use the <a href="jira-page.html">commons-build:jira-page</a> goal).
+                The <code>commons-build:sandbox-jira-page</code> goal generates a custom JIRA Issue Tracking page for a <strong>Sandbox</strong> component
+                (for <strong>Proper</strong> components, use the <a href="jira-page.html">commons-build:jira-page</a> goal).
                 Execute the goal using the following command: <source>mvn commons-build:sandbox-jira-page</source>
                 </p>
 
@@ -43,23 +43,23 @@
                 This goal uses the following:
                 </p>
                 <ul>
-                    <li>The goal is mapped to the ant script/target using the <code>sandbox-jira-page</code> mojo definition in the
+                    <li>The goal is mapped to the Ant script/target using the <code>sandbox-jira-page</code> mojo definition in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
                     <li>Executes the <code>sandbox-jira-page</code> target in
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
-                        ant script</li>
+                        Ant script</li>
                     <li>Uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/sandbox-issue-tracking-template.xml">sandbox-issue-tracking-template.xml</a>
                         template</li>
-                    <li>Uses the <a href="sandbox-jira-page-mojo.html">goal's (i.e. mojo's) parameters</a> to filter values in the template</li>
+                    <li>Uses the <a href="sandbox-jira-page-mojo.html">goal's (i.e., mojo's) parameters</a> to filter values in the template</li>
                 </ul>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
-                To generate a JIRA page, the following <a href="sandbox-jira-page-mojo.html">properties</a>  are configured in the component's <code>pom.xml</code>
+                To generate a JIRA page, the following <a href="sandbox-jira-page-mojo.html">properties</a>  are configured in the component's <code>pom.xml</code>.
                 </p>
                 <ul>
-                    <li><b>commons.jira.componentid</b> - JIRA's internal (numeric) id for the component</li>
+                    <li><b>commons.jira.componentid</b> - JIRA's internal (numeric) ID for the component</li>
                 </ul>
                 <p>
                 Example configuration:

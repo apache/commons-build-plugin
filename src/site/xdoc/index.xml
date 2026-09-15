@@ -42,7 +42,7 @@
             Available Goals:
             </p>
             <ul>
-                <li><a href="all.html">commons-build:all</a> - Generate all pages for the component's latest release (but not sandbox pages.)</li>
+                <li><a href="all.html">commons-build:all</a> - Generate all pages for the component's latest release (but not sandbox pages).</li>
                 <li><a href="all-sandbox.html">commons-build:all-sandbox</a> - Generate all pages for the sandbox component's latest release.</li>
                 <li><a href="download-page.html">commons-build:download-page</a> - Generate a Download page for the component's latest release.</li>
                 <li><a href="mail-page.html">commons-build:mail-page</a> - Generate a custom <i>Mailing List</i> page for a component.</li>
@@ -72,7 +72,7 @@
 
             <p>As noted above, you can override POM properties if necessary.</p>
 
-            <p>To use a SNAPSHOT version (for testing etc)</p>
+            <p>To use a SNAPSHOT version (for testing, etc.):</p>
             <source>mvn org.apache.commons:commons-build-plugin:1.14.0-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]</source>
         </section>
     </body>

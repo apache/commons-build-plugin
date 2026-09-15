@@ -40,20 +40,20 @@
         <section name="New Ant Scripts">
 
             <p>
-            Each ant script requires two files, which have to be named following the conventions for ant plugins:
+            Each Ant script requires two files, which have to be named following the conventions for Ant plugins:
             </p>
             <ul>
-                <li>An ant build file
+                <li>An Ant build file
                     <ul><li>[naming convention: <i>basename</i><b>.build.xml</b>]</li></ul>
                 </li>
-                <li>A <i>mapping document</i> which wires the build file into maven's plugin framework
+                <li>A <i>mapping document</i> which wires the build file into Maven's plugin framework
                     <ul><li>[naming convention: <i>basename</i><b>.mojos.xml</b>]</li></ul>
                 </li>
             </ul>
 
             <p>
-            So if you want to add a new <i>foo-bar</i> ant script you would create a <code>foo-bar.build.xml</code>
-            ant script file and <code>foo-bar.mojos.xml</code> mapping document.
+            If you want to add a new <i>foo-bar</i> Ant script, you would create a <code>foo-bar.build.xml</code>
+            Ant script file and a <code>foo-bar.mojos.xml</code> mapping document.
             </p>
 
             <p>
@@ -63,11 +63,11 @@
             </p>
 
             <p>
-            If you want to access variables from the component's <code>pom.xml</code> in the ant script
+            If you want to access variables from the component's <code>pom.xml</code> in the Ant script,
             then you need to do two things in the <i>mapping document</i>:
             </p>
             <ul>
-                <li>Add the <code>&lt;requiresProject&gt;true&lt;/requiresProject&gt;</code></li>
+                <li>Add the <code>&lt;requiresProject&gt;true&lt;/requiresProject&gt;</code> element.</li>
                 <li>Add <code>&lt;parameter&gt;</code> elements for each of the variables you
                     want to use.</li>
             </ul>
@@ -88,8 +88,8 @@
         <section name="Modifying Existing Scripts">
 
             <p>
-            Not a lot to say about this except, if you need access to additional variables from the component's
-            <code>pom.xml</code> in the ant build script then you will need to define additional <i>parameters</i>
+            If you need access to additional variables from the component's
+            <code>pom.xml</code> in the Ant build script, define additional <i>parameters</i>
             for these in the associated <i>mapping document</i>.
             </p>
 
@@ -98,8 +98,8 @@
         <section name="Debugging">
 
             <p>
-            The <i>message level</i> for ant is <i>info</i> by default. Running the plugin goal using a message
-            level of <i>debug</i> can help in discovering problems - for example:
+            The <i>message level</i> for Ant is <i>info</i> by default. Running the plugin goal using a message
+            level of <i>debug</i> can help you discover problems. For example:
 <source><![CDATA[
     mvn commons-build:jira-page -DantMessageLevel=debug
 ]]></source>

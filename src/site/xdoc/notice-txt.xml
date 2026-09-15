@@ -36,27 +36,27 @@
 
                 <p>
                 <strong>Note:</strong> The README.md should be regenerated after every release of the
-                component since it contains the maven coordinates of the latest release.
+                component since it contains the Maven coordinates of the latest release.
                 </p>
 
                 <p>
                 This goal uses the following:
                 </p>
                 <ul>
-                    <li>The goal is mapped to the ant script/target using the <code>notice-txt</code> mojo definition in the
+                    <li>The goal is mapped to the Ant script/target using the <code>notice-txt</code> mojo definition in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
                     <li>Executes the <code>notice-txt</code> target in
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
-                        ant script</li>
+                        Ant script</li>
                     <li>Uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/notice-txt-template.txt">notice-txt-template.txt</a>
                         template</li>
-                    <li>Uses the <a href="notice-txt-mojo.html">goal's (i.e. mojo's) parameters</a> to filter values in the template</li>
+                    <li>Uses the <a href="notice-txt-mojo.html">goal's (i.e., mojo's) parameters</a> to filter values in the template</li>
                 </ul>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
-                To generate a README.md, the following <a href="notice-txt-mojo.html">properties</a>  are configured in the component's <code>pom.xml</code>
+                To generate a README.md, the following <a href="notice-txt-mojo.html">properties</a>  are configured in the component's <code>pom.xml</code>.
                 </p>
                 <ul>
                     <li><b>project.inceptionYear</b> - The year of the project's inception, specified with 4 digits. This value is used when generating copyright notices as well as being informational.</li>

@@ -35,30 +35,30 @@
                 </p>
 
                 <p>
-                <strong>Note:</strong> The CONTRIBUTING.md only needs to be generated once or if the template changes.
+                <strong>Note:</strong> The CONTRIBUTING.md file only needs to be generated initially or when the template changes.
                 </p>
 
                 <p>
                 This goal uses the following:
                 </p>
                 <ul>
-                    <li>The goal is mapped to the ant script/target using the <code>contributing-md</code> mojo definition in the
+                    <li>The goal is mapped to the Ant script/target using the <code>contributing-md</code> mojo definition in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
                     <li>Executes the <code>contributing-md</code> target in
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
-                        ant script</li>
+                        Ant script</li>
                     <li>Uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/contributing-md-template.md">contributing-md-template.md</a>
                         template</li>
-                    <li>Uses the <a href="contributing-md-mojo.html">goal's (i.e. mojo's) parameters</a> to filter values in the template</li>
+                    <li>Uses the <a href="contributing-md-mojo.html">goal's (i.e., mojo's) parameters</a> to filter values in the template</li>
                 </ul>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
-                To generate a CONTRIBUTING.md, the following <a href="contributing-md-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>
+                To generate a CONTRIBUTING.md file, the following <a href="contributing-md-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>.
                 </p>
                 <ul>
-                    <li><b>commons.jira.id</b> - JIRA's external (upper case) project id for the component</li>
+                    <li><b>commons.jira.id</b> - JIRA's external (uppercase) project ID for the component</li>
                 </ul>
                 <p>
                 Example configuration for Commons Text:

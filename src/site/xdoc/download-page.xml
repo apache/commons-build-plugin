@@ -35,8 +35,8 @@
 
                 <p>
                 The above command generates an <i>xdoc</i> page named download_<i>componentid</i><b>.xml</b> in either the <code>xdocs</code>
-                or <code>src/site/xdoc</code> directory (depending on which exists), which should be checked into git.
-                This will cause a download_<i>componentid</i><b>.html</b> page to be generated when the <code>mvn site</code> is run.
+                or <code>src/site/xdoc</code> directory (depending on which exists), which should be checked into Git.
+                This will cause a download_<i>componentid</i><b>.html</b> page to be generated when <code>mvn site</code> is run.
                 Remember to add a <i>Download</i> link to download_<i>componentid</i><b>.cgi</b> to the maven <code>site.xml</code>.
                 </p>
 
@@ -49,32 +49,32 @@
                 This goal uses the following:
                 </p>
                 <ul>
-                    <li>The goal is mapped to the ant script/target using the <code>download-page</code> mojo definition in the
+                    <li>The goal is mapped to the Ant script/target using the <code>download-page</code> mojo definition in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
                     <li>Executes the <code>download-page</code> target in
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
-                        ant script</li>
+                        Ant script</li>
                     <li>Uses either the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/resources/commons-xdoc-templates/download-page-body.xml">download-page-body.xml</a> or
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/resources/commons-xdoc-templates/no-download-page-template.xml">no-download-page-template.xml</a>
                         template, depending on whether the <code>commons.release.version</code> property is set or not.
                         </li>
-                    <li>Uses the <a href="download-page-mojo.html">goal's (i.e. mojo's) parameters</a> to filter values in the template</li>
+                    <li>Uses the <a href="download-page-mojo.html">goal's (i.e., mojo's) parameters</a> to filter values in the template</li>
                 </ul>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
-                To generate a Download page, the following <a href="download-page-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>
+                To generate a Download page, the following <a href="download-page-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>.
                 </p>
                 <ul>
-                    <li><b>commons.componentid</b> - Commons component id</li>
+                    <li><b>commons.componentid</b> - Commons component ID</li>
                     <li><b>commons.release.version</b> - The version number of the latest release of the component</li>
                     <li><b>commons.release.name</b> - (<i>optional - defaults to <code>${commons.release.name}</code></i>) The name of the latest release of the component</li>
-                    <li><b>commons.release.desc</b> - (<i>optional</i>) The download links are shown in a section with the component name and release version - if this parameter is specified then this text is appended</li>
+                    <li><b>commons.release.desc</b> - (<i>optional</i>) The download links are shown in a section with the component name and release version - if this parameter is specified, then this text is appended</li>
                     <li><b>commons.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the binary release
                         (some components use "-bin", others have no suffix)</li>
-                    <li><b>commons.release.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the directory for both.</li>
+                    <li><b>commons.release.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; if set, it will be used as the directory for both.</li>
                 </ul>
                 <p>
                 Example configuration for Commons Text:
@@ -95,7 +95,7 @@
                     <li><b>commons.release.2.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                     <li><b>commons.release.2.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative
                         binary release (some components use "-bin", others have no suffix)</li>
-                    <li><b>commons.release.2.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the directory for both.</li>
+                    <li><b>commons.release.2.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; if set, it will be used as the directory for both.</li>
                 </ul>
                 <p>
                 You can have a third version on the download page. This can be achieved using the following properties:
@@ -106,7 +106,7 @@
                     <li><b>commons.release.3.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                     <li><b>commons.release.3.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative
                         binary release (some components use "-bin", others have no suffix)</li>
-                    <li><b>commons.release.3.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the directory for both.</li>
+                    <li><b>commons.release.3.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; if set, it will be used as the directory for both.</li>
                 </ul>
                 <p>
                 You can have a fourth version on the download page. This can be achieved using the following properties:
@@ -117,7 +117,7 @@
                     <li><b>commons.release.4.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                     <li><b>commons.release.4.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative
                         binary release (some components use "-bin", others have no suffix)</li>
-                    <li><b>commons.release.4.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; it set it will be used as the directory for both.</li>
+                    <li><b>commons.release.4.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; if set, it will be used as the directory for both.</li>
                 </ul>
                 <p>
                 Example configuration for Commons DBCP with two releases:

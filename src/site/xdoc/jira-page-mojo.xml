@@ -44,13 +44,13 @@
             <td><strong><a href="#commons.jira.id">commons.jira.id</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The external JIRA id for the project (alphabetic, upper case)<br/><strong>Default value is</strong>: <code>${commons.jira.id}</code>.</td>
+            <td>The external JIRA ID for the project (alphabetic, uppercase)<br/><strong>Default value is</strong>: <code>${commons.jira.id}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.jira.pid">commons.jira.pid</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The internal JIRA id for the project (numeric)<br/><strong>Default value is</strong>: <code>${commons.jira.pid}</code>.</td>
+            <td>The internal JIRA ID for the project (numeric)<br/><strong>Default value is</strong>: <code>${commons.jira.pid}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#basedir">basedir</a></strong></td>
@@ -72,19 +72,19 @@
             <td><strong><a href="#messageLevel">messageLevel</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The message-level used to tune the verbosity of Ant logging.<br/><strong>Default value is</strong>: <code>info</code>.</td>
+            <td>The message level used to tune the verbosity of Ant logging.<br/><strong>Default value is</strong>: <code>info</code>.</td>
           </tr>
         </table>
       </subsection>
       <subsection name="Parameter Details">
         <p><strong><a name="commons.jira.id">commons.jira.id</a>:</strong></p>
-        <div>The external JIRA id for the project (alphabetic, upper case)</div>
+        <div>The external JIRA ID for the project (alphabetic, uppercase)</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Default</strong>: <code>${commons.jira.id}</code></li>
         </ul><hr/><p><strong><a name="commons.jira.pid">commons.jira.pid</a>:</strong></p>
-        <div>The internal JIRA id for the project (numeric)</div>
+        <div>The internal JIRA ID for the project (numeric)</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
@@ -97,7 +97,7 @@
           <li><strong>Expression</strong>: <code>${antBasedir}</code></li>
           <li><strong>Default</strong>: <code>${basedir}</code></li>
         </ul><hr/><p><strong><a name="messageLevel">messageLevel</a>:</strong></p>
-        <div>The message-level used to tune the verbosity of Ant logging.</div>
+        <div>The message level used to tune the verbosity of Ant logging.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>

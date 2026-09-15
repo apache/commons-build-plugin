@@ -28,10 +28,10 @@
         <section name="Copy NOTICE and LICENSE files to javadoc jar">
 
             <p>
-            This <i>mojo</i> (or <i>ant build script</i>) currently copies
+            This <i>mojo</i> (or <i>Ant build script</i>) currently copies
             the NOTICE and LICENSE files to target/apidocs so that they are included in the
             generated -javadoc.jar. This is currently done in the commons-parent pom.xml
-            using the antrun plugin. Doing it here removes the need to have ant script in
+            using the antrun plugin. Doing it here removes the need to have an Ant script in
             commons-parent.
             </p>
 
