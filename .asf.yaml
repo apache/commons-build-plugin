@@ -16,6 +16,8 @@
 github:
   description: "Apache Commons Build Plugin"
   homepage: https://commons.apache.org/build-plugin/
+  autolink_jira:
+    - COMMONSSITE
   
   pull_requests:
     # allow auto-merge
