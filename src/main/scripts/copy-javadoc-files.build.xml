@@ -25,7 +25,7 @@
 
         <echo level="info" message="**** commons-build:copy-javadoc-files - Copying NOTICE and LICENSE files ****" />
 
-        <!-- Copy pages, filtering parameter values -->
+        <!-- Copy the NOTICE and LICENSE files -->
         <copy todir="target/apidocs/META-INF">
             <fileset dir=".">
                  <include name="NOTICE.txt"/>

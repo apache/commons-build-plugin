@@ -50,13 +50,13 @@
                         Ant script</li>
                     <li>Uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/sandbox-issue-tracking-template.xml">sandbox-issue-tracking-template.xml</a>
                         template</li>
-                    <li>Uses the <a href="sandbox-jira-page-mojo.html">goal's (i.e., mojo's) parameters</a> to filter values in the template</li>
+                    <li>Uses the <a href="sandbox-jira-page-mojo.html">goal's (mojo's) parameters</a> to filter values in the template</li>
                 </ul>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
-                To generate a JIRA page, the following <a href="sandbox-jira-page-mojo.html">properties</a>  are configured in the component's <code>pom.xml</code>.
+                To generate a JIRA page, the following <a href="sandbox-jira-page-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>.
                 </p>
                 <ul>
                     <li><b>commons.jira.componentid</b> - JIRA's internal (numeric) ID for the component</li>

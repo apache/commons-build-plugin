@@ -167,7 +167,7 @@
         <artifactId>apache-rat-plugin</artifactId>
         <configuration>
           <inputExcludes>
-            <!-- template files which will be inserted into the middle of resulting page -->
+            <!-- template files which will be inserted into the middle of the resulting page -->
             <inputExclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</inputExclude>
             <inputExclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</inputExclude>
             <inputExclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</inputExclude>
@@ -194,7 +194,7 @@
         <artifactId>apache-rat-plugin</artifactId>
         <configuration>
           <inputExcludes>
-            <!-- template files which will be inserted into the middle of resulting page -->
+            <!-- template files which will be inserted into the middle of the resulting page -->
             <inputExclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</inputExclude>
             <inputExclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</inputExclude>
             <inputExclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</inputExclude>

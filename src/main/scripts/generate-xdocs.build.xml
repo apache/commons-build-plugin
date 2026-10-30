@@ -44,13 +44,13 @@
 		<!-- Create a temporary directory to load the template files into -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the issue-tracking template from mojo resources to temp directory -->
+		<!-- Load the mail-lists template from the mojo resources to the temporary directory -->
 		<loadresource property="mailinglists-xml">
 			<javaresource name="${commonsMojoXdocDir}/mail-lists-template.xml" />
 		</loadresource>
 		<echo message="${mailinglists-xml}" file="${commonsMojoTempDir}/mail-lists-template.xml" append="false" />
 
-		<!-- Copy the mail-lists template filtering to replace properties -->
+		<!-- Copy the mail-lists template, filtering to replace properties -->
 		<copy file="${commonsMojoTempDir}/mail-lists-template.xml" tofile="${commonsMojoTempDir}/mail-lists.xml" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -58,7 +58,7 @@
 			</filterset>
 		</copy>
 
-		<!-- copy to either m1 or m2 xdoc directory -->
+		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory -->
 		<antcall target="copy-to-xdoc-dir">
 			<param name="file.name" value="mail-lists.xml" />
 		</antcall>
@@ -81,13 +81,13 @@
 		<!-- Create a temporary directory to load the template files into -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the issue-tracking template from mojo resources to temp directory -->
+		<!-- Load the issue-tracking template from the mojo resources to the temporary directory -->
 		<loadresource property="issuetracking-xml">
 			<javaresource name="${commonsMojoXdocDir}/issue-tracking-template.xml" />
 		</loadresource>
 		<echo message="${issuetracking-xml}" file="${commonsMojoTempDir}/issue-tracking-template.xml" append="false" />
 
-		<!-- Copy the issue-tracking template filtering to replace properties -->
+		<!-- Copy the issue-tracking template, filtering to replace properties -->
 		<copy file="${commonsMojoTempDir}/issue-tracking-template.xml" tofile="${commonsMojoTempDir}/issue-tracking.xml" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -96,7 +96,7 @@
 			</filterset>
 		</copy>
 
-		<!-- copy to either m1 or m2 xdoc directory -->
+		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory -->
 		<antcall target="copy-to-xdoc-dir">
 			<param name="file.name" value="issue-tracking.xml" />
 		</antcall>
@@ -118,13 +118,13 @@
 		<!-- Create a temporary directory to load the template files into -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the issue-tracking template from mojo resources to temp directory -->
+		<!-- Load the issue-tracking template from the mojo resources to the temporary directory -->
 		<loadresource property="sandbox-issuetracking-xml">
 			<javaresource name="${commonsMojoXdocDir}/sandbox-issue-tracking-template.xml" />
 		</loadresource>
 		<echo message="${sandbox-issuetracking-xml}" file="${commonsMojoTempDir}/sandbox-issue-tracking-template.xml" append="false" />
 
-		<!-- Copy the issue-tracking template filtering to replace properties -->
+		<!-- Copy the issue-tracking template, filtering to replace properties -->
 		<copy file="${commonsMojoTempDir}/sandbox-issue-tracking-template.xml" tofile="${commonsMojoTempDir}/issue-tracking.xml" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -132,7 +132,7 @@
 			</filterset>
 		</copy>
 
-		<!-- copy to either m1 or m2 xdoc directory -->
+		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory -->
 		<antcall target="copy-to-xdoc-dir">
 			<param name="file.name" value="issue-tracking.xml" />
 		</antcall>
@@ -192,7 +192,7 @@
 		<!-- Create a temporary directory to load the template files into -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the download-page template from mojo resources to temp directory -->
+		<!-- Load the download-page template from the mojo resources to the temporary directory -->
 		<antcall target="load-no-download-page-template" />
 		<antcall target="load-download-page-head" />
 		<antcall target="load-download-page-body-1" />
@@ -201,7 +201,7 @@
 		<antcall target="load-download-page-body-4" />
 		<antcall target="load-download-page-foot" />
 
-		<!-- copy to either m1 or m2 xdoc directory -->
+		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory -->
 		<antcall target="copy-to-xdoc-dir">
 			<param name="file.name" value="download_${commons.componentid}.xml" />
 		</antcall>
@@ -456,7 +456,7 @@
 		<!-- Create a temporary directory to load the template files into -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the readme-md template from mojo resources to temp directory -->
+		<!-- Load the readme-md template from the mojo resources to the temporary directory -->
 		<loadresource property="readme-md">
 			<javaresource name="${commonsMojoXdocDir}/readme-md-template.md" />
 		</loadresource>
@@ -473,7 +473,7 @@
 			</filterchain>
 		</loadresource>
 
-		<!-- Copy the readme-md template filtering to replace properties -->
+		<!-- Copy the readme-md template, filtering to replace properties -->
 		<copy file="${commonsMojoTempDir}/readme-md-template.md" tofile="README.md" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -509,13 +509,13 @@
 		<!-- Create a temporary directory to load the template files into -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the notice-txt template from mojo resources to temp directory -->
+		<!-- Load the notice-txt template from the mojo resources to the temporary directory -->
 		<loadresource property="notice-txt">
 			<javaresource name="${commonsMojoXdocDir}/notice-txt-template.txt" />
 		</loadresource>
 		<echo message="${notice-txt}" file="${commonsMojoTempDir}/notice-txt-template.txt" append="false" />
 
-		<!-- Copy the notice-txt template filtering to replace properties -->
+		<!-- Copy the notice-txt template, filtering to replace properties -->
 		<copy file="${commonsMojoTempDir}/notice-txt-template.txt" tofile="NOTICE.txt" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -542,7 +542,7 @@
 		<!-- Create a temporary directory to load the template files into -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the contributing-md template from mojo resources to temp directory -->
+		<!-- Load the contributing-md template from the mojo resources to the temporary directory -->
 		<loadresource property="contributing-md">
 			<javaresource name="${commonsMojoXdocDir}/contributing-md-template.md" />
 		</loadresource>
@@ -559,7 +559,7 @@
 			</filterchain>
 		</loadresource>
 
-		<!-- Copy the mail-lists template filtering to replace properties -->
+		<!-- Copy the contributing-md template, filtering to replace properties -->
 		<copy file="${commonsMojoTempDir}/contributing-md-template.md" tofile="CONTRIBUTING.md" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />

@@ -49,7 +49,7 @@
                         Ant script</li>
                     <li>Uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/contributing-md-template.md">contributing-md-template.md</a>
                         template</li>
-                    <li>Uses the <a href="contributing-md-mojo.html">goal's (i.e., mojo's) parameters</a> to filter values in the template</li>
+                    <li>Uses the <a href="contributing-md-mojo.html">goal's (mojo's) parameters</a> to filter values in the template</li>
                 </ul>
             </subsection>
 

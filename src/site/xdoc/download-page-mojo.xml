@@ -23,11 +23,19 @@
   </properties>
   <body>
     <section name="commons-build:download-page">
-      <p><strong>Full name</strong>:</p>
-      <p>org.apache.commons:commons-build-plugin:1.11:download-page</p>
-      <p><strong>Description</strong>:</p>
+      <p>
+      <strong>Full name</strong>:
+      </p>
+      <p>
+      org.apache.commons:commons-build-plugin:1.11:download-page
+      </p>
+      <p>
+      <strong>Description</strong>:
+      </p>
       <div>Apache Commons Build Mojo: Generate Download page</div>
-      <p><strong>Attributes</strong>:</p>
+      <p>
+      <strong>Attributes</strong>:
+      </p>
       <ul>
         <li>Requires a Maven 2.0 project to be executed.</li>
         <li>Is NOT inherited by default in multi-project builds.</li>
@@ -90,7 +98,7 @@
             <td><strong><a href="#commons.binary.suffix">commons.binary.suffix</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The suffix for the binary distro.<br/><strong>Default value is</strong>: <code>${commons.binary.suffix}</code>.</td>
+            <td>The suffix for the binary distribution.<br/><strong>Default value is</strong>: <code>${commons.binary.suffix}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.desc">commons.release.desc</a></strong></td>
@@ -121,7 +129,7 @@
             <td><strong><a href="#commons.release.2.binary.suffix">commons.release.2.binary.suffix</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The suffix for the alternative release binary distro.<br/><strong>Default value is</strong>: <code>${commons.release.2.binary.suffix}</code>.</td>
+            <td>The suffix for the alternative release binary distribution.<br/><strong>Default value is</strong>: <code>${commons.release.2.binary.suffix}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.2.subdir">commons.release.2.subdir</a></strong></td>
@@ -146,7 +154,7 @@
             <td><strong><a href="#commons.release.3.binary.suffix">commons.release.3.binary.suffix</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The suffix for the alternative release binary distro.<br/><strong>Default value is</strong>: <code>${commons.release.3.binary.suffix}</code>.</td>
+            <td>The suffix for the alternative release binary distribution.<br/><strong>Default value is</strong>: <code>${commons.release.3.binary.suffix}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.3.subdir">commons.release.3.subdir</a></strong></td>
@@ -171,7 +179,7 @@
             <td><strong><a href="#commons.release.4.binary.suffix">commons.release.4.binary.suffix</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The suffix for the alternative release binary distro.<br/><strong>Default value is</strong>: <code>${commons.release.4.binary.suffix}</code>.</td>
+            <td>The suffix for the alternative release binary distribution.<br/><strong>Default value is</strong>: <code>${commons.release.4.binary.suffix}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.4.subdir">commons.release.4.subdir</a></strong></td>
@@ -190,25 +198,36 @@
       </subsection>
       <subsection name="Parameter Details">
         <!-- Release (current) -->
-        <p><strong><a name="commons.release.version">commons.release.version</a>:</strong></p>
+        <p>
+        <strong><a name="commons.release.version">commons.release.version</a>:</strong>
+        </p>
         <div>The version of the latest release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Default</strong>: <code>${commons.release.version}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.name">commons.release.name</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.name">commons.release.name</a>:</strong>
+        </p>
         <div>The name of the latest release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Default</strong>: <code>${commons.release.name}</code></li>
-        </ul><hr/><p><strong><a name="commons.binary.suffix">commons.binary.suffix</a>:</strong></p>
-        <div>The suffix for the binary distro.</div>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.binary.suffix">commons.binary.suffix</a>:</strong>
+        </p>
+        <div>The suffix for the binary distribution.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.binary.suffix}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.desc">commons.release.desc</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.desc">commons.release.desc</a>:</strong>
+        </p>
         <div>Release Title or Description.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
@@ -216,84 +235,123 @@
           <li><strong>Default</strong>: <code>${commons.release.desc}</code></li>
         </ul><hr/>
         <!-- Release 2 -->
-        <p><strong><a name="commons.release.2.version">commons.release.2.version</a>:</strong></p>
+        <p>
+        <strong><a name="commons.release.2.version">commons.release.2.version</a>:</strong>
+        </p>
         <div>The version of an alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.2.version}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.2.name">commons.release.2.name</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.2.name">commons.release.2.name</a>:</strong>
+        </p>
         <div>The name of the alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Default</strong>: <code>${commons.release.2.name}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.2.desc">commons.release.2.desc</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.2.desc">commons.release.2.desc</a>:</strong>
+        </p>
         <div>Alternative Release Title or Description.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.2.desc}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.2.binary.suffix">commons.release.2.binary.suffix</a>:</strong></p>
-        <div>The suffix for the alternative release binary distro.</div>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.2.binary.suffix">commons.release.2.binary.suffix</a>:</strong>
+        </p>
+        <div>The suffix for the alternative release binary distribution.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.2.binary.suffix}</code></li>
         </ul><hr/><hr/>
         <!-- Release 3 -->
-        <p><strong><a name="commons.release.3.version">commons.release.3.version</a>:</strong></p>
+        <p>
+        <strong><a name="commons.release.3.version">commons.release.3.version</a>:</strong>
+        </p>
         <div>The version of an alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.3.version}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.3.name">commons.release.3.name</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.3.name">commons.release.3.name</a>:</strong>
+        </p>
         <div>The name of the alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Default</strong>: <code>${commons.release.3.name}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.3.desc">commons.release.3.desc</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.3.desc">commons.release.3.desc</a>:</strong>
+        </p>
         <div>Alternative Release Title or Description.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.3.desc}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.3.binary.suffix">commons.release.3.binary.suffix</a>:</strong></p>
-        <div>The suffix for the alternative release binary distro.</div>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.3.binary.suffix">commons.release.3.binary.suffix</a>:</strong>
+        </p>
+        <div>The suffix for the alternative release binary distribution.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.3.binary.suffix}</code></li>
-        </ul><hr/><p><strong><a name="basedir">basedir</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="basedir">basedir</a>:</strong>
+        </p>
         <div>The base directory from which to execute the Ant script.</div>
         <!-- Release 4 -->
-        <p><strong><a name="commons.release.4.version">commons.release.4.version</a>:</strong></p>
+        <p>
+        <strong><a name="commons.release.4.version">commons.release.4.version</a>:</strong>
+        </p>
         <div>The version of an alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.4.version}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.4.name">commons.release.4.name</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.4.name">commons.release.4.name</a>:</strong>
+        </p>
         <div>The name of the alternative release of the project.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Default</strong>: <code>${commons.release.4.name}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.4.desc">commons.release.4.desc</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.4.desc">commons.release.4.desc</a>:</strong>
+        </p>
         <div>Alternative Release Title or Description.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.4.desc}</code></li>
-        </ul><hr/><p><strong><a name="commons.release.4.binary.suffix">commons.release.4.binary.suffix</a>:</strong></p>
-        <div>The suffix for the alternative release binary distro.</div>
+        </ul><hr/>
+        <p>
+        <strong><a name="commons.release.4.binary.suffix">commons.release.4.binary.suffix</a>:</strong>
+        </p>
+        <div>The suffix for the alternative release binary distribution.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
           <li><strong>Default</strong>: <code>${commons.release.4.binary.suffix}</code></li>
-        </ul><hr/><p><strong><a name="basedir">basedir</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="basedir">basedir</a>:</strong>
+        </p>
         <div>The base directory from which to execute the Ant script.</div>
         <!-- End of Releases -->
         <ul>
@@ -301,7 +359,10 @@
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Expression</strong>: <code>${antBasedir}</code></li>
           <li><strong>Default</strong>: <code>${basedir}</code></li>
-        </ul><hr/><p><strong><a name="messageLevel">messageLevel</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="messageLevel">messageLevel</a>:</strong>
+        </p>
         <div>The message level used to tune the verbosity of Ant logging.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>

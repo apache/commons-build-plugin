@@ -59,7 +59,7 @@
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/resources/commons-xdoc-templates/no-download-page-template.xml">no-download-page-template.xml</a>
                         template, depending on whether the <code>commons.release.version</code> property is set or not.
                         </li>
-                    <li>Uses the <a href="download-page-mojo.html">goal's (i.e., mojo's) parameters</a> to filter values in the template</li>
+                    <li>Uses the <a href="download-page-mojo.html">goal's (mojo's) parameters</a> to filter values in the template</li>
                 </ul>
             </subsection>
 

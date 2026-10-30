@@ -23,11 +23,19 @@
   </properties>
   <body>
     <section name="commons-build:sandbox-jira-page">
-      <p><strong>Full name</strong>:</p>
-      <p>org.apache.commons:commons-build-plugin:1.11:sandbox-jira-page</p>
-      <p><strong>Description</strong>:</p>
+      <p>
+      <strong>Full name</strong>:
+      </p>
+      <p>
+      org.apache.commons:commons-build-plugin:1.11:sandbox-jira-page
+      </p>
+      <p>
+      <strong>Description</strong>:
+      </p>
       <div>Apache Commons Build Mojo: Generate Sandbox Issue Tracking page</div>
-      <p><strong>Attributes</strong>:</p>
+      <p>
+      <strong>Attributes</strong>:
+      </p>
       <ul>
         <li>Requires a Maven 2.0 project to be executed.</li>
         <li>Is NOT inherited by default in multi-project builds.</li>
@@ -71,20 +79,28 @@
         </table>
       </subsection>
       <subsection name="Parameter Details">
-        <p><strong><a name="commons.jira.componentid">commons.jira.componentid</a>:</strong></p>
+        <p>
+        <strong><a name="commons.jira.componentid">commons.jira.componentid</a>:</strong>
+        </p>
         <div>The internal JIRA component ID (numeric)</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Default</strong>: <code>${commons.jira.componentid}</code></li>
-        </ul><hr/><p><strong><a name="basedir">basedir</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="basedir">basedir</a>:</strong>
+        </p>
         <div>The base directory from which to execute the Ant script.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.io.File</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>
           <li><strong>Expression</strong>: <code>${antBasedir}</code></li>
           <li><strong>Default</strong>: <code>${basedir}</code></li>
-        </ul><hr/><p><strong><a name="messageLevel">messageLevel</a>:</strong></p>
+        </ul><hr/>
+        <p>
+        <strong><a name="messageLevel">messageLevel</a>:</strong>
+        </p>
         <div>The message level used to tune the verbosity of Ant logging.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>

@@ -23,23 +23,37 @@
   </properties>
   <body>
     <section name="commons-build:all-sandbox">
-      <p><strong>Full name</strong>:</p>
-      <p>org.apache.commons:commons-build-plugin:1.11:all-sandbox</p>
-      <p><strong>Description</strong>:</p>
+      <p>
+      <strong>Full name</strong>:
+      </p>
+      <p>
+      org.apache.commons:commons-build-plugin:1.11:all-sandbox
+      </p>
+      <p>
+      <strong>Description</strong>:
+      </p>
       <div>Apache Commons Build Mojo: Generate all sandbox pages</div>
-      <p><strong>Attributes</strong>:</p>
+      <p>
+      <strong>Attributes</strong>:
+      </p>
       <ul>
         <li>Requires a Maven 2.0 project to be executed.</li>
         <li>Is NOT inherited by default in multi-project builds.</li>
       </ul>
       <subsection name="Required Parameters">
-        <p>This is the union of all parameters for all goals in this plugin.</p>
+        <p>
+        This is the union of all parameters for all goals in this plugin.
+        </p>
       </subsection>
       <subsection name="Optional Parameters">
-        <p>This is the union of all parameters for all goals in this plugin.</p>
+        <p>
+        This is the union of all parameters for all goals in this plugin.
+        </p>
       </subsection>
       <subsection name="Parameter Details">
-        <p>This is the union of all parameters for all goals in this plugin.</p>
+        <p>
+        This is the union of all parameters for all goals in this plugin.
+        </p>
       </subsection>
     </section>
   </body>

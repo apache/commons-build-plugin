@@ -30,13 +30,12 @@
 
             <subsection name="Overview">
                 <p>
-                The <code>commons-build:notice-txt</code> goal generates a README.md file for a component.
+                The <code>commons-build:notice-txt</code> goal generates a NOTICE.txt file for a component.
                 Execute the goal using the following command: <source>mvn commons-build:notice-txt</source>
                 </p>
 
                 <p>
-                <strong>Note:</strong> The README.md should be regenerated after every release of the
-                component since it contains the Maven coordinates of the latest release.
+                <strong>Note:</strong> Regenerate NOTICE.txt when the project name or copyright years change.
                 </p>
 
                 <p>
@@ -50,16 +49,16 @@
                         Ant script</li>
                     <li>Uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/notice-txt-template.txt">notice-txt-template.txt</a>
                         template</li>
-                    <li>Uses the <a href="notice-txt-mojo.html">goal's (i.e., mojo's) parameters</a> to filter values in the template</li>
+                    <li>Uses the <a href="notice-txt-mojo.html">goal's (mojo's) parameters</a> to filter values in the template</li>
                 </ul>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
-                To generate a README.md, the following <a href="notice-txt-mojo.html">properties</a>  are configured in the component's <code>pom.xml</code>.
+                To generate a NOTICE.txt file, the following <a href="notice-txt-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>.
                 </p>
                 <ul>
-                    <li><b>project.inceptionYear</b> - The year of the project's inception, specified with 4 digits. This value is used when generating copyright notices as well as being informational.</li>
+                    <li><b>project.inceptionYear</b> - The year of the project's inception, specified as four digits. This value provides project information and is used to generate copyright notices.</li>
                 </ul>
                 <p>
                 Example configuration for Commons Text:

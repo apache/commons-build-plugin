@@ -58,7 +58,7 @@
     <release version="1.16.0" date="2025-07-19" description="This is a feature and maintenance release. Java 8 or later is required.">
       <!-- FIX -->
       <action type="fix" dev="ggregory" due-to="Gary Gregory">Migrate site generation templates to https://maven.apache.org/xsd/xdoc-2.0.xsd.</action>
-      <action type="fix" dev="ggregory" due-to="Gary Gregory">Remove -nouses directive from maven-bundle-plugin. OSGi package imports now state 'uses' definitions for package imports, this doesn't affect JPMS (from org.apache.commons:commons-parent:80).</action>
+      <action type="fix" dev="ggregory" due-to="Gary Gregory">Remove -nouses directive from maven-bundle-plugin. OSGi package imports now state 'uses' definitions for package imports; this doesn't affect JPMS (from org.apache.commons:commons-parent:80).</action>
       <!-- ADD -->
       <action type="add" dev="ggregory" due-to="Gary Gregory">Refactor version for Maven core plugin dependencies into a new property commons.maven.version.</action>
       <action type="add" dev="ggregory" due-to="Gary Gregory">Refactor unnamed profile into two for JavaScript dependency: java-11 and java-17-plus.</action>
@@ -89,10 +89,10 @@
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.maven:maven-core from 3.9.6 to 3.9.9 #268, #278, #294.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.apache.ant:ant-launcher from 1.10.14 to 1.10.15 #303.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.codehaus.mojo:jdepend-maven-plugin from 2.0 to 2.1 #311.</action>
-      <!-- REMVOE -->
+      <!-- REMOVE -->
       <action dev="ggregory" type="remove" due-to="Gary Gregory">Drop codecov.io badge.</action>
     </release>
-    <release version="1.14.0" date="2024-04-12" description="This is feature release.">
+    <release version="1.14.0" date="2024-04-12" description="This is a feature release.">
       <!-- FIX -->
       <action dev="sebb" type="fix">maven-plugin-report-plugin replaces maven-plugin-plugin report goal</action>
       <action dev="sebb" type="fix">Fix up errors in GHA badges for Java and CodeQL</action>
@@ -108,7 +108,7 @@
       <action dev="ggregory" type="update" due-to="Gary Gregory">Bump commons-parent from 58 to 69 #240.</action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.ant:ant-launcher from 1.10.12 to 1.10.14.</action>
       <action dev="sebb" type="update">Disable cyclonedx - not needed</action>
-      <action dev="sebb" type="update">Drop outdated, unmaintained table of components in README in favour of link to website.</action>
+      <action dev="sebb" type="update">Drop outdated, unmaintained table of components in README in favor of a link to the website.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.graalvm.js:js-scriptengine from 23.1.0 to 24.0.0 #236.</action>
       <action dev="ggregory" type="update" due-to="Dependabot">Bump org.graalvm.js:js from 23.0.1 to 23.0.3.</action>
       <action dev="ggregory" type="update" due-to="Gary Gregory">Bump org.apache.maven:maven-core 3.9.4 to 3.9.6.</action>
@@ -117,7 +117,7 @@
       <action dev="ggregory" type="update" due-to="Gary Gregory">Bump org.apache.maven.plugin-tools:maven-plugin-tools-ant from 3.9.0 to 3.12.0 #242.</action>
       <action dev="ggregory" type="update" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-artifact-plugin from 3.5.0 to 3.5.1 #393.</action>
     </release>
-    <release version="1.13" date="2023-06-25" description="This is feature release.">
+    <release version="1.13" date="2023-06-25" description="This is a feature release.">
       <!-- FIX -->
       <action dev="ggregory" type="fix" due-to="Gary Gregory">
         Fix running on Java 11 and up. Use GraalVM instead of Java 8 Nashorn for JavaScript, which was deprecated in Java 11 and removed in Java 15.
@@ -190,7 +190,7 @@
         Bump commons-parent from 52 to 61 #67, #86, #110, #120, #153.
       </action>
     </release>
-    <release version="1.12" date="2020-10-17" description="This is feature release.">
+    <release version="1.12" date="2020-10-17" description="This is a feature release.">
       <action dev="sebb" type="update">
         commons-build:mail-page - add links to lists.apache.org.
       </action>
@@ -213,7 +213,7 @@
         Update actions/setup-java from v1.4.0 to v1.4.2 #13.
       </action>
     </release>
-    <release version="1.11" date="2019-08-30" description="This is feature release.">
+    <release version="1.11" date="2019-08-30" description="This is a feature release.">
       <action dev="ggregory" type="update">
         Update versions-maven-plugin 2.5 -> 2.7.
       </action>
@@ -230,7 +230,7 @@
         Replace http://mail-archives.apache.org with https://mail-archives.apache.org.
       </action>
     </release>
-    <release version="1.10" date="2019-02-26" description="This is feature release.">
+    <release version="1.10" date="2019-02-26" description="This is a feature release.">
       <action dev="ggregory" type="update">
         Use SHA512 signatures as the default in the download page.
       </action>
@@ -238,7 +238,7 @@
         Use SHA256 signatures as the default in the download page.
       </action>
     </release>
-    <release version="1.9" date="2018-06-16" description="This is feature release.">
+    <release version="1.9" date="2018-06-16" description="This is a feature release.">
       <action dev="ggregory" type="fix">
         Fix in src/main/resources/commons-xdoc-templates/readme-md-template.md for components that have a major version number in their artifact IDs.
       </action>
@@ -258,7 +258,7 @@
         Update platform requirement from Java 7 to Java 8.
       </action>
     </release>
-    <release version="1.8" date="2018-04-02" description="This is feature release.">
+    <release version="1.8" date="2018-04-02" description="This is a feature release.">
       <action dev="sebb" type="update">
         Use sha1 signatures as opposed to md5 signatures in download page.
       </action>
@@ -266,10 +266,10 @@
         Include Javadoc badge in README.md file.
       </action>
       <action dev="sebb" type="fix">
-        Add eol-style:native otherwise generated files can cause commit errors
+        Add eol-style:native; otherwise, generated files can cause commit errors.
       </action>
     </release>
-    <release version="1.7" date="2016-11-18" description="This is feature release.">
+    <release version="1.7" date="2016-11-18" description="This is a feature release.">
       <action dev="ggregory" type="add" issue="COMMONSSITE-90">
         Include badges in the README.md file.
       </action>
@@ -278,9 +278,9 @@
       </action>
     </release>
 
-    <release version="1.6" date="2016-04-24" description="This is feature release.">
+    <release version="1.6" date="2016-04-24" description="This is a feature release.">
       <action dev="sebb" type="add">
-        Added new download-page subdir property: set this (e.g. to '1.2' or 'lang-1.2' etc) to override the default of binaries/source
+        Added new download-page subdir property: set this (for example, to '1.2' or 'lang-1.2') to override the default of binaries/source
       </action>
     </release>
 

@@ -70,9 +70,13 @@
             </p>
             <source>mvn commons:download-page [-Dcommons.release.version=1.2.3]</source>
 
-            <p>As noted above, you can override POM properties if necessary.</p>
+            <p>
+            As noted above, you can override POM properties if necessary.
+            </p>
 
-            <p>To use a SNAPSHOT version (for testing, etc.):</p>
+            <p>
+            To use a SNAPSHOT version (for testing and so on):
+            </p>
             <source>mvn org.apache.commons:commons-build-plugin:1.14.0-SNAPSHOT:download-page [-Dcommons.release.version=1.2.3]</source>
         </section>
     </body>
