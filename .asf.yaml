@@ -18,6 +18,20 @@ github:
   homepage: https://commons.apache.org/build-plugin/
   autolink_jira:
     - COMMONSSITE
+
+  rulesets:
+    - name: "Default Branch Protection"
+      type: branch
+      branches:
+        includes:
+          - "~DEFAULT_BRANCH"
+          - "release/*"
+          - "rel/*"
+        excludes: []
+      bypass_teams:
+        - root
+      restrict_deletion: true
+      restrict_force_push: true
   
   pull_requests:
     # allow auto-merge
