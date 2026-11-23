@@ -17,7 +17,7 @@
    limitations under the License.
 -->
 <!--
-   Mojo metadata for "Copy NOTICE and LICENSE files to -javadoc.jar".
+   Mojo metadata for "Copy the NOTICE and LICENSE files to the Javadoc JAR".
  -->
 <pluginMetadata
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -27,7 +27,7 @@
         <mojo>
             <goal>copy-javadoc-files</goal>
             <call>copy-javadoc-files</call>
-            <description>Commons Build: Copy NOTICE and LICENSE files to -javadoc.jar</description>
+            <description>Commons Build: Copy the NOTICE and LICENSE files to the Javadoc JAR.</description>
         </mojo>
     </mojos>
 </pluginMetadata>

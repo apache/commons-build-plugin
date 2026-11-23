@@ -32,7 +32,7 @@
       <p>
       <strong>Description</strong>:
       </p>
-      <div>Apache Commons Build Mojo: Generate Download page</div>
+      <div>Apache Commons Build Mojo: Generate the download page.</div>
       <p>
       <strong>Attributes</strong>:
       </p>
@@ -104,13 +104,13 @@
             <td><strong><a href="#commons.release.desc">commons.release.desc</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Release Title or Description.<br/><strong>Default value is</strong>: <code>${commons.release.desc}</code>.</td>
+            <td>The release title or description.<br/><strong>Default value is</strong>: <code>${commons.release.desc}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.subdir">commons.release.subdir</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.subdir}</code>.</td>
+            <td>The subdirectory to use instead of the source and binaries directories.<br/><strong>Default value is</strong>: <code>${commons.release.subdir}</code>.</td>
           </tr>
           <!-- commons.release.2.* -->
           <tr>
@@ -123,19 +123,19 @@
             <td><strong><a href="#commons.release.2.desc">commons.release.2.desc</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Alternative Release Title or Description.<br/><strong>Default value is</strong>: <code>${commons.release.2.desc}</code>.</td>
+            <td>The alternative release title or description.<br/><strong>Default value is</strong>: <code>${commons.release.2.desc}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.2.binary.suffix">commons.release.2.binary.suffix</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The suffix for the alternative release binary distribution.<br/><strong>Default value is</strong>: <code>${commons.release.2.binary.suffix}</code>.</td>
+            <td>The suffix for the binary distribution of the alternative release.<br/><strong>Default value is</strong>: <code>${commons.release.2.binary.suffix}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.2.subdir">commons.release.2.subdir</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.2.subdir}</code>.</td>
+            <td>The subdirectory to use instead of the source and binaries directories.<br/><strong>Default value is</strong>: <code>${commons.release.2.subdir}</code>.</td>
           </tr>
           <!-- commons.release.3.* -->
           <tr>
@@ -148,19 +148,19 @@
             <td><strong><a href="#commons.release.3.desc">commons.release.3.desc</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Alternative Release Title or Description.<br/><strong>Default value is</strong>: <code>${commons.release.3.desc}</code>.</td>
+            <td>The alternative release title or description.<br/><strong>Default value is</strong>: <code>${commons.release.3.desc}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.3.binary.suffix">commons.release.3.binary.suffix</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The suffix for the alternative release binary distribution.<br/><strong>Default value is</strong>: <code>${commons.release.3.binary.suffix}</code>.</td>
+            <td>The suffix for the binary distribution of the alternative release.<br/><strong>Default value is</strong>: <code>${commons.release.3.binary.suffix}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.3.subdir">commons.release.3.subdir</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.3.subdir}</code>.</td>
+            <td>The subdirectory to use instead of the source and binaries directories.<br/><strong>Default value is</strong>: <code>${commons.release.3.subdir}</code>.</td>
           </tr>
           <!-- commons.release.4.* -->
           <tr>
@@ -173,19 +173,19 @@
             <td><strong><a href="#commons.release.4.desc">commons.release.4.desc</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Alternative Release Title or Description.<br/><strong>Default value is</strong>: <code>${commons.release.4.desc}</code>.</td>
+            <td>The alternative release title or description.<br/><strong>Default value is</strong>: <code>${commons.release.4.desc}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.4.binary.suffix">commons.release.4.binary.suffix</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The suffix for the alternative release binary distribution.<br/><strong>Default value is</strong>: <code>${commons.release.4.binary.suffix}</code>.</td>
+            <td>The suffix for the binary distribution of the alternative release.<br/><strong>Default value is</strong>: <code>${commons.release.4.binary.suffix}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#commons.release.4.subdir">commons.release.4.subdir</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>Subdirectory (if not source/binaries)<br/><strong>Default value is</strong>: <code>${commons.release.4.subdir}</code>.</td>
+            <td>The subdirectory to use instead of the source and binaries directories.<br/><strong>Default value is</strong>: <code>${commons.release.4.subdir}</code>.</td>
           </tr>
           <!-- Miscellaneous -->
           <tr>
@@ -228,7 +228,7 @@
         <p>
         <strong><a name="commons.release.desc">commons.release.desc</a>:</strong>
         </p>
-        <div>Release Title or Description.</div>
+        <div>The release title or description.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
@@ -256,7 +256,7 @@
         <p>
         <strong><a name="commons.release.2.desc">commons.release.2.desc</a>:</strong>
         </p>
-        <div>Alternative Release Title or Description.</div>
+        <div>The alternative release title or description.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
@@ -265,7 +265,7 @@
         <p>
         <strong><a name="commons.release.2.binary.suffix">commons.release.2.binary.suffix</a>:</strong>
         </p>
-        <div>The suffix for the alternative release binary distribution.</div>
+        <div>The suffix for the binary distribution of the alternative release.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
@@ -293,7 +293,7 @@
         <p>
         <strong><a name="commons.release.3.desc">commons.release.3.desc</a>:</strong>
         </p>
-        <div>Alternative Release Title or Description.</div>
+        <div>The alternative release title or description.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
@@ -302,7 +302,7 @@
         <p>
         <strong><a name="commons.release.3.binary.suffix">commons.release.3.binary.suffix</a>:</strong>
         </p>
-        <div>The suffix for the alternative release binary distribution.</div>
+        <div>The suffix for the binary distribution of the alternative release.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
@@ -334,7 +334,7 @@
         <p>
         <strong><a name="commons.release.4.desc">commons.release.4.desc</a>:</strong>
         </p>
-        <div>Alternative Release Title or Description.</div>
+        <div>The alternative release title or description.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>
@@ -343,7 +343,7 @@
         <p>
         <strong><a name="commons.release.4.binary.suffix">commons.release.4.binary.suffix</a>:</strong>
         </p>
-        <div>The suffix for the alternative release binary distribution.</div>
+        <div>The suffix for the binary distribution of the alternative release.</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>No</code></li>

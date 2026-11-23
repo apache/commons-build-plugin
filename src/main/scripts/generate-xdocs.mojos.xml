@@ -17,7 +17,7 @@
    limitations under the License.
 -->
 <!--
-   Mojo metadata for "Commons Build: Standard XDOC Pages Generation".
+   Mojo metadata for "Commons Build: Standard XDOC Page Generation".
  -->
 <pluginMetadata
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -146,7 +146,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Release Title or Description.</description>
+                    <description>The release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.subdir</name>
@@ -155,7 +155,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.hash</name>
@@ -164,7 +164,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
@@ -192,7 +192,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Alternative Release Title or Description.</description>
+                    <description>The alternative release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.binary.suffix</name>
@@ -201,7 +201,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distribution.</description>
+                    <description>The suffix for the binary distribution of the alternative release.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.subdir</name>
@@ -210,7 +210,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.hash</name>
@@ -219,7 +219,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -247,7 +247,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Alternative Release Title or Description.</description>
+                    <description>The alternative release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.binary.suffix</name>
@@ -256,7 +256,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distribution.</description>
+                    <description>The suffix for the binary distribution of the alternative release.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.subdir</name>
@@ -265,7 +265,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.hash</name>
@@ -274,7 +274,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
@@ -302,7 +302,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Alternative Release Title or Description.</description>
+                    <description>The alternative release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.binary.suffix</name>
@@ -311,7 +311,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distribution.</description>
+                    <description>The suffix for the binary distribution of the alternative release.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.subdir</name>
@@ -320,7 +320,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.hash</name>
@@ -329,7 +329,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
             </parameters>
         </mojo>
@@ -427,7 +427,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Release Title or Description.</description>
+                    <description>The release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.subdir</name>
@@ -436,7 +436,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.hash</name>
@@ -445,7 +445,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
@@ -473,7 +473,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Alternative Release Title or Description.</description>
+                    <description>The alternative release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.binary.suffix</name>
@@ -482,7 +482,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distribution.</description>
+                    <description>The suffix for the binary distribution of the alternative release.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.subdir</name>
@@ -491,7 +491,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.hash</name>
@@ -500,7 +500,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -528,7 +528,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Alternative Release Title or Description.</description>
+                    <description>The alternative release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.binary.suffix</name>
@@ -537,7 +537,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distribution.</description>
+                    <description>The suffix for the binary distribution of the alternative release.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.subdir</name>
@@ -546,7 +546,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.hash</name>
@@ -555,7 +555,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
@@ -583,7 +583,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Alternative Release Title or Description.</description>
+                    <description>The alternative release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.binary.suffix</name>
@@ -592,7 +592,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distribution.</description>
+                    <description>The suffix for the binary distribution of the alternative release.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.subdir</name>
@@ -601,7 +601,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.hash</name>
@@ -610,14 +610,14 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
             </parameters>
         </mojo>
         <mojo>
             <goal>mail-page</goal>
             <call>mail-page</call>
-            <description>Apache Commons Build Mojo: Generate Mailing List page.</description>
+            <description>Apache Commons Build Mojo: Generate the mailing list page.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -643,7 +643,7 @@
         <mojo>
             <goal>jira-page</goal>
             <call>jira-page</call>
-            <description>Apache Commons Build Mojo: Generate Issue Tracking page.</description>
+            <description>Apache Commons Build Mojo: Generate the issue tracking page.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -678,7 +678,7 @@
         <mojo>
             <goal>sandbox-jira-page</goal>
             <call>sandbox-jira-page</call>
-            <description>Apache Commons Build Mojo: Generate Sandbox Issue Tracking page.</description>
+            <description>Apache Commons Build Mojo: Generate the sandbox issue tracking page.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -704,7 +704,7 @@
         <mojo>
             <goal>download-page</goal>
             <call>download-page</call>
-            <description>Apache Commons Build Mojo: Generate Download page.</description>
+            <description>Apache Commons Build Mojo: Generate the download page.</description>
             <requiresProject>true</requiresProject>
             <parameters>
                 <parameter>
@@ -768,7 +768,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Release Title or Description.</description>
+                    <description>The release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.subdir</name>
@@ -777,7 +777,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.hash</name>
@@ -786,7 +786,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
                 <!-- commons.release.2.* -->
                 <parameter>
@@ -814,7 +814,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Alternative Release Title or Description.</description>
+                    <description>The alternative release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.binary.suffix</name>
@@ -823,7 +823,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distribution.</description>
+                    <description>The suffix for the binary distribution of the alternative release.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.subdir</name>
@@ -832,7 +832,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.2.hash</name>
@@ -841,7 +841,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.2.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
                 <!-- commons.release.3.* -->
                 <parameter>
@@ -869,7 +869,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Alternative Release Title or Description.</description>
+                    <description>The alternative release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.binary.suffix</name>
@@ -878,7 +878,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distribution.</description>
+                    <description>The suffix for the binary distribution of the alternative release.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.subdir</name>
@@ -887,7 +887,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.3.hash</name>
@@ -896,7 +896,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.3.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
                 <!-- commons.release.4.* -->
                 <parameter>
@@ -924,7 +924,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.desc}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Alternative Release Title or Description.</description>
+                    <description>The alternative release title or description.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.binary.suffix</name>
@@ -933,7 +933,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.binary.suffix}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>The suffix for the alternative release binary distribution.</description>
+                    <description>The suffix for the binary distribution of the alternative release.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.subdir</name>
@@ -942,7 +942,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.subdir}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Subdirectory (instead of source/binaries).</description>
+                    <description>The subdirectory to use instead of the source and binaries directories.</description>
                 </parameter>
                 <parameter>
                     <name>commons.release.4.hash</name>
@@ -951,7 +951,7 @@
                     <readonly>false</readonly>
                     <defaultValue>${commons.release.4.hash}</defaultValue>
                     <type>java.lang.String</type>
-                    <description>Type of hash (lowercase, for example, sha512)</description>
+                    <description>The hash type (lowercase, for example, sha512).</description>
                 </parameter>
             </parameters>
         </mojo>

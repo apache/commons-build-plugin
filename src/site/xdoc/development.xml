@@ -46,7 +46,7 @@
                 <li>An Ant build file
                     <ul><li>[naming convention: <i>basename</i><b>.build.xml</b>]</li></ul>
                 </li>
-                <li>A <i>mapping document</i> which wires the build file into Maven's plugin framework
+                <li>A <i>mapping document</i> that wires the build file into Maven's plugin framework
                     <ul><li>[naming convention: <i>basename</i><b>.mojos.xml</b>]</li></ul>
                 </li>
             </ul>
@@ -57,7 +57,7 @@
             </p>
 
             <p>
-            Both these files should be located in the
+            Both of these files should be located in the
             <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/">src/main/scripts</a>
             directory.
             </p>

@@ -15,7 +15,7 @@
     limitations under the License.
 -->
 <!--
-   Commons Build: Standard XDOC Pages Generation.
+   Commons Build: Standard XDOC Page Generation.
  -->
 <project name="Commons Build: Standard XDOC Pages Generation" basedir=".">
 
@@ -26,12 +26,12 @@
 
 	<!-- ========== Generate All Pages ================================ -->
 
-	<target name="all" description="Generate all pages" depends="contributing-md, download-page, jira-page, mail-page, readme-md, notice-txt" />
-	<target name="all-sandbox" description="Generate all sandbox pages" depends="contributing-md, download-page, sandbox-jira-page, mail-page, readme-md, notice-txt" />
+	<target name="all" description="Generate all pages." depends="contributing-md, download-page, jira-page, mail-page, readme-md, notice-txt" />
+	<target name="all-sandbox" description="Generate all sandbox pages." depends="contributing-md, download-page, sandbox-jira-page, mail-page, readme-md, notice-txt" />
 
 	<!-- ========== Generate Mailing List Page ================================ -->
 
-	<target name="mail-page" description="Generate Mailing List page">
+	<target name="mail-page" description="Generate the mailing list page.">
 
 		<echo level="${level}" message="----- commons-build:mailing-list - Parameters - START -----" />
 		<echo level="${level}" message="project.name         : ${project.name}" />
@@ -41,16 +41,16 @@
 
 		<echo level="info" message="*** Generating ${project.name} Mailing List Page ***" />
 
-		<!-- Create a temporary directory to load the template files into -->
+		<!-- Create a temporary directory for the template files. -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the mail-lists template from the mojo resources to the temporary directory -->
+		<!-- Load the mail-lists template from the mojo resources into the temporary directory. -->
 		<loadresource property="mailinglists-xml">
 			<javaresource name="${commonsMojoXdocDir}/mail-lists-template.xml" />
 		</loadresource>
 		<echo message="${mailinglists-xml}" file="${commonsMojoTempDir}/mail-lists-template.xml" append="false" />
 
-		<!-- Copy the mail-lists template, filtering to replace properties -->
+		<!-- Copy the mail-lists template, filtering to replace properties. -->
 		<copy file="${commonsMojoTempDir}/mail-lists-template.xml" tofile="${commonsMojoTempDir}/mail-lists.xml" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -58,7 +58,7 @@
 			</filterset>
 		</copy>
 
-		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory -->
+		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory. -->
 		<antcall target="copy-to-xdoc-dir">
 			<param name="file.name" value="mail-lists.xml" />
 		</antcall>
@@ -67,7 +67,7 @@
 
 	<!-- ========== Generate Issue Tracking Page ============================== -->
 
-	<target name="jira-page" description="Generate JIRA Issue Tracking page">
+	<target name="jira-page" description="Generate the JIRA issue tracking page.">
 
 		<echo level="${level}" message="----- commons-build:jira-page - Parameters - START -----" />
 		<echo level="${level}" message="project.name         : ${project.name}" />
@@ -78,16 +78,16 @@
 
 		<echo level="info" message="*** Generating ${project.name} Issue Tracking Page ***" />
 
-		<!-- Create a temporary directory to load the template files into -->
+		<!-- Create a temporary directory for the template files. -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the issue-tracking template from the mojo resources to the temporary directory -->
+		<!-- Load the issue-tracking template from the mojo resources into the temporary directory. -->
 		<loadresource property="issuetracking-xml">
 			<javaresource name="${commonsMojoXdocDir}/issue-tracking-template.xml" />
 		</loadresource>
 		<echo message="${issuetracking-xml}" file="${commonsMojoTempDir}/issue-tracking-template.xml" append="false" />
 
-		<!-- Copy the issue-tracking template, filtering to replace properties -->
+		<!-- Copy the issue-tracking template, filtering to replace properties. -->
 		<copy file="${commonsMojoTempDir}/issue-tracking-template.xml" tofile="${commonsMojoTempDir}/issue-tracking.xml" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -96,7 +96,7 @@
 			</filterset>
 		</copy>
 
-		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory -->
+		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory. -->
 		<antcall target="copy-to-xdoc-dir">
 			<param name="file.name" value="issue-tracking.xml" />
 		</antcall>
@@ -106,7 +106,7 @@
 
 	<!-- ========== Generate Sandbox Issue Tracking Page ====================== -->
 
-	<target name="sandbox-jira-page" description="Generate Sandbox JIRA Issue Tracking page">
+	<target name="sandbox-jira-page" description="Generate the sandbox JIRA issue tracking page.">
 
 		<echo level="${level}" message="----- commons-build:sandbox-jira-page - Parameters - START -----" />
 		<echo level="${level}" message="project.name            : ${project.name}" />
@@ -115,16 +115,16 @@
 
 		<echo level="info" message="*** Generating ${project.name} Sandbox Issue Tracking Page ***" />
 
-		<!-- Create a temporary directory to load the template files into -->
+		<!-- Create a temporary directory for the template files. -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the issue-tracking template from the mojo resources to the temporary directory -->
+		<!-- Load the issue-tracking template from the mojo resources into the temporary directory. -->
 		<loadresource property="sandbox-issuetracking-xml">
 			<javaresource name="${commonsMojoXdocDir}/sandbox-issue-tracking-template.xml" />
 		</loadresource>
 		<echo message="${sandbox-issuetracking-xml}" file="${commonsMojoTempDir}/sandbox-issue-tracking-template.xml" append="false" />
 
-		<!-- Copy the issue-tracking template, filtering to replace properties -->
+		<!-- Copy the issue-tracking template, filtering to replace properties. -->
 		<copy file="${commonsMojoTempDir}/sandbox-issue-tracking-template.xml" tofile="${commonsMojoTempDir}/issue-tracking.xml" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -132,7 +132,7 @@
 			</filterset>
 		</copy>
 
-		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory -->
+		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory. -->
 		<antcall target="copy-to-xdoc-dir">
 			<param name="file.name" value="issue-tracking.xml" />
 		</antcall>
@@ -150,7 +150,7 @@
                              attributes.get( "string" ).toUpperCase() );
     </scriptdef>
 
-	<target name="download-page" description="Generate Download page">
+	<target name="download-page" description="Generate the download page.">
 
 		<echo level="${level}" message="----- commons-build:download-page - Parameters - START -----" />
 		<echo level="${level}" message="project.name             : ${project.name}" />
@@ -189,10 +189,10 @@
 
 		<echo level="info" message="*** Generating ${project.name} ${commons.release.version} Download Page ***" />
 
-		<!-- Create a temporary directory to load the template files into -->
+		<!-- Create a temporary directory for the template files. -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the download-page template from the mojo resources to the temporary directory -->
+		<!-- Load the download-page template from the mojo resources into the temporary directory. -->
 		<antcall target="load-no-download-page-template" />
 		<antcall target="load-download-page-head" />
 		<antcall target="load-download-page-body-1" />
@@ -201,7 +201,7 @@
 		<antcall target="load-download-page-body-4" />
 		<antcall target="load-download-page-foot" />
 
-		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory -->
+		<!-- Copy to either the Maven 1 or Maven 2 xdoc directory. -->
 		<antcall target="copy-to-xdoc-dir">
 			<param name="file.name" value="download_${commons.componentid}.xml" />
 		</antcall>
@@ -215,7 +215,7 @@
 		</condition>
 		<upper string="${HASHLC}" to="HASHUC" />
 
-		<!-- Load header -->
+		<!-- Load the header. -->
 		<loadresource property="download-page-head-xml">
 			<javaresource name="${commonsMojoXdocDir}/download-page-head.xml" />
 			<filterchain>
@@ -233,7 +233,7 @@
 	<target name="load-download-page-body-1" if="commons.release.version">
 		<echo level="info" message="*** loading download-page body(1) file***" />
 
-		<!-- Set up the defaults -->
+		<!-- Set up the defaults. -->
 		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
 			<isset property="commons.dist.subdir" />
 		</condition>
@@ -248,7 +248,7 @@
 		</condition>
 		<upper string="${HASHLC}" to="HASHUC" />
 
-		<!-- Load Body -->
+		<!-- Load the body. -->
 		<loadresource property="download-page-body-1-xml">
 			<javaresource name="${commonsMojoXdocDir}/download-page-body.xml" />
 			<filterchain>
@@ -273,7 +273,7 @@
 	<target name="load-download-page-body-2" if="commons.release.2.version">
 		<echo level="info" message="*** loading download-page body(2) file***" />
 
-		<!-- Set up the defaults -->
+		<!-- Set up the defaults. -->
 		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
 			<isset property="commons.dist.subdir" />
 		</condition>
@@ -288,7 +288,7 @@
 		</condition>
 		<upper string="${HASHLC}" to="HASHUC" />
 
-		<!-- Load Body -->
+		<!-- Load the body. -->
 		<loadresource property="download-page-body-2-xml">
 			<javaresource name="${commonsMojoXdocDir}/download-page-body.xml" />
 			<filterchain>
@@ -313,7 +313,7 @@
 	<target name="load-download-page-body-3" if="commons.release.3.version">
 		<echo level="info" message="*** loading download-page body(3) file***" />
 
-		<!-- Set up the defaults -->
+		<!-- Set up the defaults. -->
 		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
 			<isset property="commons.dist.subdir" />
 		</condition>
@@ -328,7 +328,7 @@
 		</condition>
 		<upper string="${HASHLC}" to="HASHUC" />
 
-		<!-- Load Body -->
+		<!-- Load the body. -->
 		<loadresource property="download-page-body-3-xml">
 			<javaresource name="${commonsMojoXdocDir}/download-page-body.xml" />
 			<filterchain>
@@ -353,7 +353,7 @@
 	<target name="load-download-page-body-4" if="commons.release.4.version">
 		<echo level="info" message="*** loading download-page body(4) file***" />
 
-		<!-- Set up the defaults -->
+		<!-- Set up the defaults. -->
 		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
 			<isset property="commons.dist.subdir" />
 		</condition>
@@ -368,7 +368,7 @@
 		</condition>
 		<upper string="${HASHLC}" to="HASHUC" />
 
-		<!-- Load Body -->
+		<!-- Load the body. -->
 		<loadresource property="download-page-body-4-xml">
 			<javaresource name="${commonsMojoXdocDir}/download-page-body.xml" />
 			<filterchain>
@@ -393,12 +393,12 @@
 	<target name="load-download-page-foot" if="commons.release.version">
 		<echo level="info" message="*** loading download-page footer files ***" />
 
-		<!-- Set up the defaults -->
+		<!-- Set up the defaults. -->
 		<condition property="DISTDIR" value="${commons.dist.subdir}" else="${commons.componentid}">
 			<isset property="commons.dist.subdir" />
 		</condition>
 
-		<!-- Load Footer -->
+		<!-- Load the footer. -->
 		<loadresource property="download-page-foot-xml">
 			<javaresource name="${commonsMojoXdocDir}/download-page-foot.xml" />
 			<filterchain>
@@ -439,7 +439,7 @@
 
 	<!-- ========== Generate README.md file ================================ -->
 
-	<target name="readme-md" description="Generate README.md">
+	<target name="readme-md" description="Generate README.md.">
 
 		<echo level="${level}" message="----- commons-build:readme-md - Parameters - START -----" />
 		<echo level="${level}" message="project.name              : ${project.name}" />
@@ -453,16 +453,16 @@
 
 		<echo level="info" message="*** Generating ${project.name} README.md ***" />
 
-		<!-- Create a temporary directory to load the template files into -->
+		<!-- Create a temporary directory for the template files. -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the readme-md template from the mojo resources to the temporary directory -->
+		<!-- Load the readme-md template from the mojo resources into the temporary directory. -->
 		<loadresource property="readme-md">
 			<javaresource name="${commonsMojoXdocDir}/readme-md-template.md" />
 		</loadresource>
 		<echo message="${readme-md}" file="${commonsMojoTempDir}/readme-md-template.md" append="false" />
 
-		<!-- Without using ant-contrib: remove "-project" for multi-module artifacts -->
+		<!-- Remove "-project" from multi-module artifact IDs without using ant-contrib. -->
 		<loadresource property="tmp.artifactId">
 			<propertyresource name="project.artifactId" />
 			<filterchain>
@@ -473,7 +473,7 @@
 			</filterchain>
 		</loadresource>
 
-		<!-- Copy the readme-md template, filtering to replace properties -->
+		<!-- Copy the readme-md template, filtering to replace properties. -->
 		<copy file="${commonsMojoTempDir}/readme-md-template.md" tofile="README.md" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -491,7 +491,7 @@
 
 	<!-- ========== Generate NOTICE.txt file ================================ -->
 
-	<target name="notice-txt" description="Generate NOTICE.txt">
+	<target name="notice-txt" description="Generate NOTICE.txt.">
 
 		<echo level="${level}" message="----- commons-build:notice-txt - Parameters - START -----" />
 		<echo level="${level}" message="project.name              : ${project.name}" />
@@ -506,16 +506,16 @@
 		<echo level="${level}" message="commons.currentYear       : ${commons.currentYear}" />
 		<echo level="info" message="*** Generating ${project.name} NOTICE.txt ***" />
 
-		<!-- Create a temporary directory to load the template files into -->
+		<!-- Create a temporary directory for the template files. -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the notice-txt template from the mojo resources to the temporary directory -->
+		<!-- Load the notice-txt template from the mojo resources into the temporary directory. -->
 		<loadresource property="notice-txt">
 			<javaresource name="${commonsMojoXdocDir}/notice-txt-template.txt" />
 		</loadresource>
 		<echo message="${notice-txt}" file="${commonsMojoTempDir}/notice-txt-template.txt" append="false" />
 
-		<!-- Copy the notice-txt template, filtering to replace properties -->
+		<!-- Copy the notice-txt template, filtering to replace properties. -->
 		<copy file="${commonsMojoTempDir}/notice-txt-template.txt" tofile="NOTICE.txt" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />
@@ -528,7 +528,7 @@
 
 	<!-- ========== Generate CONTRIBUTING.md file ================================ -->
 
-	<target name="contributing-md" description="Generate CONTRIBUTING.md">
+	<target name="contributing-md" description="Generate CONTRIBUTING.md.">
 
 		<echo level="${level}" message="----- commons-build:readme-md - Parameters - START -----" />
 		<echo level="${level}" message="project.name              : ${project.name}" />
@@ -539,16 +539,16 @@
 
 		<echo level="info" message="*** Generating ${project.name} CONTRIBUTING.md ***" />
 
-		<!-- Create a temporary directory to load the template files into -->
+		<!-- Create a temporary directory for the template files. -->
 		<mkdir dir="${commonsMojoTempDir}" />
 
-		<!-- Load the contributing-md template from the mojo resources to the temporary directory -->
+		<!-- Load the contributing-md template from the mojo resources into the temporary directory. -->
 		<loadresource property="contributing-md">
 			<javaresource name="${commonsMojoXdocDir}/contributing-md-template.md" />
 		</loadresource>
 		<echo message="${contributing-md}" file="${commonsMojoTempDir}/contributing-md-template.md" append="false" />
 
-		<!-- Without using ant-contrib: remove "-project" for multi-module artifacts -->
+		<!-- Remove "-project" from multi-module artifact IDs without using ant-contrib. -->
 		<loadresource property="tmp.artifactId">
 			<propertyresource name="project.artifactId" />
 			<filterchain>
@@ -559,7 +559,7 @@
 			</filterchain>
 		</loadresource>
 
-		<!-- Copy the contributing-md template, filtering to replace properties -->
+		<!-- Copy the contributing-md template, filtering to replace properties. -->
 		<copy file="${commonsMojoTempDir}/contributing-md-template.md" tofile="CONTRIBUTING.md" overwrite="true">
 			<filterset>
 				<filter token="NAME" value="${project.name}" />

@@ -39,23 +39,23 @@
                 </p>
 
                 <p>
-                This goal uses the following:
+                This goal works as follows:
                 </p>
                 <ul>
-                    <li>The goal is mapped to the Ant script/target using the <code>notice-txt</code> mojo definition in the
-                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
-                    <li>Executes the <code>notice-txt</code> target in
+                    <li>The goal is mapped to the Ant target using the <code>notice-txt</code> mojo definition in the
+                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document.</li>
+                    <li>It executes the <code>notice-txt</code> target in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
-                        Ant script</li>
-                    <li>Uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/notice-txt-template.txt">notice-txt-template.txt</a>
-                        template</li>
-                    <li>Uses the <a href="notice-txt-mojo.html">goal's (mojo's) parameters</a> to filter values in the template</li>
+                        Ant script.</li>
+                    <li>It uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/notice-txt-template.txt">notice-txt-template.txt</a>
+                        template.</li>
+                    <li>It uses the <a href="notice-txt-mojo.html">goal's (mojo's) parameters</a> to filter values in the template.</li>
                 </ul>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
-                To generate a NOTICE.txt file, the following <a href="notice-txt-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>.
+                To generate a NOTICE.txt file, configure the following <a href="notice-txt-mojo.html">properties</a> in the component's <code>pom.xml</code>.
                 </p>
                 <ul>
                     <li><b>project.inceptionYear</b> - The year of the project's inception, specified as four digits. This value provides project information and is used to generate copyright notices.</li>
