@@ -40,23 +40,23 @@
                 </p>
 
                 <p>
-                This goal uses the following:
+                This goal works as follows:
                 </p>
                 <ul>
-                    <li>The goal is mapped to the Ant script/target using the <code>mail-page</code> mojo definition in the
-                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
-                    <li>Executes the <code>mail-page</code> target in
+                    <li>The goal is mapped to the Ant target using the <code>mail-page</code> mojo definition in the
+                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document.</li>
+                    <li>It executes the <code>mail-page</code> target in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
-                        Ant script</li>
-                    <li>Uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/mail-lists-template.xml">mail-lists-template.xml</a>
-                        template</li>
-                    <li>Uses the <a href="mail-page-mojo.html">goal's (mojo's) parameters</a> to filter values in the template</li>
+                        Ant script.</li>
+                    <li>It uses the <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/resources/commons-xdoc-templates/mail-lists-template.xml">mail-lists-template.xml</a>
+                        template.</li>
+                    <li>It uses the <a href="mail-page-mojo.html">goal's (mojo's) parameters</a> to filter values in the template.</li>
                 </ul>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
-                To generate a Mailing List page, the following <a href="mail-page-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>.
+                To generate a Mailing List page, configure the following <a href="mail-page-mojo.html">properties</a> in the component's <code>pom.xml</code>.
                 </p>
                 <ul>
                     <li><b>commons.componentid</b> - Commons component ID</li>

@@ -72,24 +72,24 @@
     <commons.bc.version>1.16.1</commons.bc.version>
     <commons.release.version>1.16.2</commons.release.version>
     <commons.release.next>1.16.3</commons.release.next>
-    <!-- Previous version of the component (used for reporting binary compatibility check)-->
+    <!-- Previous version of the component (used to check binary compatibility). -->
     <commons.rc.version>RC1</commons.rc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
     <commons.maven.version>3.10.2</commons.maven.version>
     <!--
-      Define the following in ~/.m2/settings.xml in an active profile:
-      (or provide them on the command line)
+      Define the following in ~/.m2/settings.xml in an active profile
+      (or provide them on the command line):
       commons.releaseManagerName
       commons.releaseManagerKey
     -->
-    <!-- moditect currently fails. Disable the check until we need to use Java plugins -->
+    <!-- moditect currently fails. Disable the check until we need to use Java plugins. -->
     <moditect.skip>true</moditect.skip>
-    <!-- Not needed for plugins intended for developer use only -->
+    <!-- Not needed for plugins intended for developer use only. -->
     <cyclonedx.skip>true</cyclonedx.skip>
-    <!-- Not available until version 0.7.1 -->
+    <!-- Not available until version 0.7.1. -->
     <spdx.skip>true</spdx.skip>
-    <!-- project.build.outputTimestamp is managed by Maven plugins, see https://maven.apache.org/guides/mini/guide-reproducible-builds.html -->
+    <!-- project.build.outputTimestamp is managed by Maven plugins; see https://maven.apache.org/guides/mini/guide-reproducible-builds.html -->
     <project.build.outputTimestamp>2026-01-31T13:21:42Z</project.build.outputTimestamp>
   </properties>
   <dependencies>
@@ -120,7 +120,7 @@
     </dependency>
   </dependencies>
   <build>
-    <!-- include the site goal to detect problems previously encountered with maven-plugin-plugin 3.9.0 -->
+    <!-- Include the site goal to detect problems previously encountered with maven-plugin-plugin 3.9.0. -->
     <defaultGoal>clean verify apache-rat:check spotbugs:check pmd:check pmd:cpd-check javadoc:javadoc site</defaultGoal>
     <resources>
       <resource>
@@ -140,7 +140,7 @@
       <plugin>
         <artifactId>maven-plugin-plugin</artifactId>
         <version>3.16.0</version>
-        <!-- Add the Ant plugin tools to the plugin -->
+        <!-- Add the Ant plugin tools to the plugin. -->
         <dependencies>
           <dependency>
             <groupId>org.apache.maven.plugin-tools</groupId>
@@ -167,7 +167,7 @@
         <artifactId>apache-rat-plugin</artifactId>
         <configuration>
           <inputExcludes>
-            <!-- template files which will be inserted into the middle of the resulting page -->
+            <!-- Template files that will be inserted into the middle of the resulting page. -->
             <inputExclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</inputExclude>
             <inputExclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</inputExclude>
             <inputExclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</inputExclude>
@@ -194,7 +194,7 @@
         <artifactId>apache-rat-plugin</artifactId>
         <configuration>
           <inputExcludes>
-            <!-- template files which will be inserted into the middle of the resulting page -->
+            <!-- Template files that will be inserted into the middle of the resulting page. -->
             <inputExclude>src/main/resources/commons-xdoc-templates/download-page-body.xml</inputExclude>
             <inputExclude>src/main/resources/commons-xdoc-templates/download-page-foot.xml</inputExclude>
             <inputExclude>src/main/resources/commons-xdoc-templates/notice-txt-template.txt</inputExclude>
@@ -212,7 +212,7 @@
         <!-- <excludeFilterFile>${basedir}/spotbugs-exclude-filter.xml</excludeFilterFile> -->
         </configuration>
       </plugin>
-      <!-- exclude surefire report -->
+      <!-- Exclude the Surefire report. -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
@@ -220,7 +220,7 @@
           <reportSet/>
         </reportSets>
       </plugin>
-      <!-- exclude jdepend report -->
+      <!-- Exclude the JDepend report. -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>jdepend-maven-plugin</artifactId>

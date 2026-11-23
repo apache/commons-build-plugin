@@ -26,5 +26,5 @@ Before you push a pull request, review this list:
 - [ ] I used AI to create any part of, or all of, this pull request. Which AI tool was used to create this pull request, and to what extent did it contribute?
 - [ ] Run a successful build using the default [Maven](https://maven.apache.org/) goal with `mvn`; that's `mvn` on the command line by itself.
 - [ ] Write unit tests that match behavioral changes, where the tests fail if the changes to the runtime are not applied. This may not always be possible, but it is a best practice.
-- [ ] Write a pull request description that is detailed enough to understand what the pull request does, how, and why.
+- [ ] Write a pull request description that explains what the changes do, how they work, and why they are needed.
 - [ ] Each commit in the pull request should have a meaningful subject line and body. Note that a maintainer may squash commits during the merge process.

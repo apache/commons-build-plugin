@@ -24,30 +24,30 @@ $introduction.replaceAll("(?<!\015)\012", "
 
 ## The available variables are described here:
 ## http://maven.apache.org/plugins/maven-changes-plugin/examples/using-a-custom-announcement-template.html
-## Hack to improve layout: replace all pairs of spaces with a single new-line
+## Improve the layout: replace all pairs of spaces with a single newline.
 $release.description.replaceAll("  ", "
 ")
 
-## set up indent sizes. Only change indent1
+## Set up indentation sizes. Only change indent1.
 #set($props=${project.properties})
 #set($jiralen=$props.get("commons.jira.id").length())
 ## indent1 =   codec-nnnn:
 #set($blanklen=$jiralen+6)## +6 for "-nnnn:"
-## must be at least as long as the longest JIRA id
+## Must be at least as long as the longest JIRA ID.
 #set($blanks="                                  ")
 #set($indent1=$blanks.substring(0,$blanklen))
-## indent2 allows for issue wrapper
+## indent2 allows for the issue wrapper.
 #set($indent2="$indent1   ")
 ##
 #macro ( processaction )
 ## Use replaceAll to fix up LF-only line ends on Windows.
 #set($action=$actionItem.getAction().replaceAll("\n","
 "))
-## Fix up indentation for multi-line action descriptions
+## Fix indentation for multiline action descriptions.
 #set($action=$action.replaceAll("(?m)^  +",$indent2))
 #if ($actionItem.getIssue())
 #set($issue="$actionItem.getIssue():")
-## Pad shorter issue numbers
+## Pad shorter issue numbers.
 #if ($issue.length() < $indent1.length())#set ($issue="$issue ")#end
 #if ($issue.length() < $indent1.length())#set ($issue="$issue ")#end
 #if ($issue.length() < $indent1.length())#set ($issue="$issue ")#end
@@ -66,7 +66,7 @@ $release.description.replaceAll("  ", "
 #end
 ##
 #if ($release.getActions().size() == 0)
-No changes defined in this version.
+No changes are defined in this version.
 #else
 Changes in this version include:
 
@@ -105,7 +105,7 @@ Removed
 #processaction()
 #end
 #end
-## End of main loop
+## End of the main loop.
 #end
 
 For complete information on ${project.name}, including instructions on how to submit bug reports,

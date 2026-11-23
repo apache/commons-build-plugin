@@ -29,7 +29,7 @@
 
             <p>
             This is a <a href="https://maven.apache.org/">Maven 2.x/3.x</a>
-            <a href="https://ant.apache.org/">Ant</a> Plugin which is
+            <a href="https://ant.apache.org/">Ant</a> plugin that is
             used by <a href="https://commons.apache.org/">Apache Commons</a> builds. See
             the <a href="development.html">Development</a> page for information to
             help maintain this plugin.
@@ -48,15 +48,15 @@
                 <li><a href="mail-page.html">commons-build:mail-page</a> - Generate a custom <i>Mailing List</i> page for a component.</li>
                 <li><a href="jira-page.html">commons-build:jira-page</a> - Generate a custom <i>JIRA Issue Tracking</i> page for a component.</li>
                 <li><a href="sandbox-jira-page.html">commons-build:sandbox-jira-page</a> - Generate a custom <i>JIRA Issue Tracking page</i> for a Sandbox component.</li>
-                <li><a href="copy-javadoc-files-build.html">commons-build:copy-javadoc-files</a> - Copy NOTICE and LICENSE files to -javadoc jar.</li>
+                <li><a href="copy-javadoc-files-build.html">commons-build:copy-javadoc-files</a> - Copy the NOTICE and LICENSE files to the Javadoc JAR.</li>
                 <li><a href="readme-md.html">commons-build:readme-md</a> - Generate a README.md file containing information for contributors from GitHub.</li>
-                <li><a href="contributing-md.html">commons-build:contributing-md</a> - Generate a CONTRIBUTING.md file containing information on how to contribute for contributors from GitHub.</li>
+                <li><a href="contributing-md.html">commons-build:contributing-md</a> - Generate a CONTRIBUTING.md file explaining how to contribute through GitHub.</li>
             </ul>
         </section>
 
         <section name="Trying out the plugin">
             <p>
-            Configure the plugin in the <code>&lt;build&gt;</code> section of the <code>pom.xml</code>
+            Configure the plugin in the <code>&lt;build&gt;</code> section of the <code>pom.xml</code> file:
 <source><![CDATA[
 <plugin>
   <groupId>org.apache.commons</groupId>
@@ -66,7 +66,7 @@
 ]]></source>
             </p>
             <p>
-            Configure any properties required by the goal and try executing.
+            Configure any properties required by the goal and execute it.
             </p>
             <source>mvn commons:download-page [-Dcommons.release.version=1.2.3]</source>
 

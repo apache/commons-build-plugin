@@ -32,7 +32,7 @@
       <p>
       <strong>Description</strong>:
       </p>
-      <div>Apache Commons Build Mojo: Generate Sandbox Issue Tracking page</div>
+      <div>Apache Commons Build Mojo: Generate the sandbox issue tracking page.</div>
       <p>
       <strong>Attributes</strong>:
       </p>
@@ -52,7 +52,7 @@
             <td><strong><a href="#commons.jira.componentid">commons.jira.componentid</a></strong></td>
             <td><code>String</code></td>
             <td><code>-</code></td>
-            <td>The internal JIRA component ID (numeric)<br/><strong>Default value is</strong>: <code>${commons.jira.componentid}</code>.</td>
+            <td>The internal JIRA component ID (numeric).<br/><strong>Default value is</strong>: <code>${commons.jira.componentid}</code>.</td>
           </tr>
           <tr>
             <td><strong><a href="#basedir">basedir</a></strong></td>
@@ -82,7 +82,7 @@
         <p>
         <strong><a name="commons.jira.componentid">commons.jira.componentid</a>:</strong>
         </p>
-        <div>The internal JIRA component ID (numeric)</div>
+        <div>The internal JIRA component ID (numeric).</div>
         <ul>
           <li><strong>Type</strong>: <code>java.lang.String</code></li>
           <li><strong>Required</strong>: <code>Yes</code></li>

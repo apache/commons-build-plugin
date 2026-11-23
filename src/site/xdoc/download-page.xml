@@ -41,31 +41,31 @@
                 </p>
 
                 <p>
-                <strong>Note:</strong> The Download page should only need to be re-generated after a new release of the component
+                <strong>Note:</strong> The Download page should only need to be regenerated after a new release of the component
                 or if the download page template changes.
                 </p>
 
                 <p>
-                This goal uses the following:
+                This goal works as follows:
                 </p>
                 <ul>
-                    <li>The goal is mapped to the Ant script/target using the <code>download-page</code> mojo definition in the
-                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
-                    <li>Executes the <code>download-page</code> target in
+                    <li>The goal is mapped to the Ant target using the <code>download-page</code> mojo definition in the
+                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document.</li>
+                    <li>It executes the <code>download-page</code> target in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
-                        Ant script</li>
-                    <li>Uses either the
+                        Ant script.</li>
+                    <li>It uses either the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/resources/commons-xdoc-templates/download-page-body.xml">download-page-body.xml</a> or
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=blob;f=src/main/resources/commons-xdoc-templates/no-download-page-template.xml">no-download-page-template.xml</a>
-                        template, depending on whether the <code>commons.release.version</code> property is set or not.
+                        template, depending on whether the <code>commons.release.version</code> property is set.
                         </li>
-                    <li>Uses the <a href="download-page-mojo.html">goal's (mojo's) parameters</a> to filter values in the template</li>
+                    <li>It uses the <a href="download-page-mojo.html">goal's (mojo's) parameters</a> to filter values in the template.</li>
                 </ul>
             </subsection>
 
             <subsection name="Configuration">
                 <p>
-                To generate a Download page, the following <a href="download-page-mojo.html">properties</a> are configured in the component's <code>pom.xml</code>.
+                To generate a Download page, configure the following <a href="download-page-mojo.html">properties</a> in the component's <code>pom.xml</code>.
                 </p>
                 <ul>
                     <li><b>commons.componentid</b> - Commons component ID</li>
@@ -73,7 +73,7 @@
                     <li><b>commons.release.name</b> - (<i>optional - defaults to <code>${commons.release.name}</code></i>) The name of the latest release of the component</li>
                     <li><b>commons.release.desc</b> - (<i>optional</i>) The download links are shown in a section with the component name and release version - if this parameter is specified, then this text is appended</li>
                     <li><b>commons.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the binary release
-                        (some components use "-bin", others have no suffix)</li>
+                        (some components use "-bin", while others have no suffix)</li>
                     <li><b>commons.release.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; if set, it will be used as the directory for both.</li>
                 </ul>
                 <p>
@@ -94,7 +94,7 @@
                     <li><b>commons.release.2.name</b> - (<i>optional - defaults to <code>${commons.release.2.name}</code></i>) The name of the alternative release of the component</li>
                     <li><b>commons.release.2.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                     <li><b>commons.release.2.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative
-                        binary release (some components use "-bin", others have no suffix)</li>
+                        binary release (some components use "-bin", while others have no suffix)</li>
                     <li><b>commons.release.2.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; if set, it will be used as the directory for both.</li>
                 </ul>
                 <p>
@@ -105,7 +105,7 @@
                     <li><b>commons.release.3.name</b> - (<i>optional - defaults to <code>${commons.release.3.name}</code></i>) The name of the alternative release of the component</li>
                     <li><b>commons.release.3.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                     <li><b>commons.release.3.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative
-                        binary release (some components use "-bin", others have no suffix)</li>
+                        binary release (some components use "-bin", while others have no suffix)</li>
                     <li><b>commons.release.3.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; if set, it will be used as the directory for both.</li>
                 </ul>
                 <p>
@@ -116,7 +116,7 @@
                     <li><b>commons.release.4.name</b> - (<i>optional - defaults to <code>${commons.release.4.name}</code></i>) The name of the alternative release of the component</li>
                     <li><b>commons.release.4.desc</b> - (<i>optional</i>) Additional text to append to the section name of the alternative release</li>
                     <li><b>commons.release.4.binary.suffix</b> - (<i>optional - defaults to <code>-bin</code></i>) The suffix for the alternative
-                        binary release (some components use "-bin", others have no suffix)</li>
+                        binary release (some components use "-bin", while others have no suffix)</li>
                     <li><b>commons.release.4.subdir</b> - The subdirectory to use. This defaults to using separate source/binaries folders; if set, it will be used as the directory for both.</li>
                 </ul>
                 <p>
@@ -132,7 +132,7 @@
 ]]></source>
                 </p>
                 <p>
-                The above configuration generates a download page for two releases shown below:
+                The configuration above generates the download page for two releases shown below:
                 </p>
                  <p>
                     <img src="download-page-2release.jpg" alt="Download Page with two release versions"/>

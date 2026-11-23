@@ -34,14 +34,14 @@
                 Execute the goal using the following command: <source>mvn commons-build:all</source>
                 </p>
                 <p>
-                This goal uses the following:
+                This goal works as follows:
                 </p>
                 <ul>
-                    <li>The goal is mapped to the Ant script/target using the <code>all</code> Mojo definition in the
-                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document</li>
-                    <li>Executes the <code>all</code> target in
+                    <li>The goal is mapped to the Ant target using the <code>all</code> Mojo definition in the
+                        <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.mojos.xml">generate-xdocs.mojos.xml</a> mapping document.</li>
+                    <li>It executes the <code>all</code> target in the
                         <a href="https://gitbox.apache.org/repos/asf?p=commons-build-plugin.git;a=tree;f=src/main/scripts/generate-xdocs.build.xml">generate-xdocs.build.xml</a>
-                        Ant script</li>
+                        Ant script.</li>
                 </ul>
             </subsection>
 

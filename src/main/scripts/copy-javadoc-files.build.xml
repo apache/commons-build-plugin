@@ -15,17 +15,17 @@
     limitations under the License.
 -->
 <!--
-   Commons Build:  Copy NOTICE and LICENSE files to -javadoc.jar.
+   Commons Build: Copy the NOTICE and LICENSE files to the Javadoc JAR.
  -->
 <project name="Commons Build: Copy NOTICE and LICENSE files to -javadoc.jar" default="copy-javadoc-files" basedir=".">
 
     <property name="commonsMojoId"      value="Commons:javadoc-nl-copy" />
 
-    <target name="copy-javadoc-files" description="Copy NOTICE/LICENSE files for javadoc jar">
+    <target name="copy-javadoc-files" description="Copy the NOTICE and LICENSE files for the Javadoc JAR.">
 
         <echo level="info" message="**** commons-build:copy-javadoc-files - Copying NOTICE and LICENSE files ****" />
 
-        <!-- Copy the NOTICE and LICENSE files -->
+        <!-- Copy the NOTICE and LICENSE files. -->
         <copy todir="target/apidocs/META-INF">
             <fileset dir=".">
                  <include name="NOTICE.txt"/>

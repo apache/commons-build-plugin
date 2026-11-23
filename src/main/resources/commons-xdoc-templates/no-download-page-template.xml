@@ -26,10 +26,10 @@ limitations under the License.
  | commons-build-plugin/trunk/src/main/resources/commons-xdoc-templates |
  +======================================================================+
  |                                                                      |
- | 1) Re-generate using: mvn commons-build:download-page                |
+ | 1) Regenerate using: mvn commons-build:download-page                 |
  |                                                                      |
- | 2) Set the following properties in the component's pom:              |
- |    - commons.componentid (required, alphabetic, lower case)          |
+ | 2) Set the following properties in the component's POM:              |
+ |    - commons.componentid (required, alphabetic, lowercase)           |
  |    This template is used if commons.release.version is undefined.    |
  |                                                                      |
  | 3) Example Properties                                                |
